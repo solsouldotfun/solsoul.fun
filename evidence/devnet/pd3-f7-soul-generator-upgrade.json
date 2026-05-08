@@ -1,0 +1,85 @@
+{
+  "featureId": "PD3.F7",
+  "capturedAtIso": "2026-04-28T10:16:07Z",
+  "scope": "Upgrade ONLY public devnet soul-generator program and verify live Token-2022 metadata platform fields",
+  "programUpgrade": {
+    "featureId": "PD3.F7",
+    "cluster": "devnet",
+    "upgradedAtIso": "2026-04-28T10:16:07Z",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "budgetCapSol": "0.5",
+    "observedBalanceBeforeSol": "21.041154692",
+    "observedBalanceAfterUpgradeSol": "21.040411292",
+    "observedSpendSol": "0.000743400",
+    "soulGenerator": {
+      "programId": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+      "programDataAddress": "GYauQrXWC7awEwMXSE94rSxnRbPDGjYLRpvqztE4MVcT",
+      "artifact": "target/deploy/soul_generator.so",
+      "programSoSha256": "0ac896e41b056802a11a0b4f6f09e50b82ee386b690d04a08141fed057b17876",
+      "programSoSizeBytes": 90624,
+      "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "deployTxSig": "4fPWAjHfer5yCbjfrceNrQxK6X14mZCqUWxqJrBspTR6UuR9V9QSBa9F2zmwBzD7XAA17pHt7n8S7y5J6yFHiBTF",
+      "deploySlot": 458641274,
+      "explorerUrl": "https://explorer.solana.com/tx/4fPWAjHfer5yCbjfrceNrQxK6X14mZCqUWxqJrBspTR6UuR9V9QSBa9F2zmwBzD7XAA17pHt7n8S7y5J6yFHiBTF?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "GYauQrXWC7awEwMXSE94rSxnRbPDGjYLRpvqztE4MVcT",
+        "authority": "masked by solana CLI for local upgrade authority; expected 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "lastDeployedInSlot": 458641274,
+        "dataLength": 90624,
+        "balanceSol": "0.63194712"
+      },
+      "confirmEvidence": {
+        "signature": "4fPWAjHfer5yCbjfrceNrQxK6X14mZCqUWxqJrBspTR6UuR9V9QSBa9F2zmwBzD7XAA17pHt7n8S7y5J6yFHiBTF",
+        "slot": 458641274,
+        "status": "Ok",
+        "confirmed": true,
+        "blockTime": "2026-04-28T10:15:25Z",
+        "feeSol": "0.000005",
+        "computeUnitsConsumed": 2370,
+        "log": "Upgraded program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+        "explorerUrl": "https://explorer.solana.com/tx/4fPWAjHfer5yCbjfrceNrQxK6X14mZCqUWxqJrBspTR6UuR9V9QSBa9F2zmwBzD7XAA17pHt7n8S7y5J6yFHiBTF?cluster=devnet"
+      }
+    },
+    "bondingCurve": {
+      "programId": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "unchangedByFeature": true
+    },
+    "observedBalanceAfterVerificationSol": "21.015115612",
+    "observedTotalSpendSolFromBaseline": "0.026039080"
+  },
+  "metadataVerification": {
+    "verifiedAtIso": "2026-04-28T10:19:14Z",
+    "sourceMint": "ECGijwCdrYomg9x1rq3pYmC4QeJwqvVGnx4sG8dQEF5i",
+    "sourceSoulPda": "FH21aXXXnGcgKfAi9in5fnmrKgBiSpJeR6E48wV2a7YT",
+    "claimSignature": "5sgMHv3z7YDPrwBcmZoBPdAHuzhutsRoXthN1jrvkiaxbHMxw18ftZHNQCboZU6UZ3EdFPc3Rb3hQEuHrRESBtK3",
+    "claimSlot": 458641790,
+    "claimExplorerUrl": "https://explorer.solana.com/tx/5sgMHv3z7YDPrwBcmZoBPdAHuzhutsRoXthN1jrvkiaxbHMxw18ftZHNQCboZU6UZ3EdFPc3Rb3hQEuHrRESBtK3?cluster=devnet",
+    "claimComputeUnitsConsumed": 170585,
+    "nftMint": "mF3eX3cEoa9q4nzH2NVPq5oBPZurNymbjJM4k9q8sRx",
+    "nftExplorerUrl": "https://explorer.solana.com/address/mF3eX3cEoa9q4nzH2NVPq5oBPZurNymbjJM4k9q8sRx?cluster=devnet",
+    "tokenMetadata": {
+      "name": "DEVNETKXJ6MM Soul #2",
+      "symbol": "DEVNETKXJ6MM",
+      "uriPrefix": "data:application/json;base64,",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+    },
+    "decodedMetadataJson": {
+      "name": "DEVNETKXJ6MM Soul #2",
+      "symbol": "DEVNETKXJ6MM",
+      "platform": "SolSoul",
+      "creator": "SolSoul",
+      "imagePrefix": "data:image/svg+xml;base64,"
+    },
+    "assertions": {
+      "platformEqualsSolSoul": true,
+      "creatorEqualsSolSoul": true,
+      "namePreservedWithoutSolSoulSuffix": true,
+      "symbolPreservedWithoutSolSoulSuffix": true
+    },
+    "observedBalanceAfterVerificationSol": "21.015115612",
+    "observedTotalSpendSolFromBaseline": "0.026039080",
+    "budgetCapSol": "0.5"
+  }
+}

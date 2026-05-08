@@ -1,0 +1,31 @@
+PD17.A3 scope-guardrail evidence (rg results restricted to app/src)
+
+1) /api/devnet-smoke retired-410:
+   Local : POST http://127.0.0.1:3100/api/devnet-smoke -> HTTP 410
+     Body: {"error":"Devnet smoke write is retired. Use the connected wallet write flow; SolSoul public writes are wallet-signed only."}
+   Public: POST https://solsoul-devnet.vercel.app/api/devnet-smoke -> HTTP 410
+     Same JSON body.
+
+2) Marketplace / Tensor / Magic Eden / orderbook / buy-now / listing references in app/src:
+     Found only in negative tests/copy guardrails:
+       - app/src/i18n/messages.test.ts             (asserts copy does NOT contain these terms)
+       - app/src/app/soul-nft-marketplace-guardrails.test.ts (asserts routes/copy do NOT expose them)
+       - app/src/components/GenerationRulesCard.test.tsx (asserts UI does not say "Soul NFT buy-now")
+     No production component implements a marketplace/listing/orderbook/buy-now flow.
+
+3) Solflare references in app/src:
+     Only in app/src/app/wallet-adapter-local.test.ts which asserts
+     adapter set does NOT include @solana/wallet-adapter-solflare or SolflareWalletAdapter.
+     app/package.json depends only on @solana/wallet-adapter-phantom (Phantom-only).
+
+4) PumpSwap / Meteora active path:
+     No matches for `(Pumpswap|Meteora).{0,40}(active|enabled)` in app/src.
+     AmmSelector.tsx (app/src/components/AmmSelector.tsx) AMM_OPTIONS = [{ id: "raydium" }] only.
+     The other amm.pump.* / amm.meteora.* keys are referenced as labels but never added to AMM_OPTIONS.
+
+5) Wallet-signed-only public writes:
+     app/src/lib/{buySubmit,sellSubmit,directTransferSubmit,preSignReview}.ts
+     plus components LaunchForm.tsx, ClaimButton.tsx, GenerateAgainButton.tsx
+     all flow through useWallet() / sendTransaction (wallet-signed). No
+     server-signer or scripted-keypair fallback present in the public-write
+     surfaces.

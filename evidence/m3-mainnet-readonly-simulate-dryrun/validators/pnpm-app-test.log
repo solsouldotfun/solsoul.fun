@@ -1,0 +1,67 @@
+
+> app@0.1.0 test /Users/davirian/dev/active/ideas/solsouldotfun/app
+> vitest run
+
+
+[1m[46m RUN [49m[22m [36mv3.2.4 [39m[90m/Users/davirian/dev/active/ideas/solsouldotfun/app[39m
+
+ [32m✓[39m src/app/wallet-adapter-local.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/i18n/messages.test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 27[2mms[22m[39m
+ [32m✓[39m src/app/profile/page.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 74[2mms[22m[39m
+ [32m✓[39m src/lib/soulGallery.test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 44[2mms[22m[39m
+ [32m✓[39m src/lib/generationProvenance.test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 28[2mms[22m[39m
+ [32m✓[39m src/lib/statsRoute.test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 30[2mms[22m[39m
+ [32m✓[39m src/lib/stats.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 47[2mms[22m[39m
+ [32m✓[39m src/lib/tokenTimeline.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32m✓[39m src/lib/generationProvenanceRoute.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 23[2mms[22m[39m
+ [32m✓[39m src/lib/directTransferSubmit.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 64[2mms[22m[39m
+ [32m✓[39m src/components/LandingThesisView.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/lib/sellSubmit.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32m✓[39m src/lib/galleryRecovery.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/components/SoulGalleryCard.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[32m 21[2mms[22m[39m
+ [32m✓[39m src/components/TemplateEditor.test.ts [2m([22m[2m25 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/components/TokenFeedRow.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32m✓[39m src/lib/buySubmit.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/components/DevnetBanner.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[32m 22[2mms[22m[39m
+ [32m✓[39m src/lib/tokenFeed.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/components/GalleryStatusCard.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/lib/rpc.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/lib/svgPreview.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/components/LaunchForm.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/components/TokenSoulPanel.lifecycle.test.tsx [2m([22m[2m22 tests[22m[2m)[22m[32m 35[2mms[22m[39m
+ [32m✓[39m src/components/PauseBanner.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[32m 53[2mms[22m[39m
+ [32m✓[39m src/components/AmmSelector.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/components/RiskDisclaimerModal.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/components/navigation.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m src/lib/soulRarity.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/lib/starterTemplates.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/components/GenerationRulesCard.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m src/app/api/devnet-smoke/route.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/app/[locale]/privacy/page.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+ [32m✓[39m src/lib/curveEconomics.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/components/TokenDetailGenerationRules.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m src/components/PlatformBadge.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m src/components/WalletConnectButton.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/components/WalletSoulGalleryPage.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m src/lib/config.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m src/components/GenerateAgainButton.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m src/components/MobileBottomNav.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/lib/sentry.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m src/app/api/token/[mint]/timeline/route.test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m src/app/[locale]/profile/page.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/app/[locale]/gallery/page.test.tsx [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m src/lib/publicStatsCache.test.ts [2m([22m[2m24 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m src/lib/recentLaunches.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 13[2mms[22m[39m
+(node:81773) Warning: `--localstorage-file` was provided without a valid path
+(Use `node --trace-warnings ...` to show where the warning was created)
+ [32m✓[39m src/components/TokenTimeline.cache.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[32m 99[2mms[22m[39m
+ [32m✓[39m src/components/ClaimButton.test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 55[2mms[22m[39m
+ [32m✓[39m src/components/StatsDashboard.test.tsx [2m([22m[2m12 tests[22m[2m)[22m[32m 257[2mms[22m[39m
+ [32m✓[39m src/components/LaunchForm.render.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 175[2mms[22m[39m
+ [32m✓[39m src/lib/marketProvenance.test.ts [2m([22m[2m8 tests[22m[2m)[22m[33m 3020[2mms[22m[39m
+   [33m[2m✓[22m[39m market provenance helpers[2m > [22mkeeps metadata provenance without fabricated tx context when RPC evidence is absent [33m 3012[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m52 passed[39m[22m[90m (52)[39m
+[2m      Tests [22m [1m[32m338 passed[39m[22m[90m (338)[39m
+[2m   Start at [22m 05:08:32
+[2m   Duration [22m 3.49s[2m (transform 1.62s, setup 0ms, collect 7.79s, tests 4.28s, environment 4.60s, prepare 3.40s)[22m

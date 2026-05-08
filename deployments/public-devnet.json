@@ -1,0 +1,1857 @@
+{
+  "vercel": {
+    "projectName": "solsoul-devnet",
+    "projectId": "prj_eIT4GEpb56PtAoI8MAGUAKwj6Hmy",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentId": "dpl_DyAE8fvQBKYqwTyMWMGyFxrNwz4v",
+    "deploymentUrl": "https://solsoul-devnet-jhm269q8t-davirainsus-projects.vercel.app",
+    "deployedAt": "2026-05-03T08:40:00.000Z",
+    "gitRef": "f8e91fb321fd1d4a9fc506eeaa7441dcd6f10d78",
+    "envVars": [
+      "NEXT_PUBLIC_RPC",
+      "NEXT_PUBLIC_RPC_URL",
+      "NEXT_PUBLIC_BONDING_CURVE_PROGRAM_ID",
+      "NEXT_PUBLIC_SOUL_GENERATOR_PROGRAM_ID",
+      "NEXT_PUBLIC_ENV"
+    ],
+    "gitRefSemantics": "PD17.F4 final regression redeploy after doodle redesign + scope guardrails + SEC/PD18 fixes. All 410 app tests pass, typecheck clean, build clean, Lighthouse mobile 82.",
+    "deploymentNote": "PD17.F4 final public devnet visual regression and performance pass. Full-site doodle redesign verified maintainable with safe assets, no regressions, Lighthouse 82.",
+    "aliasVerifiedAt": "2026-05-03T08:42:00.000Z",
+    "alias": "https://solsoul-devnet.vercel.app",
+    "readyState": "READY",
+    "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/dpl_DyAE8fvQBKYqwTyMWMGyFxrNwz4v"
+  },
+  "programs": {
+    "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+    "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+    "previousPublicDevnet": {
+      "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+    },
+    "runtimeRepointStatus": "completed PD13.F2: SDK defaults, app env example, indexer source fallback, Vercel production env, and public alias deployment point at fresh program IDs for active devnet flows",
+    "transferHook": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+    "raydiumCpSwap": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+  },
+  "deployedAt": "2026-05-01T15:37:25.015588Z",
+  "railway": {
+    "projectName": "solsoul-indexer-devnet",
+    "projectId": "920d7206-073b-4254-a9a5-20b4a82e9499",
+    "serviceId": "0e46353c-c377-44b8-b604-fc13e4a864c2",
+    "serviceUrl": "https://indexer-production-bf20.up.railway.app",
+    "deploymentId": "bfadc750-0dd0-4163-a8fa-af4bf6b87ed5",
+    "status": "SUCCESS",
+    "deployedAt": "2026-04-28T07:22:37.324Z",
+    "smokeLog": "[indexer] historical-only Railway smoke is excluded from active M0 validation; active M0 metadata uses BONDING_CURVE_PROGRAM_ID=CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un; SOUL_GENERATOR_PROGRAM_ID=34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ; TRANSFER_HOOK_PROGRAM_ID=Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+    "validationScope": "historical_out_of_active_m0_validation",
+    "activeM0Validation": {
+      "status": "excluded_historical_runtime_smoke",
+      "reason": "Recorded Railway smoke evidence subscribed to previous public-devnet program IDs and is retained only as historical provenance, not active M0 validation evidence.",
+      "activeBondingCurveProgramId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "activeSoulGeneratorProgramId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "activeTransferHookProgramId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+      "activeEvidence": "deployments/public-devnet.json#m0RaydiumReadiness and deployments/devnet-amm-e2e-trace.raydium.json"
+    },
+    "historicalSmokeLog": "[indexer] config BONDING_CURVE_PROGRAM_ID=HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ; [indexer] config SOUL_GENERATOR_PROGRAM_ID=5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk; [indexer] listening on :8080; [indexer] subscribe ok program=HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ; [indexer] subscribe ok program=5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk; health /health returned ok=true subscriptions=2"
+  },
+  "programUpgradeEvidence": {
+    "featureId": "PD13.F1",
+    "cluster": "devnet",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "deployedAtIso": "2026-04-30T18:43:36.566369Z",
+    "verifiedAtIso": "2026-04-30T18:43:36.566369Z",
+    "mainnetWrites": false,
+    "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "build": {
+      "sbfCommand": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo build-sbf --workspace --features devnet",
+      "verificationCommandAlsoRun": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo build-sbf --workspace",
+      "features": [
+        "devnet"
+      ],
+      "artifacts": {
+        "bondingCurve": {
+          "path": "target/deploy/bonding_curve.so",
+          "sha256": "e7bd8362b4df26f3a55c012a0ba163e8b15d6f940b28a5664ecf324633d6d973",
+          "sizeBytes": 113016
+        },
+        "soulGenerator": {
+          "path": "target/deploy/soul_generator.so",
+          "sha256": "2c48850241eacee01c63d43da100e7412e35c6ffa0a3d2c1a06ca72eaa9b3fa2",
+          "sizeBytes": 159728
+        },
+        "transferHook": {
+          "path": "target/deploy/transfer_hook.so",
+          "sha256": "4ddfeec97d423414e52a7f09eaab903899d7e46cdbae2210fbecedcce5de1092",
+          "sizeBytes": 123088
+        }
+      },
+      "note": "bonding-curve was built with the devnet feature to preserve the public devnet 0.5 SOL graduation rehearsal threshold; soul-generator hash is unchanged by that feature."
+    },
+    "oldVsNewProgramIds": {
+      "bondingCurve": {
+        "oldProgramId": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+        "newProgramId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "distinct": true,
+        "oldProgramDataAddress": "DfB4CvM2eZdy87qbaRJz39ytE7prmpyfHDJ4avRXkRU9",
+        "newProgramDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn"
+      },
+      "soulGenerator": {
+        "oldProgramId": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+        "newProgramId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "distinct": true,
+        "oldProgramDataAddress": "GYauQrXWC7awEwMXSE94rSxnRbPDGjYLRpvqztE4MVcT",
+        "newProgramDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk"
+      }
+    },
+    "bondingCurve": {
+      "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+      "artifact": "target/deploy/bonding_curve.so",
+      "programSoSha256": "e7bd8362b4df26f3a55c012a0ba163e8b15d6f940b28a5664ecf324633d6d973",
+      "programSoSizeBytes": 113016,
+      "deployTxSig": "3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv",
+      "deploySlot": 459177356,
+      "blockTime": "2026-05-01T03:41:38+09:00",
+      "computeUnitsConsumed": 2670,
+      "feeSol": "0.00001",
+      "programDataBalanceSol": "0.78779544",
+      "dataLength": 113016,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "explorerUrl": "https://explorer.solana.com/tx/3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+        "authority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "lastDeployedInSlot": 459177356,
+        "dataLength": 113016,
+        "balanceSol": "0.78779544",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+      },
+      "confirmEvidence": {
+        "signature": "3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv",
+        "slot": 459177356,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T03:41:38+09:00",
+        "feeSol": "0.00001",
+        "computeUnitsConsumed": 2670,
+        "log": "Deployed program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "explorerUrl": "https://explorer.solana.com/tx/3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv?cluster=devnet"
+      },
+      "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+    },
+    "soulGenerator": {
+      "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+      "artifact": "target/deploy/soul_generator.so",
+      "programSoSha256": "2c48850241eacee01c63d43da100e7412e35c6ffa0a3d2c1a06ca72eaa9b3fa2",
+      "programSoSizeBytes": 159728,
+      "deployTxSig": "sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT",
+      "deploySlot": 459177314,
+      "blockTime": "2026-05-01T03:41:22+09:00",
+      "computeUnitsConsumed": 2670,
+      "feeSol": "0.00001",
+      "programDataBalanceSol": "1.11291096",
+      "dataLength": 159728,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "explorerUrl": "https://explorer.solana.com/tx/sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+        "authority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "lastDeployedInSlot": 459177314,
+        "dataLength": 159728,
+        "balanceSol": "1.11291096",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+      },
+      "confirmEvidence": {
+        "signature": "sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT",
+        "slot": 459177314,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T03:41:22+09:00",
+        "feeSol": "0.00001",
+        "computeUnitsConsumed": 2670,
+        "log": "Deployed program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "explorerUrl": "https://explorer.solana.com/tx/sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT?cluster=devnet"
+      },
+      "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+    },
+    "runtimeConfigFollowup": "PD13.F2 owns SDK/app/Vercel runtime repointing and public production redeploy to these fresh IDs.",
+    "sourceProvenance": {
+      "scope": "PD13.F1 fresh program deployment source tree only; this scoped record does not describe the later reviewed M5 devnet lifecycle evidence.",
+      "pd13ProgramDeploymentSourceTreeWasUncommittedAtDeployTime": true,
+      "pd13ProgramDeploymentSourceTreeLaterCommittedAs": "9294b22280c66785dfcec5d71c2161c297c01870",
+      "pd13ProgramDeploymentSourceTreeCommittedAt": "2026-05-01T04:41:43+09:00",
+      "pd13ProgramDeploymentPreDeploymentBaseCommit": "9f167e49cbace4ea274045cd07d7b116fe65ca96",
+      "pd13ProgramDeploymentCommitSubject": "chore(pd13): deploy fresh devnet programs",
+      "m5EvidenceProvenance": {
+        "primaryLifecycleEvidenceCommit": "98e52ca616d2d0f222feac6c9253a27b049abe4a",
+        "primaryLifecycleEvidenceCommitSubject": "feat(m5): validate devnet transfer hook lifecycle",
+        "reviewedEvidenceCommit": "d1bb57150db98bc043422342cde2b40a1241a33b",
+        "reviewedEvidenceCommitSubject": "fix(devnet): assert expected negative errors",
+        "evidenceFile": "deployments/devnet-e2e-trace.json",
+        "statement": "M5 devnet lifecycle evidence was produced and reviewed after the PD13 program deployment provenance commit, so it must not be attributed to the PD13 deployed source tree."
+      },
+      "statement": "Fresh devnet programs were deployed from a local source tree that was uncommitted at deploy time and later captured by the scoped PD13 commit above. Later M5 evidence in this metadata has its own reviewed commit provenance and is intentionally not covered by the PD13 deployed-source-tree record."
+    },
+    "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority.",
+    "transferHook": {
+      "programId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+      "programDataAddress": "BnxswR3hMnBhXvKC34AM83kBJJa5UEq3DaxyssW3Jr6Q",
+      "artifact": "target/deploy/transfer_hook.so",
+      "programSoSha256": "4ddfeec97d423414e52a7f09eaab903899d7e46cdbae2210fbecedcce5de1092",
+      "programSoSizeBytes": 123088,
+      "deployTxSig": "2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx",
+      "deploySlot": 459269179,
+      "blockTime": "2026-05-01T07:22:05Z",
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "********************************************",
+      "explorerUrl": "https://explorer.solana.com/tx/2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "BnxswR3hMnBhXvKC34AM83kBJJa5UEq3DaxyssW3Jr6Q",
+        "authority": "********************************************",
+        "lastDeployedInSlot": 459269179,
+        "dataLength": 123088,
+        "balanceSol": "0.85789656",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified separately and no key material is recorded."
+      },
+      "confirmEvidence": {
+        "signature": "2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx",
+        "slot": 459269179,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T07:22:05Z",
+        "log": "Deployed program Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+        "explorerUrl": "https://explorer.solana.com/tx/2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx?cluster=devnet"
+      },
+      "sourceProvenance": {
+        "scope": "Transfer-hook deployment provenance is scoped to the active devnet Transfer Hook program and is separated from bonding/soul PD13 deployment and later M5 lifecycle evidence.",
+        "evidenceSource": "Read-only devnet solana program show plus getSignaturesForAddress for the program data account; local artifact hash computed from target/deploy/transfer_hook.so."
+      }
+    }
+  },
+  "pd5F3TradeGenerationEvidence": {
+    "featureId": "PD5.F3",
+    "cluster": "devnet",
+    "mint": "859Ck1MXUnTc3LoALKhTR2KhiccqAq3kVMR8JAiuk2N1",
+    "soul": "4jxgEhTv33bKFKq7Lkt2fa9L1GzPtyqwFmndA9SyZRUU",
+    "launch": {
+      "signature": "2iPmhhn9aUahSnvJVnRgPAVy6mtxWjnKABsyZm7TCaBPBqZ15VfoBR18pzXnkf8pBu6LFcpKchzPbhVtbv5e6u9H",
+      "slot": 458696318,
+      "confirmationStatus": "finalized",
+      "explorer": "https://explorer.solana.com/tx/2iPmhhn9aUahSnvJVnRgPAVy6mtxWjnKABsyZm7TCaBPBqZ15VfoBR18pzXnkf8pBu6LFcpKchzPbhVtbv5e6u9H?cluster=devnet"
+    },
+    "buy": {
+      "signature": "59q8BZEk7HMqq3yRD25NVfCUB6aRH2m3tjpdD66i7NhJB5M7K6rYZArKLk7mE6fFyzytD9u8A4CMv1zkGxgopqVN",
+      "slot": 458696352,
+      "confirmationStatus": "finalized",
+      "generation": "1",
+      "svgLen": 1357,
+      "explorer": "https://explorer.solana.com/tx/59q8BZEk7HMqq3yRD25NVfCUB6aRH2m3tjpdD66i7NhJB5M7K6rYZArKLk7mE6fFyzytD9u8A4CMv1zkGxgopqVN?cluster=devnet"
+    },
+    "sell": {
+      "signature": "5b3jq75uSJ1sKii9ryPYcSYVKRCL5HK5uAsQC34S29BjCzZzEik3WDyggStgXoE2ANuBHU12cwZ8UmfAsx83p49z",
+      "slot": 458696387,
+      "confirmationStatus": "finalized",
+      "generation": "2",
+      "svgLen": 1356,
+      "explorer": "https://explorer.solana.com/tx/5b3jq75uSJ1sKii9ryPYcSYVKRCL5HK5uAsQC34S29BjCzZzEik3WDyggStgXoE2ANuBHU12cwZ8UmfAsx83p49z?cluster=devnet"
+    },
+    "observation": "SDK wallet-helper harness used sendTransaction-compatible callbacks; buy generated Soul #1 and sell generated Soul #2 after bonding-curve upgrade."
+  },
+  "pd6F1ClaimEvidence": {
+    "featureId": "PD6.F1",
+    "cluster": "devnet",
+    "method": "wallet-adapter-compatible SDK harness using sendTransaction callback; no server signer or /api/devnet-smoke route",
+    "reportedToken": {
+      "mint": "FeAjpw28hwpfjrVbHFWUWyb7UDsEgcaxJyphUFezUPpZ",
+      "soul": "B6sZafXSmD6eisWtUkAeejZEc9kbbk9EMW8KYKtK9upc",
+      "sequence": 0,
+      "claimPda": "Q14ZZxVpo7e4irQdq1LBmGhw7kFsWUJfRMVGEjs7DBD",
+      "nftAuthorityPda": "4GsCLNeF5cXPWJR9TENkEnQT5bNFj84ggNdAbBCff1U5",
+      "browserObservation": "Public /zh/token page loaded after Vercel deploy with Claim 灵魂 disabled until wallet connection; Select Wallet opened Phantom/Solflare wallet-adapter modal and no Invalid seeds console/page error was observed.",
+      "browserScreenshot": "/Users/davirian/.agent-browser/tmp/screenshots/screenshot-2026-04-28T20-47-19-066Z-omw876.png"
+    },
+    "bumpedDevnetFixture": {
+      "mint": "ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+      "soul": "Daq5KXjhH8PRjC3wLPvXF2XP2VgBaZmf1dW65XB2AmnQ",
+      "claimPda": "4C8fiDoNGUY1p68omAehKxefV7zhADQhgf7y8TwG7SyR",
+      "nftAuthorityPda": "6nCKorbd3frbQTn3bt3jZgykGjzX1iY53KXoRHJybKU",
+      "nftMint": "2FYg17ZnC9hhoKM4uuECVLHe4CwJTqkcFyuBuzacQ4Jh",
+      "payer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "launchSignature": "3XaxGr6JrxPgwd6vEuE8MLAjjVnbcTzedGMFqDdWMfCVhX5ueqCFkok15xwmspgy4aLr5KpY5Ps5rJaMZ4Q61AZF",
+      "buySignature": "3znEFkBCQ9DWLR2eQF9wb9YxYCJtgK8AGSBWBcPyYnVrv8cLcgwnfrX8izfEVHPoppvwS6Lect67pvhcWK1H24id",
+      "claimSignature": "5H73Tk5cSsEEMXTQZDjKsVpT9Ptmx3YuxbChzFG7hJuW1XeWrAs4FxvoQ8VitvNQfe4buvKuabv9rTQ9GzYk2BWW",
+      "claimExplorerUrl": "https://explorer.solana.com/tx/5H73Tk5cSsEEMXTQZDjKsVpT9Ptmx3YuxbChzFG7hJuW1XeWrAs4FxvoQ8VitvNQfe4buvKuabv9rTQ9GzYk2BWW?cluster=devnet",
+      "confirmation": "launch/buy/claim confirmed finalized; claimed NFT mint account exists with Token-2022 owner and metadata name PD6 Soul #1"
+    }
+  },
+  "pd7F2GenerationApiEvidence": {
+    "featureId": "PD7.F2",
+    "cluster": "devnet",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "apiUrl": "https://solsoul-devnet.vercel.app/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/generations/2?limit=5",
+    "mint": "ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+    "soul": "Daq5KXjhH8PRjC3wLPvXF2XP2VgBaZmf1dW65XB2AmnQ",
+    "generation": 2,
+    "side": "buy",
+    "amount": "990000",
+    "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "seedHash": "c613e02aa48460b1",
+    "signature": "nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd",
+    "slot": 458769366,
+    "blockTime": 1777419851,
+    "source": "finalized-rpc-logs",
+    "heuristicAccountSignatures": false,
+    "rpcComparison": "getTransaction(signature, finalized) returned slot 458769366, blockTime 1777419851, err null, and the matching [event:generation] log.",
+    "idempotency": "Repeated public curl returned exactly one generation row for the same token/Soul/generation key."
+  },
+  "pd7F3TradeFlowEvidence": {
+    "featureId": "PD7.F3",
+    "cluster": "devnet",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentUrl": "https://solsoul-devnet-4sbkpbop6-davirainsus-projects.vercel.app",
+    "mint": "ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+    "soul": "Daq5KXjhH8PRjC3wLPvXF2XP2VgBaZmf1dW65XB2AmnQ",
+    "walletFlowEvidence": "Public token page loaded in agent-browser; Select Wallet opened wallet-adapter modal with Phantom and Solflare options; buy/sell buttons stayed disabled without connected wallet, preserving connected-wallet-only signing.",
+    "browserScreenshot": "/tmp/pd7f3-token-page.png",
+    "sdkEvidence": "SDK fetchGenerationProvenanceRows returned buy generation #2 and sell generation #3 with side, amount, trader, seed hash, finalized signature, slot, blockTime, explorer URL, token mint, and Soul PDA.",
+    "buy": {
+      "generation": 2,
+      "side": "buy",
+      "amount": "990000",
+      "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "seedHash": "c613e02aa48460b1",
+      "signature": "nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd",
+      "slot": 458769366,
+      "blockTime": 1777419851,
+      "explorerUrl": "https://explorer.solana.com/tx/nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd?cluster=devnet"
+    },
+    "sell": {
+      "generation": 3,
+      "side": "sell",
+      "amount": "1000000",
+      "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "seedHash": "4e2b056a78bfdb20",
+      "signature": "3V6Stt7KaQ8Ba4vQzUG3yAzWmxbaFfx97q5jnNfV81DD7B7Vux4GUFzBi6d2fS5ahr1K1rFUT3Rc477EeysjP1hk",
+      "slot": 458771409,
+      "blockTime": 1777420625,
+      "explorerUrl": "https://explorer.solana.com/tx/3V6Stt7KaQ8Ba4vQzUG3yAzWmxbaFfx97q5jnNfV81DD7B7Vux4GUFzBi6d2fS5ahr1K1rFUT3Rc477EeysjP1hk?cluster=devnet"
+    },
+    "apiUrl": "https://solsoul-devnet.vercel.app/api/generations?limit=20",
+    "apiObservation": "Public API returned HTTP 200 with buy and sell rows and source.heuristicAccountSignatures=false; solana confirm returned Finalized for both signatures."
+  },
+  "pd7F4ClaimMetadataEvidence": {
+    "featureId": "PD7.F4",
+    "cluster": "devnet",
+    "method": "wallet-signed SDK harness with ComputeBudgetProgram limit; no server signer or /api/devnet-smoke route",
+    "mint": "CfaWjwi7S69XjfX5cLLyrReXwA9SaX21wZpPz6nBADDV",
+    "soul": "pBMR5wd8bK5YSBpDKU5iH5cgsGkNFhqWnhEnqRFsUVn",
+    "launchSignature": "5zG4yvxmxv5Wp9BhfsacVxM1QiM6gDyVYXvsPVmJnSZzY3jEGHPc8zgbM2pK3QWRgDUsXVAbNJYYctKWd1Du8AE2",
+    "buySignature": "4dnVe5iGPLkbrm7XiFoJLfTKntiNZ6yQUCvwjVTq5ZE9zjJ5m1UfJN6zd8AyexrzqGzDA1tRrSQSo3jYAXd3nwkB",
+    "claimSignature": "QVPjKL8bHnuSs9fhDNqspESpcSw6FRXK4MPogrUJvobDfFaAJxnimSXTrjEQp5sVHzn9YhMBBHccWN4x2GECD8Q",
+    "claimSlot": 458798780,
+    "claimBlockTime": "2026-04-29T11:49:56+09:00",
+    "claimComputeUnitsConsumed": 205659,
+    "nftMint": "9aEeQxpH8qqoEXLYExpEioGrv8SXbgPNG3bxBZy5WhPu",
+    "metadataName": "P74 Soul #1",
+    "metadataSymbol": "P74",
+    "provenanceGeneration": "1",
+    "provenanceSeedHash": "a68d8f5535cadc50",
+    "metadataAttributes": [
+      {
+        "trait_type": "Generation",
+        "value": "1"
+      },
+      {
+        "trait_type": "Trade side",
+        "value": "buy"
+      },
+      {
+        "trait_type": "Trade amount",
+        "value": "990000"
+      },
+      {
+        "trait_type": "Trader wallet",
+        "value": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i"
+      },
+      {
+        "trait_type": "Trader token account",
+        "value": "DgygxKkTjpC5ouHrZD6AWJrrC7xnuz4Mzz4EBRnWVttc"
+      },
+      {
+        "trait_type": "Seed hash",
+        "value": "a68d8f5535cadc50"
+      },
+      {
+        "trait_type": "Token mint",
+        "value": "CfaWjwi7S69XjfX5cLLyrReXwA9SaX21wZpPz6nBADDV"
+      },
+      {
+        "trait_type": "Soul PDA",
+        "value": "pBMR5wd8bK5YSBpDKU5iH5cgsGkNFhqWnhEnqRFsUVn"
+      }
+    ],
+    "negativeCheck": "Decoded metadata JSON omitted signature, slot, and blockTime fields; finalized RPC context remains external evidence only.",
+    "claimExplorerUrl": "https://explorer.solana.com/tx/QVPjKL8bHnuSs9fhDNqspESpcSw6FRXK4MPogrUJvobDfFaAJxnimSXTrjEQp5sVHzn9YhMBBHccWN4x2GECD8Q?cluster=devnet"
+  },
+  "pd7F5TimelineStatsEvidence": {
+    "featureId": "PD7.F5",
+    "cluster": "devnet",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentUrl": "https://solsoul-devnet-cpfnb76jl-davirainsus-projects.vercel.app",
+    "verifiedAt": "2026-04-29T03:34:41Z",
+    "knownToken": {
+      "mint": "ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+      "soul": "Daq5KXjhH8PRjC3wLPvXF2XP2VgBaZmf1dW65XB2AmnQ",
+      "timelineApiUrl": "https://solsoul-devnet.vercel.app/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/timeline",
+      "timelineObservation": "Timeline API returned launch, claim, generation #2 buy, generation #3 sell, trade/generation #4, and claim rows in slot order. Generation rows included side, amount, trader, token account, seed hash, finalized signature, and slot from public API/RPC provenance.",
+      "generationRows": [
+        {
+          "generation": 2,
+          "side": "buy",
+          "amount": "990000",
+          "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+          "seedHash": "c613e02aa48460b1",
+          "signature": "nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd",
+          "slot": 458769366
+        },
+        {
+          "generation": 3,
+          "side": "sell",
+          "amount": "1000000",
+          "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+          "seedHash": "4e2b056a78bfdb20",
+          "signature": "3V6Stt7KaQ8Ba4vQzUG3yAzWmxbaFfx97q5jnNfV81DD7B7Vux4GUFzBi6d2fS5ahr1K1rFUT3Rc477EeysjP1hk",
+          "slot": 458771409
+        }
+      ],
+      "browserObservation": "After a full browser reload, the public token page visible timeline showed Soul generation rows with side, amount, trader, token account, seed hash, signature, and slot, alongside launch/trade/claim rows.",
+      "browserScreenshot": "/tmp/pd7f5-token-timeline.png"
+    },
+    "stats": {
+      "statsApiUrl": "https://solsoul-devnet.vercel.app/api/stats",
+      "statsObservation": "Stats API returned recent tradeGeneration rows with side, amount, trader, seed hash, finalized signature/slot, token mint, Soul PDA, Explorer tx link, and Soul PDA link; repeated API refresh succeeded after deployment.",
+      "firstRecentGeneration": {
+        "generation": 1,
+        "side": "buy",
+        "amount": "990000",
+        "signature": "4dnVe5iGPLkbrm7XiFoJLfTKntiNZ6yQUCvwjVTq5ZE9zjJ5m1UfJN6zd8AyexrzqGzDA1tRrSQSo3jYAXd3nwkB",
+        "slot": 458798744,
+        "soul": "pBMR5wd8bK5YSBpDKU5iH5cgsGkNFhqWnhEnqRFsUVn"
+      },
+      "browserObservation": "Public stats page visible recent proof rows showed Trade / generation entries with side, amount, trader, seed hash, slot, token links, Explorer tx links, and Soul PDA links.",
+      "browserScreenshot": "/tmp/pd7f5-stats.png"
+    },
+    "noHeuristicFallback": "Generation timeline/stat rows are constructed from generation provenance API/RPC rows; tests assert Soul account signatures are not used as generation evidence and stats do not synthesize generation activity from SoulAccount counts alone.",
+    "rpcConfirmation": "solana confirm finalized returned Finalized for generation signatures nJCQ4h... and 3V6St... on devnet."
+  },
+  "pd9F5FreshPublicGenerationEvidence": {
+    "featureId": "PD9.F5",
+    "cluster": "devnet",
+    "publicUrl": "https://solsoul-devnet.vercel.app",
+    "mint": "4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND",
+    "soul": "BuqnXAYbkjauaLoatXQsyf5LhKGgfYLma4BmWFKu3N3T",
+    "launchSignature": "3yYMWdtrftfKHVtQbUmbDfUMWnP26feHBUbE8Y6NC1qfRcAhnxuXJmRFKfeTEBXhzaVciwkMAaoKen6MBgDRuNUJ",
+    "launchSlot": 458994602,
+    "buySignature": "3jLhtRKUXnxaAW6Hkr1vAMhoKL76hVFVwrdTmxLJpJSUpHHuKPcmp9VfLA1inmi1rCDfuGp8Kiq6eEW2WjJXSbC",
+    "buySlot": 458994607,
+    "generation": "1",
+    "svgLen": 1340,
+    "rawSvgPath": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/fresh-public-devnet-generation.svg",
+    "tokenDetailScreenshot": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/public-token-detail.png",
+    "publicTokenUrl": "https://solsoul-devnet.vercel.app/en/token/4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND",
+    "pd9MarkerPresent": true,
+    "forbiddenTokensAbsent": true,
+    "publicApiEvidence": {
+      "url": "https://solsoul-devnet.vercel.app/api/token/4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND/generations/1?limit=5",
+      "rowCount": 1,
+      "firstRow": {
+        "generation": 1,
+        "side": "buy",
+        "amount": "990000",
+        "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "seedHash": "b6456c680e3ef84f",
+        "signature": "3jLhtRKUXnxaAW6Hkr1vAMhoKL76hVFVwrdTmxLJpJSUpHHuKPcmp9VfLA1inmi1rCDfuGp8Kiq6eEW2WjJXSbC",
+        "slot": 458994607,
+        "source": "finalized-rpc-logs"
+      }
+    }
+  },
+  "mainnetWriteGuardEvidence": {
+    "mainnetWrites": false,
+    "deploymentCluster": "devnet",
+    "programDeployCommands": [
+      "solana program deploy target/deploy/soul_generator.so --program-id <fresh-soul-generator-keypair> --url https://api.devnet.solana.com",
+      "solana program deploy target/deploy/bonding_curve.so --program-id <fresh-bonding-curve-keypair> --url https://api.devnet.solana.com"
+    ],
+    "freshProgramIds": {
+      "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ"
+    },
+    "oldProgramIds": {
+      "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+    },
+    "frontendRuntimeRepoint": "pending PD13.F2"
+  },
+  "pd10F6RegressionEvidence": {
+    "featureId": "PD10.F6",
+    "verifiedAtIso": "2026-04-30T11:47:26.244953Z",
+    "publicUrl": "https://solsoul-devnet.vercel.app",
+    "vercelDeploymentUrl": "https://solsoul-devnet-8b7yjjzaj-davirainsus-projects.vercel.app",
+    "routeSmoke": [
+      "/en/launch",
+      "/en/stats",
+      "/zh/stats",
+      "/en/tokens",
+      "/en/souls",
+      "/en/gallery",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/gallery"
+    ],
+    "provenanceApi": {
+      "url": "https://solsoul-devnet.vercel.app/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/generations/2?limit=5",
+      "signature": "nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd",
+      "slot": 458769366,
+      "source": "finalized-rpc-logs",
+      "heuristicAccountSignatures": false
+    },
+    "devnetSmokeRoute": {
+      "status": 410,
+      "observation": "POST /api/devnet-smoke action=claim returns wallet-signed-only retirement message."
+    },
+    "walletEvidence": "Browser launch page exposed Monochrome/Hexagram/Custom theme controls and Select Wallet opened Phantom/Solflare wallet-adapter modal; token page buy/sell/claim controls remained disabled until wallet connection.",
+    "vercelDeploymentId": "dpl_ASWBiaDSYSCFKw6rWHwz92y6UCLw",
+    "statsApi": {
+      "status": 200,
+      "metrics": [
+        "launchedTokens",
+        "generatedSoulCandidates",
+        "claimedSouls",
+        "activeCurves"
+      ],
+      "themeDistributionCount": 2,
+      "recentActivityCount": 12
+    },
+    "timelineApi": {
+      "status": 200,
+      "eventCount": 5,
+      "partial": false
+    },
+    "browserScreenshots": [
+      "/tmp/pd10f6-launch.png",
+      "/tmp/pd10f6-wallet-modal.png",
+      "/tmp/pd10f6-stats.png",
+      "/tmp/pd10f6-token.png"
+    ]
+  },
+  "pd11F5RegressionEvidence": {
+    "featureId": "PD11.F5",
+    "verifiedAt": "2026-04-30T13:52:45.837465Z",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentUrl": "https://solsoul-devnet-g8mtxd6g2-davirainsus-projects.vercel.app",
+    "deploymentId": "dpl_HbcjPordPDmkgfrD93TyKrkNdTWT",
+    "gitRef": "542ddd3b96f78d16133e4e9d28993102b9f9bbed",
+    "routesChecked": [
+      "/en/profile",
+      "/zh/profile",
+      "/en/launch",
+      "/en/tokens",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/gallery",
+      "/en/souls",
+      "/en/stats"
+    ],
+    "apiChecks": [
+      {
+        "path": "/api/devnet-smoke",
+        "method": "POST",
+        "expectedStatus": 410
+      },
+      {
+        "path": "/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/generations/2?limit=5",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/timeline",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/api/stats",
+        "expectedStatus": 200
+      }
+    ],
+    "browserScreenshots": [
+      "/tmp/solsoul-pd11-f5-en-profile.png",
+      "/tmp/solsoul-pd11-f5-zh-profile.png",
+      "/tmp/solsoul-pd11-f5-en-tokens.png",
+      "/tmp/solsoul-pd11-f5-token-detail.png",
+      "/tmp/solsoul-pd11-f5-wallet-modal.png",
+      "/tmp/solsoul-pd11-f5-launch.png",
+      "/tmp/solsoul-pd11-f5-public-souls.png",
+      "/tmp/solsoul-pd11-f5-token-gallery.png",
+      "/tmp/solsoul-pd11-f5-stats.png"
+    ],
+    "walletFlowEvidence": "Browser reached wallet-adapter Select Wallet modal on public token detail with Phantom and Solflare options; buy/sell and claim controls remained wallet-gated/disabled without a connected wallet, preserving wallet-signed-only public writes.",
+    "negativeTradingControlCheck": "Public Profile/My Souls, Souls, token detail, token gallery, and Market pages were checked for buy-now/list/sell NFT/orderbook copy; no banned Soul NFT trading controls/copy were found."
+  },
+  "pd12F6RegressionEvidence": {
+    "featureId": "PD12.F6",
+    "verifiedAtIso": "2026-04-30T18:05:10.072478Z",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentUrl": "https://solsoul-devnet-2nswdxmt1-davirainsus-projects.vercel.app",
+    "deploymentId": "dpl_7BbL1XNN7dykamhVozJqk8j1xvYZ",
+    "gitRef": "031796142c9ec8cd9e2a51261f6b65606707a8e8",
+    "routesChecked": [
+      "/zh/profile",
+      "/en/launch",
+      "/zh/launch",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r",
+      "/en/souls",
+      "/en/stats",
+      "/en/tokens",
+      "/en/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/gallery"
+    ],
+    "apiChecks": [
+      {
+        "path": "/api/devnet-smoke",
+        "method": "POST",
+        "expectedStatus": 410,
+        "observation": "returned wallet-signed-only retirement message"
+      },
+      {
+        "path": "/api/stats",
+        "expectedStatus": 200
+      },
+      {
+        "path": "/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/timeline",
+        "expectedStatus": 200,
+        "events": 4
+      },
+      {
+        "path": "/api/token/ADLARTUded8VFhQy3WwSv9PJpQW3PFMGLVYHmf8Mp16r/generations/2?limit=5",
+        "expectedStatus": 200,
+        "rows": 1,
+        "signature": "nJCQ4htehrUSF6RFHSMQzPyW5swfRj4prZotprPGQnFpJapywiyCp5L3VZXmK2wtwEpZz7hYdBR55jxx7xpBJfd",
+        "slot": 458769366,
+        "source": "finalized-rpc-logs"
+      }
+    ],
+    "browserScreenshots": [
+      "/tmp/pd12f6-en-launch.png",
+      "/tmp/pd12f6-zh-launch.png",
+      "/tmp/pd12f6-zh-profile.png",
+      "/tmp/pd12f6-token-detail.png",
+      "/tmp/pd12f6-wallet-modal.png",
+      "/tmp/pd12f6-souls.png",
+      "/tmp/pd12f6-stats.png"
+    ],
+    "soulpuffLaunchEvidence": "Public EN/ZH launch renders artTheme=soulpuff radio checked by default, SoulPuff copy visible, and no target_amm/targetAmm inputs present.",
+    "walletFlowEvidence": "Public token detail Select Wallet opens wallet-adapter modal with Phantom and Solflare; buy/sell/claim controls remain connected-wallet gated and no server signer path was introduced.",
+    "profileFallbackEvidence": "Public /zh/profile renders My Souls connected-wallet state and ClaimAccount/partial enrichment fallback copy; app tests cover claim-first fallback cards.",
+    "negativeTradingControlCheck": "Profile, Souls, Stats, token detail, and wallet modal checks found no Buy now/List NFT/Sell NFT/orderbook Soul NFT trading controls. Token detail no-marketplace wording is negative copy only."
+  },
+  "pd13F1FreshDeploymentEvidence": {
+    "featureId": "PD13.F1",
+    "cluster": "devnet",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "deployedAtIso": "2026-04-30T18:43:36.566369Z",
+    "verifiedAtIso": "2026-04-30T18:43:36.566369Z",
+    "mainnetWrites": false,
+    "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "build": {
+      "sbfCommand": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo build-sbf --workspace --features devnet",
+      "verificationCommandAlsoRun": "PATH=\"$HOME/.cargo/bin:$PATH\" cargo build-sbf --workspace",
+      "features": [
+        "devnet"
+      ],
+      "artifacts": {
+        "bondingCurve": {
+          "path": "target/deploy/bonding_curve.so",
+          "sha256": "e7bd8362b4df26f3a55c012a0ba163e8b15d6f940b28a5664ecf324633d6d973",
+          "sizeBytes": 113016
+        },
+        "soulGenerator": {
+          "path": "target/deploy/soul_generator.so",
+          "sha256": "2c48850241eacee01c63d43da100e7412e35c6ffa0a3d2c1a06ca72eaa9b3fa2",
+          "sizeBytes": 159728
+        },
+        "transferHook": {
+          "path": "target/deploy/transfer_hook.so",
+          "sha256": "4ddfeec97d423414e52a7f09eaab903899d7e46cdbae2210fbecedcce5de1092",
+          "sizeBytes": 123088
+        }
+      },
+      "note": "bonding-curve was built with the devnet feature to preserve the public devnet 0.5 SOL graduation rehearsal threshold; soul-generator hash is unchanged by that feature."
+    },
+    "oldVsNewProgramIds": {
+      "bondingCurve": {
+        "oldProgramId": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+        "newProgramId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "distinct": true,
+        "oldProgramDataAddress": "DfB4CvM2eZdy87qbaRJz39ytE7prmpyfHDJ4avRXkRU9",
+        "newProgramDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn"
+      },
+      "soulGenerator": {
+        "oldProgramId": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+        "newProgramId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "distinct": true,
+        "oldProgramDataAddress": "GYauQrXWC7awEwMXSE94rSxnRbPDGjYLRpvqztE4MVcT",
+        "newProgramDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk"
+      }
+    },
+    "bondingCurve": {
+      "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+      "artifact": "target/deploy/bonding_curve.so",
+      "programSoSha256": "e7bd8362b4df26f3a55c012a0ba163e8b15d6f940b28a5664ecf324633d6d973",
+      "programSoSizeBytes": 113016,
+      "deployTxSig": "3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv",
+      "deploySlot": 459177356,
+      "blockTime": "2026-05-01T03:41:38+09:00",
+      "computeUnitsConsumed": 2670,
+      "feeSol": "0.00001",
+      "programDataBalanceSol": "0.78779544",
+      "dataLength": 113016,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "explorerUrl": "https://explorer.solana.com/tx/3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+        "authority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "lastDeployedInSlot": 459177356,
+        "dataLength": 113016,
+        "balanceSol": "0.78779544",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+      },
+      "confirmEvidence": {
+        "signature": "3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv",
+        "slot": 459177356,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T03:41:38+09:00",
+        "feeSol": "0.00001",
+        "computeUnitsConsumed": 2670,
+        "log": "Deployed program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "explorerUrl": "https://explorer.solana.com/tx/3BViFCfqPQ98u8vNT2bG6TfbhLzeR2vrySwEek3jqyweZaC1PWF7QfTm2aaK8LreRVxiC3kj933oiFYJHuNWfZxv?cluster=devnet"
+      },
+      "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+    },
+    "soulGenerator": {
+      "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+      "artifact": "target/deploy/soul_generator.so",
+      "programSoSha256": "2c48850241eacee01c63d43da100e7412e35c6ffa0a3d2c1a06ca72eaa9b3fa2",
+      "programSoSizeBytes": 159728,
+      "deployTxSig": "sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT",
+      "deploySlot": 459177314,
+      "blockTime": "2026-05-01T03:41:22+09:00",
+      "computeUnitsConsumed": 2670,
+      "feeSol": "0.00001",
+      "programDataBalanceSol": "1.11291096",
+      "dataLength": 159728,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "deployerPubkey": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "explorerUrl": "https://explorer.solana.com/tx/sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+        "authority": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "lastDeployedInSlot": 459177314,
+        "dataLength": 159728,
+        "balanceSol": "1.11291096",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+      },
+      "confirmEvidence": {
+        "signature": "sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT",
+        "slot": 459177314,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T03:41:22+09:00",
+        "feeSol": "0.00001",
+        "computeUnitsConsumed": 2670,
+        "log": "Deployed program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "explorerUrl": "https://explorer.solana.com/tx/sQzeouNBMYtqR2VmYZpqFrjxretayoTupNdEXcZoqw88ne8nRF4W8zGcmvivWmTQasZLQaxXTFmw23FaxwEAVNT?cluster=devnet"
+      },
+      "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority."
+    },
+    "runtimeConfigFollowup": "PD13.F2 owns SDK/app/Vercel runtime repointing and public production redeploy to these fresh IDs.",
+    "sourceProvenance": {
+      "scope": "PD13.F1 fresh program deployment source tree only; this scoped record does not describe the later reviewed M5 devnet lifecycle evidence.",
+      "pd13ProgramDeploymentSourceTreeWasUncommittedAtDeployTime": true,
+      "pd13ProgramDeploymentSourceTreeLaterCommittedAs": "9294b22280c66785dfcec5d71c2161c297c01870",
+      "pd13ProgramDeploymentSourceTreeCommittedAt": "2026-05-01T04:41:43+09:00",
+      "pd13ProgramDeploymentPreDeploymentBaseCommit": "9f167e49cbace4ea274045cd07d7b116fe65ca96",
+      "pd13ProgramDeploymentCommitSubject": "chore(pd13): deploy fresh devnet programs",
+      "m5EvidenceProvenance": {
+        "primaryLifecycleEvidenceCommit": "98e52ca616d2d0f222feac6c9253a27b049abe4a",
+        "primaryLifecycleEvidenceCommitSubject": "feat(m5): validate devnet transfer hook lifecycle",
+        "reviewedEvidenceCommit": "d1bb57150db98bc043422342cde2b40a1241a33b",
+        "reviewedEvidenceCommitSubject": "fix(devnet): assert expected negative errors",
+        "evidenceFile": "deployments/devnet-e2e-trace.json",
+        "statement": "M5 devnet lifecycle evidence was produced and reviewed after the PD13 program deployment provenance commit, so it must not be attributed to the PD13 deployed source tree."
+      },
+      "statement": "Fresh devnet programs were deployed from a local source tree that was uncommitted at deploy time and later captured by the scoped PD13 commit above. Later M5 evidence in this metadata has its own reviewed commit provenance and is intentionally not covered by the PD13 deployed-source-tree record."
+    },
+    "authorityEvidence": "solana program show masks the local upgrade authority; public key verified with solana-keygen pubkey ~/.config/solana/id.json, and PD13.F1 deploy commands used this keypair as deployer, fee payer, and upgrade authority.",
+    "transferHook": {
+      "programId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+      "programDataAddress": "BnxswR3hMnBhXvKC34AM83kBJJa5UEq3DaxyssW3Jr6Q",
+      "artifact": "target/deploy/transfer_hook.so",
+      "programSoSha256": "4ddfeec97d423414e52a7f09eaab903899d7e46cdbae2210fbecedcce5de1092",
+      "programSoSizeBytes": 123088,
+      "deployTxSig": "2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx",
+      "deploySlot": 459269179,
+      "blockTime": "2026-05-01T07:22:05Z",
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "upgradeAuthority": "********************************************",
+      "explorerUrl": "https://explorer.solana.com/tx/2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx?cluster=devnet",
+      "programShowEvidence": {
+        "programId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataAddress": "BnxswR3hMnBhXvKC34AM83kBJJa5UEq3DaxyssW3Jr6Q",
+        "authority": "********************************************",
+        "lastDeployedInSlot": 459269179,
+        "dataLength": 123088,
+        "balanceSol": "0.85789656",
+        "authorityEvidence": "solana program show masks the local upgrade authority; public key verified separately and no key material is recorded."
+      },
+      "confirmEvidence": {
+        "signature": "2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx",
+        "slot": 459269179,
+        "status": "Ok",
+        "confirmed": true,
+        "finalized": true,
+        "blockTime": "2026-05-01T07:22:05Z",
+        "log": "Deployed program Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+        "explorerUrl": "https://explorer.solana.com/tx/2YgUqj5KjKQ7uckLgmJRmaZfyMN9RSWG13W3R3VnkX7hjjshFjPFJn3yXPS9KnFMDzBSUr5NeMggsGyakoJ5MiYx?cluster=devnet"
+      },
+      "sourceProvenance": {
+        "scope": "Transfer-hook deployment provenance is scoped to the active devnet Transfer Hook program and is separated from bonding/soul PD13 deployment and later M5 lifecycle evidence.",
+        "evidenceSource": "Read-only devnet solana program show plus getSignaturesForAddress for the program data account; local artifact hash computed from target/deploy/transfer_hook.so."
+      }
+    }
+  },
+  "pd13F2RuntimeRepointEvidence": {
+    "featureId": "PD13.F2",
+    "cluster": "devnet",
+    "recordedAtIso": "2026-04-30T18:59:33.633454Z",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentId": "dpl_9rbJHW8auKAGDqqP5EhSsP86Zqpi",
+    "deploymentUrl": "https://solsoul-devnet-amuyanmmq-davirainsus-projects.vercel.app",
+    "readyState": "READY",
+    "aliases": [
+      "solsoul-devnet.vercel.app",
+      "solsoul-devnet-davirainsus-projects.vercel.app",
+      "solsoul-devnet-davirain-su-davirainsus-projects.vercel.app"
+    ],
+    "freshProgramIds": {
+      "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ"
+    },
+    "oldProgramIds": {
+      "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+    },
+    "runtimeConfigFilesUpdated": [
+      "sdk/src/index.ts",
+      "sdk/src/index.test.ts",
+      "app/.env.example",
+      "services/indexer/src/main.ts"
+    ],
+    "vercelProductionEnvUpdated": [
+      "NEXT_PUBLIC_RPC=https://api.devnet.solana.com",
+      "NEXT_PUBLIC_RPC_URL=https://api.devnet.solana.com",
+      "NEXT_PUBLIC_BONDING_CURVE_PROGRAM_ID=<fresh bonding curve program id>",
+      "NEXT_PUBLIC_SOUL_GENERATOR_PROGRAM_ID=<fresh soul-generator program id>",
+      "NEXT_PUBLIC_ENV=devnet"
+    ],
+    "authPath": "local Vercel CLI auth fallback after file-token auth returned invalid; no token material printed or persisted",
+    "sourceConfigAudit": {
+      "checkedFiles": [
+        "sdk/src/index.ts",
+        "app/.env.example",
+        "services/indexer/src/main.ts"
+      ],
+      "oldProgramIdMatches": 0,
+      "freshProgramIdsPresent": true
+    },
+    "publicRuntimeAssetAudit": {
+      "url": "https://solsoul-devnet.vercel.app/en/launch",
+      "htmlAndScriptAssetsChecked": 18,
+      "freshHits": {
+        "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un": 2,
+        "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ": 2
+      },
+      "oldHits": {
+        "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ": 0,
+        "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk": 0
+      }
+    },
+    "routeSmoke": [
+      {
+        "path": "/en/launch",
+        "status": 200,
+        "devnetBanner": true
+      },
+      {
+        "path": "/zh/launch",
+        "status": 200,
+        "devnetBanner": true
+      },
+      {
+        "path": "/zh/profile",
+        "status": 200,
+        "devnetBanner": true
+      },
+      {
+        "path": "/en/tokens",
+        "status": 200,
+        "devnetBanner": true
+      },
+      {
+        "path": "/en/souls",
+        "status": 200,
+        "devnetBanner": true
+      },
+      {
+        "path": "/en/stats",
+        "status": 200,
+        "devnetBanner": true
+      }
+    ],
+    "apiSmoke": [
+      {
+        "method": "GET",
+        "path": "/api/stats",
+        "status": 200,
+        "observation": "clean-state metrics returned launchedTokens/generatedSoulCandidates/claimedSouls/activeCurves as 0"
+      },
+      {
+        "method": "GET",
+        "path": "/api/generations?limit=1",
+        "status": 200,
+        "observation": "clean-state generation list returned ok=true with an empty generations array"
+      },
+      {
+        "method": "POST",
+        "path": "/api/devnet-smoke",
+        "status": 410,
+        "observation": "server-signed devnet smoke route remains retired; public writes stay wallet-signed only"
+      }
+    ],
+    "mainnetWrites": false,
+    "serverSignerFallbackIntroduced": false
+  },
+  "pd13F3CleanStateSmokeEvidence": {
+    "featureId": "PD13.F3",
+    "cluster": "devnet",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "publicUrl": "https://solsoul-devnet.vercel.app",
+    "ranAtIso": "2026-04-30T19:11:47.144Z",
+    "method": "client/wallet-compatible SDK harness; local devnet wallet signed SDK transactions; no server signer or /api/devnet-smoke fallback",
+    "programs": {
+      "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ"
+    },
+    "token": {
+      "symbol": "P13EBMNN",
+      "mint": "6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+      "curve": "54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz",
+      "vault": "HGfrma9xuUGriMUHH7qbu5tjAc23DE1qkdScTVk72Cmu",
+      "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu"
+    },
+    "claim": {
+      "claimPda": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+      "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF"
+    },
+    "transactions": {
+      "walletLaunch": {
+        "signature": "5RXNqiM8zgAXWXnkkDDCZmA5mzknUqmJyzF3dj8y4kAruPuYRw5bUdKwNp4rN4QW9hN92MsQHwcTk4Qf8s4vZsSZ",
+        "slot": 459182118,
+        "confirmationStatus": "confirmed",
+        "explorerUrl": "https://explorer.solana.com/tx/5RXNqiM8zgAXWXnkkDDCZmA5mzknUqmJyzF3dj8y4kAruPuYRw5bUdKwNp4rN4QW9hN92MsQHwcTk4Qf8s4vZsSZ?cluster=devnet"
+      },
+      "walletUploadSoulPuffTheme": {
+        "signature": "gMLpK6Bi4EaiFw5n8HRs23KdUnDhrbUENqNPCtW4i9WJKDxLr2C2M6V1aSAVWawbuHMh33rsdjL7vUWoat5qLeM",
+        "slot": 459182124,
+        "confirmationStatus": "confirmed",
+        "explorerUrl": "https://explorer.solana.com/tx/gMLpK6Bi4EaiFw5n8HRs23KdUnDhrbUENqNPCtW4i9WJKDxLr2C2M6V1aSAVWawbuHMh33rsdjL7vUWoat5qLeM?cluster=devnet"
+      },
+      "walletBuy": {
+        "signature": "4ujA1oUx3BfSBaUm9Qy1LsKLKhgjG4yK3mFezmLxRdFpRFx8qM4ndxagkswDT54BbGdwn7kc54ezHGDoWJkLtrBJ",
+        "slot": 459182128,
+        "confirmationStatus": "confirmed",
+        "explorerUrl": "https://explorer.solana.com/tx/4ujA1oUx3BfSBaUm9Qy1LsKLKhgjG4yK3mFezmLxRdFpRFx8qM4ndxagkswDT54BbGdwn7kc54ezHGDoWJkLtrBJ?cluster=devnet"
+      },
+      "walletSell": {
+        "signature": "5dQVwo4Wkfs7K16edTYrEsdX1hkHKyGagTDD6C116NYDBP9q3NrBWRgTBSV5vSJMoGnMwhLsSt9pDbvjy11Y8kJX",
+        "slot": 459182134,
+        "confirmationStatus": "confirmed",
+        "explorerUrl": "https://explorer.solana.com/tx/5dQVwo4Wkfs7K16edTYrEsdX1hkHKyGagTDD6C116NYDBP9q3NrBWRgTBSV5vSJMoGnMwhLsSt9pDbvjy11Y8kJX?cluster=devnet"
+      },
+      "walletClaimSoul": {
+        "signature": "2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB",
+        "slot": 459182141,
+        "confirmationStatus": "confirmed",
+        "explorerUrl": "https://explorer.solana.com/tx/2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB?cluster=devnet"
+      }
+    },
+    "accountEvidence": {
+      "mint": {
+        "address": "6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+        "exists": true,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "dataLen": 82,
+        "decimals": 6,
+        "supply": "3529253363570",
+        "explorerUrl": "https://explorer.solana.com/address/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY?cluster=devnet"
+      },
+      "curve": {
+        "address": "54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz",
+        "exists": true,
+        "owner": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "dataLen": 147,
+        "realSolReserves": "98999997",
+        "realTokenReserves": "789570746636430",
+        "graduated": false,
+        "targetAmm": 0,
+        "explorerUrl": "https://explorer.solana.com/address/54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz?cluster=devnet"
+      },
+      "soul": {
+        "address": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+        "exists": true,
+        "owner": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "dataLen": 6673,
+        "generationCount": "2",
+        "claimCount": "1",
+        "lastSvgLen": 1752,
+        "artTheme": "soulpuff",
+        "explorerUrl": "https://explorer.solana.com/address/FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu?cluster=devnet"
+      },
+      "claim": {
+        "address": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+        "exists": true,
+        "owner": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "dataLen": 112,
+        "claimer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+        "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+        "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+        "sequence": "0",
+        "generationCount": "2",
+        "explorerUrl": "https://explorer.solana.com/address/EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt?cluster=devnet"
+      },
+      "nft": {
+        "address": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+        "exists": true,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "dataLen": 5379,
+        "decimals": 0,
+        "supply": "1",
+        "metadataPointerTarget": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+        "metadataName": "P13EBMNN Soul #1",
+        "metadataSymbol": "P13EBMNN",
+        "explorerUrl": "https://explorer.solana.com/address/ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF?cluster=devnet",
+        "metadataUriSummary": "Token-2022 metadata URI present as an on-chain data URI; raw encoded URI omitted from committed summary"
+      }
+    },
+    "profileClaimPrimary": {
+      "queriedByClaimer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "totalClaimsForClaimerOnFreshSoulProgram": 2,
+      "foundClaimedSoul": true,
+      "matchedClaim": {
+        "claim": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+        "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+        "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+        "metadataName": "P13EBMNN Soul #1"
+      },
+      "source": "SDK listClaimedSoulNftsByClaimer uses ClaimAccount memcmp on claimer as Profile/My Souls primary path"
+    },
+    "routeChecks": [
+      {
+        "path": "/en/launch",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/en/token/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/en/profile",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/en/souls",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/en/stats",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/en/tokens",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": true
+      },
+      {
+        "path": "/api/stats",
+        "method": "GET",
+        "status": 200,
+        "ok": true,
+        "containsDevnetBanner": false
+      },
+      {
+        "path": "/api/devnet-smoke",
+        "method": "POST",
+        "status": 410,
+        "ok": false,
+        "containsDevnetBanner": false
+      }
+    ],
+    "browserEvidence": {
+      "screenshots": [
+        "evidence/PD13.F3/launch.png",
+        "evidence/PD13.F3/token-detail.png",
+        "evidence/PD13.F3/profile.png",
+        "evidence/PD13.F3/souls.png",
+        "evidence/PD13.F3/stats.png",
+        "evidence/PD13.F3/tokens.png"
+      ],
+      "textCaptures": [
+        "evidence/PD13.F3/launch.txt",
+        "evidence/PD13.F3/token-detail.txt",
+        "evidence/PD13.F3/profile.txt",
+        "evidence/PD13.F3/souls.txt",
+        "evidence/PD13.F3/stats.txt",
+        "evidence/PD13.F3/tokens.txt"
+      ],
+      "consoleErrorCaptures": [
+        "evidence/PD13.F3/token-detail-errors.txt",
+        "evidence/PD13.F3/browser-errors-final.txt"
+      ],
+      "negativeSoulNftTradingControls": {
+        "buy now": false,
+        "list nft": false,
+        "sell nft": false,
+        "orderbook": false
+      },
+      "visibleEvidence": {
+        "devnetBanner": true,
+        "soulpuff": true,
+        "token2022Explanation": true,
+        "generationExplanation": true,
+        "raydiumFixedRoute": true,
+        "profileMySoulsRoute": true,
+        "statsDashboardPopulated": true,
+        "statsThemeDistributionSoulPuff": true,
+        "statsNoInvalidDataError": true,
+        "statsNoLoadingState": true
+      }
+    },
+    "safetyChecks": {
+      "devnetOnly": true,
+      "apiDevnetSmokeStatus": 410,
+      "noServerSignerFallback": true,
+      "noMainnetWrites": true
+    },
+    "sdkFix": {
+      "claimComputeUnitLimit": "450000",
+      "reason": "SoulPuff claim consumed 346620 CU in this smoke; prior 300000 SDK limit failed before this evidence run."
+    },
+    "evidenceArtifact": "evidence/PD13.F3/clean-state-smoke.json",
+    "vercelRedeploy": {
+      "deploymentId": "dpl_rn5RLRGmHiwyPgX98PkPxGb42Frp",
+      "deploymentUrl": "https://solsoul-devnet-qugdf9jhx-davirainsus-projects.vercel.app",
+      "productionUrl": "https://solsoul-devnet.vercel.app",
+      "readyState": "READY",
+      "deployedAt": "2026-04-30T20:43:23.107000Z",
+      "reason": "Publish PD13.F5 public stats cache/client validator fix accepting SoulPuff theme summaries."
+    },
+    "rpcAccountEvidenceFiles": [
+      "evidence/PD13.F3/solana-account-mint.json",
+      "evidence/PD13.F3/solana-account-curve.json",
+      "evidence/PD13.F3/solana-account-soul.json",
+      "evidence/PD13.F3/solana-account-claim.json",
+      "evidence/PD13.F3/solana-account-nft.json"
+    ],
+    "postRedeployChecks": {
+      "launchPage": {
+        "url": "https://solsoul-devnet.vercel.app/en/launch",
+        "status": 200
+      },
+      "tokenDetailPage": {
+        "url": "https://solsoul-devnet.vercel.app/en/token/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+        "status": 200
+      },
+      "devnetSmokeApiPost": {
+        "url": "https://solsoul-devnet.vercel.app/api/devnet-smoke",
+        "status": 410,
+        "bodySummary": "410 response requires connected-wallet writes and confirms retired devnet smoke API"
+      },
+      "apiStats": {
+        "ok": true,
+        "launchedTokens": "7",
+        "generatedSoulCandidates": "6",
+        "claimedSouls": "2",
+        "activeCurves": "7",
+        "soulpuffTokenCount": "2",
+        "soulpuffGeneratedSoulCandidates": "4",
+        "soulpuffClaimedSouls": "1"
+      },
+      "claimTxConfirm": {
+        "signature": "2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB",
+        "slot": 459182141,
+        "status": "Finalized",
+        "computeUnitsConsumed": 346620,
+        "computeBudgetLimit": 450000
+      },
+      "statsBrowserDashboard": {
+        "url": "https://solsoul-devnet.vercel.app/en/stats",
+        "screenshot": "evidence/PD13.F3/stats.png",
+        "textCapture": "evidence/PD13.F3/stats.txt",
+        "consoleErrors": "evidence/PD13.F3/browser-errors-final.txt",
+        "capturedAfterDeploymentId": "dpl_rn5RLRGmHiwyPgX98PkPxGb42Frp",
+        "visibleMetrics": {
+          "launchedTokens": "7",
+          "generatedSoulCandidates": "6",
+          "claimedSouls": "2",
+          "activeCurves": "7"
+        },
+        "visibleThemeDistribution": [
+          {
+            "theme": "SoulPuff",
+            "tokenLaunches": "2",
+            "generated": "4",
+            "claimed": "1"
+          },
+          {
+            "theme": "Monochrome Soul",
+            "tokenLaunches": "5",
+            "generated": "2",
+            "claimed": "1"
+          }
+        ],
+        "noInvalidDataError": true,
+        "noLoadingState": true,
+        "observation": "Browser-visible dashboard renders populated proof metrics, SoulPuff theme distribution, per-token totals, and recent activity; the prior invalidData/loading regression text is absent from visible innerText."
+      }
+    }
+  },
+  "sourceProvenance": {
+    "scope": "PD13.F1 fresh program deployment source tree only; this scoped record does not describe the later reviewed M5 devnet lifecycle evidence.",
+    "pd13ProgramDeploymentSourceTreeWasUncommittedAtDeployTime": true,
+    "pd13ProgramDeploymentSourceTreeLaterCommittedAs": "9294b22280c66785dfcec5d71c2161c297c01870",
+    "pd13ProgramDeploymentSourceTreeCommittedAt": "2026-05-01T04:41:43+09:00",
+    "pd13ProgramDeploymentPreDeploymentBaseCommit": "9f167e49cbace4ea274045cd07d7b116fe65ca96",
+    "pd13ProgramDeploymentCommitSubject": "chore(pd13): deploy fresh devnet programs",
+    "m5EvidenceProvenance": {
+      "primaryLifecycleEvidenceCommit": "98e52ca616d2d0f222feac6c9253a27b049abe4a",
+      "primaryLifecycleEvidenceCommitSubject": "feat(m5): validate devnet transfer hook lifecycle",
+      "reviewedEvidenceCommit": "d1bb57150db98bc043422342cde2b40a1241a33b",
+      "reviewedEvidenceCommitSubject": "fix(devnet): assert expected negative errors",
+      "evidenceFile": "deployments/devnet-e2e-trace.json",
+      "statement": "M5 devnet lifecycle evidence was produced and reviewed after the PD13 program deployment provenance commit, so it must not be attributed to the PD13 deployed source tree."
+    },
+    "statement": "Fresh devnet programs were deployed from a local source tree that was uncommitted at deploy time and later captured by the scoped PD13 commit above. Later M5 evidence in this metadata has its own reviewed commit provenance and is intentionally not covered by the PD13 deployed-source-tree record."
+  },
+  "transferHookProgramId": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+  "transfer_hook_program_id": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+  "raydiumCpSwapProgramId": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW",
+  "m0RaydiumReadiness": {
+    "featureId": "m0-refresh-raydium-devnet-trace",
+    "refreshedAtIso": "2026-05-01T00:42:40.871Z",
+    "cluster": "devnet",
+    "rpcUrl": "https://api.devnet.solana.com",
+    "activeAmm": "raydium",
+    "deferredAmmTargets": {
+      "meteora": "deferred/historical; not required for M0 pass/fail",
+      "pumpSwap": "deferred/historical; not required for M0 pass/fail"
+    },
+    "tracePath": "deployments/devnet-amm-e2e-trace.raydium.json",
+    "programs": {
+      "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "transferHook": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+      "raydiumCpSwap": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW"
+    },
+    "sourceProvenance": {
+      "deploymentMetadataPath": "deployments/devnet.json",
+      "publicMetadataPath": "deployments/public-devnet.json",
+      "deployedSourceCommit": "9294b22280c66785dfcec5d71c2161c297c01870",
+      "statement": "M0 Raydium trace was regenerated after the fresh PD13 devnet deployments and reconciles against the active deployment metadata; Meteora/PumpSwap remain deferred or historical evidence only."
+    },
+    "trace": {
+      "ranAtIso": "2026-05-01T00:41:39.374Z",
+      "payer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "mint": "2xnVZhfMzx5vBQvpmXijgET3PCdDzpAjfpAbCHEPpS1L",
+      "curvePda": "ANxipmQnuBzjES3GMvH6FeZmByZej4n2sDsdeBxdk1jx",
+      "vaultPda": "ZoEpciwBD96ufbALdo4XUGNkjjwhrtNTWd4w75NtVpn",
+      "soulPda": "2ivEaES19PTacgYw6qGnVKvFoibkcNUQYnoHUKTFsTDv",
+      "migrationTarget": "9xb1MAwG4VnMbf7nR1kRpCQbt6i6rCgX1xnzK7iKs7Fv",
+      "targetAmm": 0,
+      "poolState": "6mGA8w1m7g8Wz99VpKAXLh4S32gHzU1UGBsAwQWVLJC7",
+      "lpMint": "AMRN3efmTEcX71ELXbLfaCxKENndHLMHdcBQQcAGtkUL",
+      "lpSupply": "0",
+      "token0Mint": "So11111111111111111111111111111111111111112",
+      "token1Mint": "2xnVZhfMzx5vBQvpmXijgET3PCdDzpAjfpAbCHEPpS1L",
+      "token0Vault": "Fkm1Qa1hN56nApPwetFRtHFpaFmr2P5xQTTqbSwTZy2n",
+      "token1Vault": "J3wfxCmKXUcndyumvAsMHXq1xa1KFZfrsL6L7qC758T6",
+      "observationState": "FD31p4ZasFYdSLw8aKG9XTb9jDcR9rWfgsCGGhne2wLL",
+      "nativeIsToken0": true,
+      "curveAccount": {
+        "address": "ANxipmQnuBzjES3GMvH6FeZmByZej4n2sDsdeBxdk1jx",
+        "exists": true,
+        "owner": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "lamports": 1914000,
+        "data_len": 147,
+        "graduated": true,
+        "migrated": true,
+        "migration_target": "9xb1MAwG4VnMbf7nR1kRpCQbt6i6rCgX1xnzK7iKs7Fv",
+        "target_amm": 0,
+        "real_sol_reserves": "0",
+        "real_token_reserves": "0"
+      },
+      "poolAccount": {
+        "address": "6mGA8w1m7g8Wz99VpKAXLh4S32gHzU1UGBsAwQWVLJC7",
+        "exists": true,
+        "owner": "CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW",
+        "lamports": 5324400,
+        "data_len": 637
+      },
+      "token0VaultAccount": {
+        "address": "Fkm1Qa1hN56nApPwetFRtHFpaFmr2P5xQTTqbSwTZy2n",
+        "exists": true,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": 426155280,
+        "data_len": 165,
+        "mint": "So11111111111111111111111111111111111111112",
+        "amount": "424116000",
+        "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+      },
+      "token1VaultAccount": {
+        "address": "J3wfxCmKXUcndyumvAsMHXq1xa1KFZfrsL6L7qC758T6",
+        "exists": true,
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "lamports": 2039280,
+        "data_len": 165,
+        "mint": "2xnVZhfMzx5vBQvpmXijgET3PCdDzpAjfpAbCHEPpS1L",
+        "amount": "651285856750882",
+        "token_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
+      },
+      "lpMintAccount": {
+        "address": "AMRN3efmTEcX71ELXbLfaCxKENndHLMHdcBQQcAGtkUL",
+        "exists": true,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": 1461600,
+        "data_len": 82,
+        "supply": "0",
+        "decimals": 9,
+        "mint_authority": "7rQ1QFNosMkUCuh7Z7fPbTHvh73b68sQYdirycEzJVuw",
+        "freeze_authority": null
+      },
+      "signatures": [
+        {
+          "label": "create_mint_account",
+          "signature": "28K7Lktz8fNrr8LBqYBQ5CJKaeUvDpTpdtCgXoXcc12kvoRP4nWTWfgM8YKf2eywCvreABiCZbYGdpJK8m748sZr",
+          "slot": 459234334,
+          "confirmationStatus": "finalized",
+          "blockTimeIso": "2026-05-01T00:41:42Z",
+          "logMessages": [
+            "Program 11111111111111111111111111111111 invoke [1]",
+            "Program 11111111111111111111111111111111 success"
+          ],
+          "explorer": "https://explorer.solana.com/tx/28K7Lktz8fNrr8LBqYBQ5CJKaeUvDpTpdtCgXoXcc12kvoRP4nWTWfgM8YKf2eywCvreABiCZbYGdpJK8m748sZr?cluster=devnet"
+        },
+        {
+          "label": "initialize_soul",
+          "signature": "onPRbHAXJH9VEFma9ocLNdtdBRbPfux8MjABYB2kVpwgVTPvcD3b4jKbNnSibab6ESne6ktzTxxE63coPBSGEVt",
+          "slot": 459234339,
+          "confirmationStatus": "finalized",
+          "blockTimeIso": "2026-05-01T00:41:44Z",
+          "logMessages": [
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ invoke [1]",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ consumed 43413 of 200000 compute units",
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ success"
+          ],
+          "explorer": "https://explorer.solana.com/tx/onPRbHAXJH9VEFma9ocLNdtdBRbPfux8MjABYB2kVpwgVTPvcD3b4jKbNnSibab6ESne6ktzTxxE63coPBSGEVt?cluster=devnet"
+        },
+        {
+          "label": "create_token",
+          "signature": "2UTG7zQUFSLSfJT8nUiCTGt8KaoNAW9tyUMn1nBYTwu3dXSJLxoXkL6z2tq6k5FgWjLVVvqAq1MLPAgTM6hCMbUN",
+          "slot": 459234342,
+          "confirmationStatus": "finalized",
+          "blockTimeIso": "2026-05-01T00:41:45Z",
+          "logMessages": [
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un invoke [1]",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeMint2",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1225 of 188263 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un consumed 13139 of 200000 compute units",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un success"
+          ],
+          "explorer": "https://explorer.solana.com/tx/2UTG7zQUFSLSfJT8nUiCTGt8KaoNAW9tyUMn1nBYTwu3dXSJLxoXkL6z2tq6k5FgWjLVVvqAq1MLPAgTM6hCMbUN?cluster=devnet"
+        },
+        {
+          "label": "migrate_raydium",
+          "signature": "1VRLYwTPUT6GrcDAnLLh2B7zktAVtBhWniYnN6hMyc8Nu1x23rbkQMmmwmibhYPk5bfF6pq7jTsLUmYwHmLuX9n",
+          "slot": 459234351,
+          "confirmationStatus": "finalized",
+          "blockTimeIso": "2026-05-01T00:41:48Z",
+          "logMessages": [
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "Program log: CreateIdempotent",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 8839 of 600000 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "Program log: CreateIdempotent",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: GetAccountDataSize",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1155 of 582823 compute units",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program log: Initialize the associated token account",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 674 of 576846 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1516 of 573838 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 19143 of 591161 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un invoke [1]",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 560535 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: MintTo",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1237 of 559120 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW invoke [2]",
+            "Program log: Instruction: Initialize",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 202 of 534176 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [3]",
+            "Program log: Create",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [4]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 522783 compute units",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program 11111111111111111111111111111111 invoke [4]",
+            "Program 11111111111111111111111111111111 success",
+            "Program log: Initialize the associated token account",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [4]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 517694 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [4]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 515233 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13409 of 528126 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 229 of 479869 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1490 of 473216 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 461508 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+            "Program log: Instruction: TransferChecked",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1840 of 458347 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program log: liquidity:525567076995, lock_lp_amount:100, vault_0_amount:424116000,vault_1_amount:651285856750882",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 447506 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program 11111111111111111111111111111111 invoke [3]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 443503 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW consumed 113069 of 555164 compute units",
+            "Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW success",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 440873 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: MintTo",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1237 of 439448 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program log: [event:graduation] curve=ANxipmQnuBzjES3GMvH6FeZmByZej4n2sDsdeBxdk1jx sol_raised=504900000",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un consumed 138367 of 572018 compute units",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un success"
+          ],
+          "explorer": "https://explorer.solana.com/tx/1VRLYwTPUT6GrcDAnLLh2B7zktAVtBhWniYnN6hMyc8Nu1x23rbkQMmmwmibhYPk5bfF6pq7jTsLUmYwHmLuX9n?cluster=devnet"
+        },
+        {
+          "label": "buy_1",
+          "signature": "4RPQ2p6TpiJtS6RYrdWJ2gByHRuBwkw9cgMZSViuEw9ngQyY4VuqGWyTHQ3P2zdWFSvr3Ek55koXWH5J1J7agAxZ",
+          "slot": 459234347,
+          "confirmationStatus": "finalized",
+          "blockTimeIso": "2026-05-01T00:41:47Z",
+          "logMessages": [
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+            "Program log: CreateIdempotent",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: GetAccountDataSize",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1155 of 394739 compute units",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program log: Initialize the associated token account",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 674 of 388762 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: InitializeAccount3",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1516 of 385755 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 16044 of 400000 compute units",
+            "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un invoke [1]",
+            "Program 11111111111111111111111111111111 invoke [2]",
+            "Program 11111111111111111111111111111111 success",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+            "Program log: Instruction: MintTo",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1237 of 374511 compute units",
+            "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ invoke [2]",
+            "Program log: [event:generation] generation=1 side=buy amount=504900000 trader=8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i token_account=6GavziKFeBm9KcqsqtPTvQcJgnHWDn53QHcA5SfDjsiv mint=2xnVZhfMzx5vBQvpmXijgET3PCdDzpAjfpAbCHEPpS1L soul=2ivEaES19PTacgYw6qGnVKvFoibkcNUQYnoHUKTFsTDv seed_hash=9643acd8ca325cfb",
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ consumed 31252 of 371653 compute units",
+            "Program 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ success",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un consumed 43581 of 383956 compute units",
+            "Program CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un success"
+          ],
+          "explorer": "https://explorer.solana.com/tx/4RPQ2p6TpiJtS6RYrdWJ2gByHRuBwkw9cgMZSViuEw9ngQyY4VuqGWyTHQ3P2zdWFSvr3Ek55koXWH5J1J7agAxZ?cluster=devnet"
+        }
+      ]
+    },
+    "validation": {
+      "verifyTraceCommand": "pnpm exec tsx scripts/devnet-amm-e2e.ts --amm raydium --verify-trace",
+      "jsonValid": true,
+      "secretFree": true,
+      "requiredTraceTransactionEvidence": [
+        "confirmation_status",
+        "block_time_iso",
+        "log_messages"
+      ],
+      "transferHookReconciledWithActiveDeployment": true,
+      "activeRuntimeProgramIdsMatchTrace": true
+    },
+    "reconciliationFeatureId": "m0-public-runtime-metadata-reconciliation"
+  },
+  "runtimeMetadataReconciliation": {
+    "featureId": "m0-public-runtime-metadata-reconciliation",
+    "status": "active_metadata_reconciled_historical_runtime_scoped_out",
+    "activeProgramIds": {
+      "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "transferHook": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66"
+    },
+    "historicalOnlyProgramIds": {
+      "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+    },
+    "historicalEvidenceFields": [
+      "railway.historicalSmokeLog",
+      "programs.previousPublicDevnet",
+      "programUpgradeEvidence.oldVsNewProgramIds",
+      "pd13F2RuntimeRepointEvidence.oldProgramIds"
+    ],
+    "activeEvidenceFields": [
+      "programs",
+      "transferHookProgramId",
+      "transfer_hook_program_id",
+      "m0RaydiumReadiness.programs",
+      "m0RaydiumReadiness.trace.signatures"
+    ],
+    "statement": "Old HuSRC61/5wGUM runtime smoke logs are historical-only and must not be used as active M0 success evidence."
+  },
+  "pd14F3DeploymentValidation": {
+    "featureId": "PD14.F3",
+    "cluster": "devnet",
+    "validatedAtIso": "2026-05-01T15:37:25.015588Z",
+    "mainnetWrites": false,
+    "serverSignerIntroduced": false,
+    "devnetSmokeStatus": 410,
+    "programs": {
+      "bondingCurve": {
+        "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "action": "unchanged_PD13_fresh_program_id",
+        "lastDeploySlotObserved": 459269085,
+        "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+        "dataLengthObserved": 120904
+      },
+      "soulGenerator": {
+        "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "action": "in_place_devnet_upgrade_only",
+        "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+        "upgradeTxSig": "49WSFFkTH3gkVCUjDNFc2xcKYhxbiX8ognMAaKVdeLbfY8FtECP4sd5vF4B3mf9Tygx8Xc1oBW6swbhXbCX9u5ZV",
+        "upgradeSlot": 459374959,
+        "upgradeBlockTime": "2026-05-02T00:31:16+09:00",
+        "artifact": "target/deploy/soul_generator.so",
+        "programSoSha256": "3048ac2ae85b73ca5f104c6569f7bf495ce612348d82fff1fbb730c0b5f2f576",
+        "programSoSizeBytes": 190024,
+        "programDataLengthObserved": 193448,
+        "explorerUrl": "https://explorer.solana.com/tx/49WSFFkTH3gkVCUjDNFc2xcKYhxbiX8ognMAaKVdeLbfY8FtECP4sd5vF4B3mf9Tygx8Xc1oBW6swbhXbCX9u5ZV?cluster=devnet"
+      }
+    },
+    "vercel": {
+      "deploymentId": "dpl_7ko8GS1xRHXtiiJocWoqaqV7UWpV",
+      "deploymentUrl": "https://solsoul-devnet-r9iqxbtrn-davirainsus-projects.vercel.app",
+      "productionUrl": "https://solsoul-devnet.vercel.app",
+      "readyState": "READY",
+      "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/7ko8GS1xRHXtiiJocWoqaqV7UWpV"
+    },
+    "publicDevnetEvidence": {
+      "freshTokenMint": "CVDNDZfXtHJJGcPuPBW6TrCfztZDJS11KmUEPGkc6mG8",
+      "freshTokenDetailUrl": "https://solsoul-devnet.vercel.app/en/token/CVDNDZfXtHJJGcPuPBW6TrCfztZDJS11KmUEPGkc6mG8",
+      "qualifyingClaimSig": "e5T3xXSfQj5prWU4TmFa3TayvGd1HUiRUdeqGYDtqH4N4Y7pGwX1qiTd3TkncZLqLJS5E5JriH4DWjF8HcQrjp9",
+      "qualifyingNftMint": "2CRYh9JZC7HeEFVt5Km5jSPQkqV7Wou82pbhwpB8cz4w",
+      "boundarySettlementSellSig": "5BmkqpTKKThLMjNnTTmao6jckmvNaeXv7WQy4weuQGQhDkAkmXEb9r7PgZxq8oY5x9UzPcgEzMcKp7Unka19PtAb",
+      "traceFile": "deployments/devnet-e2e-trace.json",
+      "traceSummary": {
+        "qualifyingClaimReceiptState": "active",
+        "boundarySettlementSellRecorded": true,
+        "nonQualifyingClaimRejected": true,
+        "discoveredIssues": []
+      }
+    },
+    "screenshots": [
+      "evidence/PD14.F3/neonpuff-launch-final.png",
+      "evidence/PD14.F3/neonpuff-token-final.png",
+      "evidence/PD14.F3/neonpuff-theme-section.png"
+    ],
+    "routeSmoke": {
+      "routes": [
+        "/en",
+        "/en/launch",
+        "/zh/launch",
+        "/en/stats",
+        "/en/tokens",
+        "/en/souls",
+        "/en/profile",
+        "/en/token/CVDNDZfXtHJJGcPuPBW6TrCfztZDJS11KmUEPGkc6mG8"
+      ],
+      "allReturned200": true,
+      "devnetBannerObserved": true,
+      "neonpuffObserved": true,
+      "forbiddenSoulNftTradingControlsObserved": false
+    },
+    "notes": "PD14.F3 upgraded only the PD13 fresh devnet soul-generator program in place; bonding-curve stayed unchanged. NeonPuff SVG was compacted to preserve claim metadata heap safety while retaining non-pixel neon-gradient vector markers."
+  },
+  "pd16F4DeploymentRegressionEvidence": {
+    "featureId": "PD16.F4",
+    "cluster": "devnet",
+    "validatedAtIso": "2026-05-02T12:45:06.098042Z",
+    "mainnetWrites": false,
+    "serverSignerIntroduced": false,
+    "walletSignedWritesEvidence": "SDK wallet-compatible sendTransaction harness with local devnet wallet; public /api/devnet-smoke stayed retired with HTTP 410 and no signature.",
+    "programs": {
+      "bondingCurve": {
+        "programId": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "action": "unchanged_PD13_fresh_program_id",
+        "lastDeploySlotObserved": 459269085,
+        "programDataAddress": "D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn",
+        "dataLengthObserved": 120904
+      },
+      "soulGenerator": {
+        "programId": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "action": "in_place_devnet_upgrade_only",
+        "programDataAddress": "Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk",
+        "upgradeTxSig": "2TjEnFuMrfVG6mFz1n2CjsiX7eNno3MFtTtidvBiWvmvPHx1iTwoqhQP7EXNZPjhyQEgoLznwqaVWHRfJgZXxvuR",
+        "upgradeSlot": 459572708,
+        "upgradeBlockTime": "2026-05-02T21:22:16+09:00",
+        "artifact": "target/deploy/soul_generator.so",
+        "programSoSha256": "c395f58869890dbf140534a5c19db8a9a994c6b57464097d20ed28e8f6389919",
+        "programSoSizeBytes": 217256,
+        "programDataLengthObserved": 217256,
+        "explorerUrl": "https://explorer.solana.com/tx/2TjEnFuMrfVG6mFz1n2CjsiX7eNno3MFtTtidvBiWvmvPHx1iTwoqhQP7EXNZPjhyQEgoLznwqaVWHRfJgZXxvuR?cluster=devnet"
+      }
+    },
+    "vercel": {
+      "deploymentId": "dpl_8wUka9BDMhiVY1hyXtYfES86ZX6P",
+      "deploymentUrl": "https://solsoul-devnet-k8rqrwqws-davirainsus-projects.vercel.app",
+      "productionUrl": "https://solsoul-devnet.vercel.app",
+      "readyState": "READY",
+      "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/8wUka9BDMhiVY1hyXtYfES86ZX6P",
+      "reason": "Publish PD16 trait metadata surfaces and 700k claim compute-budget SDK after fresh devnet claim regression."
+    },
+    "publicDevnetEvidence": {
+      "freshTokenDetailUrl": "https://solsoul-devnet.vercel.app/en/token/5AYtErVxPKM5ALcXD5ew5DD8r4isTrd5AL62RydonN4E",
+      "traceFile": "deployments/devnet-e2e-trace.json",
+      "traitMetadataEvidence": "deployments/evidence/PD16.F4/trait-claim-metadata.json",
+      "routeSmokeEvidence": "deployments/evidence/PD16.F4/public-route-smoke.json",
+      "browserSmokeEvidence": "deployments/evidence/PD16.F4/browser-smoke-summary.json",
+      "traceSummary": {
+        "qualifyingClaimReceiptState": "active",
+        "boundaryTransferRejected": true,
+        "boundarySettlementTransferRecorded": true,
+        "boundarySellRejected": true,
+        "boundarySettlementSellRecorded": true,
+        "nonQualifyingClaimRejected": true,
+        "discoveredIssues": []
+      },
+      "traitMetadataSummary": {
+        "generatedTraitCount": 9,
+        "containsPd14NeonPuff": true,
+        "containsPd16TraitLayerComposer": true,
+        "requiredTraitTypesPresent": true,
+        "containsExternalRefs": false
+      },
+      "routeSmoke": {
+        "allRoutesReturned200": true,
+        "devnetSmokePostStatus": 410,
+        "forbiddenVisibleControlCopyObserved": false
+      }
+    },
+    "notes": "PD16.F4 upgraded only the PD13 fresh devnet soul-generator program in place. Fresh devnet launch/buy/claim/hook-transfer/boundary-sell evidence confirms trait-layer NeonPuff defaults and metadata decode; Raydium-only/no-marketplace/wallet-signed-only guardrails remained intact."
+  },
+  "pd17F4DeploymentRegressionEvidence": {
+    "featureId": "PD17.F4",
+    "cluster": "devnet",
+    "validatedAtIso": "2026-05-02T15:21:13.946Z",
+    "mainnetWrites": false,
+    "serverSignerIntroduced": false,
+    "frontendRedeployed": true,
+    "vercel": {
+      "deploymentId": "dpl_3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+      "deploymentUrl": "https://solsoul-devnet-k2g4antp1-davirainsus-projects.vercel.app",
+      "productionUrl": "https://solsoul-devnet.vercel.app",
+      "readyState": "READY",
+      "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+      "reason": "Publish PD17 full-site meme doodle redesign public devnet regression pass."
+    },
+    "evidenceFiles": {
+      "assetPerformanceAudit": "deployments/evidence/PD17.F4/asset-performance-audit.json",
+      "publicRegressionSmoke": "deployments/evidence/PD17.F4/public-regression-smoke.json",
+      "browserSmokeSummary": "deployments/evidence/PD17.F4/browser-smoke-summary.json",
+      "screenshotsDir": "deployments/evidence/PD17.F4/screenshots"
+    },
+    "coverage": {
+      "desktopScreenshots": [
+        "en-home",
+        "zh-home",
+        "en-launch",
+        "zh-launch",
+        "en-token",
+        "zh-token",
+        "en-profile",
+        "zh-profile",
+        "en-souls",
+        "zh-souls",
+        "en-stats",
+        "zh-stats",
+        "en-tokens",
+        "zh-tokens"
+      ],
+      "mobileScreenshots": [
+        "en-home",
+        "zh-home",
+        "en-launch",
+        "zh-launch",
+        "en-token",
+        "zh-token",
+        "en-profile",
+        "zh-profile",
+        "en-souls",
+        "zh-souls",
+        "en-stats",
+        "zh-stats",
+        "en-tokens",
+        "zh-tokens"
+      ],
+      "publicRoutesHttp200": true,
+      "browserConsoleErrors": false
+    },
+    "validators": {
+      "baselineCommandPassed": true,
+      "appTestPassed": true,
+      "workspaceTypecheckPassed": true,
+      "appBuildPassed": true,
+      "vercelInspectReady": true
+    },
+    "safetyAndRegression": {
+      "pd13ActiveProgramIdsPreserved": true,
+      "pd14NeonPuffIdentityPreserved": true,
+      "pd15RaydiumOnlyNoMarketplaceGuardrailsPreserved": true,
+      "pd16TraitLayerBehaviorPreserved": true,
+      "devnetSmokeRetired410": true,
+      "unsafeExternalImagesScriptsFontsFound": false,
+      "largeUnboundedAssetsFound": false,
+      "layoutJankObserved": false,
+      "assetAuditVerdict": "pass"
+    },
+    "notes": "PD17.F4 redeployed only the Next.js frontend. On-chain devnet program IDs stayed unchanged; public API smoke preserved active metadata, conservative RPC classification, Raydium-only guardrails, wallet-signed-only public writes, and retired /api/devnet-smoke behavior."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "generatedAtIso": "2026-05-01T20:09:00Z",
+  "validators": [
+    {
+      "name": "mainnet dry-run helper tests",
+      "command": "node --import tsx --test scripts/mainnet-dry-run.test.ts",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/mainnet-dry-run-node-test.log",
+      "summary": [
+        "node:test reported 5 tests, 1 suite, 5 pass, 0 fail"
+      ]
+    },
+    {
+      "name": "cargo build-sbf --workspace",
+      "command": "PATH=\"/Users/davirian/.cargo/bin:$PATH\" cargo build-sbf --workspace",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-build-sbf.log",
+      "summary": [
+        "bonding-curve SBF release build finished successfully"
+      ]
+    },
+    {
+      "name": "cargo test --workspace",
+      "command": "cargo test --workspace",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-test-workspace.log",
+      "summary": [
+        "bonding_curve 76 passed",
+        "shared 22 passed",
+        "soul_generator 85 passed",
+        "transfer_hook 1 passed",
+        "doc tests passed with 0 tests"
+      ]
+    },
+    {
+      "name": "pnpm --filter sdk test",
+      "command": "pnpm --filter sdk test",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-sdk-test.log",
+      "summary": [
+        "Vitest reported 5 files passed and 71 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm --filter app test",
+      "command": "pnpm --filter app test",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-app-test.log",
+      "summary": [
+        "Vitest reported 52 files passed and 338 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm --filter indexer test",
+      "command": "pnpm --filter indexer test",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-indexer-test.log",
+      "summary": [
+        "Vitest reported 3 files passed and 23 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm -r typecheck",
+      "command": "pnpm -r typecheck",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-typecheck.log",
+      "summary": [
+        "sdk, services/indexer, and app typecheck scripts completed successfully"
+      ]
+    },
+    {
+      "name": "cargo fmt --all -- --check",
+      "command": "cargo fmt --all -- --check",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-fmt.log",
+      "summary": [
+        "rustfmt check completed successfully with no formatting changes"
+      ]
+    },
+    {
+      "name": "cargo clippy --workspace -- -D warnings",
+      "command": "cargo clippy --workspace -- -D warnings",
+      "exitCode": 0,
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-clippy.log",
+      "summary": [
+        "clippy finished dev profile with warnings denied"
+      ]
+    }
+  ]
+}

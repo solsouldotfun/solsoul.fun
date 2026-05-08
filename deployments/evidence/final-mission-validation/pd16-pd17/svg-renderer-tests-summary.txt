@@ -1,0 +1,32 @@
+PD16.A2 — SVG layer composer test summary
+
+Command: cargo test -p soul-generator svg:: --lib
+Result : 39 passed; 0 failed
+Capacity: LAST_SVG_CAPACITY = 4096 bytes (programs/soul-generator/src/state.rs:19)
+
+Key tests confirming PD16.A2 contract behaviour:
+- svg::neonpuff::tests::default_neonpuff_svg_uses_trait_layers_and_safe_inline_animation
+    asserts trait layers (background/aura/profile/eyes/expression/outfit/relic),
+    presence of <animate>/<animateTransform>, no pixel/grid markers,
+    rendered.len() <= LAST_SVG_CAPACITY, and no external refs (script/image/href/xlink/url(http*)).
+- svg::neonpuff::tests::trait_layer_composer_covers_safe_animation_branches
+    exercises 7 animation branches (gentle_gas_drift, lens_shine, aura_flow,
+    background_pulse, sparkle_pop, rainbow_orbit, mythic_prism_bloom) and
+    repeatCount="indefinite" markers within capacity.
+- svg::neonpuff::tests::neonpuff_svg_is_inline_bounded_neon_gradient_vector_not_pixel_art
+- svg::soulpuff::tests::soulpuff_svg_is_inline_bounded_and_visibly_rainbow_accented
+- svg::monochrome::tests::svg_uses_only_inline_monochrome_primitives_and_fits_budget
+- svg::theme::tests::built_in_theme_renderers_are_deterministic_distinct_and_bounded
+
+Safety scans (negative tokens enforced by tests):
+  "<image", "<script", "<style", "href=", "xlink:", "http://", "https://",
+  "ipfs", "arweave", "data:", "font", "url(http", "url(//"
+  All confirmed absent for default neonpuff/soulpuff/monochrome render outputs.
+
+Storage-free / on-chain bounded:
+  buffer is a fixed slice of length 4096 (LAST_SVG_CAPACITY); writer guards
+  against overflow with ProgramError::AccountDataTooSmall.
+
+Determinism:
+  same_seed_produces_same_neonpuff_svg / different_seed_produces_distinct_neonpuff_variants
+  cover seed parity for animated trait composer.

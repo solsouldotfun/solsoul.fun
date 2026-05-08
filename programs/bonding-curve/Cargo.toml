@@ -1,0 +1,29 @@
+[package]
+name = "bonding-curve"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "lib"]
+path = "src/lib.rs"
+
+[features]
+default = []
+
+[dependencies]
+pinocchio = { workspace = true, features = ["cpi"] }
+pinocchio-pubkey = { workspace = true }
+pinocchio-system = "0.6.0"
+solana-address = { version = "2.6.0", features = ["curve25519"] }
+shared = { workspace = true }
+
+[dev-dependencies]
+soul-generator = { path = "../soul-generator" }
+solana-program-option = "2.2.1"
+solana-program-pack = "2.2.1"
+solana-program-test = "2.3.11"
+solana-sdk = "2.3.1"
+spl-token-2022 = "8"
+tokio = { version = "1", features = ["macros"] }

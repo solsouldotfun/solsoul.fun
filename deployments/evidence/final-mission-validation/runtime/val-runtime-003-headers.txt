@@ -1,0 +1,14 @@
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=15
+content-encoding: gzip
+content-type: application/json
+date: Sat, 02 May 2026 21:46:36 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+x-matched-path: /api/stats
+x-vercel-cache: HIT
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: kix1::iad1::wjvn9-1777758397441-9fbb43098c65
+

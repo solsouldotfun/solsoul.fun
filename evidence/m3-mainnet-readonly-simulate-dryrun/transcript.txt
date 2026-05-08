@@ -1,0 +1,23 @@
+[dry-run] mode no-write
+[dry-run] endpoint api.mainnet-beta.solana.com
+[dry-run] command solana epoch-info --url https://api.mainnet-beta.solana.com
+[dry-run] rpc getEpochInfo
+[dry-run] rpc getBlockHeight
+[dry-run] rpc getLatestBlockhash
+[dry-run] rpc getVersion
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getAccountInfo
+[dry-run] rpc getLatestBlockhash
+[dry-run] rpc simulateTransaction
+[dry-run] submitted transaction count 0
+[dry-run] production signer material count 0

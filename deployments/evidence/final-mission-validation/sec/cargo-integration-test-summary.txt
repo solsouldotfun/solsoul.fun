@@ -1,0 +1,28 @@
+test result: ok. 83 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+     Running tests/integration/amm_meteora.rs (target/debug/deps/amm_meteora-fad5056221752b37)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
+     Running tests/integration/amm_raydium.rs (target/debug/deps/amm_raydium-fa161a870ecae783)
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.89s
+     Running tests/integration/claim.rs (target/debug/deps/claim-6b878f99e99ad6e7)
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.74s
+     Running tests/integration/default_renderer.rs (target/debug/deps/default_renderer-17fdb1af8a688c0f)
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+     Running tests/integration/e2e_skeleton.rs (target/debug/deps/e2e_skeleton-5ab9148fd45e3520)
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s
+     Running tests/integration/fees.rs (target/debug/deps/fees-3450b06320fa8557)
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+     Running tests/integration/graduation.rs (target/debug/deps/graduation-2bde45d4dbdaef3d)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.24s
+     Running tests/integration/pause.rs (target/debug/deps/pause-9d9c105b3d061399)
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.87s
+     Running tests/integration/sec_provenance.rs (target/debug/deps/sec_provenance-adb4d3faf5e9cc23)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+     Running tests/integration/target_amm.rs (target/debug/deps/target_amm-6cdd75f5870bda22)
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+     Running tests/integration/templates.rs (target/debug/deps/templates-41915eb6f93767fc)
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+     Running tests/integration/transfer_hook.rs (target/debug/deps/transfer_hook-82bb635e6e094d75)
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.79s
+test result: ok. 96 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

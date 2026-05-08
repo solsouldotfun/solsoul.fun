@@ -1,0 +1,360 @@
+{
+  "featureId": "PD13.F3",
+  "ranAtIso": "2026-04-30T19:11:47.144Z",
+  "cluster": "devnet",
+  "rpcUrl": "https://api.devnet.solana.com",
+  "publicUrl": "https://solsoul-devnet.vercel.app",
+  "method": "client/wallet-compatible SDK harness; local devnet wallet signed SDK transactions; no server signer or /api/devnet-smoke fallback",
+  "mainnetWrites": false,
+  "payer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+  "programs": {
+    "bondingCurve": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+    "soulGenerator": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ"
+  },
+  "token": {
+    "symbol": "P13EBMNN",
+    "mint": "6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+    "curve": "54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz",
+    "vault": "HGfrma9xuUGriMUHH7qbu5tjAc23DE1qkdScTVk72Cmu",
+    "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+    "balanceAfterBuyBaseUnits": "3529253463570",
+    "sellAmountBaseUnits": "100000",
+    "balanceAfterSellBaseUnits": "3529253363570"
+  },
+  "claim": {
+    "claimPda": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+    "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF"
+  },
+  "transactions": {
+    "walletLaunch": {
+      "signature": "5RXNqiM8zgAXWXnkkDDCZmA5mzknUqmJyzF3dj8y4kAruPuYRw5bUdKwNp4rN4QW9hN92MsQHwcTk4Qf8s4vZsSZ",
+      "slot": 459182118,
+      "confirmationStatus": "confirmed",
+      "explorerUrl": "https://explorer.solana.com/tx/5RXNqiM8zgAXWXnkkDDCZmA5mzknUqmJyzF3dj8y4kAruPuYRw5bUdKwNp4rN4QW9hN92MsQHwcTk4Qf8s4vZsSZ?cluster=devnet"
+    },
+    "walletUploadSoulPuffTheme": {
+      "signature": "gMLpK6Bi4EaiFw5n8HRs23KdUnDhrbUENqNPCtW4i9WJKDxLr2C2M6V1aSAVWawbuHMh33rsdjL7vUWoat5qLeM",
+      "slot": 459182124,
+      "confirmationStatus": "confirmed",
+      "explorerUrl": "https://explorer.solana.com/tx/gMLpK6Bi4EaiFw5n8HRs23KdUnDhrbUENqNPCtW4i9WJKDxLr2C2M6V1aSAVWawbuHMh33rsdjL7vUWoat5qLeM?cluster=devnet"
+    },
+    "walletBuy": {
+      "signature": "4ujA1oUx3BfSBaUm9Qy1LsKLKhgjG4yK3mFezmLxRdFpRFx8qM4ndxagkswDT54BbGdwn7kc54ezHGDoWJkLtrBJ",
+      "slot": 459182128,
+      "confirmationStatus": "confirmed",
+      "explorerUrl": "https://explorer.solana.com/tx/4ujA1oUx3BfSBaUm9Qy1LsKLKhgjG4yK3mFezmLxRdFpRFx8qM4ndxagkswDT54BbGdwn7kc54ezHGDoWJkLtrBJ?cluster=devnet"
+    },
+    "walletSell": {
+      "signature": "5dQVwo4Wkfs7K16edTYrEsdX1hkHKyGagTDD6C116NYDBP9q3NrBWRgTBSV5vSJMoGnMwhLsSt9pDbvjy11Y8kJX",
+      "slot": 459182134,
+      "confirmationStatus": "confirmed",
+      "explorerUrl": "https://explorer.solana.com/tx/5dQVwo4Wkfs7K16edTYrEsdX1hkHKyGagTDD6C116NYDBP9q3NrBWRgTBSV5vSJMoGnMwhLsSt9pDbvjy11Y8kJX?cluster=devnet"
+    },
+    "walletClaimSoul": {
+      "signature": "2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB",
+      "slot": 459182141,
+      "confirmationStatus": "confirmed",
+      "explorerUrl": "https://explorer.solana.com/tx/2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB?cluster=devnet"
+    }
+  },
+  "accounts": {
+    "mint": {
+      "address": "6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "dataLen": 82,
+      "decimals": 6,
+      "supply": "3529253363570",
+      "explorerUrl": "https://explorer.solana.com/address/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY?cluster=devnet"
+    },
+    "curve": {
+      "address": "54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz",
+      "exists": true,
+      "owner": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "dataLen": 147,
+      "realSolReserves": "98999997",
+      "realTokenReserves": "789570746636430",
+      "graduated": false,
+      "targetAmm": 0,
+      "explorerUrl": "https://explorer.solana.com/address/54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz?cluster=devnet"
+    },
+    "soul": {
+      "address": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+      "exists": true,
+      "owner": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "dataLen": 6673,
+      "generationCount": "2",
+      "claimCount": "1",
+      "lastSvgLen": 1752,
+      "artTheme": "soulpuff",
+      "explorerUrl": "https://explorer.solana.com/address/FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu?cluster=devnet"
+    },
+    "claim": {
+      "address": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+      "exists": true,
+      "owner": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "dataLen": 112,
+      "claimer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+      "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+      "sequence": "0",
+      "generationCount": "2",
+      "explorerUrl": "https://explorer.solana.com/address/EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt?cluster=devnet"
+    },
+    "nft": {
+      "address": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+      "exists": true,
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "dataLen": 5379,
+      "decimals": 0,
+      "supply": "1",
+      "metadataPointerTarget": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+      "metadataName": "P13EBMNN Soul #1",
+      "metadataSymbol": "P13EBMNN",
+      "explorerUrl": "https://explorer.solana.com/address/ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF?cluster=devnet",
+      "metadataUriScheme": "data URI present; raw encoded URI omitted from committed summary"
+    }
+  },
+  "profileClaimPrimary": {
+    "queriedByClaimer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "totalClaimsForClaimerOnFreshSoulProgram": 2,
+    "foundClaimedSoul": true,
+    "matchedClaim": {
+      "claim": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+      "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+      "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+      "metadataName": "P13EBMNN Soul #1"
+    },
+    "source": "SDK listClaimedSoulNftsByClaimer uses ClaimAccount memcmp on claimer as Profile/My Souls primary path"
+  },
+  "routeChecks": [
+    {
+      "path": "/en/launch",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/en/token/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/en/profile",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/en/souls",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/en/stats",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/en/tokens",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": true,
+      "responseSummary": "HTML response returned successfully; DEVNET TESTNET banner presence captured by containsDevnetBanner"
+    },
+    {
+      "path": "/api/stats",
+      "method": "GET",
+      "status": 200,
+      "ok": true,
+      "containsDevnetBanner": false,
+      "responseSummary": "ok=true with launched/generated/claimed/active-curve metrics and SoulPuff theme distribution"
+    },
+    {
+      "path": "/api/devnet-smoke",
+      "method": "POST",
+      "status": 410,
+      "ok": false,
+      "containsDevnetBanner": false,
+      "responseSummary": "410 JSON error says retired writes must use connected wallet flow; no server signer fallback"
+    }
+  ],
+  "safetyChecks": {
+    "devnetOnly": true,
+    "apiDevnetSmokeStatus": 410,
+    "noServerSignerFallback": true,
+    "noMainnetWrites": true
+  },
+  "globalConfig": {
+    "bondingCurve": {
+      "address": "AKhhkqnGB6avDpxHvZoEmhpKVnT8NfGYa37zBS1aJ7K2",
+      "initialized": true,
+      "unpaused": true
+    },
+    "soulGenerator": {
+      "address": "4Wd5mYyHzB2GQcwMfaERKCY2bVNdgWeQfeodncNNqXuF",
+      "initialized": true,
+      "unpaused": true
+    }
+  },
+  "balance": {
+    "startingLamports": 16832837392,
+    "startingSol": "16.832837392",
+    "endingLamports": 16608053675,
+    "endingSol": "16.608053675",
+    "spentLamports": 224783717,
+    "spentSol": "0.224783717"
+  },
+  "launchResult": {
+    "signature": "5RXNqiM8zgAXWXnkkDDCZmA5mzknUqmJyzF3dj8y4kAruPuYRw5bUdKwNp4rN4QW9hN92MsQHwcTk4Qf8s4vZsSZ",
+    "mint": "6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+    "curve": "54kyTv9i5H9njUhtzF4WnmZp4tCjXckvNjzZkPDga1tz",
+    "vault": "HGfrma9xuUGriMUHH7qbu5tjAc23DE1qkdScTVk72Cmu",
+    "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+    "targetAmm": 0,
+    "curveOwnerAfterLaunch": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+    "soulOwnerAfterLaunch": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ"
+  },
+  "soulAfterTrade": {
+    "generationCount": "2",
+    "claimCount": "0",
+    "lastSvgLen": 1752,
+    "artTheme": "soulpuff",
+    "memeSymbol": "P13EBMNN",
+    "provenanceSide": 2,
+    "provenanceAmount": "100000",
+    "provenanceSeedHashHex": "08031cde38639bac",
+    "hasSoulPuffMarker": true
+  },
+  "browserEvidence": {
+    "screenshots": [
+      "evidence/PD13.F3/launch.png",
+      "evidence/PD13.F3/token-detail.png",
+      "evidence/PD13.F3/profile.png",
+      "evidence/PD13.F3/souls.png",
+      "evidence/PD13.F3/stats.png",
+      "evidence/PD13.F3/tokens.png"
+    ],
+    "textCaptures": [
+      "evidence/PD13.F3/launch.txt",
+      "evidence/PD13.F3/token-detail.txt",
+      "evidence/PD13.F3/profile.txt",
+      "evidence/PD13.F3/souls.txt",
+      "evidence/PD13.F3/stats.txt",
+      "evidence/PD13.F3/tokens.txt"
+    ],
+    "consoleErrorCaptures": [
+      "evidence/PD13.F3/token-detail-errors.txt",
+      "evidence/PD13.F3/browser-errors-final.txt"
+    ],
+    "negativeSoulNftTradingControls": {
+      "buy now": false,
+      "list nft": false,
+      "sell nft": false,
+      "orderbook": false
+    },
+    "visibleEvidence": {
+      "devnetBanner": true,
+      "soulpuff": true,
+      "token2022Explanation": true,
+      "generationExplanation": true,
+      "raydiumFixedRoute": true,
+      "profileMySoulsRoute": true,
+      "statsDashboardPopulated": true,
+      "statsThemeDistributionSoulPuff": true,
+      "statsNoInvalidDataError": true,
+      "statsNoLoadingState": true
+    }
+  },
+  "vercelRedeploy": {
+    "deploymentId": "dpl_rn5RLRGmHiwyPgX98PkPxGb42Frp",
+    "deploymentUrl": "https://solsoul-devnet-qugdf9jhx-davirainsus-projects.vercel.app",
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "readyState": "READY",
+    "deployedAt": "2026-04-30T20:43:23.107000Z",
+    "reason": "Publish PD13.F5 public stats cache/client validator fix accepting SoulPuff theme summaries."
+  },
+  "rpcAccountEvidenceFiles": [
+    "evidence/PD13.F3/solana-account-mint.json",
+    "evidence/PD13.F3/solana-account-curve.json",
+    "evidence/PD13.F3/solana-account-soul.json",
+    "evidence/PD13.F3/solana-account-claim.json",
+    "evidence/PD13.F3/solana-account-nft.json"
+  ],
+  "postRedeployChecks": {
+    "launchPage": {
+      "url": "https://solsoul-devnet.vercel.app/en/launch",
+      "status": 200
+    },
+    "tokenDetailPage": {
+      "url": "https://solsoul-devnet.vercel.app/en/token/6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY",
+      "status": 200
+    },
+    "devnetSmokeApiPost": {
+      "url": "https://solsoul-devnet.vercel.app/api/devnet-smoke",
+      "status": 410,
+      "bodySummary": "410 response requires connected-wallet writes and confirms retired devnet smoke API"
+    },
+    "apiStats": {
+      "ok": true,
+      "launchedTokens": "7",
+      "generatedSoulCandidates": "6",
+      "claimedSouls": "2",
+      "activeCurves": "7",
+      "soulpuffTokenCount": "2",
+      "soulpuffGeneratedSoulCandidates": "4",
+      "soulpuffClaimedSouls": "1"
+    },
+    "claimTxConfirm": {
+      "signature": "2h1wTiteaRF8EGFWgs4rgzbi2jQ6782ZgSYN19ngVMEY3m5wd16q5pnZm46sLXbQT3rSSZjuzykFxZSDMbSPGmmB",
+      "slot": 459182141,
+      "status": "Finalized",
+      "computeUnitsConsumed": 346620,
+      "computeBudgetLimit": 450000
+    },
+    "statsBrowserDashboard": {
+      "url": "https://solsoul-devnet.vercel.app/en/stats",
+      "screenshot": "evidence/PD13.F3/stats.png",
+      "textCapture": "evidence/PD13.F3/stats.txt",
+      "consoleErrors": "evidence/PD13.F3/browser-errors-final.txt",
+      "capturedAfterDeploymentId": "dpl_rn5RLRGmHiwyPgX98PkPxGb42Frp",
+      "visibleMetrics": {
+        "launchedTokens": "7",
+        "generatedSoulCandidates": "6",
+        "claimedSouls": "2",
+        "activeCurves": "7"
+      },
+      "visibleThemeDistribution": [
+        {
+          "theme": "SoulPuff",
+          "tokenLaunches": "2",
+          "generated": "4",
+          "claimed": "1"
+        },
+        {
+          "theme": "Monochrome Soul",
+          "tokenLaunches": "5",
+          "generated": "2",
+          "claimed": "1"
+        }
+      ],
+      "noInvalidDataError": true,
+      "noLoadingState": true,
+      "observation": "Browser-visible dashboard renders populated proof metrics, SoulPuff theme distribution, per-token totals, and recent activity; the prior invalidData/loading regression text is absent from visible innerText."
+    }
+  }
+}

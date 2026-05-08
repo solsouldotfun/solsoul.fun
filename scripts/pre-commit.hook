@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# pre-commit hook — secret scanner gate
+#
+# Install:
+#   cp scripts/pre-commit.hook .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+#
+# The hook runs `gitleaks protect --staged` via scripts/scan-secrets.sh,
+# which only inspects files already added to the git index (staged).
+# Untracked files are never scanned.
+#
+# Bypass (emergencies only — document why in the commit message):
+#   SKIP_SECRET_SCAN=1 git commit -m "..."
+# or the universal git bypass:
+#   git commit --no-verify -m "..."
+#
+# See docs/security.md for full guidance.
+
+set -euo pipefail
+
+if [[ "${SKIP_SECRET_SCAN:-0}" == "1" ]]; then
+  echo "[pre-commit] SKIP_SECRET_SCAN=1 — skipping secret scan." >&2
+  exit 0
+fi
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+echo "[pre-commit] Running secret scanner on staged files..."
+if bash "${REPO_ROOT}/scripts/scan-secrets.sh"; then
+  echo "[pre-commit] No secrets detected."
+  exit 0
+else
+  echo ""
+  echo "[pre-commit] ✗ Secret scan FAILED — commit blocked." >&2
+  echo "[pre-commit] Review the findings above and remove any secrets." >&2
+  echo "[pre-commit] Bypass (last resort): SKIP_SECRET_SCAN=1 git commit -m '...'" >&2
+  exit 1
+fi

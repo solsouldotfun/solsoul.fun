@@ -1,0 +1,40 @@
+[
+  {
+    "classification": "deferred_or_historical_amm_trace",
+    "count": 4,
+    "samplePaths": [
+      "deployments/devnet-amm-e2e-trace.meteora.json",
+      "deployments/local-pumpswap-trace.json"
+    ]
+  },
+  {
+    "classification": "historical_mainnet_readiness_archive",
+    "count": 5,
+    "samplePaths": [
+      "deployments/mainnet-readiness-matrix.json",
+      "deployments/mainnet-readiness-summary.json"
+    ]
+  },
+  {
+    "classification": "historical_or_provenance_metadata",
+    "count": 42,
+    "samplePaths": [
+      "deployments/devnet.json",
+      "deployments/public-devnet.json"
+    ]
+  },
+  {
+    "classification": "static_validator_historical_id_allowlist",
+    "count": 2,
+    "samplePaths": [
+      "scripts/runtime-static-reconciliation.ts"
+    ]
+  },
+  {
+    "classification": "test_fixture_or_override_coverage",
+    "count": 2,
+    "samplePaths": [
+      "sdk/src/index.test.ts"
+    ]
+  }
+]

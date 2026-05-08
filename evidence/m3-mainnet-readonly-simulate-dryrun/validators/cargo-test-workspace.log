@@ -1,0 +1,232 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.80s
+     Running unittests src/lib.rs (target/debug/deps/bonding_curve-b0ffbf2423468d56)
+
+running 76 tests
+test amm::raydium::tests::initialize_ix_data_matches_raydium_idl_fixture ... ok
+test amm::raydium::tests::deposit_ix_data_matches_raydium_idl_fixture ... ok
+test amm::raydium::tests::initial_lp_amount_matches_raydium_lock_rule ... ok
+test amm::pump::tests::lp_ownership_uses_pump_default_84_burn_16_creator_flooring ... ok
+test amm::pump::tests::create_pool_ix_data_matches_public_pumpswap_idl_fixture ... ok
+test amm::pump::tests::deposit_ix_data_matches_public_pumpswap_idl_fixture ... ok
+test amm::meteora::tests::raw_ix_data_matches_meteora_idl_discriminators ... ok
+test amm::meteora::tests::bin_step_q64_math_matches_meteora_sdk_shapes ... ok
+test amm::raydium::tests::insufficient_vault_sol_is_rejected_with_stable_error ... ok
+test amm::raydium::tests::malformed_or_short_mint_data_is_handled_safely ... ok
+test amm::pump::tests::pump_pdas_are_distinct_for_creator_and_mint ... ok
+test amm::raydium::tests::meme_first_sorting_keeps_sol_as_amount_1 ... ok
+test amm::raydium::tests::native_first_sorting_keeps_sol_as_amount_0 ... ok
+test amm::raydium::tests::non_transfer_fee_mint_extensions_are_accepted ... ok
+test amm::raydium::tests::reads_lp_token_account_amount_for_post_burn_fixture ... ok
+test amm::split::tests::large_multiple_of_100_boundary_overflow_is_caught ... ok
+test amm::raydium::tests::transfer_fee_mint_extension_is_rejected ... ok
+test amm::pump::tests::pump_pdas_use_canonical_bumps ... ok
+test amm::split::tests::non_even_amounts_floor_lp_share ... ok
+test amm::split::tests::one_lamport_rounds_lp_down_to_zero ... ok
+test amm::split::tests::sum_invariant_holds_for_successful_splits ... ok
+test amm::split::tests::overflow_is_caught_before_split ... ok
+test amm::split::tests::splits_even_amounts_84_16 ... ok
+test amm::split::tests::zero_meme_total_is_invalid_argument ... ok
+test amm::meteora::tests::pda_derivation_matches_meteora_sdk_fixtures ... ok
+test amm::split::tests::zero_sol_total_is_invalid_argument ... ok
+test amm::tests::dispatcher_rejects_invalid_target_amm ... ok
+test amm::tests::dispatcher_routes_each_target_amm_to_the_matching_adapter ... ok
+test amm::tests::m7_unimplemented_adapters_return_stable_not_implemented_error ... ok
+test instructions::create_token::tests::read_legacy_soul_target_amm_defaults_to_raydium ... ok
+test instructions::create_token::tests::read_soul_target_amm_copies_all_supported_values ... ok
+test instructions::create_token::tests::read_soul_target_amm_rejects_invalid_value ... ok
+test instructions::migrate::tests::adapter_not_implemented_path_emits_fallback_log ... ok
+test instructions::migrate::tests::graduation_path_emits_indexer_event ... ok
+test amm::raydium::tests::raydium_pdas_derive_from_sorted_mints ... ok
+test instructions::pause::tests::pause_toggle_emits_indexer_event ... ok
+test instructions::release_lp::tests::release_before_lock_expiry_rejects_stable_error ... ok
+test instructions::release_lp::tests::release_by_non_admin_rejects_stable_error ... ok
+test instructions::release_lp::tests::release_exactly_at_expiry_is_allowed ... ok
+test instructions::release_lp::tests::release_past_expiry_is_allowed ... ok
+test instructions::unpause::tests::unpause_emits_indexer_event ... ok
+test math::tests::checked_product_prevents_overflow ... ok
+test amm::meteora::tests::bin_array_index_uses_floor_division_and_boundary_adjacency ... ok
+test math::tests::launch_fee_rejects_payers_below_fee_plus_rent ... ok
+test math::tests::launch_fee_is_point_zero_three_sol ... ok
+test math::tests::quote_buy_rejects_slippage_above_token_out ... ok
+test math::tests::quote_buy_uses_constant_product_forward_math ... ok
+test math::tests::quote_sell_rejects_slippage_above_sol_out ... ok
+test math::tests::quote_sell_uses_constant_product_reverse_math ... ok
+test math::tests::quotes_reject_zero_amounts ... ok
+test math::tests::trading_fee_handles_zero_amount ... ok
+test math::tests::trading_fee_rejects_overflow ... ok
+test math::tests::trading_fee_is_one_percent_rounded_down ... ok
+test soul_generator_cpi::tests::cpi_program_id_matches_devnet_soul_generator ... ok
+test state::global_config::tests::global_config_admin_guard_accepts_only_admin ... ok
+test state::global_config::tests::global_config_layout_has_expected_size ... ok
+test state::global_config::tests::global_config_rejects_invalid_paused_flag ... ok
+test state::global_config::tests::global_config_roundtrips_paused_state ... ok
+test state::global_config::tests::programdata_upgrade_authority_parser_reads_bpf_loader_metadata ... ok
+test state::global_config::tests::programdata_upgrade_authority_parser_rejects_missing_or_wrong_authority ... ok
+test state::tests::bonding_curve_account_layout_extends_legacy_len_for_target_amm ... ok
+test state::tests::bonding_curve_account_packs_and_unpacks_roundtrip ... ok
+test state::tests::bonding_curve_legacy_len_defaults_target_amm_and_logs_migration ... ok
+test state::tests::bonding_curve_lock_end_ts_roundtrips ... ok
+test state::tests::bonding_curve_m7_len_defaults_lock_end_ts_and_preserves_target_amm ... ok
+test state::tests::bonding_curve_pack_rejects_invalid_target_amm_values ... ok
+test state::tests::bonding_curve_target_amm_roundtrips_all_supported_values ... ok
+test state::tests::default_graduation_threshold_is_mainnet_value ... ok
+test state::tests::migration_requires_graduation_and_rejects_repeat ... ok
+test state::tests::bonding_curve_unpack_rejects_invalid_target_amm ... ok
+test state::global_config::tests::global_config_pda_uses_single_seed ... ok
+test state::tests::post_graduation_trades_are_rejected_by_shared_guard ... ok
+test state::tests::sol_receipt_at_exact_threshold_marks_graduated ... ok
+test state::tests::sol_receipt_crossing_threshold_marks_graduated ... ok
+test state::tests::target_amm_guard_rejects_post_init_mutation ... ok
+test state::tests::curve_and_vault_pdas_use_mint_seed ... ok
+
+test result: ok. 76 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/shared-e122dbf466f29788)
+
+running 22 tests
+test amm::tests::target_amm_discriminants_are_stable ... ok
+test geppetto::tests::assert_owned_by_accepts_expected_owner ... ok
+test amm::tests::target_amm_try_from_roundtrips_all_supported_values ... ok
+test amm::tests::target_amm_validation_rejects_out_of_range_values ... ok
+test boundary::tests::balance_for_whole_units_uses_exact_base_units ... ok
+test boundary::tests::exact_boundary_sell_math_is_deterministic ... ok
+test boundary::tests::multi_boundary_crossing_counts_each_whole_unit ... ok
+test geppetto::tests::assert_program_id_accepts_expected_program_account ... ok
+test geppetto::tests::assert_signer_accepts_signer ... ok
+test geppetto::tests::assert_pda_rejects_invalid_seed_length ... ok
+test geppetto::tests::assert_program_id_rejects_unexpected_program_account ... ok
+test geppetto::tests::assert_owned_by_rejects_unexpected_owner ... ok
+test geppetto::tests::assert_pda_rejects_wrong_address ... ok
+test geppetto::tests::assert_pda_accepts_derived_pda ... ok
+test geppetto::tests::assert_signer_rejects_non_signer ... ok
+test geppetto::tests::assert_writable_accepts_writable_account ... ok
+test geppetto::tests::assert_writable_rejects_readonly_account ... ok
+test pause::tests::malformed_or_short_global_config_is_rejected ... ok
+test pause::tests::paused_global_config_rejects_with_stable_error_code ... ok
+test pause::tests::unpaused_global_config_allows_write_paths ... ok
+test programs::tests::bonding_curve_program_id_matches_devnet_deployment ... ok
+test programs::tests::soul_generator_program_id_matches_devnet_deployment ... ok
+
+test result: ok. 22 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/soul_generator-2ca694a52eb454b2)
+
+running 85 tests
+test instructions::claim_soul::tests::double_claim_unit_rejects_when_claim_count_caught_up ... ok
+test instructions::claim_soul::tests::insufficient_balance_unit_rejects_less_than_one_whole_token_default_and_override ... ok
+test instructions::claim_soul::tests::read_claim_fields_decodes_pd7_provenance_for_claim_metadata ... ok
+test instructions::claim_soul::tests::claim_soul_error_codes_are_stable ... ok
+test instructions::claim_soul::tests::claim_success_path_emits_indexer_event ... ok
+test instructions::claim_soul::tests::happy_path_unit_claim_sequence_and_balance_pass ... ok
+test instructions::claim_soul::tests::neonpuff_theme_label_is_metadata_ready ... ok
+test instructions::claim_soul::tests::metadata_uri_omits_provenance_attributes_when_unavailable ... ok
+test instructions::claim_soul::tests::read_claim_fields_returns_claim_overrides_and_counts ... ok
+test instructions::claim_soul::tests::metadata_uri_includes_claim_provenance_attributes_without_fake_tx_context ... ok
+test instructions::claim_soul::tests::metadata_uri_escapes_quotes_and_backslashes_in_ascii_symbol_values ... ok
+test instructions::claim_soul::tests::metadata_uri_includes_platform_fields_without_mutating_name_or_symbol ... ok
+test instructions::claim_soul::tests::soulpuff_theme_label_is_metadata_ready ... ok
+test instructions::generate_soul::tests::deterministic_seed_hash_is_stable_and_distinguishes_trade_seed ... ok
+test instructions::generate_soul::tests::generation_event_omits_transaction_context_fields ... ok
+test instructions::generate_soul::tests::provenance_side_matches_buy_sell_flags ... ok
+test instructions::initialize_soul::tests::parse_initialize_args_accepts_legacy_and_symbol_forms ... ok
+test instructions::initialize_soul::tests::parse_initialize_args_accepts_optional_target_amm ... ok
+test instructions::initialize_soul::tests::parse_initialize_args_rejects_oversize_or_non_ascii_symbol ... ok
+test instructions::unpause::tests::unpause_emits_indexer_event ... ok
+test instructions::pause::tests::pause_toggle_emits_indexer_event ... ok
+test instructions::upload_template::tests::built_in_theme_style_params_can_be_uploaded_without_template_bytes ... ok
+test instructions::upload_template::tests::authorized_upload_writes_template_and_style_fields ... ok
+test instructions::upload_template::tests::custom_theme_without_template_bytes_is_rejected ... ok
+test instructions::upload_template::tests::non_svg_prefix_is_rejected ... ok
+test instructions::upload_template::tests::external_reference_templates_are_rejected ... ok
+test instructions::upload_template::tests::local_fragment_css_url_templates_remain_allowed ... ok
+test instructions::upload_template::tests::oversize_style_params_are_rejected ... ok
+test instructions::upload_template::tests::oversize_template_is_rejected ... ok
+test instructions::upload_template::tests::unauthorized_signer_is_rejected ... ok
+test instructions::upload_template::tests::protocol_relative_css_url_templates_are_rejected ... ok
+test state::global_config::tests::global_config_layout_has_expected_size ... ok
+test state::global_config::tests::global_config_admin_guard_accepts_only_admin ... ok
+test state::global_config::tests::global_config_rejects_invalid_paused_flag ... ok
+test state::global_config::tests::global_config_roundtrips_paused_state ... ok
+test state::global_config::tests::programdata_upgrade_authority_parser_reads_bpf_loader_metadata ... ok
+test state::global_config::tests::programdata_upgrade_authority_parser_rejects_missing_or_wrong_authority ... ok
+test state::tests::claim_account_layout_has_expected_packed_size ... ok
+test state::tests::receipt_account_layout_has_expected_packed_size_and_roundtrips_states ... ok
+test state::tests::receipt_account_unpack_rejects_unknown_lifecycle_state ... ok
+test state::tests::receipt_registry_layout_tracks_lifecycle_counts_without_claim_account_changes ... ok
+test state::tests::soul_account_layout_has_expected_packed_size ... ok
+test state::tests::soul_account_layout_reserves_template_and_style_bytes ... ok
+test state::tests::soul_account_legacy_len_defaults_target_amm_and_logs_migration ... ok
+test state::tests::soul_account_pack_rejects_invalid_provenance_side ... ok
+test state::tests::soul_account_pre_pd7_legacy_len_preserves_existing_fields_without_provenance ... ok
+test state::global_config::tests::global_config_pda_uses_single_seed ... ok
+test state::tests::soul_account_pack_rejects_invalid_target_amm_values ... ok
+test state::tests::soul_account_serialization_roundtrip_preserves_template_fields ... ok
+test state::tests::soul_account_target_amm_roundtrips_all_supported_values ... ok
+test state::tests::soul_account_unpack_accepts_legacy_accounts_without_symbol ... ok
+test state::tests::soul_account_unpack_rejects_oversized_template_lengths ... ok
+test state::tests::soul_pda_derivation_uses_mint_seed ... ok
+test svg::hexagram::tests::different_seed_produces_different_svg ... ok
+test svg::hexagram::tests::deterministic_same_seed_produces_same_svg ... ok
+test svg::hexagram::tests::svg_fits_in_capacity ... ok
+test svg::hexagram::tests::svg_starts_with_open_tag_and_ends_with_close ... ok
+test svg::monochrome::tests::different_seed_produces_visible_monochrome_variants ... ok
+test svg::hexagram::tests::all_yao_values_6_to_9_are_derived ... ok
+test svg::monochrome::tests::same_seed_produces_same_svg ... ok
+test state::tests::soul_account_unpack_rejects_invalid_target_amm ... ok
+test svg::neonpuff::tests::different_seed_produces_distinct_neonpuff_variants ... ok
+test svg::neonpuff::tests::same_seed_produces_same_neonpuff_svg ... ok
+test svg::signal::tests::same_seed_produces_same_signal_svg ... ok
+test svg::monochrome::tests::svg_uses_only_inline_monochrome_primitives_and_fits_budget ... ok
+test svg::soulpuff::tests::different_seed_produces_distinct_soulpuff_variants ... ok
+test svg::soulpuff::tests::same_seed_produces_same_soulpuff_svg ... ok
+test svg::signal::tests::signal_svg_is_inline_and_bounded ... ok
+test svg::neonpuff::tests::neonpuff_svg_is_inline_bounded_neon_gradient_vector_not_pixel_art ... ok
+test svg::soulpuff::tests::soulpuff_svg_is_inline_bounded_and_visibly_rainbow_accented ... ok
+test svg::template::tests::all_placeholders_substitute_to_expected_literal_shapes ... ok
+test svg::template::tests::color_mode_substitutes_hue_and_accent ... ok
+test svg::template::tests::evolution_range_controls_enabled_placeholders ... ok
+test svg::template::tests::hsl_mode_preserves_hsl_template_shape ... ok
+test svg::template::tests::pixel_mode_uses_bucketed_hue_values ... ok
+test svg::template::tests::unknown_placeholders_are_left_literal ... ok
+test svg::theme::tests::soulpuff_theme_remains_legacy_selectable ... ok
+test svg::theme::tests::neonpuff_theme_resolves_to_new_builtin_default_identity ... ok
+test svg::theme::tests::theme_resolver_maps_empty_and_legacy_fields_to_expected_themes ... ok
+test svg::theme::tests::theme_resolver_prefers_custom_templates_over_built_in_params ... ok
+test svg::unicorn::tests::different_seed_produces_different_svg ... ok
+test svg::unicorn::tests::same_seed_produces_same_svg ... ok
+test tests::declared_program_id_matches_devnet_deployment ... ok
+test svg::unicorn::tests::svg_contains_expected_on_chain_primitives_and_fits_budget ... ok
+test svg::theme::tests::built_in_theme_renderers_are_deterministic_distinct_and_bounded ... ok
+
+test result: ok. 85 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/transfer_hook-95e32b591d6f8492)
+
+running 1 test
+test tests::hook_policy_summary_is_explicit_about_surplus_and_no_burns ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests bonding_curve
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests shared
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests soul_generator
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests transfer_hook
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s

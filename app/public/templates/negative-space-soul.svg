@@ -1,0 +1,9 @@
+<svg viewBox="0 0 320 320" data-soul-art="pd9-monochrome-template" data-accent="{{ACCENT}}">
+  <rect width="320" height="320" rx="42" fill="#060606"/>
+  <path d="M42 42 H278 V278 H42 Z" fill="none" stroke="#f4f4ef" stroke-width="4"/>
+  <path d="M80 236 C92 170 118 98 160 70 C202 98 228 170 240 236 Z" fill="#f4f4ef"/>
+  <circle cx="160" cy="132" r="52" fill="#060606" stroke="#f4f4ef" stroke-width="5"/>
+  <path d="M121 137 H145 M175 137 H199" stroke="#f4f4ef" stroke-width="{{HOLDER_TIER}}" stroke-linecap="round"/>
+  <path d="M96 88 C130 56 190 56 224 88" fill="none" stroke="#f4f4ef" stroke-width="3" stroke-linecap="round"/>
+  <text x="160" y="270" text-anchor="middle" fill="#f4f4ef" font-size="13">{{SEED_HEX}}</text>
+</svg>

@@ -1,0 +1,1 @@
+{"fixture":"indexed","endpointLabel":"solana-devnet","classification":"indexed_rpc_verified","indexedGpaSupported":true,"programLabel":"spl-program-2022","requestedFilters":[{"memcmp":{"offset":0,"bytes":"<addr_d77cf5c8a1c7>"}}],"warningCodes":[]}

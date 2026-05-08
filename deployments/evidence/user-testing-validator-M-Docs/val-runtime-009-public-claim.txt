@@ -1,0 +1,13 @@
+HTTP/2 410 
+cache-control: no-store
+content-type: application/json
+date: Sat, 02 May 2026 21:36:58 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+x-matched-path: /api/devnet-smoke
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: kix1::iad1::4bn5q-1777757818127-3db63af48cc9
+
+{"error":"Devnet smoke claim is retired. Use the connected wallet claim Soul flow; SolSoul public writes are wallet-signed only."}

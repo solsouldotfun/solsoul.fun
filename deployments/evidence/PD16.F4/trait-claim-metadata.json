@@ -1,0 +1,186 @@
+{
+  "featureId": "PD16.F4",
+  "cluster": "devnet",
+  "checkedAtIso": "2026-05-02T12:33:28.471Z",
+  "claimSignature": "<solana:4iAiHcr6:sha256:9350a31c3da18b6d>",
+  "nftMint": "<solana:FXTczYZ3:sha256:0f9c881a5d722fbb>",
+  "metadataName": "M5Q3LWHA Soul #1",
+  "metadataSymbol": "M5Q3LWHA",
+  "image": {
+    "dataUri": true,
+    "svgLength": 2706,
+    "containsPd14NeonPuff": true,
+    "containsPd16TraitLayerComposer": true,
+    "containsPixelRegressionMarkers": false,
+    "containsExternalRefs": false
+  },
+  "generatedTraits": [
+    {
+      "category": "character_archetype",
+      "traitType": "Character",
+      "value": "solana_dragon"
+    },
+    {
+      "category": "goggles_eyes",
+      "traitType": "Goggles/Eyes",
+      "value": "rainbow_goggles"
+    },
+    {
+      "category": "expression",
+      "traitType": "Expression",
+      "value": "diamond_grin"
+    },
+    {
+      "category": "gas_aura_cloud",
+      "traitType": "Gas/Aura",
+      "value": "green_gas_puff"
+    },
+    {
+      "category": "background",
+      "traitType": "Background",
+      "value": "checker_stars"
+    },
+    {
+      "category": "outfit",
+      "traitType": "Outfit",
+      "value": "hoodie"
+    },
+    {
+      "category": "relic",
+      "traitType": "Relic",
+      "value": "none"
+    },
+    {
+      "category": "animation_behavior",
+      "traitType": "Animation",
+      "value": "gentle_gas_drift"
+    },
+    {
+      "category": "gas_level",
+      "traitType": "Gas Level",
+      "value": "level_6"
+    }
+  ],
+  "rarity": {
+    "tier": "epic",
+    "score": 936
+  },
+  "requiredTraitTypesPresent": true,
+  "attributes": [
+    {
+      "trait_type": "Platform",
+      "value": "SolSoul"
+    },
+    {
+      "trait_type": "Creator",
+      "value": "<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>"
+    },
+    {
+      "trait_type": "Launcher",
+      "value": "<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>"
+    },
+    {
+      "trait_type": "Associated token mint",
+      "value": "<solana:5AYtErVx:sha256:4801b7a03b03009e>"
+    },
+    {
+      "trait_type": "Associated token symbol",
+      "value": "M5Q3LWHA"
+    },
+    {
+      "trait_type": "Art engine",
+      "value": "SolSoul On-Chain Art Engine"
+    },
+    {
+      "trait_type": "Art theme",
+      "value": "NeonPuff Soul"
+    },
+    {
+      "trait_type": "Generation",
+      "value": "1"
+    },
+    {
+      "trait_type": "Character",
+      "value": "solana_dragon"
+    },
+    {
+      "trait_type": "Goggles/Eyes",
+      "value": "rainbow_goggles"
+    },
+    {
+      "trait_type": "Expression",
+      "value": "diamond_grin"
+    },
+    {
+      "trait_type": "Gas/Aura",
+      "value": "green_gas_puff"
+    },
+    {
+      "trait_type": "Background",
+      "value": "checker_stars"
+    },
+    {
+      "trait_type": "Outfit",
+      "value": "hoodie"
+    },
+    {
+      "trait_type": "Relic",
+      "value": "none"
+    },
+    {
+      "trait_type": "Animation",
+      "value": "gentle_gas_drift"
+    },
+    {
+      "trait_type": "Gas Level",
+      "value": "level_6"
+    },
+    {
+      "trait_type": "Rarity tier",
+      "value": "epic"
+    },
+    {
+      "trait_type": "Soul Score",
+      "value": "936"
+    },
+    {
+      "trait_type": "Trade side",
+      "value": "buy"
+    },
+    {
+      "trait_type": "Trade amount",
+      "value": "99000000"
+    },
+    {
+      "trait_type": "Trade token output",
+      "value": "3529253463570"
+    },
+    {
+      "trait_type": "Trader wallet",
+      "value": "<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>"
+    },
+    {
+      "trait_type": "Trader token account",
+      "value": "<solana:DNMpKde9:sha256:cea0a4237dad869c>"
+    },
+    {
+      "trait_type": "Seed hash",
+      "value": "441254824c40f435"
+    },
+    {
+      "trait_type": "Token mint",
+      "value": "<solana:5AYtErVx:sha256:4801b7a03b03009e>"
+    },
+    {
+      "trait_type": "Soul PDA",
+      "value": "<solana:7ksHnQFb:sha256:3b3c44a40aa69a3f>"
+    }
+  ],
+  "storageRedaction": {
+    "droidShieldSafe": true,
+    "reason": "Public devnet signatures and addresses are stored as stable prefixes plus SHA-256 digests; non-address trait IDs remain literal.",
+    "scheme": "<solana:{prefix8}:sha256:{digest16}> for public devnet signatures/accounts/tokens in committed evidence",
+    "redactedIdentifierCount": 68,
+    "trackedEvidenceRoot": "deployments/evidence/PD16.F4/"
+  }
+}

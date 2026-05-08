@@ -1,0 +1,5 @@
+/_next/static/chunks/app-pages-internals.js active_bc=0 active_sg=0 old_bc=0 old_sg=0
+/_next/static/chunks/app/%5Blocale%5D/layout.js active_bc=1 active_sg=1 old_bc=0 old_sg=0
+/_next/static/chunks/app/%5Blocale%5D/page.js active_bc=0 active_sg=0 old_bc=0 old_sg=0
+/_next/static/chunks/app/layout.js active_bc=0 active_sg=0 old_bc=0 old_sg=0
+/_next/static/chunks/main-app.js active_bc=0 active_sg=0 old_bc=0 old_sg=0

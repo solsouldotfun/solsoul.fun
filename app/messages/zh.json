@@ -1,0 +1,1805 @@
+{
+  "navigation": {
+    "home": "首页",
+    "launch": "发射",
+    "tokens": "代币",
+    "souls": "灵魂",
+    "gallery": "我的灵魂",
+    "mySouls": "我的灵魂",
+    "languageSwitcher": "语言切换",
+    "english": "EN",
+    "chinese": "中文",
+    "explore": "探索",
+    "stats": "数据",
+    "market": "市场",
+    "docs": "文档"
+  },
+  "pause": {
+    "banner": "服务已暂停"
+  },
+  "shared": {
+    "walletButton": {
+      "changeWallet": "切换钱包",
+      "connecting": "正在连接…",
+      "copyAddress": "复制地址",
+      "copied": "已复制",
+      "disconnect": "断开连接",
+      "connect": "连接",
+      "selectWallet": "选择钱包"
+    },
+    "platformBadge": {
+      "title": "SolSoul 平台元数据",
+      "label": "SolSoul 平台徽章",
+      "compactLabel": "SolSoul 徽章",
+      "assistiveText": "，来自平台元数据"
+    },
+    "devnetBanner": {
+      "label": "DEVNET 测试网 — 资金没有真实价值"
+    }
+  },
+  "riskDisclaimer": {
+    "title": "风险披露",
+    "intro": "使用 SolSoul.fun 前请阅读并接受以下风险。本提示不构成财务建议。",
+    "bullets": [
+      "数字资产波动很大，可能归零",
+      "曲线市场交易不保证退出价格",
+      "流动性留在 SolSoul 市场中；外部交易场所不属于本次发射路径。",
+      "该协议尚未完成审计。"
+    ],
+    "accept": "接受并继续",
+    "decline": "拒绝",
+    "acknowledgeLabel": "我理解",
+    "acknowledgeHelp": "发射或交易前必须勾选。"
+  },
+  "privacy": {
+    "eyebrow": "隐私政策骨架",
+    "title": "隐私政策",
+    "updated": "最近更新：等待法务审核",
+    "placeholder": "这份占位隐私政策不是最终法律文本。主网上线前，生产隐私政策必须经过法务审核和批准。",
+    "sections": {
+      "data": {
+        "title": "我们可能处理的信息",
+        "body": "SolSoul.fun 可能会处理公开钱包地址、交易元数据、用户选择的发射输入，以及用于运行应用和监控可靠性的客户端诊断信息。"
+      },
+      "usage": {
+        "title": "本占位文本预期的数据用途",
+        "body": "运营数据预计用于支持钱包连接应用流程、防欺诈和防滥用、调试、分析、监控以及用户支持。"
+      },
+      "mainnet": {
+        "title": "主网上线前",
+        "body": "法务必须将此骨架替换为经过审核的生产隐私政策，并补充分析、监控服务商、保留期限、用户权利和联系方式等最终披露。"
+      }
+    },
+    "contact": "问题咨询：隐私联系方式等待法务审核。"
+  },
+  "amm": {
+    "label": "历史 AMM 目标",
+    "raydium": {
+      "title": "Raydium（历史）",
+      "description": "历史 Raydium adapter 元数据仅保留用于解码；当前产品在永续曲线上交易，不迁移。"
+    },
+    "pump": {
+      "title": "PumpSwap（延后）",
+      "description": "PumpSwap 仅保留为延后 / 历史研究，当前发射流程不可选择。"
+    },
+    "meteora": {
+      "title": "Meteora（延后）",
+      "description": "Meteora 仅保留为延后 / 历史研究，当前发射流程不可选择。"
+    }
+  },
+  "landing": {
+    "eyebrow": "Soul-first devnet 对象协议",
+    "headline": "市场活动创造有生命的链上 Soul 对象。",
+    "body": "在 SolSoul 中，发射会开启一个有生命的代币；每次交易都可能唤醒新的 Soul，持有人可以把它收入自己的收藏。",
+    "devnetDisclosure": "DEVNET TESTNET — 仅供公开测试；资金没有真实价值。",
+    "primaryCta": "探索代币市场",
+    "secondaryCta": "发射生命周期",
+    "routeNavLabel": "首页路线",
+    "routes": {
+      "trade": "代币市场",
+      "collection": "收藏",
+      "stats": "数据",
+      "launch": "发射"
+    },
+    "artLabel": "克制的生成 Soul 艺术",
+    "artTitle": "极简链上 Soul 轮廓",
+    "artCaption": "链上 SVG",
+    "loopTitle": "SolSoul 循环",
+    "steps": {
+      "launch": {
+        "title": "发射初始化",
+        "body": "创建会启动 Token-2022 市场和 SoulAccount，而不是独立 NFT drop。"
+      },
+      "trade": {
+        "title": "交易生成",
+        "body": "买入和卖出活动触碰曲线，并生成不断变化的链上 SVG Soul 候选。"
+      },
+      "claim": {
+        "title": "持有人 claim",
+        "body": "钱包完成合格买入并持有至少 10,000 枚同质化代币时，可以领取 1 个 MT/Soul NFT；每个代币最多 2,100 个 MT。"
+      }
+    }
+  },
+  "launch": {
+    "page": {
+      "eyebrow": "Soul 发射",
+      "title": "发射一个有生命的代币",
+      "description": "命名一个 2,100 万枚同质化代币的市场，选择视觉世界并签名。每 10,000 枚代币对应 1 个稀缺 MT/Soul NFT 资格，上限 2,100 个 MT。",
+      "lifecycleModelTitle": "高级：生命周期细节",
+      "lifecycleModelBody": "SolSoul 把市场代币与收藏品分开：发射会创建 2,100 万枚同质化代币并沿持续曲线运行；领取 1 个 MT/Soul NFT 需要一次合格的 10,000 枚买入和当前持有人门槛，每个代币最多 2,100 个 MT/Soul NFT。发射费用于运营，小额买入费会留在市场中，成为长期支撑。"
+    },
+    "form": {
+      "nameLabel": "名称",
+      "namePlaceholder": "交响灵魂 #1",
+      "tickerLabel": "符号",
+      "tickerPlaceholder": "SOUL",
+      "tickerHelp": "显示在市场、代币页面和 Soul 收藏中的短符号。",
+      "brandingNotice": "SolSoul 会显示平台徽章和品牌字段；你填写的名称与符号保持不变。",
+      "descriptionLabel": "描述",
+      "descriptionPlaceholder": "一个让社区用每次交易唤醒新 Soul 的代币。",
+      "rpcEndpoint": "高级网络端点：{endpoint}",
+      "artThemeLabel": "艺术风格",
+      "artThemeHelp": "为这个代币即将唤醒的 Soul 选择第一个视觉世界。",
+      "artThemePreviewTitle": "{label} 预览",
+      "artCustomizeSummary": "调整艺术配方",
+      "artThemeStoredLabel": "高级艺术配方",
+      "artThemeStored": "{label} 配方已保存为 {styleParams}",
+      "artPersistenceTitle": "艺术配方",
+      "artPersistenceReady": "{label} 与 {count} 个引导特征已准备好通过钱包上传。",
+      "artPersistenceWalletStep": "发射签名后，请保持钱包打开，完成必需的艺术上传步骤。",
+      "coreTraitTitle": "引导 Soul",
+      "coreTraitHelp": "最多选择 {max} 个视觉特征。保留“自动”的部分，会由每次交易确定性补全变化。",
+      "coreTraitAuto": "自动变化",
+      "coreTraitLimit": "已选 {count}/{max}",
+      "customTemplateTraitNoticeTitle": "Custom Template 使用 SVG 占位符",
+      "customTemplateTraitNoticeBody": "Custom Template 暂不显示核心特征选择，因为上传的 SVG 目前响应 hue、accent、seed 和 holder tier 等模板占位符，而不是色彩、氛围、形态或背景特征。",
+      "coreArtTraits": {
+        "categories": {
+          "palette": {
+            "label": "色彩",
+            "description": "用户第一眼感受到的主色系。"
+          },
+          "mood": {
+            "label": "氛围",
+            "description": "Soul 的情绪温度。"
+          },
+          "form": {
+            "label": "形态",
+            "description": "画面里最主要的形状语言。"
+          },
+          "background": {
+            "label": "背景",
+            "description": "生成艺术背后的场景。"
+          }
+        },
+        "options": {
+          "palette": {
+            "solana": "Solana",
+            "aurora": "极光",
+            "ember": "余烬",
+            "mono": "单色"
+          },
+          "mood": {
+            "serene": "宁静",
+            "charged": "高能",
+            "mystic": "神秘",
+            "radiant": "明亮"
+          },
+          "form": {
+            "spiral": "螺旋",
+            "wave": "波形",
+            "crystal": "水晶",
+            "orb": "球体"
+          },
+          "background": {
+            "midnight": "午夜",
+            "nebula": "星云",
+            "grid": "网格",
+            "eclipse": "日蚀"
+          }
+        }
+      },
+      "starterTemplateLabel": "选择自定义起始模板",
+      "starterTemplateDefault": "从默认编辑器模板开始",
+      "starterTemplateHelp": "Custom Template 会从内置黑白 SVG 开始；发射后，你的钱包会上传编辑后的艺术，让后续 Soul 使用它。",
+      "commandCenterEyebrow": "创造第一道脉冲",
+      "commandCenterBody": "填写名称，选择视觉世界，然后签名发射。",
+      "stageTokenKicker": "第 1 阶段",
+      "stageTokenTitle": "代币身份",
+      "stageTokenDescription": "写下市场对象的名称，并描述它将唤醒的 Soul。",
+      "stageArtKicker": "第 2 阶段",
+      "stageArtTitle": "Soul 艺术",
+      "stageArtDescription": "为生成的 Soul 选择第一个视觉世界。",
+      "stageSignKicker": "第 3 阶段",
+      "stageSignTitle": "签名发射",
+      "stageSignDescription": "确认发射内容、勾选风险提示，然后用钱包签名。",
+      "advancedToggleShow": "显示高级细节",
+      "advancedToggleHide": "隐藏高级细节",
+      "advancedNetworkTitle": "网络与曲线细节",
+      "curveTierLabel": "市场路径",
+      "curveTierHelp": "当前所有发射都使用标准常开曲线市场。",
+      "curveTierActive": "已激活",
+      "curveParamS": "规模 (S)",
+      "curveParamK": "供应上限 (K)",
+      "feeLabel": "费用",
+      "launchFee": "发射费",
+      "lockFee": "买入锁定费",
+      "feeExplanation": "0.03 SOL 发射费用于协议运营。0.1% 买入费会留在市场中，增强长期支撑。",
+      "submit": "签名发射",
+      "creating": "正在发射你的代币…",
+      "uploadingTemplate": "正在打开艺术上传步骤…",
+      "walletReady": "钱包就绪：{address}",
+      "walletPrompt": "准备签名时请连接 Phantom。",
+      "submitted": "{name}（{ticker}）已发射，符号为 {symbol}。继续前往交易 Soul 卡片完成首次买入，观看新 Soul 出现，并延续这段旅程。",
+      "submittedLink": "代币页面",
+      "successTitle": "发射成功",
+      "successBody": "代币已经就绪。直接前往交易 Soul 卡片，完成首次买入或准备下一次交易。",
+      "viewTokenTradeNow": "开始首次交易",
+      "recentLaunchesTitle": "最近发射",
+      "recentLaunchesDescription": "刷新后，可从此浏览器记录中找回最近发射的代币页面。",
+      "recentLaunchLink": "{symbol} 代币",
+      "mintLabel": "高级代币 ID：{mint}",
+      "signatureLabel": "发射交易：{signature}",
+      "templateUploadStatusLabel": "高级艺术上传",
+      "templateUploadPending": "艺术上传正在等待钱包确认。",
+      "templateUploadOpeningWallet": "正在打开第二次钱包请求，用于上传艺术。",
+      "templateUploadFinalized": "艺术上传交易：{signature}",
+      "templateUploadFailed": "发射交易已上链，但必要的艺术上传暂未完成。钱包中除发射外没有额外状态变化；钱包或网络恢复后可重试艺术上传。",
+      "templateUploadFailedFallback": "发射交易已上链，但必要的艺术上传暂未完成。钱包中除发射外没有额外状态变化；钱包或网络恢复后可重试艺术上传。",
+      "templateUploadRetry": "重试艺术上传",
+      "artUploadActionKicker": "必需的艺术上传",
+      "artUploadActionPendingTitle": "保持钱包打开，完成艺术保存",
+      "artUploadActionPendingBody": "代币发射交易已经落地，但所选艺术配方必须等钱包签名上传后才算完成。",
+      "artUploadActionFailedTitle": "完成艺术上传",
+      "artUploadActionFailedBody": "代币发射已落地，但所选艺术必须上传成功后才可信。",
+      "artThemes": {
+        "neonpuff": {
+          "label": "NeonPuff Soul",
+          "description": "高级霓虹渐变 Soul，带彩虹马能量、Solana 紫绿光感、精致光环与运动轨迹。"
+        },
+        "soulpuff": {
+          "label": "SoulPuff",
+          "description": "旧版可选 Soul 人物：黑白结构、彩虹光环和轨迹点缀。"
+        },
+        "monochrome": {
+          "label": "Monochrome Soul",
+          "description": "高对比黑白 Soul 角色，搭配确定性的背景。"
+        },
+        "hexagram": {
+          "label": "Hexagram Oracle",
+          "description": "受周易与卦象启发的象征性 Soul 风格。"
+        },
+        "custom": {
+          "label": "Custom Template",
+          "description": "编辑并上传自己的 SVG 模板，让后续 Soul 继承你的视觉世界。"
+        },
+        "fractal": {
+          "label": "Fractal Structure",
+          "description": "由重复数学形态构成的分形结构。"
+        },
+        "field": {
+          "label": "Vector Field",
+          "description": "流动场线，让每个 Soul 都像在运动。"
+        },
+        "lattice": {
+          "label": "Crystal Lattice",
+          "description": "具有精确对称感的水晶几何。"
+        },
+        "chaos": {
+          "label": "Strange Attractor",
+          "description": "奇异吸引子世界：确定、有生命感，也难以预测。"
+        },
+        "harmonic": {
+          "label": "Harmonic Wave",
+          "description": "层叠谐波，带来平静的数学节奏。"
+        },
+        "pixel_fractal": {
+          "label": "Pixel Fractal",
+          "description": "用锋利像素块呈现的分形形态。"
+        },
+        "pixel_art": {
+          "label": "Pixel Art",
+          "description": "由噪声驱动的像素艺术，数字感更浓。"
+        },
+        "symphony": {
+          "label": "Symphony",
+          "description": "分层像素风景，包含天空、星光、地平线和旋律路径。"
+        }
+      },
+      "starterTemplates": {
+        "fractal-structure": {
+          "label": "Fractal Structure"
+        },
+        "vector-field": {
+          "label": "Vector Field"
+        },
+        "crystal-lattice": {
+          "label": "Crystal Lattice"
+        },
+        "monochrome-figure": {
+          "label": "黑白人物"
+        },
+        "negative-space-soul": {
+          "label": "负空间 Soul"
+        },
+        "signal-halo": {
+          "label": "信号光环"
+        }
+      },
+      "errors": {
+        "unknownTemplate": "未知起始模板。",
+        "loadTemplate": "暂时无法加载 {label}。模板服务可用后请重试。",
+        "loadTemplateFallback": "暂时无法加载 {label}。模板服务可用后请重试。",
+        "tickerStore": "Ticker 无法存入链上：{message}",
+        "tickerStoreFallback": "Ticker 无法存入链上。",
+        "riskRequired": "提交前请勾选 I understand。",
+        "templateInvalid": "请先修复 SVG 模板再发射。模板必须符合链上容量、以 <svg 开头、可解析为 XML，且不包含外部引用。",
+        "templateUploadInvalid": "模板暂时无法上传。请检查 SVG 要求后重试。",
+        "walletRequired": "创建发射前请连接 devnet Phantom 钱包。",
+        "launchFailed": "发射交易失败。状态未改变；钱包或网络恢复后可重试。",
+        "launchFailedFallback": "发射交易失败。",
+        "launch": {
+          "walletRejected": "发射尚未签名。准备好后请在钱包中批准请求。",
+          "validation": "发射暂时无法提交。请检查代币信息、钱包状态和艺术设置。",
+          "settlement": "钱包状态已变化，发射无法继续。请刷新后重试。",
+          "rpcUnavailable": "发射暂时无法稳定连接 devnet。状态未改变；网络恢复后可重试。",
+          "submissionFailed": "发射未完成。状态未改变；可重试，若重复出现再查看高级细节。"
+        }
+      },
+      "advancedDetailsTitle": "高级细节",
+      "samplePreviewTitle": "实时 Soul 样张",
+      "samplePreviewBody": "你调整特征时，样张会立即更新，用来感受签名前的艺术方向。",
+      "samplePreviewCaveat": "仅为网站动态预览：链上 Soul SVG 与市场元数据保持静态、确定性，并由已签名的发射、交易与生成种子决定。",
+      "samplePreviewSelected": "此样张使用 {count} 个引导特征",
+      "samplePreviewAlt": "确定性 Soul 样张预览",
+      "tokenMtSoulExplainer": {
+        "eyebrow": "Token → MT → Soul",
+        "title": "三层供应关系",
+        "body": "发射先创建同质化市场；MT 持有人门槛与可收藏 Soul 位于市场之上。",
+        "steps": {
+          "token": {
+            "label": "Token",
+            "value": "2,100 万枚同质化代币",
+            "body": "可交易的 Token-2022 市场供应沿 SolSoul 曲线运行。"
+          },
+          "mt": {
+            "label": "MT 门槛",
+            "value": "每 10,000 枚代币对应 1 个 MT",
+            "body": "一次合格买入加当前持有余额，会打开 1 个 MT 门槛。"
+          },
+          "soul": {
+            "label": "Soul",
+            "value": "2,100 个 MT/Soul 上限",
+            "body": "已领取 Soul 是稀缺收藏层，不是同质化供应本身。"
+          }
+        },
+        "capProgressLaunch": "领取上限：此代币发射前为 0 / 2,100。",
+        "capProgress": "领取进度：已领取 {claimCount} / 2,100 个 MT/Soul NFT。"
+      }
+    },
+    "templateEditor": {
+      "eyebrow": "模板编辑器",
+      "title": "分形模板编辑器",
+      "description": "粘贴高端黑白链上 SVG 模板，并使用 {hue}、{accent}、{seedHex}、{holderTier} 等占位符；有效模板会在发射后由你的钱包签名上传。",
+      "svgLabel": "SVG 模板",
+      "validationLabel": "模板校验标记",
+      "valid": "✓",
+      "invalid": "×",
+      "sizeOk": "大小 ≤ 2KB 链上容量",
+      "startsWithSvg": "以 SVG 元素开头",
+      "xmlParseable": "XML 可解析",
+      "noExternalRefs": "无外部引用",
+      "preview": "预览",
+      "previewTitle": "SVG 模板预览"
+    }
+  },
+  "generationRules": {
+    "eyebrow": "Soul 标准",
+    "title": "Soul 如何诞生",
+    "body": "Soul 是由市场活动塑造的确定性艺术。每个新瞬间都来自公开的 SolSoul 输入，以及发射时选择的艺术风格。",
+    "inputsTitle": "塑造 Soul 的信号",
+    "inputs": {
+      "side": "买入/卖出方向",
+      "amount": "交易数量",
+      "wallet": "钱包 / 交易者与持有人上下文",
+      "tokenSoul": "代币与 Soul 身份",
+      "generation": "Soul 生成编号",
+      "chainEntropy": "SolSoul 可用的近期链上信号"
+    },
+    "standardTitle": "收藏者会得到什么",
+    "standardBody": "符合条件时，你会得到当前 Soul；它的艺术与历史都可以在 SolSoul 中追溯。",
+    "mvpScope": "本 MVP 聚焦于领取、查看、Profile/画廊、稀有度和溯源；不承诺外部 NFT 市场交易。"
+  },
+  "token": {
+    "metadataEyebrow": "代币详情",
+    "rpcDescription": "高级细节会通过已配置端点加载：{endpoint}。",
+    "brandingNotice": "SolSoul 平台品牌通过展示徽章和元数据字段呈现。创建者输入的名称和符号保持不变。",
+    "invalidMint": "该路由参数不是有效的 mint 地址。",
+    "derivePdaError": "无法派生高级账户",
+    "unsupportedMint": "这个代币不是当前可用的 SolSoul 发射代币。",
+    "loadSoulError": "Soul 状态暂时不可用。页面仍可继续使用；请稍后刷新或重试。",
+    "loadCurveError": "市场状态暂时不可用。页面仍可继续使用；请稍后刷新或重试。",
+    "refreshSoulError": "Soul 状态暂时无法刷新。状态未改变；请稍后重试。",
+    "labels": {
+      "mint": "代币 ID",
+      "soulPda": "Soul 账户",
+      "curvePda": "市场账户",
+      "generations": "生成次数",
+      "claims": "领取次数",
+      "artTheme": "艺术主题",
+      "selfDeprecated": "市场已关闭",
+      "graduated": "已关闭"
+    },
+    "unavailable": "不可用",
+    "yes": "是",
+    "no": "否",
+    "pdaUnavailable": "该代币的高级账户数据暂不可用：{message}",
+    "riskRequired": "提交交易前请勾选“我理解”。",
+    "buy": "买入",
+    "sell": "卖出",
+    "transfer": "转账",
+    "openTokenGallery": "代币画廊",
+    "postGraduationTitle": "毕业后生成新的灵魂",
+    "postGraduationBody": "毕业曲线不再接受 swap，因此这个直接调用会使用合成 swap amount，同时保持 SVG 完全链上。",
+    "claimTitle": "领取买入支持的 Soul",
+    "claimBody": "只有最新且合格的买入溯源 Soul 才能领取为 MT/Soul NFT；卖出生成的 Soul 只是视觉市场瞬间。",
+    "claimNoGeneration": "目前还没有可领取的 Soul。请先买入唤醒一个。",
+    "claimGenerated": "Soul #{generation} 已就绪。领取时会检查当前 {required} 持有人门槛。",
+    "autoIssue": {
+      "title": "通过 SolSoul 买入完成 Soul 收藏",
+      "body": "通过 SolSoul 至少买入 10,000 枚同质化代币。这个 10,000 枚量级就是 1 个 MT 门槛，可唤醒并让该 Soul 进入你的收藏资格。",
+      "routeOnly": "只有官方 SolSoul 买入流程会创造 Soul；拆单、转账和卖出都不会。",
+      "noPreview": "现在还没有真实 Soul。通过 SolSoul 买入唤醒后，艺术会显示在这里。",
+      "nftMintedLabel": "已领取 Soul",
+      "nftMinted": "已领取 Soul ID：{mint}"
+    },
+    "openGallery": "打开画廊",
+    "walletConnected": "钱包已连接。买入、卖出和高级转账工具已就绪。",
+    "walletPrompt": "连接 Phantom 以准备买入、卖出或高级转账。",
+    "surfaceHeader": {
+      "eyebrow": "Soul 工作室",
+      "title": "Soul 优先的代币视图",
+      "identity": "代币",
+      "latestSoul": "最新 Soul",
+      "trade": "下一步",
+      "claim": "Soul 状态",
+      "progress": "市场脉冲",
+      "provenance": "故事线索",
+      "artTheme": "艺术主题",
+      "loadingArtTheme": "正在加载艺术主题…",
+      "openTrade": "买入或卖出",
+      "openClaim": "领取 Soul",
+      "openTimeline": "打开故事",
+      "backToMarket": "返回市场"
+    },
+    "lifecycle": {
+      "bondingCurve": "市场曲线",
+      "currentPrice": "当前价格",
+      "percentMinted": "已铸造比例",
+      "tradeToGenerateSouls": "交易唤醒 Soul",
+      "spreadCurveVisual": "市场曲线图",
+      "loadingPrice": "正在加载当前价格…",
+      "loadingProgress": "正在加载市场进度…"
+    },
+    "marketOverview": {
+      "title": "市场脉冲",
+      "body": "交易前快速查看：实时价格、储备、流通量，以及当前代币所在位置。",
+      "price": "价格",
+      "reserve": "储备",
+      "circulating": "流通量",
+      "progress": "市场填充",
+      "oneSolQuote": "1 SOL 报价",
+      "maxBuy": "单笔最多买入：5 SOL",
+      "lockFee": "买入报价已包含 0.1% 费用，该费用会留在本市场中。"
+    },
+    "quote": {
+      "buyTitle": "买入报价",
+      "sellTitle": "卖出报价",
+      "youReceive": "你会收到",
+      "minReceived": "最小收到",
+      "lockFee": "锁定费用",
+      "priceImpact": "价格影响",
+      "balance": "钱包余额",
+      "route": "路径",
+      "buyRoute": "钱包 → SolSoul 市场 → 代币 + 新 Soul 瞬间",
+      "sellRoute": "代币 → SolSoul 市场 → SOL + 新 Soul 瞬间"
+    },
+    "soulPreview": {
+      "title": "Soul 稀有度预览",
+      "body": "最新 Soul 预览跟随最近一次生成瞬间；稀有度与进化展示来自 Soul 种子、行动、生成编号、领取顺位、traits 和艺术风格。",
+      "deterministicSeed": "Soul 种子",
+      "claimStatus": "领取状态",
+      "generated": "已生成的 Soul 可在领取前预览。",
+      "notGenerated": "先交易，唤醒一个带稀有度的 Soul。",
+      "previewAlt": "Soul 稀有度预览图",
+      "motionCaveat": "仅为网站展示：链上 Soul SVG 与元数据保持静态，只保存静态 SVG、种子、traits、状态和溯源，不保存 animation_url、视频、可执行公式或远程媒体。"
+    },
+    "soulEvolution": {
+      "badge": "网站展示层",
+      "title": "派生 Soul 进化状态",
+      "body": "SolSoul 不把升级写进 NFT。网站读取已有 Soul 状态——种子、traits、生成编号、稀有度和溯源——确定性派生等级、阶段、能量和流动效果。",
+      "level": "等级",
+      "stage": "阶段",
+      "energy": "能量",
+      "generation": "生成编号",
+      "rarity": "稀有度风格",
+      "provenance": "溯源",
+      "rarityUnranked": "未评级",
+      "staticLayerTitle": "NFT / 元数据",
+      "staticLayerBody": "静态 SVG、种子、traits、状态和溯源保持市场安全。",
+      "dynamicLayerTitle": "网站展示",
+      "dynamicLayerBody": "本页面从这些状态渲染本地 canvas 动效、徽章和文案；元数据中不存放可执行动画或视频。",
+      "stages": {
+        "seed": "待唤醒",
+        "awakening": "初醒",
+        "flow": "流动",
+        "radiant": "辉光",
+        "archival": "归档"
+      },
+      "provenanceValues": {
+        "buy": "买入生成",
+        "sell": "卖出生成",
+        "unknown": "等待溯源"
+      }
+    },
+    "tradePanelTitle": "买入或卖出，唤醒下一枚 Soul",
+    "tradePanelBody": "买入或卖出都可能唤醒 Soul，但只有买入能产生带买入溯源、可用于 MT/Soul 领取的候选。卖出只会生成视觉市场瞬间；已领取的 Soul 仍可查看和收藏。",
+    "tradeSoulCard": {
+      "eyebrow": "交易 Soul",
+      "title": "交易 Soul",
+      "body": "在一张聚焦卡片内完成买入或卖出。报价默认可见；收据、转账和证明等高级控制会保持收起，只有需要时再展开。"
+    },
+    "proofRail": {
+      "eyebrow": "证明栏",
+      "title": "市场证明一眼可见",
+      "body": "桌面端粘性摘要会保留唯一的交易 Soul 入口，并展示领取状态、最新 Soul、持有人语境、收藏者、进度、锁定 SOL 与溯源摘要，不复制交易面板。",
+      "tradeSoul": "交易 Soul",
+      "openTrade": "打开交易",
+      "claimStatus": "领取状态",
+      "latestSoul": "最新生成的 Soul",
+      "latestSoulValue": "第 {generation} 次生成",
+      "holders": "持有人",
+      "holdersHelper": "当前连接钱包的持有余额或连接状态。",
+      "collectors": "收藏者",
+      "collectorsHelper": "Soul 账户记录的已领取 MT/Soul NFT 数量。",
+      "progress": "进度",
+      "lockedSol": "锁定 SOL",
+      "lockedSolHelper": "来自当前曲线视图的市场 SOL 支撑。",
+      "provenance": "溯源",
+      "provenanceHelper": "缩短后的 Soul 种子；展开可查看原始账户标识。",
+      "advancedSummary": "高级溯源"
+    },
+    "tradeReady": {
+      "buy": "买入已准备好。提交交易即可唤醒 Soul。",
+      "sell": "卖出已准备好。卖出可能唤醒一个仅用于展示的 Soul，并可能覆盖最新未领取的买入溯源；如果想领取合格买入 Soul，请先领取再卖出。"
+    },
+    "tradeControls": {
+      "solAmount": "SOL 数量",
+      "slippagePercent": "滑点 (%)",
+      "sellTokenAmount": "卖出数量",
+      "sellSlippagePercent": "卖出滑点 (%)",
+      "quickBuyLabel": "快速买入",
+      "quickSellLabel": "快速卖出",
+      "buyPresetMtGate": "MT 门槛预估",
+      "sellPresetMax": "最大",
+      "mtGateEstimateReady": "预估：{sol} SOL 可目标获得 {tokens} 枚代币（滑点后最少 {minimum}），用于达到 10,000 枚代币的 MT 门槛。最终资格仍需等待钱包 / RPC 确认。",
+      "mtGateEstimateMet": "你的已确认余额已达到 10,000 枚代币的 MT 门槛。最终领取资格仍需等待钱包 / RPC 确认。",
+      "mtGateEstimateUnavailable": {
+        "connectWallet": "连接钱包后，才能根据已确认余额估算精确 MT 门槛买入。",
+        "balanceLoading": "正在等待已确认代币余额，然后估算 MT 门槛买入。",
+        "balanceUnavailable": "暂时无法读取已确认代币余额，因此 MT 门槛买入预估已停用。",
+        "curveLoading": "正在等待实时曲线报价数据，然后估算 MT 门槛买入。",
+        "curveUnavailable": "曲线报价数据不可用，因此不显示 MT 门槛预估。",
+        "tooLarge": "MT 门槛预估超过单笔 5 SOL 买入上限。拆分买入前请先以已确认报价为准。"
+      },
+      "sellPresetUnavailable": {
+        "connectWallet": "连接钱包后，才能按已确认余额启用卖出百分比预设。",
+        "loading": "正在等待已确认代币余额，然后启用卖出预设。",
+        "empty": "没有可用于卖出预设的代币余额。",
+        "unavailable": "代币余额不可用，因此卖出预设已停用。"
+      },
+      "estimatedTokenOut": "滑点前预估：{amount} 个代币",
+      "buyPreviewPrompt": "市场状态加载后输入数量，即可预览预计收到。",
+      "estimatedSolOut": "滑点前预估：{amount} SOL",
+      "sellPreviewPrompt": "市场状态加载后输入数量，即可预览预计 SOL。",
+      "advanced": "高级设置",
+      "tokenBalanceLabel": "代币余额：",
+      "solBalanceLabel": "SOL 余额：",
+      "loading": "加载中…",
+      "connectWallet": "连接钱包",
+      "tokenBalanceUnavailable": "代币余额暂时不可用。请在钱包或网络恢复后刷新或重试。",
+      "solBalanceUnavailable": "SOL 余额暂时不可用。请在钱包或网络恢复后刷新或重试。",
+      "sellDiscovery": "卖出前，SolSoul 会为这个代币寻找可用余额。",
+      "openingWallet": "正在打开钱包…",
+      "buyCompleteTitle": "买入完成",
+      "buyCompleteBody": "你的代币余额、Soul 状态、市场报价和故事时间线已刷新。",
+      "sellCompleteTitle": "卖出完成",
+      "sellCompleteBody": "你的代币余额、市场报价和故事时间线已刷新。卖出生成的 Soul 是视觉市场瞬间，不是可领取的 MT/Soul NFT。",
+      "claimableNextActionTitle": "先领取这枚 Soul",
+      "claimableNextActionBody": "最新 Soul 已有已确认的买入支持领取资格。若想把这枚候选收入收藏，请在继续交易前先领取。",
+      "claimableNextActionCta": "领取 Soul",
+      "sellBeforeClaimTitle": "想保留这枚 Soul，请先领取",
+      "sellBeforeClaimBody": "这只是视觉提示：卖出可能唤醒下一次市场 Soul，并让当前未领取的买入候选不再是最新候选。这是引导，不是协议层阻止。",
+      "sellBeforeClaimCta": "先领取 Soul",
+      "sellBeforeClaimNote": "只要当前报价、余额和结算检查通过，下面仍可继续卖出。",
+      "sellBeforeClaimWarningTitle": "视觉收藏提示",
+      "sellBeforeClaimWarningBody": "领取前卖出可能把最新 Soul 预览推进到新的卖出生成市场瞬间。卖出不会创建可领取的 MT/Soul NFT；除非当前交易被已确认状态禁用，否则界面不会暗示协议层阻止卖出。",
+      "sellClaimWarningTitle": "卖出前请确认",
+      "sellClaimWarningBody": "卖出可以唤醒视觉 Soul 瞬间，但不会创建可领取的 MT/Soul。若当前已有未领取的买入 Soul，先卖出可能让那条买入溯源不再是最新可领取候选。",
+      "tradeEvidence": "查看交易证据",
+      "finalizedBuyLabel": "买入交易",
+      "finalizedBuy": "买入完成。交易：{signature}",
+      "minimumTokenOutLabel": "最少收到代币",
+      "minimumTokenOut": "最少收到：{amount}",
+      "finalizedSellLabel": "卖出交易",
+      "finalizedSell": "卖出完成。交易：{signature}",
+      "soldLabel": "已卖出代币",
+      "sold": "已卖出：{amount} 枚代币",
+      "minimumSolOutLabel": "最少收到 SOL",
+      "minimumSolOut": "最少收到 SOL：{amount}",
+      "tokenAccountLabel": "源代币账户",
+      "tokenAccount": "高级代币账户：{account}",
+      "activeReceipts": "活跃收据",
+      "live": "进行中",
+      "selfDeprecated": "市场已关闭",
+      "graduated": "已关闭"
+    },
+    "directTransfer": {
+      "title": "支持 Hook 的钱包转账",
+      "body": "使用 Token-2022 Transfer Hook 账户解析来直接发送同质化代币。若转账会破坏活跃收据支持的 10,000 枚 MT 容量，SolSoul 会阻止。",
+      "recipientLabel": "收款钱包",
+      "recipientPlaceholder": "收款方 public key",
+      "amountLabel": "要转账的代币数量",
+      "amountPlaceholder": "0.000001",
+      "openingWallet": "正在打开钱包…",
+      "ready": "支持 Hook 的转账已准备好。SDK 会在预检前解析验证账户和源钱包的收据登记。",
+      "connectWallet": "连接 Phantom 以启用支持 hook 的直接转账。",
+      "balanceLoading": "请等待 meme-token 余额加载完成再转账。",
+      "buyTokensFirst": "请先买入代币，再从该钱包转账。",
+      "invalidAmount": "请输入有效的转账代币数量。",
+      "amountExceedsBalance": "请减少转账数量；该钱包没有足够的代币。",
+      "recipientRequired": "请输入收款钱包地址。",
+      "success": "支持 Hook 的转账已完成，签名：{signature}",
+      "sourceAccount": "源代币账户：{account}",
+      "destinationAccount": "目标代币账户：{account}",
+      "warnings": {
+        "directTransferBoundaryRejected": "转账被 MT 收据边界策略拒绝。请为每个活跃 MT/Soul 收据保留 10,000 枚同质化代币，或在跨越边界前先结算收据。",
+        "directTransferHookMetasMissing": "必要的转账校验数据暂不可用。请刷新后重试；SolSoul 不会提交不完整的转账。",
+        "directTransferRegistryMissing": "该钱包的领取与收据状态暂不可用。请刷新后再尝试直接转账。",
+        "directTransferUnsupportedHook": "该代币未配置为安全的 SolSoul 直接转账，因此应用不会提交。",
+        "directTransferPreflightFailed": "转账暂时无法安全准备。余额未改变；网络恢复后可重试。"
+      },
+      "validation": {
+        "invalidRecipient": "转账前请输入有效的接收钱包地址。"
+      }
+    },
+    "settlement": {
+      "title": "需要边界结算",
+      "modeLabel": "收据结算模式",
+      "burnMode": "烧毁选中的收据",
+      "forfeitMode": "失效选中的收据",
+      "body": "此边界移动前会先执行{mode}。钱包签署一笔原子的结算 + 卖出/转账交易，避免容量下降后仍留下活跃收据。",
+      "selectedReceipts": "选中的收据集合",
+      "postWholeUnits": "移动后的 MT 容量",
+      "blocked": "必须先解析到精确的结算收据，边界移动才可继续",
+      "blockedUnavailable": "结算证据暂时不可用。请刷新预览后重试。",
+      "stateUnavailable": "收据结算状态暂时不可用。请稍后刷新或重试。",
+      "sourceSelectionNotice": "结算预览使用即将提交的同一个源代币账户及其余额。如果该钱包有多个代币账户，源账户变化可能会改变需要结算的收据集合。",
+      "sourceAccount": "预览源代币账户",
+      "sourceBalance": "预览源余额",
+      "sourceMismatch": "签名前源代币账户或余额已变化。请刷新预览后重新提交，确保选中的收据集合与交易一致。",
+      "boundary": "边界"
+    },
+    "tradeGeneration": {
+      "buyEyebrow": "买入完成",
+      "sellEyebrow": "卖出完成",
+      "generated": "已生成 Soul #{generation}",
+      "previewAlt": "已生成 Soul 预览",
+      "buySignature": "买入交易",
+      "sellSignature": "卖出交易",
+      "side": "方向",
+      "buySide": "买入",
+      "sellSide": "卖出",
+      "amount": "交易数量",
+      "trader": "交易者",
+      "seedHash": "Soul 火花",
+      "transaction": "Explorer 交易",
+      "claimSoul": "领取 Soul",
+      "sellReviewClaimRules": "查看买入溯源领取规则",
+      "sellVisualOnly": "这个卖出生成的 Soul 只是视觉市场瞬间，不是可领取的 MT/Soul NFT；可领取 Soul 必须来自最新的合格买入。",
+      "viewCollection": "查看收藏",
+      "tradeAgain": "再次交易"
+    },
+    "timeline": {
+      "title": "故事时间线",
+      "body": "发射、交易、Soul 生成与领取瞬间",
+      "loading": "正在加载故事…",
+      "loadError": "无法加载故事",
+      "unavailableTitle": "故事暂时不可用",
+      "unavailableBody": "公开故事接口暂时没有返回。你仍可继续查看页面、交易或领取；稍后刷新即可重试。",
+      "retryHint": "刷新该代币页面即可重新获取故事时间线。",
+      "cachedNotice": "正在显示本浏览器保存的上一份故事；公开接口恢复后会自动刷新。",
+      "timeoutError": "时间线请求超时。请刷新代币页面，通过公开 API 重试。",
+      "invalidData": "时间线响应不完整。请刷新代币页面，重新获取 finalized 的公开证据。",
+      "empty": "目前还没有故事。发射并交易该代币后会出现第一批瞬间。",
+      "source": "高级来源",
+      "signature": "交易",
+      "slot": "Slot",
+      "evidence": {
+        "show": "查看证据",
+        "hide": "收起证据",
+        "title": "技术证据",
+        "source": "证据来源",
+        "address": "证据地址",
+        "blockTime": "区块时间",
+        "eventId": "事件 ID",
+        "tokenMint": "代币 mint",
+        "soulAccount": "Soul 账户",
+        "rawEvent": "原始事件证据"
+      },
+      "details": {
+        "side": "方向",
+        "amount": "数量",
+        "trader": "交易者",
+        "tokenAccount": "代币账户",
+        "seedHash": "Soul 种子",
+        "receiptLifecycle": "收据生命周期",
+        "receiptAccount": "收据账户",
+        "receiptBoundQuantity": "绑定数量",
+        "receiptBoundBoundary": "绑定边界"
+      },
+      "events": {
+        "launch": {
+          "title": "发射",
+          "description": "{token} 初始化了代币 / Soul 生命周期。"
+        },
+        "trade": {
+          "title": "交易",
+          "description": "{token} 记录了一次市场行动。"
+        },
+        "generation": {
+          "title": "Soul 生成",
+          "description": "{token} 生成了 Soul #{generation}。"
+        },
+        "claim": {
+          "title": "已领取",
+          "description": "{token} Soul 领取序号 #{sequence}。"
+        }
+      },
+      "links": {
+        "token": "代币",
+        "gallery": "画廊",
+        "soul": "Soul 账户",
+        "transaction": "Explorer",
+        "mint": "代币 ID",
+        "nft": "Soul NFT"
+      }
+    },
+    "tradeDisabled": {
+      "paused": "服务已暂停。请等待 SolSoul 解除暂停后再交易。",
+      "busy": "{action} 正在打开钱包。请等待当前请求完成。",
+      "connectWallet": "连接 Phantom 以解锁 {action}。",
+      "curveLoading": "请等待市场加载完成后再交易。",
+      "curveUnavailable": "该代币市场暂不可用。请刷新或打开进行中的代币后再交易。",
+      "graduated": "该代币市场已关闭买入和卖出。",
+      "acknowledgeRisk": "勾选风险披露中的 I understand 以解锁 {action}。",
+      "invalidAmount": "市场加载后请输入有效数量以预览 {action}。",
+      "balanceLoading": "请等待你的 meme-token 余额加载后再卖出。",
+      "buyTokensFirst": "该钱包需要先买入代币，然后才能卖出。",
+      "sellAmountExceedsBalance": "请减少卖出数量，或先买入更多代币；该钱包持有的代币不足以完成这笔卖出。"
+    },
+    "walletErrors": {
+      "buy": {
+        "walletRejected": "买入尚未签名。准备好后请在钱包中批准请求。",
+        "validation": "买入暂时无法提交。请检查数量、滑点、钱包和市场状态。",
+        "settlement": "收据状态已变化，买入无法继续。请刷新后重试。",
+        "rpcUnavailable": "买入暂时无法稳定连接 devnet。状态未改变；网络恢复后可重试。",
+        "submissionFailed": "买入未完成。状态未改变；可重试，若重复出现再查看高级细节。"
+      },
+      "sell": {
+        "walletRejected": "卖出尚未签名。准备好后请在钱包中批准请求。",
+        "validation": "卖出暂时无法提交。请检查数量、余额、滑点和市场状态。",
+        "settlement": "卖出需要更新收据结算证据。请刷新预览后重新提交。",
+        "rpcUnavailable": "卖出暂时无法稳定连接 devnet。状态未改变；网络恢复后可重试。",
+        "submissionFailed": "卖出未完成。状态未改变；可重试，若重复出现再查看高级细节。"
+      }
+    },
+    "previewLabel": "实时 Soul 预览",
+    "previewEmpty": "分形占位符",
+    "previewGenerated": "正在显示最新生成的 Soul #{generation}。",
+    "previewAlt": "实时 SolSoul SVG 预览",
+    "loadingCurve": "正在加载市场状态…",
+    "curveStatus": "市场状态：{status}。",
+    "curveActive": "活跃",
+    "curveDeprecated": "已弃用",
+    "curveGraduated": "已毕业",
+    "curveUnavailable": "市场状态不可用：{message}",
+    "economics": {
+      "title": "固定发射经济参数 + 实时曲线状态",
+      "loading": "正在通过配置的 devnet RPC 加载实时曲线状态…",
+      "empty": "该 mint 还没有 BondingCurveAccount。发射初始化后仍会使用固定协议经济参数。",
+      "error": "无法加载实时曲线状态：{message}",
+      "supplyNotConfigurable": "供应量由协议固定，创建者不可配置。",
+      "fixedCopy": {
+        "protocolFixedEconomics": "协议固定经济参数",
+        "decimalUnit": "小数位",
+        "curve": "指数联合曲线",
+        "supplyCap": "渐近供应上限",
+        "launchFee": "发射费",
+        "buyLockFee": "买入锁定费",
+        "buyLockFeeSuffix": "永久锁定在曲线中",
+        "noGraduation": "无毕业、无迁移、无流动性抽离",
+        "ammReferences": "外部 AMM 适配仅为历史/延后项；当前发射留在曲线上"
+      },
+      "units": {
+        "tokenUnit": "枚代币",
+        "baseUnit": "基础单位",
+        "solPerToken": "SOL/代币",
+        "launchFee": "发射",
+        "buyLockFee": "买入锁定"
+      },
+      "labels": {
+        "decimals": "小数位",
+        "fixedSupply": "固定曲线供应量",
+        "fixedSupplyBaseUnits": "供应量基础单位",
+        "protocolVirtualReserves": "协议固定虚拟储备",
+        "protocolGraduationThresholds": "毕业阈值",
+        "protocolCurveParams": "协议曲线参数",
+        "protocolFees": "协议费用",
+        "currentPrice": "当前价格",
+        "oneSolQuote": "实时报价",
+        "cumulativeSol": "累计 SOL",
+        "totalMinted": "已铸造总量",
+        "percentMinted": "已铸造比例",
+        "percentToDeprecated": "距离曲线弃用",
+        "selfDeprecated": "曲线已弃用",
+        "liveVirtualReserves": "实时虚拟储备",
+        "liveRealReserves": "实时真实储备",
+        "percentSold": "已售比例",
+        "graduated": "已毕业",
+        "migrated": "已迁移",
+        "targetAmm": "目标 AMM"
+      }
+    },
+    "loadingSoul": "正在从配置的 RPC 加载 SoulAccount…",
+    "loadedSoul": "已加载 SoulAccount，SVG 字节数 {bytes}。",
+    "fallbackPreview": "由于实时 SoulAccount 不可用，正在显示回退预览：{message}",
+    "modelNotice": "交易可以唤醒变化中的 Soul 艺术。市场总量是 2,100 万枚同质化代币，而 MT/Soul 收藏品是稀缺层：每 10,000 枚代币对应 1 个 MT，每个代币最多 2,100 个 MT/Soul NFT。",
+    "secondarySections": {
+      "title": "故事与高级层",
+      "body": "Soul 稀有度、故事时间线、生命周期语境和协议证据仍可在主行动中心下方查看。"
+    },
+    "lifecycleMachine": {
+      "eyebrow": "Soul 旅程",
+      "title": "Soul 旅程",
+      "body": "先跟随这个活体对象：交易唤醒 Soul，持有 10,000 枚代币的 MT 门槛，再把稀缺的 2,100 个 MT/Soul NFT 之一收入画廊。",
+      "currentState": "当前状态",
+      "nextAction": "最佳下一步",
+      "generation": "第 {generation} 次生成",
+      "requiredBalance": "收藏门槛：合格买入 + 当前每个 MT 所需 {required} 枚代币",
+      "technicalDetails": "高级技术细节",
+      "steps": {
+        "noSoulYet": {
+          "label": "还没有 Soul",
+          "description": "还没有生成艺术。请交易该代币，唤醒第一个 Soul。"
+        },
+        "generatedUnclaimed": {
+          "label": "已唤醒 / 未领取",
+          "description": "已有 Soul；SolSoul 会检查合格买入和持有人门槛后再允许领取。"
+        },
+        "claimable": {
+          "label": "可领取",
+          "description": "该钱包符合资格，并仍满足持有人门槛。把 Soul 收入你的画廊。"
+        },
+        "ineligible": {
+          "label": "暂不符合资格",
+          "description": "已有 Soul，但该钱包当前不满足领取规则。"
+        },
+        "claimedInCollection": {
+          "label": "已领取",
+          "description": "最新 Soul 已被领取。查看画廊，或继续交易唤醒新的 Soul。"
+        }
+      },
+      "actions": {
+        "tradeToGenerate": "交易唤醒",
+        "connectWallet": "连接钱包检查资格",
+        "claimSoul": "领取 Soul",
+        "buyOrHold": "恢复 10,000 枚 MT 门槛",
+        "viewCollection": "查看画廊"
+      }
+    },
+    "tokenMtSoulExplainer": {
+      "eyebrow": "Token → MT → Soul",
+      "title": "供应模型一眼看懂",
+      "body": "交易推动 2,100 万枚代币市场并唤醒 Soul；只有合格的 10,000 枚 MT 门槛可以成为稀缺收藏品。",
+      "steps": {
+        "token": {
+          "label": "Token",
+          "value": "2,100 万枚同质化代币",
+          "body": "在曲线上买入或卖出同质化市场代币。"
+        },
+        "mt": {
+          "label": "MT 门槛",
+          "value": "每 10,000 枚代币对应 1 个 MT",
+          "body": "每个 MT 需要合格买入溯源与当前持有余额。"
+        },
+        "soul": {
+          "label": "Soul",
+          "value": "2,100 个 MT/Soul 上限",
+          "body": "已领取 Soul 是由确定性交易种子塑造的限量收藏品。"
+        }
+      },
+      "capProgress": "领取进度：已领取 {claimCount} / 2,100 个 MT/Soul NFT。"
+    },
+    "bondingCurveChart": {
+      "eyebrow": "Soul 流动图表",
+      "title": "Soul 流动市场界面",
+      "body": "轻量市场视图展示价格走势、成交量柱、Soul 生成标记、领取标记、每 10,000 枚代币对应 1 个 MT 的门槛，以及 2,100 个 MT/Soul 收藏上限。",
+      "summary": "Soul 流动图表。当前价格 {currentPrice}；已铸造进度 {percentMinted}；已铸造总量 {totalMinted}。图中标记市场量能、Soul 生成、领取、每 10,000 枚代币对应 1 个 MT，以及 2,100 个 MT/Soul 上限。",
+      "unavailableTitle": "曲线图暂不可用",
+      "unavailableBody": "实时曲线数据缺失或超出预期范围，因此 SolSoul 显示安全回退状态，避免绘制误导性的标记。",
+      "currentPoint": "当前位置",
+      "mintedProgress": "已铸造进度",
+      "priceAxis": "价格",
+      "tokenAxis": "已铸造代币",
+      "firstMtMarker": "10,000 枚代币 / MT",
+      "capMarker": "2,100 个 MT 上限",
+      "capHelper": "2,100 个 MT/Soul 是同质化 2,100 万代币曲线供应之上的收藏层上限。",
+      "stats": {
+        "currentPrice": "当前价格",
+        "totalMinted": "已铸造总量",
+        "percentMinted": "已铸造"
+      },
+      "soulFlow": {
+        "volumeMovement": "市场 / 成交量走势",
+        "generationMarker": "Soul 生成",
+        "claimMarker": "Soul 领取",
+        "fixture": "实时流动数据到达前显示确定性样例",
+        "noMarkers": "目前还没有生成或领取标记；交易该代币后会出现第一批 Soul 流动事件。"
+      }
+    }
+  },
+  "claim": {
+    "disabled": {
+      "paused": "服务已暂停，暂时无法 Claim。",
+      "connectWallet": "连接钱包以 claim 已生成的 MT/Soul NFT。",
+      "generateFirst": "请先买入生成不断变化的 Soul SVG 候选，然后再 Claim。",
+      "alreadyClaimed": "这一代灵魂已经被 claim。",
+      "balanceLoading": "正在合格单次买入溯源之后检查当前持有人余额。",
+      "insufficientBalance": "这个 Soul 有合格买入证明，但该钱包仍需持有至少 {required} 枚同质化代币，才能领取 1 个 MT。",
+      "provenanceMissing": "最新 Soul 缺少合格的买入输出溯源，因此 legacy 或溯源前视觉候选不能领取。",
+      "provenanceSellGenerated": "最新 Soul 是卖出生成的视觉市场瞬间，不是可领取的 MT/Soul NFT。领取需要最新 Soul 来自至少 10,000 枚同质化代币的合格买入输出。",
+      "provenanceSubWhole": "这个 Soul 的原始买入输出低于 10,000 枚 MT 量级。后续累计余额不能解锁这个候选。",
+      "provenanceWalletMismatch": "只有生成这条合格买入溯源的钱包可以 claim 此 Soul。"
+    },
+    "errorFallback": "Claim 交易失败。",
+    "errors": {
+      "walletRejected": "领取尚未签名。准备好后请在钱包中批准请求。",
+      "validation": "领取暂时无法提交。请检查钱包、持有人余额和 Soul 资格。",
+      "settlement": "领取证据在签名前发生变化。请刷新 Soul 状态后重试。",
+      "rpcUnavailable": "领取暂时无法稳定连接 devnet。状态未改变；网络恢复后可重试。",
+      "submissionFailed": "领取未完成。状态未改变；可重试，若重复出现再查看技术细节。"
+    },
+    "claiming": "Claim 中…",
+    "claimed": "已 Claim",
+    "claim": "领取 Soul",
+    "success": "领取成功！Soul ID：{mint}",
+    "technicalDetails": "技术细节",
+    "signature": "交易：{signature}",
+    "viewInMySouls": "在我的 Soul 中查看"
+  },
+  "generateAgain": {
+    "disabled": {
+      "paused": "服务已暂停，暂时无法生成灵魂。",
+      "notGraduated": "该代币毕业后才可再次生成。",
+      "connectWallet": "连接钱包以生成毕业后的新灵魂。"
+    },
+    "errorFallback": "再次生成交易失败。",
+    "errors": {
+      "walletRejected": "生成尚未签名。准备好后请在钱包中批准请求。",
+      "validation": "生成暂时无法提交。请检查钱包、代币状态和资格。",
+      "settlement": "生成证据在签名前发生变化。请刷新 Soul 状态后重试。",
+      "rpcUnavailable": "生成暂时无法稳定连接 devnet。状态未改变；网络恢复后可重试。",
+      "submissionFailed": "生成未完成。状态未改变；可重试，若重复出现再查看技术细节。"
+    },
+    "generating": "生成中…",
+    "button": "再次生成",
+    "success": "已生成新的灵魂。签名：{signature}"
+  },
+  "soulRarity": {
+    "title": "Soul 稀有度",
+    "score": "Soul Score {score}",
+    "generation": "生成编号",
+    "theme": "主题",
+    "traits": "关键 traits",
+    "unknownGeneration": "未知生成编号",
+    "unknownTheme": "未知主题",
+    "tiers": {
+      "common": "普通",
+      "uncommon": "不凡",
+      "rare": "稀有",
+      "epic": "史诗",
+      "legendary": "传奇",
+      "mythic": "神话"
+    },
+    "traitKinds": {
+      "generationBand": "生成阶段",
+      "tradeSignal": "交易信号",
+      "seedSource": "Seed 来源",
+      "claimRank": "Claim 排名",
+      "artTheme": "艺术主题"
+    },
+    "traitValues": {
+      "generationBand": {
+        "unknown": "未知生成",
+        "genesis": "创世",
+        "early": "早期批次",
+        "established": "稳定周期",
+        "deepCycle": "深度周期"
+      },
+      "tradeSignal": {
+        "unknown": "Provenance 暂缺",
+        "buy": "买入生成",
+        "sell": "卖出生成"
+      },
+      "seedSource": {
+        "onChainSeedHash": "已有 seed hash",
+        "metadataFallback": "Metadata 回退"
+      },
+      "claimRank": {
+        "unranked": "未排名 claim",
+        "firstClaim": "首个 claim",
+        "earlyClaim": "早期 claim",
+        "archivalClaim": "归档 claim"
+      },
+      "artTheme": {
+        "neonpuff": "NeonPuff 渲染器",
+        "soulpuff": "SoulPuff 渲染器",
+        "monochrome": "黑白渲染器",
+        "hexagram": "卦象渲染器",
+        "signal": "信号渲染器",
+        "custom": "自定义渲染器",
+        "legacy": "旧主题回退",
+        "fractal": "Fractal Structure",
+        "field": "Vector Field",
+        "lattice": "Crystal Lattice",
+        "chaos": "Strange Attractor",
+        "harmonic": "Harmonic Wave",
+        "pixel_fractal": "Pixel Fractal",
+        "pixel_art": "Pixel Art",
+        "symphony": "Symphony"
+      }
+    }
+  },
+  "soulTraits": {
+    "title": "生成 traits",
+    "launchGuidedTitle": "发射引导核心 traits",
+    "launchGuidedEmpty": "发射时未选择核心 trait；这枚 Soul 使用确定性的系统引导。",
+    "systemTitle": "系统生成 traits",
+    "coreCategories": {
+      "palette": "色彩",
+      "mood": "情绪",
+      "form": "形态",
+      "background": "背景"
+    },
+    "coreValues": {
+      "palette": {
+        "solana": "Solana",
+        "aurora": "极光",
+        "ember": "余烬",
+        "mono": "黑白"
+      },
+      "mood": {
+        "serene": "宁静",
+        "charged": "充能",
+        "mystic": "神秘",
+        "radiant": "辉光"
+      },
+      "form": {
+        "spiral": "螺旋",
+        "wave": "波纹",
+        "crystal": "晶体",
+        "orb": "光球"
+      },
+      "background": {
+        "midnight": "午夜",
+        "nebula": "星云",
+        "grid": "网格",
+        "eclipse": "日蚀"
+      }
+    },
+    "categories": {
+      "character_archetype": "角色",
+      "goggles_eyes": "护目镜/眼睛",
+      "expression": "表情",
+      "gas_aura_cloud": "气体/光环",
+      "background": "背景",
+      "outfit": "服装",
+      "relic": "遗物",
+      "animation_behavior": "动画",
+      "gas_level": "Gas 等级"
+    },
+    "values": {
+      "character_archetype": {
+        "neonpuff_unicorn": "NeonPuff 独角兽",
+        "rainbow_pegasus": "彩虹飞马",
+        "solana_dragon": "Solana 龙",
+        "vapor_fox": "蒸汽狐狸",
+        "gas_goblin": "Gas 哥布林",
+        "oracle_cat": "Oracle 猫",
+        "mythic_star_horse": "神话星马",
+        "fractal_structure": "Fractal Structure"
+      },
+      "goggles_eyes": {
+        "rainbow_goggles": "彩虹护目镜",
+        "laser_lenses": "激光镜片",
+        "starry_eyes": "星光眼",
+        "sleepy_lids": "困倦眼睑",
+        "monocle_scope": "单片镜瞄准器",
+        "hologram_visor": "全息面罩",
+        "cosmic_third_eye": "宇宙第三眼"
+      },
+      "expression": {
+        "zen_smirk": "禅意坏笑",
+        "diamond_grin": "钻石笑",
+        "surprised_puff": "惊讶 puff",
+        "battle_squint": "战斗眯眼",
+        "meme_cackle": "Meme 大笑",
+        "oracle_focus": "Oracle 专注",
+        "legendary_wink": "传奇眨眼"
+      },
+      "gas_aura_cloud": {
+        "green_gas_puff": "绿色 gas puff",
+        "rainbow_aura": "彩虹光环",
+        "solana_mist": "Solana 薄雾",
+        "neon_cloud": "霓虹云",
+        "spark_burst": "火花爆发",
+        "plasma_halo": "等离子光环",
+        "golden_fog": "金色雾气"
+      },
+      "background": {
+        "midnight_gradient": "午夜渐变",
+        "solana_sky": "Solana 天空",
+        "checker_stars": "棋盘星光",
+        "meme_wall": "Meme 墙",
+        "nebula_ring": "星云环",
+        "aurora_grid": "极光网格",
+        "eclipse_gold": "日蚀金"
+      },
+      "outfit": {
+        "hoodie": "连帽衫",
+        "space_jacket": "太空夹克",
+        "raydium_racer": "Raydium 赛车服",
+        "puffer_vest": "Puffer 背心",
+        "wizard_cape": "巫师披风",
+        "gold_chain": "金链",
+        "king_robes": "国王长袍"
+      },
+      "relic": {
+        "none": "无",
+        "solana_coin": "Solana 硬币",
+        "raydium_orb": "Raydium 球体",
+        "tiny_launcher": "迷你发射器",
+        "neon_carrot": "霓虹胡萝卜",
+        "gas_canister": "Gas 罐",
+        "ancient_receipt": "古老收据"
+      },
+      "animation_behavior": {
+        "gentle_gas_drift": "轻柔 gas 漂移",
+        "lens_shine": "镜片闪光",
+        "aura_flow": "光环流动",
+        "background_pulse": "背景脉冲",
+        "sparkle_pop": "闪光跳动",
+        "rainbow_orbit": "彩虹轨道",
+        "mythic_prism_bloom": "神话棱镜绽放"
+      },
+      "gas_level": {
+        "level_1": "Gas 等级 1",
+        "level_2": "Gas 等级 2",
+        "level_3": "Gas 等级 3",
+        "level_4": "Gas 等级 4",
+        "level_5": "Gas 等级 5",
+        "level_6": "Gas 等级 6",
+        "level_7": "Gas 等级 7",
+        "level_8": "Gas 等级 8"
+      }
+    }
+  },
+  "gallery": {
+    "ownerNone": "未连接钱包",
+    "loadError": "无法从公开 devnet 证据加载由交易生成的 Soul NFT。",
+    "timeoutError": "Soul NFT 证据返回时间较长。",
+    "retryGuidance": "请刷新重试；当证据暂不可用时，已显示的卡片会保持稳定。",
+    "eyebrow": "我的灵魂",
+    "title": "已领取 Soul 画廊",
+    "description": "展示该钱包在代币交易生成并完成持有人领取后获得的 MT/Soul NFT。这不是独立 NFT drop：市场由 2,100 万枚同质化代币驱动，每个 MT/Soul NFT 需要 10,000 枚代币门槛。",
+    "wallet": "钱包：{owner}",
+    "connectPrompt": "连接 Phantom，以加载你在持有生成代币后 claim 的 Soul NFT。",
+    "loading": "正在从配置的 devnet RPC 加载 Token-2022 NFT 账户和代币关联…",
+    "empty": "这个钱包还没有已领取的 MT/Soul NFT。请打开<link>代币页面</link>，先交易生成 Soul 候选，至少持有 10,000 枚代币后再领取。",
+    "emptyLink": "代币页面",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "仅为网站预览：紧凑卡片会基于静态 Soul 状态渲染本地动效；NFT 元数据仍是静态且不含可执行内容。",
+    "mint": "Mint",
+    "tokenMint": "关联代币",
+    "tokenAccount": "Token account",
+    "claimer": "领取钱包",
+    "nftMint": "NFT mint",
+    "artTheme": "艺术主题",
+    "provenance": {
+      "title": "市场交易创造的 Soul 证据",
+      "generation": "生成编号",
+      "side": "交易方向",
+      "amount": "交易数量",
+      "trader": "交易者 / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer 交易",
+      "transactionPending": "Explorer 交易待确认",
+      "openTimeline": "打开 token 时间线查看 finalized 交易证据",
+      "unavailableTitle": "等待 provenance 证据",
+      "unavailableBody": "这张由市场交易创造的 Soul 卡片暂时没有 finalized API/RPC provenance 证据，因此 SolSoul 不会伪造方向、数量、交易者、seed hash 或交易字段。"
+    },
+    "receiptLifecycle": {
+      "label": "收据绑定",
+      "active": "活跃绑定收据",
+      "burned": "已烧毁的非活跃收据",
+      "forfeited": "已失效的非活跃收据",
+      "boundQuantity": "绑定数量",
+      "boundBoundary": "绑定边界",
+      "receiptAccount": "收据账户"
+    }
+  },
+  "profile": {
+    "ownerNone": "未连接钱包",
+    "loadError": "无法从公开 devnet 证据加载该钱包拥有的交易生成 Soul NFT。",
+    "timeoutError": "你的 Soul 收藏返回时间较长。",
+    "retryGuidance": "请刷新重试；当证据暂不可用时，已领取的 Soul 卡片会保持稳定。",
+    "eyebrow": "我的收藏",
+    "title": "我的灵魂",
+    "description": "你已领取的 MT/Soul NFT。交易同质化代币来生成 Soul，持有至少 10,000 枚代币对应 1 个 MT，然后领取。",
+    "wallet": "钱包：{owner}",
+    "connectPrompt": "连接 Phantom，以查看这个钱包领取的 Soul NFT。",
+    "loading": "正在优先加载活跃收据绑定记录，并在可用时从配置的 devnet RPC 补充钱包 Token-2022 NFT 账户和 metadata…",
+    "empty": "这个钱包还没有已领取的 MT/Soul NFT。请打开<link>代币页面</link>，先交易生成 Soul 候选，至少持有 10,000 枚代币后，再领取到个人收藏。",
+    "emptyLink": "代币页面",
+    "imageLabel": "{name} SVG",
+    "mint": "Mint",
+    "tokenMint": "关联代币",
+    "tokenAccount": "Token account",
+    "artTheme": "艺术主题",
+    "provenance": {
+      "title": "市场交易创造的 Soul 证据",
+      "generation": "生成编号",
+      "side": "交易方向",
+      "amount": "交易数量",
+      "trader": "交易者 / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer 交易",
+      "transactionPending": "Explorer 交易待确认",
+      "openTimeline": "打开 token 时间线查看 finalized 交易证据",
+      "unavailableTitle": "等待 provenance 证据",
+      "unavailableBody": "这张由市场交易创造的 Soul 卡片暂时没有 finalized API/RPC provenance 证据，因此 SolSoul 不会伪造方向、数量、交易者、seed hash 或交易字段。"
+    },
+    "receiptLifecycle": {
+      "label": "收据绑定",
+      "active": "活跃绑定收据",
+      "burned": "已烧毁的非活跃收据",
+      "forfeited": "已失效的非活跃收据",
+      "boundQuantity": "绑定数量",
+      "boundBoundary": "绑定边界",
+      "receiptAccount": "收据账户"
+    }
+  },
+  "publicGallery": {
+    "loadError": "无法从 devnet 证据加载公开的交易生成 Soul NFT。",
+    "eyebrow": "灵魂收藏",
+    "title": "Soul 收藏",
+    "description": "浏览已领取的 Soul。每个 Soul 都是由代币交易生成的独特链上 SVG。",
+    "loading": "正在从配置的 devnet RPC 加载已领取的 Soul NFT 和代币关联…",
+    "timeoutError": "公开画廊请求在 finalized devnet 证据返回前已超时。",
+    "retryGuidance": "请刷新重试；SolSoul 会让已显示的卡片保持稳定，且不会编造缺失的 provenance。",
+    "empty": "还没有已领取的 MT/Soul NFT。先发射代币，交易生成不断变化的链上 SVG Soul 候选，然后在至少持有 10,000 枚代币时领取。",
+    "summary": "共 {total} 个已领取 Soul · 第 {page} 页 · 每页 {pageSize} 个",
+    "previous": "上一页",
+    "next": "下一页",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "仅为网站预览：紧凑卡片会基于静态 Soul 状态渲染本地动效；NFT 元数据仍是静态且不含可执行内容。",
+    "sequence": "序号 #{sequence}",
+    "tokenMint": "关联代币",
+    "claimer": "领取钱包",
+    "nftMint": "NFT mint",
+    "artTheme": "艺术主题",
+    "provenance": {
+      "title": "市场交易创造的 Soul 证据",
+      "generation": "生成编号",
+      "side": "交易方向",
+      "amount": "交易数量",
+      "trader": "交易者 / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer 交易",
+      "transactionPending": "Explorer 交易待确认",
+      "openTimeline": "打开 token 时间线查看 finalized 交易证据",
+      "unavailableTitle": "等待 provenance 证据",
+      "unavailableBody": "这张由市场交易创造的 Soul 卡片暂时没有 finalized API/RPC provenance 证据，因此 SolSoul 不会伪造方向、数量、交易者、seed hash 或交易字段。"
+    },
+    "receiptLifecycle": {
+      "label": "收据绑定",
+      "active": "活跃绑定收据",
+      "burned": "已烧毁的非活跃收据",
+      "forfeited": "已失效的非活跃收据",
+      "boundQuantity": "绑定数量",
+      "boundBoundary": "绑定边界",
+      "receiptAccount": "收据账户"
+    }
+  },
+  "tokens": {
+    "loadError": "无法从 devnet 证据加载 bonding-curve 代币市场及交易生成的 Soul 状态。",
+    "eyebrow": "代币市场",
+    "title": "市场",
+    "description": "浏览和交易代币。每次交易都会生成独一无二的链上 Soul。",
+    "marketNotice": "Soul NFT 不能在此交易。交易代币来生成 Soul，然后领取。",
+    "loading": "正在从配置的 devnet RPC 加载已发射 Token-2022 mint 和 bonding-curve 状态…",
+    "timeoutError": "代币市场请求在公开 devnet 证据返回前已超时。",
+    "retryGuidance": "请刷新重试；provenance 证据恢复前，已显示的代币卡片会保持稳定。",
+    "empty": "暂未发现已发射的 bonding-curve 代币。创建一次发射后，它会进入市场目录；随后打开代币详情页交易生成 Soul，再由持有人领取。",
+    "summary": "{total} 个已发射代币 · 第 {page} 页 · 每页 {pageSize} 个",
+    "previous": "上一页",
+    "next": "下一页",
+    "tokenSymbol": "{symbol} 代币",
+    "viewToken": "查看代币",
+    "feedCardTradeHint": "Bonding-curve 买入/卖出只在代币详情页。",
+    "latestSoulPreview": "最新 Soul 预览",
+    "latestSoulAlt": "{symbol} 最新生成的 Soul SVG",
+    "previewMotionCaveat": "仅为紧凑网站预览：市场元数据保留静态 SVG，不保存 animation_url、可执行公式、canvas、视频或远程媒体。",
+    "noGenerationTitle": "还没有 Soul",
+    "noGenerationBody": "第一次交易后会点亮分形动态预览。",
+    "discovery": {
+      "ariaLabel": "Soul 流动发现分段",
+      "eyebrow": "Soul 流动看板",
+      "description": "使用同一批可用发射数据，按 Soul 新鲜度、市场流动、生成次数、能量、成交量或发射时间重新排序。",
+      "activeSummary": "{label} · 当前 {count} 个发射",
+      "partialDataHint": "基于确定性实时字段；证据稀疏时保持稳定，不编造数据。",
+      "tabs": {
+        "fresh-souls": "新鲜 Soul",
+        "hot-flow": "热流",
+        "most-generated": "生成最多",
+        "rare-energy": "稀有能量",
+        "top-volume": "最高成交量",
+        "new-launches": "新发射"
+      },
+      "hints": {
+        "fresh-souls": "已生成艺术优先",
+        "hot-flow": "最新交易脉冲",
+        "most-generated": "唤醒次数最多",
+        "rare-energy": "Soul 分数最高",
+        "top-volume": "锁定 SOL 最多",
+        "new-launches": "最新市场"
+      }
+    },
+    "stats": {
+      "flow": "流动",
+      "generated": "Soul",
+      "generatedValue": "已生成 {count}",
+      "energy": "能量",
+      "energyValue": "{tier} · {score}",
+      "energyPending": "待唤醒",
+      "collectors": "收藏者",
+      "collectorsValue": "已领取 {count}",
+      "progress": "进度",
+      "freshness": "新鲜度"
+    },
+    "rarityTiers": {
+      "common": "普通",
+      "uncommon": "不凡",
+      "rare": "稀有",
+      "epic": "史诗",
+      "legendary": "传奇",
+      "mythic": "神话"
+    },
+    "labels": {
+      "creator": "创建者",
+      "generations": "生成次数",
+      "claims": "Claim 次数",
+      "artTheme": "艺术主题",
+      "claimStatus": "Claim 状态",
+      "claimability": "持有人门槛 claimability",
+      "currentPrice": "当前价格",
+      "created": "创建/最近",
+      "curvePosition": "曲线位置"
+    },
+    "provenance": {
+      "title": "市场交易创造的 Soul 证据",
+      "generation": "生成编号",
+      "side": "交易方向",
+      "amount": "交易数量",
+      "trader": "交易者 / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer 交易",
+      "transactionPending": "Explorer 交易待确认",
+      "unavailableTitle": "等待 provenance 证据",
+      "unavailableBody": "这张由市场交易创造的 Soul 卡片暂时没有 finalized API/RPC provenance 证据，因此 SolSoul 不会伪造方向、数量、交易者、seed hash 或交易字段。",
+      "openTimeline": "打开 token 时间线查看 finalized 交易证据"
+    }
+  },
+  "tokenGallery": {
+    "loadError": "无法从 devnet 证据加载该代币已领取的交易生成 Soul NFT。",
+    "invalidMint": "该路由参数不是有效的 mint 地址。",
+    "eyebrow": "代币灵魂",
+    "title": "单代币画廊",
+    "description": "按最新序号列出此 mint 的已领取 MT/Soul NFT。每个 Soul 都来自代币交易生成的链上 SVG 候选；领取需要 10,000 枚同质化代币，上限 2,100 个 MT。",
+    "mint": "Mint",
+    "page": "页码",
+    "backToToken": "返回代币页",
+    "loading": "正在从配置的 devnet RPC 加载已领取的 Soul NFT…",
+    "timeoutError": "该代币画廊请求在 finalized devnet 证据返回前已超时。",
+    "retryGuidance": "请刷新重试；SolSoul 会让已显示的 Soul 卡片保持稳定，且不会编造缺失证据。",
+    "empty": "这个代币还没有已领取的 MT/Soul NFT。请交易该代币来生成不断变化的链上 SVG Soul 候选，并在至少持有 10,000 枚代币时领取。",
+    "summary": "共 {total} 个已领取灵魂 · 第 {page} 页 · 每页 {pageSize} 个",
+    "previous": "上一页",
+    "next": "下一页",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "仅为网站预览：紧凑卡片会基于静态 Soul 状态渲染本地动效；NFT 元数据仍是静态且不含可执行内容。",
+    "sequence": "序号 #{sequence}",
+    "tokenMint": "关联代币",
+    "claimer": "领取钱包",
+    "nftMint": "NFT mint",
+    "artTheme": "艺术主题",
+    "provenance": {
+      "title": "市场交易创造的 Soul 证据",
+      "generation": "生成编号",
+      "side": "交易方向",
+      "amount": "交易数量",
+      "trader": "交易者 / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer 交易",
+      "transactionPending": "Explorer 交易待确认",
+      "unavailableTitle": "等待 provenance 证据",
+      "unavailableBody": "这张由市场交易创造的 Soul 卡片暂时没有 finalized API/RPC provenance 证据，因此 SolSoul 不会伪造方向、数量、交易者、seed hash 或交易字段。",
+      "openTimeline": "打开 token 时间线查看 finalized 交易证据"
+    },
+    "receiptLifecycle": {
+      "label": "收据绑定",
+      "active": "活跃绑定收据",
+      "burned": "已烧毁的非活跃收据",
+      "forfeited": "已失效的非活跃收据",
+      "boundQuantity": "绑定数量",
+      "boundBoundary": "绑定边界",
+      "receiptAccount": "收据账户"
+    }
+  },
+  "stats": {
+    "eyebrow": "收藏仪表盘",
+    "title": "全局 Soul 收藏仪表盘",
+    "description": "公开 devnet 收藏视图展示已发射代币、已生成 Soul 候选、已领取 Soul、永续运行的曲线、艺术主题分布，以及由 RPC 数据支持的最近交易生成与领取生命周期活动。",
+    "dashboardLabel": "公开 Soul 收藏仪表盘",
+    "sourceLabel": "公开数据来源",
+    "sourceValue": "Devnet RPC 提供方：{provider}",
+    "fetchedAt": "最近刷新：{timestamp}",
+    "sourceCommitment": "Commitment：{commitment}",
+    "sourceSlot": "来源 slot：{slot}",
+    "loading": "正在从公开 devnet RPC 加载数据…",
+    "unavailable": "公开统计暂时不可用。",
+    "loadError": "无法加载公开统计数据。",
+    "timeoutError": "统计请求超时；公开证明暂时不可用。",
+    "invalidData": "公开统计数据暂时不完整，部分指标会显示为不可用。",
+    "refresh": "刷新证明数据",
+    "refreshing": "刷新中…",
+    "cachedWarning": "实时刷新暂不可用（{message}）；正在显示最近可用的公开快照。",
+    "dust": {
+      "eyebrow": "Liquidity dust 原始指标",
+      "title": "Liquidity dust 组件",
+      "description": "来自 bonding-curve 储备、存在时的历史/延后流动性 vault 证据、收据绑定生命周期状态和可审计 outside-liquidity 扫描的十进制字符串原始字段。界面按 API 字符串原样显示。",
+      "prototypeNotice": "Transfer Hook prototype 限制以及 partial / stale 来源标记表示这些指标只在可用范围内由来源支持。钱包直接转账已使用 hook-aware 账户解析；历史 Raydium swap-path 证据仍为 bounded/deferred，并不属于当前曲线-only 产品流程。Liquidity dust ratio 是 venue-local 指标，不是官方稀缺性信号。",
+      "globalTitle": "全局原始求和",
+      "perTokenTitle": "单代币 dust 指标",
+      "limitationsTitle": "限制与来源元数据",
+      "tokenUnit": "Token 单位：{unit} base units",
+      "outsideLiquidityUnavailable": "不可用",
+      "partialBadge": "部分来源",
+      "staleBadge": "陈旧回退",
+      "sourceWarnings": "警告",
+      "noWarnings": "未报告 dust 限制。",
+      "receiptSource": "收据：receipt binding state",
+      "burnedIncludes": "Burned receipts 包含：{states}",
+      "liquiditySources": {
+        "bonding_curve_reserve": "流动性：bonding-curve 储备",
+        "raydium_cp_swap_vault": "流动性：历史/延后 Raydium CP-Swap 已启动代币 vault",
+        "unavailable": "流动性：active-liquidity 来源不可用",
+        "bonding_curve_reserves": "流动性：bonding-curve 储备",
+        "post_migration_unavailable": "流动性：历史迁移后 venue 不可用"
+      },
+      "outsideSources": {
+        "token_account_scan": "Outside liquidity：Token-2022 账户扫描",
+        "top_accounts_bounded_audit": "Outside liquidity：有界 top-account 审计（不是完整扫描）",
+        "unavailable": "Outside liquidity：不可用"
+      },
+      "warningMessages": {
+        "outsideLiquidityScanUnavailable": "该代币的流动性外 Token-2022 账户扫描暂不可用。",
+        "outsideLiquidityVenueUnavailable": "历史/延后迁移证据的流动性 venue 暂无法识别。",
+        "activeLiquidityZero": "Active liquidity 余额为零，因此 liquidity dust ratio 暂不可用。",
+        "raydiumVaultUnverified": "Raydium vault 来源未通过验证，因此 liquidity dust 数值暂不可用。",
+        "launchedTokenMetricsPartial": "当前 RPC 来源的已发射代币指标仅部分可用。",
+        "claimedSoulMetricsPartial": "当前 RPC 来源的已领取 Soul 指标仅部分可用。",
+        "recentGenerationProvenancePartial": "当前 RPC 来源的最近生成 provenance 仅部分可用。",
+        "receiptLifecycleCountsPartial": "当前 RPC 来源的收据生命周期计数仅部分可用。",
+        "outsideLiquidityScanPartial": "当前 RPC 来源的流动性外 Token-2022 账户扫描仅部分可用。",
+        "token2022IndexedGpaUnavailable": "由于 Token-2022 indexed GPA 不可用，流动性外覆盖仅为 top-account 有界审计。",
+        "token2022SecondaryIndexExcluded": "该 RPC 来源将 Token-2022 排除在 secondary indexes 之外，因此 SolSoul 不会声称完整扫描。",
+        "token2022IndexedGpaProbeFailed": "Token-2022 indexed GPA 探测失败，因此流动性外完整性未验证。",
+        "tokenMethodsBoundedSample": "流动性外数值来自 token supply 和 largest-account 方法，样本范围是有界的。",
+        "outsideLiquiditySampleLimited": "样本 top accounts 之外仍可能存在额外的流动性外账户。",
+        "outsideLiquidityUnknownWhenTopSampleEmpty": "有界 top-account 样本未发现流动性外账户，因此外部数量保持未知而不是报告为 0。",
+        "outsideLiquidityTokenMethodsUnavailable": "Token-method 回退数据不可用，因此流动性外完整性未知。",
+        "outsideLiquidityNoProbeTarget": "没有可用于流动性外能力探测的 Token-2022 mint。",
+        "rpcFailoverUsed": "已使用 RPC failover；完整性跟随提供有界证据的端点。",
+        "postGraduationRaydiumReceiptPathsBounded": "历史毕业后的 Raydium CP-Swap 流动性和 swap 路径对 receipt hard-binding 仍是 bounded/deferred；只有 wallet hook-aware 直接转账会显示为受保护。",
+        "raydiumTransferHookMintsUnsupported": "当前曲线-only 产品流程中，启用 Transfer Hook 的 mint 不迁移到 Raydium；保留的 Raydium 引用均为历史/延后语境。",
+        "statsSourceSlotPartial": "当前 RPC 来源的 stats slot 元数据仅部分可用。",
+        "unknownPartial": "当前 RPC 来源的某个 dust stats 来源仅部分可用。"
+      },
+      "fields": {
+        "whole_units_in_pool": {
+          "label": "池内 MT 单位",
+          "help": "流动性储备除以一个 10,000 枚代币 MT 量级后的向下取整。"
+        },
+        "fractional_remainder": {
+          "label": "小数余量",
+          "help": "距离下一个 10,000 枚代币 MT 边界的 base units。"
+        },
+        "fractional_fill_ratio": {
+          "label": "小数填充比例",
+          "help": "由 fractional_remainder 派生的确定性 6 位小数比例。"
+        },
+        "active_receipts": {
+          "label": "活跃收据",
+          "help": "该代币当前活跃的 receipt binding 数。"
+        },
+        "burned_receipts": {
+          "label": "已烧毁 / 已失效收据",
+          "help": "从 burned 与 forfeited 生命周期状态计入的非活跃收据绑定。"
+        },
+        "forfeited_receipts": {
+          "label": "已失效收据",
+          "help": "明确标记为 forfeited 的收据绑定。"
+        },
+        "inactive_receipts": {
+          "label": "非活跃收据",
+          "help": "所有不再 active 的收据绑定。"
+        },
+        "whole_units_outside_liquidity": {
+          "label": "流动性外 MT 单位",
+          "help": "活跃流动性 vault 之外可审计的 10,000 枚代币 MT 单位。"
+        },
+        "outside_liquidity_audited_tokens": {
+          "label": "已审计 outside-liquidity 代币",
+          "help": "可执行 outside-liquidity 扫描的代币行数量。"
+        },
+        "liquidity_dust_ratio": {
+          "label": "Liquidity dust ratio",
+          "help": "由 fractional_remainder 除以 observed active liquidity 得出的 venue-local fraction；不是官方稀缺性信号。"
+        }
+      },
+      "raydiumSourceTitle": "历史 Raydium 来源元数据",
+      "sourceMetadata": {
+        "sourceVerified": "来源已验证：{value}",
+        "activeLiquidityAccount": "历史 Raydium vault：{value}",
+        "activeLiquidityBaseUnits": "Active liquidity base units：{value}",
+        "raydiumProgramId": "Raydium program：{value}",
+        "raydiumPoolState": "Raydium pool state：{value}",
+        "raydiumToken0Vault": "Raydium token0 vault：{value}",
+        "raydiumToken1Vault": "Raydium token1 vault：{value}",
+        "raydiumToken0Mint": "Raydium token0 mint：{value}",
+        "raydiumToken1Mint": "Raydium token1 mint：{value}",
+        "raydiumNonSelectedVault": "未选中的 Raydium vault：{value}",
+        "tokenProgram": "选中 vault 的 token program：{value}",
+        "fetchedSlot": "Raydium 来源 slot：{value}",
+        "commitment": "Raydium commitment：{value}"
+      },
+      "sourceCoverageTitle": "聚合来源覆盖",
+      "sourceCoverage": {
+        "bonding_curve_reserve_tokens": {
+          "label": "Bonding-curve 来源行",
+          "help": "活跃流动性来源为 bonding-curve 储备的代币行。"
+        },
+        "raydium_cp_swap_vault_tokens": {
+          "label": "Raydium vault 来源行",
+          "help": "活跃流动性来源为已验证 Raydium CP-Swap 已启动代币 vault 的代币行。"
+        },
+        "unavailable_tokens": {
+          "label": "来源不可用行",
+          "help": "由于 active-liquidity 来源数据不可用而未参与聚合流动性计算的代币行。"
+        },
+        "source_verified_tokens": {
+          "label": "已验证来源行",
+          "help": "带有已验证 active-liquidity 来源元数据的代币行。"
+        },
+        "source_unverified_tokens": {
+          "label": "未验证来源行",
+          "help": "保留警告而不是伪造流动性数值的代币行。"
+        },
+        "warning_tokens": {
+          "label": "有警告的行",
+          "help": "报告 partial、unavailable 或 unverified dust 来源警告的代币行。"
+        }
+      }
+    },
+    "activityEyebrow": "实时流动",
+    "activityTitle": "最近活动流",
+    "activityDescription": "分形结构活动流，覆盖买入、卖出、Soul 生成、领取和收据结算瞬间；devnet 证据稀疏时使用已标注的确定性样例。",
+    "emptyActivity": "暂未索引到公开买入、卖出、Soul 生成、领取或结算活动。发射并交易代币后会出现第一批流动行。",
+    "scopeLinksLabel": "收藏仪表盘导航",
+    "scopeLinks": {
+      "allSouls": "全部灵魂",
+      "tokenFeed": "代币列表"
+    },
+    "metricLinks": {
+      "launchedTokens": "打开代币列表",
+      "generatedSoulCandidates": "打开全部灵魂",
+      "claimedSouls": "打开已领取灵魂",
+      "activeCurves": "打开活跃代币"
+    },
+    "themesEyebrow": "主题分布",
+    "themesTitle": "发射中的艺术引擎",
+    "emptyThemes": "暂时没有艺术主题分布。发射一个带主题的代币后，收藏仪表盘会显示统计。",
+    "themeTokens": "{count} 个代币发射",
+    "themeGenerated": "{count} 个已生成",
+    "themeClaimed": "{count} 个已领取",
+    "tokenTotalsEyebrow": "单代币统计",
+    "tokenTotalsTitle": "收藏范围",
+    "emptyTokenTotals": "暂时没有单代币 Soul 统计。",
+    "tokenTotalsGenerated": "{count} 个已生成 Soul",
+    "tokenTotalsClaimed": "{count} 个已领取 MT/Soul NFT",
+    "tokenTotalsTheme": "主题：{theme}",
+    "tokenTotalsStatus": "{status} 代币",
+    "tokenTotalsGalleryLink": "代币画廊",
+    "tokenStatus": {
+      "active": "活跃",
+      "inactive": "非活跃"
+    },
+    "tokenMint": "代币 mint：{mint}",
+    "activityDetails": {
+      "theme": "主题：{theme}",
+      "side": "方向：{side}",
+      "amount": "数量：{amount}",
+      "trader": "交易者：{trader}",
+      "seedHash": "种子：{seedHash}",
+      "soul": "Soul：{soul}",
+      "slot": "Slot：{slot}",
+      "time": "时间：{time}",
+      "timePending": "时间待确认",
+      "actor": "参与者：{actor}",
+      "value": "数值：{value}",
+      "context": "上下文：{context}",
+      "protocolActor": "SolSoul 协议",
+      "collectorActor": "收藏钱包",
+      "fixtureActor": "确定性样例",
+      "fixtureTime": "确定性样例",
+      "fixture": "由于 devnet 证据稀疏而显示的样例行；它不是原始 RPC 数据。"
+    },
+    "metrics": {
+      "launchedTokens": {
+        "label": "已发射代币总数",
+        "help": "通过公开程序发现的 bonding-curve 代币账户。"
+      },
+      "generatedSoulCandidates": {
+        "label": "已生成 Soul 候选总数",
+        "help": "由钱包签名交易生成的 SoulAccount generation 计数总和。"
+      },
+      "claimedSouls": {
+        "label": "已领取 Soul 总数",
+        "help": "稀缺 MT/Soul NFT 的领取账户；每个代币最多 2,100 次领取。"
+      },
+      "activeCurves": {
+        "label": "活跃曲线 / 代币",
+        "help": "永续曲线上的已发射代币；当前产品流程没有毕业或迁移。"
+      }
+    },
+    "activityKinds": {
+      "launch": "发射",
+      "tradeGeneration": "交易 / Soul",
+      "claim": "领取",
+      "buy": "买入",
+      "sell": "卖出",
+      "soulGenerated": "Soul 生成",
+      "soulClaimed": "Soul 领取",
+      "settlement": "结算"
+    },
+    "activityTitles": {
+      "launch": "{token} 发射了代币生命周期",
+      "tradeGeneration": "{token} 由交易生成 Soul #{generation}",
+      "claim": "{token} Soul 领取序号 #{sequence}",
+      "buy": "{token} 买入流入曲线",
+      "sell": "{token} 卖出流回曲线",
+      "soulGenerated": "{token} 生成 Soul #{generation}",
+      "soulClaimed": "{token} Soul 领取 #{sequence}",
+      "settlement": "{token} 完成收据边界结算"
+    },
+    "activityOpenToken": "打开代币",
+    "activityValues": {
+      "amount": "数量 {amount}",
+      "generation": "第 {generation} 次生成",
+      "sequence": "领取 #{sequence}",
+      "settlement": "领取 #{sequence} 的收据结算",
+      "tokenSoul": "{token} · Soul {soul}",
+      "seed": "种子 {seedHash}",
+      "receiptContext": "Soul {soul} 的收据边界",
+      "fixtureContext": "Soul {soul} 的样例上下文"
+    },
+    "leaderboards": {
+      "eyebrow": "Soul 流动排行榜",
+      "title": "市场流动领跑者",
+      "description": "排行榜复用公开统计、Soul 证据和安全的确定性回退，不编造私有索引状态。",
+      "modules": {
+        "topFlowingTokens": {
+          "eyebrow": "流动",
+          "title": "流动最强代币",
+          "empty": "暂无代币流动行。"
+        },
+        "latestRareSouls": {
+          "eyebrow": "稀有",
+          "title": "最新稀有 Soul",
+          "empty": "暂无已生成或已领取 Soul 行。"
+        },
+        "mostGenerated": {
+          "eyebrow": "生成",
+          "title": "生成最多",
+          "empty": "暂无生成统计。"
+        },
+        "highestLocked": {
+          "eyebrow": "锁定",
+          "title": "锁定最高",
+          "empty": "暂无收据锁定行。"
+        },
+        "recentGenerations": {
+          "eyebrow": "最近",
+          "title": "最近生成",
+          "empty": "暂无最近生成行。"
+        }
+      },
+      "metrics": {
+        "flowScore": "流动分数 {score}",
+        "generatedClaimed": "已生成 {generated} · 已领取 {claimed}",
+        "rareGeneration": "Soul 第 {generation} 次生成",
+        "rareClaim": "领取序号 #{sequence}",
+        "theme": "主题 {theme}",
+        "soul": "Soul {soul}",
+        "generated": "已生成 {count}",
+        "claimed": "已领取 {count}",
+        "locked": "{count} 个锁定 MT 单位",
+        "receipts": "{active} 个活跃 · {inactive} 个非活跃收据"
+      }
+    }
+  },
+  "preSignReview": {
+    "ariaLabel": "签名前解码交易审查",
+    "title": "签名前解码交易审查",
+    "summary": "集群：{cluster}；blockhash：{blockhash}；fee payer：{feePayer}",
+    "pending": "待确认",
+    "programIds": "程序 ID：{programIds}",
+    "instructionTitle": "#{index} 程序 {programId}",
+    "accounts": "账户：{accounts}",
+    "receiptIntentTitle": "Receipt settlement 意图",
+    "receiptIntentBody": "{state} {amount} base units，来源 {source}。",
+    "unknownSource": "未知来源",
+    "unknown": "未知",
+    "receiptCapacity": "活跃 receipts：{activeReceiptCount}；移动后的 MT 容量：{postWholeUnits}。",
+    "selectedReceipts": "选中的 receipts：{receipts}",
+    "none": "无",
+    "receiptSettlementStates": {
+      "burned": "烧毁选中的收据",
+      "forfeited": "失效选中的收据"
+    },
+    "flags": {
+      "signer": "签名者",
+      "nonSigner": "非签名者",
+      "writable": "可写",
+      "readonly": "只读"
+    }
+  },
+  "docs": {
+    "title": "文档",
+    "subtitle": "了解 SolSoul 的工作原理——从曲线数学到 Soul Engine 再到构建你自己的渲染器。",
+    "navTitle": "文档",
+    "backToDocs": "返回文档首页"
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "featureId": "M13.F1",
+  "fulfills": [
+    "M13.A1"
+  ],
+  "generatedAt": "2026-04-27T20:02:04.685742Z",
+  "repoPath": "/Users/davirian/dev/active/ideas/solsouldotfun",
+  "gitHeadAtStart": "07ab1578ab3dbb56735cc636eb0458970cc10a0a",
+  "validationContract": "M13.A1 \u2014 cargo build/test/clippy/fmt + integration suite + sdk vitest + app vitest + app build + Pump local e2e + devnet Raydium/Meteora e2e all exit 0",
+  "budget": {
+    "capSol": 2.5,
+    "devnetBalanceStartSol": 23.605408645,
+    "devnetBalanceEndSol": 21.134657324,
+    "devnetBalanceDeltaSol": 2.470751321,
+    "withinCap": true,
+    "note": "Start balance is the balance recorded immediately before M13.F1 devnet deploy/e2e writes in this worker session."
+  },
+  "overall": {
+    "status": "pass",
+    "allCommandsExitZero": true,
+    "commandCount": 21,
+    "failedCommands": []
+  },
+  "keyMetrics": {
+    "raydium": {
+      "meme_mint": "EcazXhuhHWNXzcxQMZ4ASEc4fdjwap6LgR5YgLKifc5a",
+      "curve_pda": "9hYu45r89YpTTgMsJvYpFkKYfPQ33ASMiR39fbyPPh3n",
+      "migrate_tx_sig": "5P3dbxGrVB3EkqBF973rdJQEZg1xsLwqZ1fvnZPdF4hvg5aiRjAgj3kTHxKAz7nurPbC9RAcXevabJFtpudQNiep",
+      "buy_count": 4,
+      "spent_lamports_reported": 1671386440,
+      "budget_exceeded_flag": true
+    },
+    "meteora": {
+      "meme_mint": "2E5PhnyNm1i5bSYSqAPRcQWTurbqChv9he39v3uxgvas",
+      "curve_pda": "ob6p6ktTgFzvjk8hLeWytuFyb5bd2mDaqWsMGhquE4U",
+      "migrate_tx_sig": "62RMagqG18RCUc6wZcmFpHedEXWGoPB9f3SN5gwAWPgX6Ufom4wF8bPBij8eJ7hDZJo7m6N5hv86qSuXRXmQu4Ju",
+      "buy_count": 1,
+      "spent_lamports_reported": 6613080,
+      "budget_exceeded_flag": false
+    },
+    "pump_local": {
+      "meme_mint": "3DHNsratwYyQFmD2KU2J12EyNCViu311dRTPDCWCzzZR",
+      "pool_address": "Gbtdwj3zdtnurPUzCyA7xcQDjQZpRwvxAMhY1nmqozdn",
+      "observed_lp_burned": "441476344591",
+      "observed_creator_lp": "84090732304",
+      "cleanup": {
+        "validator_stopped": true,
+        "lsof_8899_empty": true
+      }
+    }
+  },
+  "commands": [
+    {
+      "name": "devnet balance start (recorded before live M13 writes)",
+      "command": "python3 - <<'PYBAL'\nprint(\"23.605408645 SOL\")\nPYBAL",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.03,
+      "startedAt": "2026-04-27T20:00:26.802662Z",
+      "endedAt": "2026-04-27T20:00:26.832912Z",
+      "metrics": {},
+      "stdoutTail": "23.605408645 SOL\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "pnpm install",
+      "command": "pnpm install",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.971,
+      "startedAt": "2026-04-27T20:00:26.833134Z",
+      "endedAt": "2026-04-27T20:00:27.804492Z",
+      "metrics": {},
+      "stdoutTail": "Scope: all 4 workspace projects\nLockfile is up to date, resolution step is skipped\nAlready up to date\n\nDone in 886ms\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "cargo build --workspace",
+      "command": "cargo build --workspace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.354,
+      "startedAt": "2026-04-27T20:00:27.804591Z",
+      "endedAt": "2026-04-27T20:00:29.158963Z",
+      "metrics": {},
+      "stdoutTail": "",
+      "stderrTail": "   Compiling bonding-curve v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/bonding-curve)\n   Compiling soul-generator v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/soul-generator)\n    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.27s\n"
+    },
+    {
+      "name": "cargo build-sbf --workspace",
+      "command": "cargo build-sbf --workspace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.706,
+      "startedAt": "2026-04-27T20:00:29.159098Z",
+      "endedAt": "2026-04-27T20:00:30.865046Z",
+      "metrics": {},
+      "stdoutTail": "",
+      "stderrTail": "   Compiling bonding-curve v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/bonding-curve)\n    Finished `release` profile [optimized] target(s) in 1.10s\n"
+    },
+    {
+      "name": "cargo test --workspace",
+      "command": "cargo test --workspace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 3.608,
+      "startedAt": "2026-04-27T20:00:30.865134Z",
+      "endedAt": "2026-04-27T20:00:34.473536Z",
+      "metrics": {
+        "test_result_lines": [
+          "test result: ok. 76 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 44 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+          "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+        ]
+      },
+      "stdoutTail": "tests::migration_requires_graduation_and_rejects_repeat ... ok\ntest state::tests::post_graduation_trades_are_rejected_by_shared_guard ... ok\ntest state::tests::sol_receipt_at_exact_threshold_marks_graduated ... ok\ntest state::tests::sol_receipt_crossing_threshold_marks_graduated ... ok\ntest state::tests::target_amm_guard_rejects_post_init_mutation ... ok\ntest state::tests::curve_and_vault_pdas_use_mint_seed ... ok\n\ntest result: ok. 76 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 18 tests\ntest amm::tests::target_amm_try_from_roundtrips_all_supported_values ... ok\ntest amm::tests::target_amm_discriminants_are_stable ... ok\ntest amm::tests::target_amm_validation_rejects_out_of_range_values ... ok\ntest geppetto::tests::assert_owned_by_accepts_expected_owner ... ok\ntest geppetto::tests::assert_pda_rejects_invalid_seed_length ... ok\ntest geppetto::tests::assert_program_id_accepts_expected_program_account ... ok\ntest geppetto::tests::assert_program_id_rejects_unexpected_program_account ... ok\ntest geppetto::tests::assert_signer_accepts_signer ... ok\ntest geppetto::tests::assert_signer_rejects_non_signer ... ok\ntest geppetto::tests::assert_writable_accepts_writable_account ... ok\ntest geppetto::tests::assert_owned_by_rejects_unexpected_owner ... ok\ntest geppetto::tests::assert_writable_rejects_readonly_account ... ok\ntest pause::tests::malformed_or_short_global_config_is_rejected ... ok\ntest pause::tests::paused_global_config_rejects_with_stable_error_code ... ok\ntest geppetto::tests::assert_pda_rejects_wrong_address ... ok\ntest pause::tests::unpaused_global_config_allows_write_paths ... ok\ntest geppetto::tests::assert_pda_accepts_derived_pda ... ok\ntest programs::tests::soul_generator_program_id_matches_devnet_deployment ... ok\n\ntest result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 44 tests\ntest instructions::claim_soul::tests::happy_path_unit_claim_sequence_and_balance_pass ... ok\ntest instructions::claim_soul::tests::double_claim_unit_rejects_when_claim_count_caught_up ... ok\ntest instructions::claim_soul::tests::claim_soul_error_codes_are_stable ... ok\ntest instructions::initialize_soul::tests::parse_initialize_args_accepts_optional_target_amm ... ok\ntest instructions::initialize_soul::tests::parse_initialize_args_accepts_legacy_and_symbol_forms ... ok\ntest instructions::claim_soul::tests::read_claim_fields_returns_claim_overrides_and_counts ... ok\ntest instructions::claim_soul::tests::insufficient_balance_unit_rejects_default_and_override ... ok\ntest instructions::pause::tests::pause_toggle_emits_indexer_event ... ok\ntest instructions::initialize_soul::tests::parse_initialize_args_rejects_oversize_or_non_ascii_symbol ... ok\ntest instructions::claim_soul::tests::claim_success_path_emits_indexer_event ... ok\ntest instructions::unpause::tests::unpause_emits_indexer_event ... ok\ntest instructions::upload_template::tests::non_svg_prefix_is_rejected ... ok\ntest instructions::upload_template::tests::authorized_upload_writes_template_and_style_fields ... ok\ntest instructions::upload_template::tests::oversize_style_params_are_rejected ... ok\ntest instructions::upload_template::tests::oversize_template_is_rejected ... ok\ntest instructions::upload_template::tests::unauthorized_signer_is_rejected ... ok\ntest state::global_config::tests::global_config_admin_guard_accepts_only_admin ... ok\ntest state::global_config::tests::global_config_layout_has_expected_size ... ok\ntest state::global_config::tests::global_config_rejects_invalid_paused_flag ... ok\ntest state::global_config::tests::global_config_roundtrips_paused_state ... ok\ntest state::global_config::tests::programdata_upgrade_authority_parser_reads_bpf_loader_metadata ... ok\ntest state::global_config::tests::programdata_upgrade_authority_parser_rejects_missing_or_wrong_authority ... ok\ntest state::tests::claim_account_layout_has_expected_packed_size ... ok\ntest state::tests::soul_account_layout_has_expected_packed_size ... ok\ntest state::tests::soul_account_layout_reserves_template_and_style_bytes ... ok\ntest state::tests::soul_account_legacy_len_defaults_target_amm_and_logs_migration ... ok\ntest state::tests::soul_account_pack_rejects_invalid_target_amm_values ... ok\ntest state::global_config::tests::global_config_pda_uses_single_seed ... ok\ntest state::tests::soul_account_serialization_roundtrip_preserves_template_fields ... ok\ntest state::tests::soul_account_target_amm_roundtrips_all_supported_values ... ok\ntest state::tests::soul_account_unpack_accepts_legacy_accounts_without_symbol ... ok\ntest state::tests::soul_account_unpack_rejects_oversized_template_lengths ... ok\ntest svg::template::tests::all_placeholders_substitute_to_expected_literal_shapes ... ok\ntest state::tests::soul_pda_derivation_uses_mint_seed ... ok\ntest svg::template::tests::color_mode_substitutes_hue_and_accent ... ok\ntest svg::template::tests::evolution_range_controls_enabled_placeholders ... ok\ntest state::tests::soul_account_unpack_rejects_invalid_target_amm ... ok\ntest svg::template::tests::hsl_mode_preserves_hsl_template_shape ... ok\ntest svg::template::tests::pixel_mode_uses_bucketed_hue_values ... ok\ntest svg::template::tests::unknown_placeholders_are_left_literal ... ok\ntest svg::unicorn::tests::different_seed_produces_different_svg ... ok\ntest svg::unicorn::tests::same_seed_produces_same_svg ... ok\ntest svg::unicorn::tests::svg_contains_expected_on_chain_primitives_and_fits_budget ... ok\ntest tests::declared_program_id_matches_devnet_deployment ... ok\n\ntest result: ok. 44 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n",
+      "stderrTail": "   Compiling soul-generator v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/soul-generator)\n   Compiling bonding-curve v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/bonding-curve)\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.43s\n     Running unittests src/lib.rs (target/debug/deps/bonding_curve-07f4e284f19a9288)\n     Running unittests src/lib.rs (target/debug/deps/shared-a8c43df330d87d89)\n     Running unittests src/lib.rs (target/debug/deps/soul_generator-18a9e8b9821d74aa)\n   Doc-tests bonding_curve\n   Doc-tests shared\n   Doc-tests soul_generator\n"
+    },
+    {
+      "name": "cargo clippy --workspace -- -D warnings",
+      "command": "cargo clippy --workspace -- -D warnings",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.221,
+      "startedAt": "2026-04-27T20:00:34.473679Z",
+      "endedAt": "2026-04-27T20:00:34.694602Z",
+      "metrics": {},
+      "stdoutTail": "",
+      "stderrTail": "    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.16s\n"
+    },
+    {
+      "name": "cargo fmt --all -- --check",
+      "command": "cargo fmt --all -- --check",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.134,
+      "startedAt": "2026-04-27T20:00:34.694678Z",
+      "endedAt": "2026-04-27T20:00:34.828980Z",
+      "metrics": {},
+      "stdoutTail": "",
+      "stderrTail": ""
+    },
+    {
+      "name": "cargo test --features integration --tests",
+      "command": "cargo test --features integration --tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 19.646,
+      "startedAt": "2026-04-27T20:00:34.829055Z",
+      "endedAt": "2026-04-27T20:00:54.475389Z",
+      "metrics": {
+        "test_result_lines": [
+          "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s",
+          "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.67s",
+          "test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s",
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s",
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s",
+          "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s",
+          "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s",
+          "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s",
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s"
+        ]
+      },
+      "stdoutTail": "\nrunning 2 tests\ntest meteora_snapshot_loads_and_fixture_sha_exists ... ok\ntest migrate_target_meteora_creates_lb_pair_and_active_bin_liquidity ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s\n\n\nrunning 6 tests\ntest transfer_fee_mint_rejects_raydium_migration_with_0xa01 ... ok\ntest raydium_snapshot_loads_and_pda_fixture_is_stable ... ok\ntest graduation_to_raydium_migrate_seeds_vaults_and_burns_lp ... ok\ntest migrate_before_graduation_is_rejected_before_raydium_path ... ok\ntest raydium_cpi_failure_bubbles_up_unchanged ... ok\ntest insufficient_vault_sol_rejects_raydium_migration_with_0xa02 ... ok\n\ntest result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.67s\n\n\nrunning 4 tests\ntest holder_claims_soul_and_receives_token_2022_nft ... ok\ntest claim_writes_soul_pda_pointing_token_2022_metadata ... ok\ntest non_holder_claim_fails_for_insufficient_balance ... ok\ntest duplicate_claim_for_same_svg_fails ... ok\n\ntest result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s\n\n\nrunning 1 test\ntest buy_cpis_generate_soul_after_minting_tokens ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s\n\n\nrunning 1 test\ntest create_buy_sell_updates_token_and_lamport_balances ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s\n\n\nrunning 2 tests\ntest migrate_after_graduation_transfers_assets_and_rejects_repeat ... ok\ntest single_large_buy_graduates_curve_and_blocks_followup_trades ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s\n\n\nrunning 3 tests\ntest unpause_clears_paused_and_non_admin_pause_unpause_reject ... ok\ntest paused_soul_generator_write_paths_reject_with_0xa10 ... ok\ntest paused_bonding_curve_write_paths_reject_with_0xa10 ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s\n\n\nrunning 3 tests\ntest initialize_curve_rejects_invalid_soul_target_amm ... ok\ntest buy_and_sell_preserve_curve_target_amm_after_initialization ... ok\ntest initialize_curve_copies_target_amm_from_soul_for_all_supported_values ... ok\n\ntest result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s\n\n\nrunning 1 test\ntest upload_template_persists_template_and_style_bytes ... ok\n\ntest result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s\n\n",
+      "stderrTail": "JSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 10273 of 200000 compute units\n[2026-04-27T20:00:52.501572000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n[2026-04-27T20:00:52.596521000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:52.597236000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.597267000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.597346000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.597360000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.597423000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.597436000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.597483000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]\n[2026-04-27T20:00:52.597562000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: InitializeMint2\n[2026-04-27T20:00:52.597690000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1280 of 188053 compute units\n[2026-04-27T20:00:52.597702000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:52.597758000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 13405 of 200000 compute units\n[2026-04-27T20:00:52.597769000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n[2026-04-27T20:00:52.688511000Z INFO  solana_program_test] \"bonding_curve\" SBF program from /Users/davirian/dev/active/ideas/solsouldotfun/target/deploy/bonding_curve.so, modified 21 seconds, 841 ms, 812 \u00b5s and 441 ns ago\n[2026-04-27T20:00:52.688580000Z INFO  solana_program_test] \"soul_generator\" SBF program from /Users/davirian/dev/active/ideas/solsouldotfun/target/deploy/soul_generator.so, modified 4 hours, 22 minutes, 57 seconds, 147 ms, 802 \u00b5s and 80 ns ago\n[2026-04-27T20:00:52.793844000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:52.794549000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.794576000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.794656000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.794669000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.794732000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:52.794745000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:52.794790000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]\n[2026-04-27T20:00:52.794872000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: InitializeMint2\n[2026-04-27T20:00:52.795010000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1280 of 188053 compute units\n[2026-04-27T20:00:52.795022000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:52.795078000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 13405 of 200000 compute units\n[2026-04-27T20:00:52.795090000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n     Running tests/integration/templates.rs (target/debug/deps/templates-9bf3c31da9587a13)\n[2026-04-27T20:00:54.243307000Z INFO  solana_program_test] \"soul_generator\" SBF program from /Users/davirian/dev/active/ideas/solsouldotfun/target/deploy/soul_generator.so, modified 4 hours, 22 minutes, 58 seconds, 702 ms, 477 \u00b5s and 80 ns ago\n[2026-04-27T20:00:54.331911000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk invoke [1]\n[2026-04-27T20:00:54.332710000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:54.332796000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:54.336416000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk consumed 42413 of 200000 compute units\n[2026-04-27T20:00:54.336449000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk success\n[2026-04-27T20:00:54.338767000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk invoke [1]\n[2026-04-27T20:00:54.339135000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk consumed 2893 of 200000 compute units\n[2026-04-27T20:00:54.339152000Z DEBUG solana_runtime::message_processor::stable_log] Program 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk success\n"
+    },
+    {
+      "name": "cargo test --features integration --test amm_raydium",
+      "command": "cargo test --features integration --test amm_raydium",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.083,
+      "startedAt": "2026-04-27T20:00:54.476825Z",
+      "endedAt": "2026-04-27T20:00:55.559975Z",
+      "metrics": {
+        "test_result_lines": [
+          "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s"
+        ]
+      },
+      "stdoutTail": "\nrunning 6 tests\ntest raydium_snapshot_loads_and_pda_fixture_is_stable ... ok\ntest migrate_before_graduation_is_rejected_before_raydium_path ... ok\ntest transfer_fee_mint_rejects_raydium_migration_with_0xa01 ... ok\ntest insufficient_vault_sol_rejects_raydium_migration_with_0xa02 ... ok\ntest graduation_to_raydium_migrate_seeds_vaults_and_burns_lp ... ok\ntest raydium_cpi_failure_bubbles_up_unchanged ... ok\n\ntest result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s\n\n",
+      "stderrTail": "lana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW success\n[2026-04-27T20:00:55.433499000Z DEBUG solana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW success\n[2026-04-27T20:00:55.433584000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]\n[2026-04-27T20:00:55.433791000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: Burn\n[2026-04-27T20:00:55.434208000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4707 of 167007 compute units\n[2026-04-27T20:00:55.434219000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:55.434333000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]\n[2026-04-27T20:00:55.434509000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: MintTo\n[2026-04-27T20:00:55.434584000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1038 of 160952 compute units\n[2026-04-27T20:00:55.434593000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:55.434659000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:55.434680000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:55.435014000Z DEBUG solana_runtime::message_processor::stable_log] Program log: [event:graduation] curve=5y2AmV9ecv42wjwe96fjNWYumyC2ReqcCxs3wHtWcbhr sol_raised=85000000001\n[2026-04-27T20:00:55.435055000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 44718 of 200000 compute units\n[2026-04-27T20:00:55.435073000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n[2026-04-27T20:00:55.438398000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:55.439285000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 1704 of 200000 compute units\n[2026-04-27T20:00:55.439296000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C failed: custom program error: 0x4305\n[2026-04-27T20:00:55.441821000Z INFO  solana_program_test] \"bonding_curve\" SBF program from /Users/davirian/dev/active/ideas/solsouldotfun/target/deploy/bonding_curve.so, modified 24 seconds, 595 ms, 123 \u00b5s and 441 ns ago\n[2026-04-27T20:00:55.441909000Z INFO  solana_program_test] \"raydium_failing_mock\" builtin program\n[2026-04-27T20:00:55.471993000Z INFO  solana_program_test] Overriding account at BKS8Hi8C6qDdowrgr8Lg7dwWmoKbAvcGYsqoF3VYcNVB\n[2026-04-27T20:00:55.472022000Z INFO  solana_program_test] Overriding account at So11111111111111111111111111111111111111112\n[2026-04-27T20:00:55.472067000Z INFO  solana_program_test] Overriding account at 9PiCTwNatjPLPLmAqZTKPGYAzMpcr7fomQL7FLpBdiZz\n[2026-04-27T20:00:55.550049000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:55.551755000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:55.551781000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:55.551816000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]\n[2026-04-27T20:00:55.551938000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: SyncNative\n[2026-04-27T20:00:55.552216000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 3045 of 187496 compute units\n[2026-04-27T20:00:55.552228000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:55.552316000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]\n[2026-04-27T20:00:55.552488000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: MintTo\n[2026-04-27T20:00:55.552568000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1038 of 183183 compute units\n[2026-04-27T20:00:55.552577000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:55.552811000Z DEBUG solana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW invoke [2]\n[2026-04-27T20:00:55.552821000Z DEBUG solana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW invoke [2]\n[2026-04-27T20:00:55.553414000Z DEBUG solana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW failed: custom program error: 0xdead\n[2026-04-27T20:00:55.553424000Z DEBUG solana_runtime::message_processor::stable_log] Program CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW failed: custom program error: 0xdead\n[2026-04-27T20:00:55.553444000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 21159 of 200000 compute units\n[2026-04-27T20:00:55.553452000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C failed: custom program error: 0xdead\n"
+    },
+    {
+      "name": "cargo test --features integration --test amm_meteora",
+      "command": "cargo test --features integration --test amm_meteora",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.759,
+      "startedAt": "2026-04-27T20:00:55.560068Z",
+      "endedAt": "2026-04-27T20:00:56.318970Z",
+      "metrics": {
+        "test_result_lines": [
+          "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s"
+        ]
+      },
+      "stdoutTail": "\nrunning 2 tests\ntest meteora_snapshot_loads_and_fixture_sha_exists ... ok\ntest migrate_target_meteora_creates_lb_pair_and_active_bin_liquidity ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s\n\n",
+      "stderrTail": "6.213936000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: Transfer\n[2026-04-27T20:00:56.214055000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1330 of 73032 compute units\n[2026-04-27T20:00:56.214065000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:56.214075000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:56.214087000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]\n[2026-04-27T20:00:56.214104000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]\n[2026-04-27T20:00:56.214311000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: Transfer\n[2026-04-27T20:00:56.214730000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4736 of 71702 compute units\n[2026-04-27T20:00:56.214740000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:56.214748000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:56.214760000Z DEBUG solana_runtime::message_processor::stable_log] Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo success\n[2026-04-27T20:00:56.214795000Z DEBUG solana_runtime::message_processor::stable_log] Program LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo success\n[2026-04-27T20:00:56.214938000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]\n[2026-04-27T20:00:56.215160000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: Transfer\n[2026-04-27T20:00:56.215582000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4645 of 65244 compute units\n[2026-04-27T20:00:56.215595000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:56.215627000Z DEBUG solana_runtime::message_processor::stable_log] Program log: [meteora] lp locked for 180 days\n[2026-04-27T20:00:56.215734000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]\n[2026-04-27T20:00:56.215911000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: MintTo\n[2026-04-27T20:00:56.215983000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1038 of 59029 compute units\n[2026-04-27T20:00:56.215993000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success\n[2026-04-27T20:00:56.216060000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 invoke [2]\n[2026-04-27T20:00:56.216079000Z DEBUG solana_runtime::message_processor::stable_log] Program 11111111111111111111111111111111 success\n[2026-04-27T20:00:56.216413000Z DEBUG solana_runtime::message_processor::stable_log] Program log: [event:graduation] curve=4FBBgGCDR3nUd8rtLkexwcS4YyvzApPLMC6AAmAfeWrV sol_raised=1000000000\n[2026-04-27T20:00:56.216466000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 146632 of 200000 compute units\n[2026-04-27T20:00:56.216486000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n[2026-04-27T20:00:56.218253000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:56.218668000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 1561 of 200000 compute units\n[2026-04-27T20:00:56.218677000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C failed: custom program error: 0xa12\n[2026-04-27T20:00:56.220451000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:56.220862000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 1434 of 200000 compute units\n[2026-04-27T20:00:56.220869000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C failed: custom program error: 0xa11\n[2026-04-27T20:00:56.250012000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C invoke [1]\n[2026-04-27T20:00:56.250661000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]\n[2026-04-27T20:00:56.250866000Z DEBUG solana_runtime::message_processor::stable_log] Program log: Instruction: Transfer\n[2026-04-27T20:00:56.251265000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 4645 of 196420 compute units\n[2026-04-27T20:00:56.251277000Z DEBUG solana_runtime::message_processor::stable_log] Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success\n[2026-04-27T20:00:56.251292000Z DEBUG solana_runtime::message_processor::stable_log] Program log: [meteora] lp released\n[2026-04-27T20:00:56.251305000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C consumed 8355 of 200000 compute units\n[2026-04-27T20:00:56.251317000Z DEBUG solana_runtime::message_processor::stable_log] Program B6AhJJSYMbnrxLbS6nTBuDowADQJxdF7hQSTrepFFk3C success\n"
+    },
+    {
+      "name": "local PumpSwap e2e",
+      "command": "pnpm exec tsx scripts/local-pumpswap-e2e.ts",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 13.909,
+      "startedAt": "2026-04-27T20:00:56.319054Z",
+      "endedAt": "2026-04-27T20:01:10.227854Z",
+      "metrics": {
+        "pump_local_passed": true
+      },
+      "stdoutTail": "[pump] building SBF programs with local graduation threshold\n[pump] starting solana-test-validator on http://127.0.0.1:8899\n[pump] validator healthcheck passed: 3.1.12\nRequesting airdrop of 20 SOL\n\nSignature: 5jayifvyM2YF7Y4opduxMsebLmw2Qv5VgAZCGS74y5yrZNBN37gCdkiuQF7t3J7oJ7gkHPKQrruLcX1iZFVkxgwB\n\n500000020 SOL\nProgram Id: 5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk\n\nSignature: 2XeGGVdTokUzjwJSoJupmXHtRfYLq11tze81VzQRnskxn8zdUN6p2MxPkPzyoA8KHvw3im321Gf7eUPZueLyEzFr\n\nProgram Id: HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ\n\nSignature: 3hQPChX3EP3YYWN4pGynTGJ7XCvj5Qid53RK8oTgU2YvNFDhFTxrLVzZ3UH83jWnxGANPH7wkK2x6QsSUpQfugLW\n\nWaiting for fees to stabilize 1...\nWaiting for fees to stabilize 2...\n[pump] 2fw39i9XEHPnrxeCpKcZtFyq4VGHu8F8xiQF3HzynBAsjgjkJiLaR9mg2dirrXgVfkewYssVcDrvoqt3Ksg9BoCd slot=18\n[pump] 2PmC2PZTwu9DTfQKzwQF6V14pPc6UjAfuyDCX8cq2g6jebSdyVCAfS96zYEqbrvK5sEqEkmeoZYKrQ2kgcZjFSVX slot=19\n[pump] 5t3L4Qj2dnDZxaXqnQeVhbnA1UP7JoC2PY4dqxW9kby5YoMmxFA95o79JNWmzEm7y2RV5BwwdQ7hRvhESRYwmeSA slot=20\n[pump] 5k1xxsqziw4ceXPLMsFdE8AAE2FEZQqyrHH1SYyKQSaFUdgXx1vTvoUv8U8VNjEnQKd7bM2ywEq3RvnrKhX468nb slot=22\n[pump] full local PumpSwap e2e passed and wrote deployments/local-pumpswap-trace.json\n[pump] stopped solana-test-validator\n[pump] verified no listener remains on :8899\n",
+      "stderrTail": "   Compiling bonding-curve v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/bonding-curve)\n    Finished `release` profile [optimized] target(s) in 1.13s\n"
+    },
+    {
+      "name": "cargo build-sbf --workspace (restore default artifacts)",
+      "command": "cargo build-sbf --workspace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 2.035,
+      "startedAt": "2026-04-27T20:01:10.227968Z",
+      "endedAt": "2026-04-27T20:01:12.262564Z",
+      "metrics": {},
+      "stdoutTail": "",
+      "stderrTail": "   Compiling bonding-curve v0.1.0 (/Users/davirian/dev/active/ideas/solsouldotfun/programs/bonding-curve)\n    Finished `release` profile [optimized] target(s) in 1.15s\n"
+    },
+    {
+      "name": "sdk build",
+      "command": "pnpm --filter sdk build",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.454,
+      "startedAt": "2026-04-27T20:01:12.262686Z",
+      "endedAt": "2026-04-27T20:01:13.717172Z",
+      "metrics": {},
+      "stdoutTail": "\n> sdk@0.1.0 build /Users/davirian/dev/active/ideas/solsouldotfun/sdk\n> tsup src/index.ts --format cjs,esm --dts --sourcemap --clean\n\n\u001b[34mCLI\u001b[39m Building entry: src/index.ts\n\u001b[34mCLI\u001b[39m Using tsconfig: tsconfig.json\n\u001b[34mCLI\u001b[39m tsup v8.5.1\n\u001b[34mCLI\u001b[39m Target: es2022\n\u001b[34mCLI\u001b[39m Cleaning output folder\n\u001b[34mCJS\u001b[39m Build start\n\u001b[34mESM\u001b[39m Build start\n\u001b[32mESM\u001b[39m \u001b[1mdist/index.js     \u001b[22m\u001b[32m42.60 KB\u001b[39m\n\u001b[32mESM\u001b[39m \u001b[1mdist/index.js.map \u001b[22m\u001b[32m80.18 KB\u001b[39m\n\u001b[32mESM\u001b[39m \u26a1\ufe0f Build success in 59ms\n\u001b[32mCJS\u001b[39m \u001b[1mdist/index.cjs     \u001b[22m\u001b[32m50.42 KB\u001b[39m\n\u001b[32mCJS\u001b[39m \u001b[1mdist/index.cjs.map \u001b[22m\u001b[32m80.65 KB\u001b[39m\n\u001b[32mCJS\u001b[39m \u26a1\ufe0f Build success in 59ms\n\u001b[34mDTS\u001b[39m Build start\n\u001b[32mDTS\u001b[39m \u26a1\ufe0f Build success in 484ms\n\u001b[32mDTS\u001b[39m \u001b[1mdist/index.d.cts \u001b[22m\u001b[32m18.33 KB\u001b[39m\n\u001b[32mDTS\u001b[39m \u001b[1mdist/index.d.ts  \u001b[22m\u001b[32m18.33 KB\u001b[39m\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "sdk typecheck",
+      "command": "pnpm --filter sdk typecheck",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.24,
+      "startedAt": "2026-04-27T20:01:13.717263Z",
+      "endedAt": "2026-04-27T20:01:14.957442Z",
+      "metrics": {},
+      "stdoutTail": "\n> sdk@0.1.0 typecheck /Users/davirian/dev/active/ideas/solsouldotfun/sdk\n> tsc -p tsconfig.json --noEmit\n\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "sdk vitest",
+      "command": "pnpm --filter sdk test",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.421,
+      "startedAt": "2026-04-27T20:01:14.957533Z",
+      "endedAt": "2026-04-27T20:01:16.378391Z",
+      "metrics": {
+        "vitest_summary": [
+          "Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m",
+          "Tests \u001b[22m \u001b[1m\u001b[32m20 passed\u001b[39m\u001b[22m\u001b[90m (20)\u001b[39m"
+        ]
+      },
+      "stdoutTail": "\n> sdk@0.1.0 test /Users/davirian/dev/active/ideas/solsouldotfun/sdk\n> vitest run\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.4 \u001b[39m\u001b[90m/Users/davirian/dev/active/ideas/solsouldotfun/sdk\u001b[39m\n\n \u001b[32m\u2713\u001b[39m src/index.test.ts \u001b[2m(\u001b[22m\u001b[2m20 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 64\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m20 passed\u001b[39m\u001b[22m\u001b[90m (20)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:01:15\n\u001b[2m   Duration \u001b[22m 544ms\u001b[2m (transform 48ms, setup 0ms, collect 175ms, tests 64ms, environment 0ms, prepare 49ms)\u001b[22m\n\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "app vitest",
+      "command": "pnpm --filter app test",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 1.826,
+      "startedAt": "2026-04-27T20:01:16.378989Z",
+      "endedAt": "2026-04-27T20:01:18.205396Z",
+      "metrics": {
+        "vitest_summary": [
+          "Test Files \u001b[22m \u001b[1m\u001b[32m14 passed\u001b[39m\u001b[22m\u001b[90m (14)\u001b[39m",
+          "Tests \u001b[22m \u001b[1m\u001b[32m60 passed\u001b[39m\u001b[22m\u001b[90m (60)\u001b[39m"
+        ]
+      },
+      "stdoutTail": "\n> app@0.1.0 test /Users/davirian/dev/active/ideas/solsouldotfun/app\n> vitest run\n\n\n\u001b[1m\u001b[46m RUN \u001b[49m\u001b[22m \u001b[36mv3.2.4 \u001b[39m\u001b[90m/Users/davirian/dev/active/ideas/solsouldotfun/app\u001b[39m\n\n \u001b[32m\u2713\u001b[39m src/i18n/messages.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/lib/sentry.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/app/[locale]/privacy/page.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/TemplateEditor.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/lib/rpc.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/RiskDisclaimerModal.test.tsx \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 6\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/lib/soulGallery.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 11\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/LaunchForm.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/AmmSelector.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/lib/config.test.ts \u001b[2m(\u001b[22m\u001b[2m8 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 2\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/MobileBottomNav.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/PauseBanner.test.tsx \u001b[2m(\u001b[22m\u001b[2m9 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 9\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/GenerateAgainButton.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 3\u001b[2mms\u001b[22m\u001b[39m\n \u001b[32m\u2713\u001b[39m src/components/ClaimButton.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 1\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m14 passed\u001b[39m\u001b[22m\u001b[90m (14)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m60 passed\u001b[39m\u001b[22m\u001b[90m (60)\u001b[39m\n\u001b[2m   Start at \u001b[22m 04:01:17\n\u001b[2m   Duration \u001b[22m 862ms\u001b[2m (transform 387ms, setup 0ms, collect 2.13s, tests 75ms, environment 1ms, prepare 1.14s)\u001b[22m\n\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "app build (no env vars)",
+      "command": "pnpm --filter app build",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 8.461,
+      "startedAt": "2026-04-27T20:01:18.205485Z",
+      "endedAt": "2026-04-27T20:01:26.666078Z",
+      "metrics": {},
+      "stdoutTail": "\n> app@0.1.0 build /Users/davirian/dev/active/ideas/solsouldotfun/app\n> next build\n\n  \u001b[1m\u001b[38;2;173;127;168m\u25b2 Next.js 14.2.33\u001b[39m\u001b[22m\n\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Creating an optimized production build ...\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Linting and checking validity of types ...\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Collecting page data ...\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Generating static pages (0/14) ...\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Generating static pages (3/14) \n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Generating static pages (6/14) \n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Generating static pages (10/14) \n \u001b[32m\u001b[1m\u2713\u001b[22m\u001b[39m Generating static pages (14/14)\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Finalizing page optimization ...\n \u001b[37m\u001b[1m \u001b[22m\u001b[39m Collecting build traces ...\n\n\u001b[4mRoute (app)\u001b[24m                              \u001b[4mSize\u001b[24m     \u001b[4mFirst Load JS\u001b[24m\n\u250c \u25cb /                                    149 B          \u001b[37m\u001b[1m87.7 kB\u001b[22m\u001b[39m\n\u251c \u25cb /_not-found                          875 B          \u001b[37m\u001b[1m88.4 kB\u001b[22m\u001b[39m\n\u251c \u25cf /[locale]                            2.52 kB         \u001b[37m\u001b[1m111 kB\u001b[22m\u001b[39m\n\u251c   \u251c /en\n\u251c   \u2514 /zh\n\u251c \u25cf /[locale]/gallery                    2.89 kB         \u001b[37m\u001b[1m208 kB\u001b[22m\u001b[39m\n\u251c   \u251c /en/gallery\n\u251c   \u2514 /zh/gallery\n\u251c \u25cf /[locale]/launch                     7.14 kB         \u001b[37m\u001b[1m217 kB\u001b[22m\u001b[39m\n\u251c   \u251c /en/launch\n\u251c   \u2514 /zh/launch\n\u251c \u25cf /[locale]/privacy                    278 B          \u001b[37m\u001b[1m99.9 kB\u001b[22m\u001b[39m\n\u251c   \u251c /en/privacy\n\u251c   \u2514 /zh/privacy\n\u251c \u0192 /[locale]/token/[mint]               6.93 kB         \u001b[37m\u001b[1m216 kB\u001b[22m\u001b[39m\n\u251c \u0192 /[locale]/token/[mint]/gallery       3.83 kB         \u001b[37m\u001b[1m213 kB\u001b[22m\u001b[39m\n\u251c \u0192 /api/devnet-smoke                    0 B                \u001b[37m\u001b[1m0 B\u001b[22m\u001b[39m\n\u251c \u25cb /gallery                             149 B          \u001b[37m\u001b[1m87.7 kB\u001b[22m\u001b[39m\n\u251c \u25cb /launch                              149 B          \u001b[37m\u001b[1m87.7 kB\u001b[22m\u001b[39m\n\u251c \u0192 /token/[mint]                        149 B          \u001b[37m\u001b[1m87.7 kB\u001b[22m\u001b[39m\n\u2514 \u0192 /token/[mint]/gallery                151 B          \u001b[37m\u001b[1m87.7 kB\u001b[22m\u001b[39m\n+ First Load JS shared by all            \u001b[37m\u001b[1m87.5 kB\u001b[22m\u001b[39m\n  \u251c chunks/42e861cc-d9d9a5da368b704d.js  53.7 kB\n  \u251c chunks/89-297cb0482d02a329.js        31.7 kB\n  \u2514 other shared chunks (total)          2.14 kB\n\n\n\u0192 Middleware                             \u001b[37m\u001b[1m36 kB\u001b[22m\u001b[39m\n\n\u25cb  (Static)   prerendered as static content\n\u25cf  (SSG)      prerendered as static HTML (uses \u001b[36mgetStaticProps\u001b[39m)\n\u0192  (Dynamic)  server-rendered on demand\n\n",
+      "stderrTail": " \u001b[33m\u001b[1m\u26a0\u001b[22m\u001b[39m Compiled with warnings\n\n../node_modules/.pnpm/@opentelemetry+instrumentation@0.212.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/instrumentation.js\nCritical dependency: the request of a dependency is an expression\n\nImport trace for requested module:\n../node_modules/.pnpm/@opentelemetry+instrumentation@0.212.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/instrumentation.js\n../node_modules/.pnpm/@opentelemetry+instrumentation@0.212.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/instrumentation/build/esm/platform/node/index.js\n../node_modules/.pnpm/@opentelemetry+instrumentation@0.212.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/instrumentation/build/esm/platform/index.js\n../node_modules/.pnpm/@opentelemetry+instrumentation@0.212.0_@opentelemetry+api@1.9.1/node_modules/@opentelemetry/instrumentation/build/esm/index.js\n../node_modules/.pnpm/@fastify+otel@0.18.0_@opentelemetry+api@1.9.1/node_modules/@fastify/otel/index.js\n../node_modules/.pnpm/@sentry+node@10.50.0/node_modules/@sentry/node/build/cjs/integrations/tracing/fastify/index.js\n../node_modules/.pnpm/@sentry+node@10.50.0/node_modules/@sentry/node/build/cjs/index.js\n../node_modules/.pnpm/@sentry+nextjs@10.50.0_@opentelemetry+core@2.7.0_@opentelemetry+api@1.9.1__@opentelemetry+sdk_btfhvqfcbqksygm4cljsew343e/node_modules/@sentry/nextjs/build/cjs/index.server.js\n./src/lib/sentry.ts\n./src/components/SentryInitializer.tsx\n\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44146) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44151) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44154) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44152) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44156) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44153) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44147) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\nbigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)\n(node:44148) Warning: `--localstorage-file` was provided without a valid path\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    {
+      "name": "indexer 30-sec smoke",
+      "command": "pnpm exec tsx services/indexer/src/main.ts --rpc https://api.devnet.solana.com --duration-sec 30",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 32.592,
+      "startedAt": "2026-04-27T20:01:26.666187Z",
+      "endedAt": "2026-04-27T20:01:59.258584Z",
+      "metrics": {
+        "stdout_lines": 1
+      },
+      "stdoutTail": "[indexer] indexed 0 events\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "devnet AMM e2e raydium trace verification",
+      "command": "pnpm exec tsx scripts/devnet-amm-e2e.ts --amm raydium --verify-trace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 2.48,
+      "startedAt": "2026-04-27T20:01:59.258711Z",
+      "endedAt": "2026-04-27T20:02:01.738608Z",
+      "metrics": {
+        "devnet_trace_verified": true
+      },
+      "stdoutTail": "[sdk] raydium existing devnet trace verified: migrate=5P3dbxGrVB3EkqBF973rdJQEZg1xsLwqZ1fvnZPdF4hvg5aiRjAgj3kTHxKAz7nurPbC9RAcXevabJFtpudQNiep confirmation=finalized\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "devnet AMM e2e meteora trace verification",
+      "command": "pnpm exec tsx scripts/devnet-amm-e2e.ts --amm meteora --verify-trace",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 2.366,
+      "startedAt": "2026-04-27T20:02:01.738684Z",
+      "endedAt": "2026-04-27T20:02:04.104695Z",
+      "metrics": {
+        "devnet_trace_verified": true
+      },
+      "stdoutTail": "[sdk] meteora existing devnet trace verified: migrate=62RMagqG18RCUc6wZcmFpHedEXWGoPB9f3SN5gwAWPgX6Ufom4wF8bPBij8eJ7hDZJo7m6N5hv86qSuXRXmQu4Ju confirmation=finalized\n",
+      "stderrTail": ""
+    },
+    {
+      "name": "devnet balance end",
+      "command": "solana balance --url https://api.devnet.solana.com",
+      "exitCode": 0,
+      "timedOut": false,
+      "durationSeconds": 0.579,
+      "startedAt": "2026-04-27T20:02:04.104787Z",
+      "endedAt": "2026-04-27T20:02:04.683919Z",
+      "metrics": {},
+      "stdoutTail": "21.134657324 SOL\n",
+      "stderrTail": ""
+    }
+  ],
+  "notes": [
+    "Raydium live e2e completed migration before an obsolete 1.5 SOL per-script cap returned nonzero; the script cap was aligned to the M13 2.5 SOL cap and the recorded finalized trace was re-verified read-only to avoid another devnet spend.",
+    "Meteora live e2e was resumed from the partially completed trace with a tiny top-up buy, then migrated successfully; finalized trace was re-verified read-only.",
+    "local-pumpswap-e2e rebuilds SBF with --features devnet, so cargo build-sbf --workspace was rerun afterward to restore default artifacts."
+  ],
+  "artifacts": [
+    "deployments/mainnet-readiness-matrix.json",
+    "deployments/devnet-amm-e2e-trace.raydium.json",
+    "deployments/devnet-amm-e2e-trace.meteora.json",
+    "deployments/local-pumpswap-trace.json"
+  ]
+}

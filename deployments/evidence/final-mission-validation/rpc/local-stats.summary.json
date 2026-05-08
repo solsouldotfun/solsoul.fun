@@ -1,0 +1,132 @@
+{
+  "note": "redacted summary; raw response had token mints/owners replaced with <addr_*> hashes",
+  "top_keys": [
+    "dustTotals",
+    "metrics",
+    "ok",
+    "perTokenSoulTotals",
+    "recentActivity",
+    "source",
+    "themeDistribution"
+  ],
+  "metrics": [
+    {
+      "id": "launchedTokens",
+      "value": "46"
+    },
+    {
+      "id": "generatedSoulCandidates",
+      "value": "61"
+    },
+    {
+      "id": "claimedSouls",
+      "value": "19"
+    },
+    {
+      "id": "activeCurves",
+      "value": "45"
+    }
+  ],
+  "dustTotals_summary": {
+    "whole_units_in_pool": "36217261960",
+    "fractional_remainder": "19470628",
+    "active_receipts": "3",
+    "burned_receipts": "14",
+    "forfeited_receipts": "0",
+    "inactive_receipts": "14",
+    "outside_liquidity_audited_tokens": "0"
+  },
+  "source_coverage_keys": [
+    "bonding_curve_reserve_tokens",
+    "raydium_cp_swap_vault_tokens",
+    "source_unverified_tokens",
+    "source_verified_tokens",
+    "unavailable_tokens",
+    "warning_tokens",
+    "warnings"
+  ],
+  "themeDistribution": [
+    {
+      "id": "neonpuff",
+      "label": "NeonPuff Soul",
+      "renderer": "built-in",
+      "tokenCount": "44",
+      "generatedSoulCandidates": "57",
+      "claimedSouls": "18"
+    },
+    {
+      "id": "soulpuff",
+      "label": "SoulPuff",
+      "renderer": "built-in",
+      "tokenCount": "2",
+      "generatedSoulCandidates": "4",
+      "claimedSouls": "1"
+    }
+  ],
+  "perTokenSoulTotals_count": 46,
+  "perTokenSoulTotals_sample_keys": [
+    "active",
+    "active_liquidity_base_units",
+    "active_receipts",
+    "burned_receipts",
+    "claimedSouls",
+    "dustSource",
+    "forfeited_receipts",
+    "fractional_fill_ratio",
+    "fractional_remainder",
+    "galleryLink",
+    "generatedSoulCandidates",
+    "inactive_receipts",
+    "launchedAt",
+    "liquidity_dust_ratio",
+    "primaryLink",
+    "soul",
+    "theme",
+    "tokenLabel",
+    "tokenMint",
+    "whole_units_in_pool"
+  ],
+  "source_top_keys": [
+    "commitment",
+    "deployment",
+    "fetchedAt",
+    "partial",
+    "rpcCapability",
+    "rpcCluster",
+    "rpcCredentialRedacted",
+    "rpcEndpoint",
+    "rpcEndpointLabel",
+    "rpcProvider",
+    "slot",
+    "warnings"
+  ],
+  "source_deployment_keys": [
+    "bondingCurveProgramId",
+    "soulGeneratorProgramId"
+  ],
+  "source_partial": true,
+  "source_warnings": [
+    "outside-liquidity token account scan: outside-liquidity token account scan timed out after 4500ms"
+  ],
+  "source_rpcCapability_outsideLiquidity_keys": [
+    "classification",
+    "endpointLabel",
+    "indexedGpaSupported",
+    "programLabel",
+    "requestedFilters",
+    "rpcCluster",
+    "rpcCredentialRedacted",
+    "rpcProvider",
+    "warningCodes"
+  ],
+  "source_rpcCapability_outsideLiquidity_values": {
+    "classification": "unavailable",
+    "warningCodes": [
+      "outside_liquidity_no_probe_target"
+    ]
+  },
+  "route": null,
+  "status": null,
+  "bounded": null,
+  "gracefulPartialFallback": null
+}

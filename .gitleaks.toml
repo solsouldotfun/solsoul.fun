@@ -1,0 +1,97 @@
+title = "SolSoul gitleaks configuration"
+
+# ─── Extend built-in rules ───────────────────────────────────────────────────
+[extend]
+  useDefault = true   # keep all upstream gitleaks detectors active
+
+# ─── Global allowlists ───────────────────────────────────────────────────────
+# Example env files are intentionally scanned; only explicit placeholder values
+# are allowlisted at rule level.
+[allowlist]
+  description = "Safe scanner config and expected-clean fixture"
+  paths = [
+    '''(^|/)test-fixtures/secret-negative''',
+    '''(^|/)\.gitleaks\.toml$''',
+    '''(^|/)docs/security\.md$''',
+  ]
+
+# ─── Custom rules ────────────────────────────────────────────────────────────
+
+# 1. Solana base58 private key (~87-88 base58 chars) in an assignment context.
+#    Real devnet/mainnet private keys or locally generated keypairs.
+[[rules]]
+  id          = "solana-base58-private-key"
+  description = "Potential Solana private key (base58-encoded 64-byte key, ~87-88 chars)"
+  # Match common assignment patterns such as PRIVATE_KEY=, SECRET_KEY=, KEYPAIR=, etc.
+  regex       = '''(?i)(?:private_?key|secret_?key|keypair|SOLANA_SK)\s*[=:]\s*["']?([1-9A-HJ-NP-Za-km-z]{87,88})["']?'''
+  secretGroup = 1
+
+  [rules.allowlist]
+    paths = [
+      '''(^|/)test-fixtures/secret-negative''',
+    ]
+    regexes = [
+      '''YOUR_''', '''PLACEHOLDER''', '''<.*>''', '''xxx+''',
+    ]
+
+# 2. Solana keypair as JSON array of 64 unsigned bytes (as written by solana-keygen).
+#    Example: [12,34,56,...] with 64 entries.
+[[rules]]
+  id          = "solana-keypair-json-array"
+  description = "Solana keypair serialised as a JSON array of 64 u8 values"
+  # Match an array that contains exactly 64 comma-separated numbers (approximate).
+  # Uses a repeated-group pattern to detect dense numeric arrays.
+  regex       = '''\[\s*\d{1,3}(?:\s*,\s*\d{1,3}){63}\s*\]'''
+
+  [rules.allowlist]
+    paths = [
+      '''(^|/)test-fixtures/secret-negative''',
+      # Cargo.lock may contain version arrays that look numeric — exclude it.
+      '''(^|/)Cargo\.lock$''',
+    ]
+
+# 3. Helius API key (UUID-shaped key that appears after a helius subdomain or
+#    in environment variables named HELIUS_*).
+[[rules]]
+  id          = "helius-api-key"
+  description = "Helius RPC API key (UUID format)"
+  regex       = '''(?i)(?:helius[_\-]?(?:api[_\-]?)?(?:key|token)|HELIUS_RPC_URL\b.*?/|mainnet\.helius-rpc\.com/)\s*["']?([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})["']?'''
+  secretGroup = 1
+
+  [rules.allowlist]
+    paths = ['''(^|/)test-fixtures/secret-negative''']
+    regexes = ['''YOUR_''', '''PLACEHOLDER''', '''<.*>''']
+
+# 4. Triton (Triton One / rpcpool.com) RPC URL with embedded API key.
+[[rules]]
+  id          = "triton-rpc-url-with-key"
+  description = "Triton One RPC endpoint containing an API key path segment"
+  regex       = '''https?://[a-z0-9\-]+\.rpcpool\.com/([a-zA-Z0-9\-]{20,})'''
+  secretGroup = 1
+
+  [rules.allowlist]
+    paths = ['''(^|/)test-fixtures/secret-negative''']
+    regexes = ['''YOUR_''', '''PLACEHOLDER''']
+
+# 5. QuickNode endpoint URL with embedded key.
+[[rules]]
+  id          = "quicknode-rpc-url-with-key"
+  description = "QuickNode endpoint containing an API key path segment"
+  regex       = '''https?://[a-z0-9\-]+\.quiknode\.pro/([a-zA-Z0-9]{20,})'''
+  secretGroup = 1
+
+  [rules.allowlist]
+    paths = ['''(^|/)test-fixtures/secret-negative''']
+
+# 6. NEXT_PUBLIC_RPC (or similar) pointing to a known paid/private RPC host.
+#    Uses positive matching for known paid provider domains (Go regexp has no
+#    lookahead support).  Add new providers to the alternation as needed.
+[[rules]]
+  id          = "rpc-url-private-host"
+  description = "NEXT_PUBLIC_RPC or RPC_URL pointing to a private/paid RPC provider"
+  regex       = '''(?i)(?:NEXT_PUBLIC_RPC|RPC_URL|RPC_ENDPOINT|SOLANA_RPC)[A-Z_]*\s*=\s*["']?(https?://[a-zA-Z0-9.\-]*(?:helius-rpc\.com|rpcpool\.com|quiknode\.pro|alchemy\.com|infura\.io|ankr\.com|blockdaemon\.com|figment\.io|nownodes\.io|quicknode\.com|getblock\.io|chainstack\.com|extrnode\.com|triton\.one)[^\s"']*)["']?'''
+  secretGroup = 1
+
+  [rules.allowlist]
+    paths = ['''(^|/)test-fixtures/secret-negative''']
+    regexes = ['''YOUR_''', '''PLACEHOLDER''', '''<.*>''']

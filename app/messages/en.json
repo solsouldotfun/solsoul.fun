@@ -1,0 +1,1805 @@
+{
+  "navigation": {
+    "home": "Home",
+    "launch": "Launch",
+    "tokens": "Tokens",
+    "souls": "Souls",
+    "gallery": "My Souls",
+    "mySouls": "My Souls",
+    "languageSwitcher": "Language switcher",
+    "english": "EN",
+    "chinese": "中文",
+    "explore": "Explore",
+    "stats": "Stats",
+    "market": "Market",
+    "docs": "Docs"
+  },
+  "pause": {
+    "banner": "Service paused"
+  },
+  "shared": {
+    "walletButton": {
+      "changeWallet": "Change wallet",
+      "connecting": "Connecting…",
+      "copyAddress": "Copy address",
+      "copied": "Copied",
+      "disconnect": "Disconnect",
+      "connect": "Connect",
+      "selectWallet": "Select wallet"
+    },
+    "platformBadge": {
+      "title": "SolSoul platform metadata",
+      "label": "Badge-branded by SolSoul",
+      "compactLabel": "SolSoul badge",
+      "assistiveText": " through platform metadata"
+    },
+    "devnetBanner": {
+      "label": "DEVNET TESTNET — funds are not real"
+    }
+  },
+  "riskDisclaimer": {
+    "title": "Risk disclosure",
+    "intro": "Review and accept these risks before using SolSoul.fun. This is not financial advice.",
+    "bullets": [
+      "Digital assets are volatile and can lose all value",
+      "Market-curve trades do not guarantee an exit price",
+      "Liquidity stays with the SolSoul market; outside venues are not part of this launch journey.",
+      "This protocol has not completed an audit."
+    ],
+    "accept": "Accept and continue",
+    "decline": "Decline",
+    "acknowledgeLabel": "I understand",
+    "acknowledgeHelp": "Required before launch or token trade submissions."
+  },
+  "privacy": {
+    "eyebrow": "Privacy skeleton",
+    "title": "Privacy Policy",
+    "updated": "Last updated: legal review pending",
+    "placeholder": "This placeholder privacy policy is not final legal text. The production policy must be reviewed and approved by legal counsel before mainnet launch.",
+    "sections": {
+      "data": {
+        "title": "Information we may process",
+        "body": "SolSoul.fun may process public wallet addresses, transaction metadata, selected launch inputs, and client diagnostics needed to operate the app and monitor reliability."
+      },
+      "usage": {
+        "title": "How this placeholder expects data to be used",
+        "body": "Operational data is expected to support wallet-connected app flows, fraud and abuse prevention, debugging, analytics, monitoring, and user support."
+      },
+      "mainnet": {
+        "title": "Before mainnet launch",
+        "body": "Legal counsel must replace this skeleton with the reviewed production privacy policy, including final disclosures for analytics, monitoring providers, retention, user rights, and contact channels."
+      }
+    },
+    "contact": "Questions: privacy contact pending legal review."
+  },
+  "amm": {
+    "label": "Historical AMM target",
+    "raydium": {
+      "title": "Raydium (historical)",
+      "description": "Historical Raydium adapter metadata is retained for decoding only; the active product trades on the curve without migration."
+    },
+    "pump": {
+      "title": "PumpSwap (deferred)",
+      "description": "PumpSwap is deferred historical research and is not selectable in the active launch flow."
+    },
+    "meteora": {
+      "title": "Meteora (deferred)",
+      "description": "Meteora is deferred historical research and is not selectable in the active launch flow."
+    }
+  },
+  "landing": {
+    "eyebrow": "A Soul-first devnet object protocol",
+    "headline": "Market activity creates living on-chain Soul objects.",
+    "body": "In SolSoul, a launch starts a living token, each trade can awaken a new Soul, and holders bring those Souls into their collection.",
+    "devnetDisclosure": "DEVNET TESTNET — public testing only; funds are not real.",
+    "primaryCta": "Explore token market",
+    "secondaryCta": "Launch a lifecycle",
+    "routeNavLabel": "Landing page routes",
+    "routes": {
+      "trade": "Token market",
+      "collection": "Collection",
+      "stats": "Stats",
+      "launch": "Launch"
+    },
+    "artLabel": "Restrained generated Soul art",
+    "artTitle": "Minimal on-chain Soul outline",
+    "artCaption": "On-chain SVG",
+    "loopTitle": "The SolSoul loop",
+    "steps": {
+      "launch": {
+        "title": "Launch initializes",
+        "body": "Creation starts a Token-2022 market and its SoulAccount, not a standalone NFT drop."
+      },
+      "trade": {
+        "title": "Trades generate",
+        "body": "Buy and sell activity touches the curve and produces changing on-chain SVG Soul candidates."
+      },
+      "claim": {
+        "title": "Holders claim",
+        "body": "Wallets with a qualifying buy and at least 10,000 fungible tokens can claim one MT/Soul NFT, capped at 2,100 MTs per token."
+      }
+    }
+  },
+  "launch": {
+    "page": {
+      "eyebrow": "Soul launch",
+      "title": "Release a living token",
+      "description": "Name a 21M-token market, choose a visual world, and sign. Every 10,000 tokens can qualify one scarce MT/Soul NFT, up to 2,100 MTs.",
+      "lifecycleModelTitle": "Advanced: lifecycle details",
+      "lifecycleModelBody": "SolSoul separates the market token from the collectible. A launch creates 21,000,000 fungible tokens on a forever curve; collecting one MT/Soul NFT requires a qualifying 10,000-token buy and current holder gate, with at most 2,100 MT/Soul NFTs per token. The launch fee supports operations, while a small buy fee stays with the market as durable backing."
+    },
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Symphony Soul #1",
+      "tickerLabel": "Symbol",
+      "tickerPlaceholder": "SOUL",
+      "tickerHelp": "Short market symbol shown across token pages and Soul collection views.",
+      "brandingNotice": "SolSoul adds platform branding as a display badge and metadata field; your chosen token name and ticker are not changed or suffixed.",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "A token whose community turns each trade into a new Soul.",
+      "rpcEndpoint": "Advanced network endpoint: {endpoint}",
+      "artThemeLabel": "Art style",
+      "artThemeHelp": "Choose the first visual world for the Souls this token will awaken.",
+      "artThemePreviewTitle": "{label} preview",
+      "artCustomizeSummary": "Change art recipe",
+      "artThemeStoredLabel": "Advanced art recipe",
+      "artThemeStored": "{label} recipe stored as {styleParams}",
+      "artPersistenceTitle": "Art recipe",
+      "artPersistenceReady": "{label} with {count} guided traits is ready for wallet upload.",
+      "artPersistenceWalletStep": "After launch signing, keep the wallet open for the required art upload step.",
+      "coreTraitTitle": "Guide the Soul",
+      "coreTraitHelp": "Choose up to {max} visual traits. Leave any trait on Auto and each trade deterministically completes the variation.",
+      "coreTraitAuto": "Auto variation",
+      "coreTraitLimit": "{count}/{max} chosen",
+      "customTemplateTraitNoticeTitle": "Custom Template uses SVG placeholders",
+      "customTemplateTraitNoticeBody": "Core trait guidance is hidden for Custom Template because uploaded SVGs currently respond to template placeholders such as hue, accent, seed, and holder tier instead of palette, mood, form, or background traits.",
+      "coreArtTraits": {
+        "categories": {
+          "palette": {
+            "label": "Palette",
+            "description": "The color family users notice first."
+          },
+          "mood": {
+            "label": "Mood",
+            "description": "The emotional temperature of the Soul."
+          },
+          "form": {
+            "label": "Form",
+            "description": "The dominant shape language."
+          },
+          "background": {
+            "label": "Background",
+            "description": "The scene behind the generated art."
+          }
+        },
+        "options": {
+          "palette": {
+            "solana": "Solana",
+            "aurora": "Aurora",
+            "ember": "Ember",
+            "mono": "Mono"
+          },
+          "mood": {
+            "serene": "Serene",
+            "charged": "Charged",
+            "mystic": "Mystic",
+            "radiant": "Radiant"
+          },
+          "form": {
+            "spiral": "Spiral",
+            "wave": "Wave",
+            "crystal": "Crystal",
+            "orb": "Orb"
+          },
+          "background": {
+            "midnight": "Midnight",
+            "nebula": "Nebula",
+            "grid": "Grid",
+            "eclipse": "Eclipse"
+          }
+        }
+      },
+      "starterTemplateLabel": "Pick a custom starter template",
+      "starterTemplateDefault": "Start from the default editor template",
+      "starterTemplateHelp": "Custom Template starts from a bundled black/white SVG; after launch, your wallet uploads it so later Souls use your edited art.",
+      "commandCenterEyebrow": "Create the first pulse",
+      "commandCenterBody": "Give the token a name, choose its visual world, then sign the launch.",
+      "stageTokenKicker": "Stage 1",
+      "stageTokenTitle": "Token identity",
+      "stageTokenDescription": "Name the market object and describe the Soul it will awaken.",
+      "stageArtKicker": "Stage 2",
+      "stageArtTitle": "Soul art",
+      "stageArtDescription": "Choose the first visual world for generated Souls.",
+      "stageSignKicker": "Stage 3",
+      "stageSignTitle": "Sign launch",
+      "stageSignDescription": "Review the launch, acknowledge the risk, then sign with your wallet.",
+      "advancedToggleShow": "Show Advanced",
+      "advancedToggleHide": "Hide Advanced",
+      "advancedNetworkTitle": "Network and curve details",
+      "curveTierLabel": "Market path",
+      "curveTierHelp": "All launches currently use the standard always-on market curve.",
+      "curveTierActive": "Active",
+      "curveParamS": "Scale (S)",
+      "curveParamK": "Supply cap (K)",
+      "feeLabel": "Fees",
+      "launchFee": "Launch fee",
+      "lockFee": "Buy lock fee",
+      "feeExplanation": "The 0.03 SOL launch fee supports protocol operations. The 0.1% buy fee stays with the market to deepen long-term backing.",
+      "submit": "Sign launch",
+      "creating": "Launching your token…",
+      "uploadingTemplate": "Opening art upload step…",
+      "walletReady": "Wallet ready: {address}",
+      "walletPrompt": "Connect Phantom when you are ready to sign.",
+      "submitted": "Launched {name} ({ticker}) with {symbol}. Continue to the Trade Soul card for the first buy, watch new Souls appear, and keep the journey moving.",
+      "submittedLink": "the token page",
+      "successTitle": "Your launch is live",
+      "successBody": "The token is ready. Jump straight to its Trade Soul card to make the first buy or prepare the next trade.",
+      "viewTokenTradeNow": "Start first trade",
+      "recentLaunchesTitle": "Recent launches",
+      "recentLaunchesDescription": "Recover recently launched token pages after a refresh from this browser.",
+      "recentLaunchLink": "{symbol} token",
+      "mintLabel": "Advanced token ID: {mint}",
+      "signatureLabel": "Launch transaction: {signature}",
+      "templateUploadStatusLabel": "Advanced art upload",
+      "templateUploadPending": "Art upload is waiting for wallet approval.",
+      "templateUploadOpeningWallet": "A second wallet request is opening for the art upload.",
+      "templateUploadFinalized": "Art upload transaction: {signature}",
+      "templateUploadFailed": "Launch transaction landed, but the required art upload could not finish. Nothing changed in your wallet beyond the launch; retry the art upload when the wallet or network is ready.",
+      "templateUploadFailedFallback": "Launch transaction landed, but the required art upload could not finish. Nothing changed in your wallet beyond the launch; retry the art upload when the wallet or network is ready.",
+      "templateUploadRetry": "Retry art upload",
+      "artUploadActionKicker": "Required art upload",
+      "artUploadActionPendingTitle": "Keep the wallet open to finish the art",
+      "artUploadActionPendingBody": "Your token launch transaction landed, but the selected art recipe is not complete until the wallet signs this upload.",
+      "artUploadActionFailedTitle": "Finish the art upload",
+      "artUploadActionFailedBody": "The token launch landed, but selected art will not be trusted until this upload succeeds.",
+      "artThemes": {
+        "neonpuff": {
+          "label": "NeonPuff Soul",
+          "description": "Premium neon-gradient Soul with rainbow-horse energy, Solana violet/green light, polished aura, and motion accents."
+        },
+        "soulpuff": {
+          "label": "SoulPuff",
+          "description": "Legacy optional Soul figure with black/white structure, rainbow aura, and trail accents."
+        },
+        "monochrome": {
+          "label": "Monochrome Soul",
+          "description": "High-contrast black/white Soul character with a deterministic background."
+        },
+        "hexagram": {
+          "label": "Hexagram Oracle",
+          "description": "Zhou Yi / hexagram-inspired oracle style for a more symbolic Soul."
+        },
+        "custom": {
+          "label": "Custom Template",
+          "description": "Edit and upload your own SVG template so later Souls inherit your visual world."
+        },
+        "fractal": {
+          "label": "Fractal Structure",
+          "description": "Fractal structure built from repeating mathematical forms."
+        },
+        "field": {
+          "label": "Vector Field",
+          "description": "Flowing field lines that make each Soul feel in motion."
+        },
+        "lattice": {
+          "label": "Crystal Lattice",
+          "description": "Crystal-like geometry with precise symmetry."
+        },
+        "chaos": {
+          "label": "Strange Attractor",
+          "description": "A strange-attractor world: deterministic, alive, and hard to predict."
+        },
+        "harmonic": {
+          "label": "Harmonic Wave",
+          "description": "Layered harmonic waves with calm mathematical rhythm."
+        },
+        "pixel_fractal": {
+          "label": "Pixel Fractal",
+          "description": "Fractal forms rendered as sharp pixel blocks."
+        },
+        "pixel_art": {
+          "label": "Pixel Art",
+          "description": "Noise-driven pixel art with a compact digital mood."
+        },
+        "symphony": {
+          "label": "Symphony",
+          "description": "Layered pixel landscape with sky, stars, horizon, and melodic paths."
+        }
+      },
+      "starterTemplates": {
+        "fractal-structure": {
+          "label": "Fractal Structure"
+        },
+        "vector-field": {
+          "label": "Vector Field"
+        },
+        "crystal-lattice": {
+          "label": "Crystal Lattice"
+        },
+        "monochrome-figure": {
+          "label": "Monochrome Figure"
+        },
+        "negative-space-soul": {
+          "label": "Negative Space Soul"
+        },
+        "signal-halo": {
+          "label": "Signal Halo"
+        }
+      },
+      "errors": {
+        "unknownTemplate": "Unknown starter template.",
+        "loadTemplate": "Could not load {label}. Retry when the template service is available.",
+        "loadTemplateFallback": "Could not load {label}. Retry when the template service is available.",
+        "tickerStore": "Ticker cannot be stored on-chain: {message}",
+        "tickerStoreFallback": "Ticker cannot be stored on-chain.",
+        "riskRequired": "Check I understand before submitting.",
+        "templateInvalid": "Fix the SVG template before launch. It must fit on-chain capacity, start with <svg, parse as XML, and contain no external references.",
+        "templateUploadInvalid": "Template cannot be uploaded yet. Check the SVG requirements and try again.",
+        "walletRequired": "Connect a devnet Phantom wallet before creating a launch.",
+        "launchFailed": "Launch transaction failed. Nothing changed; retry after the wallet or network is ready.",
+        "launchFailedFallback": "Launch transaction failed.",
+        "launch": {
+          "walletRejected": "Launch was not signed. Approve the wallet request when you are ready.",
+          "validation": "Launch cannot be submitted yet. Check the token details, wallet state, and art settings.",
+          "settlement": "Launch could not continue because wallet state changed. Refresh and try again.",
+          "rpcUnavailable": "Launch could not reach devnet reliably. Nothing changed; retry after the network recovers.",
+          "submissionFailed": "Launch did not complete. Nothing changed; retry or inspect Advanced details if it repeats."
+        }
+      },
+      "advancedDetailsTitle": "Advanced details",
+      "samplePreviewTitle": "Live sample Soul",
+      "samplePreviewBody": "Trait choices update this sample immediately so you can feel the art direction before signing.",
+      "samplePreviewCaveat": "Website motion preview only: the on-chain Soul SVG and marketplace metadata stay static, deterministic, and tied to the signed launch, trade, and generation seed.",
+      "samplePreviewSelected": "{count} guided traits in this sample",
+      "samplePreviewAlt": "Deterministic sample Soul preview",
+      "tokenMtSoulExplainer": {
+        "eyebrow": "Token → MT → Soul",
+        "title": "How the supply layers fit",
+        "body": "A launch creates a fungible market first; MT holder gates and collectible Souls sit above that market.",
+        "steps": {
+          "token": {
+            "label": "Token",
+            "value": "21,000,000 fungible tokens",
+            "body": "The tradeable Token-2022 market supply runs on the SolSoul curve."
+          },
+          "mt": {
+            "label": "MT gate",
+            "value": "10,000 tokens per MT",
+            "body": "A qualifying buy plus current holder balance opens one MT gate."
+          },
+          "soul": {
+            "label": "Soul",
+            "value": "2,100 MT/Soul cap",
+            "body": "Claimed Souls are the scarce collectible layer, not the fungible supply."
+          }
+        },
+        "capProgressLaunch": "Claim cap: 0 of 2,100 claimed before this token launches.",
+        "capProgress": "Claim progress: {claimCount} of 2,100 MT/Soul NFTs claimed."
+      }
+    },
+    "templateEditor": {
+      "eyebrow": "Template editor",
+      "title": "Fractal Template Editor",
+      "description": "Paste a high-end black/white on-chain SVG template and use placeholders like {hue}, {accent}, {seedHex}, and {holderTier}; valid templates are uploaded by your wallet after launch.",
+      "svgLabel": "SVG template",
+      "validationLabel": "Template validation badges",
+      "valid": "✓",
+      "invalid": "×",
+      "sizeOk": "size ≤ 2KB on-chain",
+      "startsWithSvg": "starts with an SVG element",
+      "xmlParseable": "XML parseable",
+      "noExternalRefs": "no external refs",
+      "preview": "Preview",
+      "previewTitle": "SVG template preview"
+    }
+  },
+  "generationRules": {
+    "eyebrow": "Soul standard",
+    "title": "How Souls are born",
+    "body": "Souls are deterministic artworks shaped by market activity. Each new moment is recreated from public SolSoul inputs and the art style chosen at launch.",
+    "inputsTitle": "Signals that shape a Soul",
+    "inputs": {
+      "side": "trade side (buy or sell)",
+      "amount": "trade amount",
+      "wallet": "wallet / trader and holder context",
+      "tokenSoul": "token and Soul identity",
+      "generation": "Soul generation number",
+      "chainEntropy": "recent chain signal available to SolSoul"
+    },
+    "standardTitle": "What collectors receive",
+    "standardBody": "When eligible, you receive the current Soul as a collectible whose artwork and history stay traceable in SolSoul.",
+    "mvpScope": "This MVP focuses on claim, view, Profile/gallery, rarity, and provenance. External NFT marketplace trading is not promised."
+  },
+  "token": {
+    "metadataEyebrow": "Token details",
+    "rpcDescription": "Advanced details are loaded through the configured endpoint: {endpoint}.",
+    "brandingNotice": "SolSoul platform branding is shown as a display badge and metadata field. Creator-entered names and symbols remain unchanged.",
+    "invalidMint": "This route parameter is not a valid mint address.",
+    "derivePdaError": "Unable to derive advanced accounts",
+    "unsupportedMint": "This token is not an active SolSoul launch mint.",
+    "loadSoulError": "Soul state is temporarily unavailable. The page remains usable; refresh or retry shortly.",
+    "loadCurveError": "Market state is temporarily unavailable. The page remains usable; refresh or retry shortly.",
+    "refreshSoulError": "Soul state could not refresh yet. Nothing changed; retry shortly.",
+    "labels": {
+      "mint": "Token ID",
+      "soulPda": "Soul account",
+      "curvePda": "Market account",
+      "generations": "Generations",
+      "claims": "Claims",
+      "artTheme": "Art theme",
+      "selfDeprecated": "Market closed",
+      "graduated": "Closed"
+    },
+    "unavailable": "Unavailable",
+    "yes": "Yes",
+    "no": "No",
+    "pdaUnavailable": "Advanced account data is unavailable for this token: {message}",
+    "riskRequired": "Check I understand before submitting a trade.",
+    "buy": "Buy",
+    "sell": "Sell",
+    "transfer": "Transfer",
+    "openTokenGallery": "Token gallery",
+    "postGraduationTitle": "Generate a fresh post-graduation Soul",
+    "postGraduationBody": "Graduated curves no longer accept swaps, so this direct call uses a synthetic swap amount while keeping the SVG fully on-chain.",
+    "claimTitle": "Collect the buy-backed Soul",
+    "claimBody": "Only the latest qualifying buy-backed Soul can be collected as an MT/Soul NFT. Sell-generated Souls remain visual market moments.",
+    "claimNoGeneration": "No collectible Soul exists yet. Buy first to awaken one.",
+    "claimGenerated": "Soul #{generation} is ready. Collecting checks the current {required} holder gate.",
+    "autoIssue": {
+      "title": "Soul collection happens through SolSoul buys",
+      "body": "Buy at least 10,000 fungible tokens through SolSoul. That 10,000-token quantum is one MT gate and can awaken a collectible Soul for your wallet.",
+      "routeOnly": "Only the official SolSoul buy flow creates a Soul; split orders, transfers, and sells do not.",
+      "noPreview": "No real Soul exists yet. The art appears after a SolSoul buy awakens one.",
+      "nftMintedLabel": "Collected Soul",
+      "nftMinted": "Collected Soul ID: {mint}"
+    },
+    "openGallery": "Open gallery",
+    "walletConnected": "Wallet connected. Buy, sell, and advanced transfer helpers are ready.",
+    "walletPrompt": "Connect Phantom to prepare buy, sell, or advanced transfer actions.",
+    "surfaceHeader": {
+      "eyebrow": "Soul studio",
+      "title": "Soul-first token view",
+      "identity": "Token",
+      "latestSoul": "Latest Soul",
+      "trade": "Next move",
+      "claim": "Soul status",
+      "progress": "Market pulse",
+      "provenance": "Story trail",
+      "artTheme": "Art theme",
+      "loadingArtTheme": "Loading art theme…",
+      "openTrade": "Buy or sell",
+      "openClaim": "Collect Soul",
+      "openTimeline": "Open story",
+      "backToMarket": "Back to market"
+    },
+    "lifecycle": {
+      "bondingCurve": "Market curve",
+      "currentPrice": "Current price",
+      "percentMinted": "Percent minted",
+      "tradeToGenerateSouls": "Trade to awaken Souls",
+      "spreadCurveVisual": "Market curve visual",
+      "loadingPrice": "Loading current price…",
+      "loadingProgress": "Loading market progress…"
+    },
+    "marketOverview": {
+      "title": "Market pulse",
+      "body": "Quick read: live price, reserve, circulating supply, and where this token sits before you trade.",
+      "price": "Price",
+      "reserve": "Reserve",
+      "circulating": "Circulating",
+      "progress": "Market filled",
+      "oneSolQuote": "1 SOL quote",
+      "maxBuy": "Max buy: 5 SOL per transaction",
+      "lockFee": "Buy quotes include the 0.1% fee that stays with this market."
+    },
+    "quote": {
+      "buyTitle": "Buy quote",
+      "sellTitle": "Sell quote",
+      "youReceive": "You receive",
+      "minReceived": "Minimum received",
+      "lockFee": "Locked fee",
+      "priceImpact": "Price impact",
+      "balance": "Wallet balance",
+      "route": "Path",
+      "buyRoute": "Wallet → SolSoul market → tokens + new Soul moment",
+      "sellRoute": "Tokens → SolSoul market → SOL + new Soul moment"
+    },
+    "soulPreview": {
+      "title": "Soul rarity preview",
+      "body": "The latest Soul preview follows the most recent generation moment; rarity and evolution reflect the Soul seed, action, generation, claim rank, traits, and art style.",
+      "deterministicSeed": "Soul seed",
+      "claimStatus": "Claim status",
+      "generated": "A generated Soul can be previewed before collecting.",
+      "notGenerated": "Trade first to awaken a rarity-bearing Soul.",
+      "previewAlt": "Soul rarity preview artwork",
+      "motionCaveat": "Website display only: the on-chain Soul SVG and metadata stay static, storing static SVG plus seed, traits, state, and provenance—not animation_url, video, executable formulas, or remote media."
+    },
+    "soulEvolution": {
+      "badge": "Website display layer",
+      "title": "Derived Soul evolution",
+      "body": "SolSoul does not write upgrades into the NFT. The website reads existing Soul state—seed, traits, generation, rarity, and provenance—and deterministically derives this level, stage, energy, and flow profile.",
+      "level": "Level",
+      "stage": "Stage",
+      "energy": "Energy",
+      "generation": "Generation",
+      "rarity": "Rarity style",
+      "provenance": "Provenance",
+      "rarityUnranked": "Unranked",
+      "staticLayerTitle": "NFT / metadata",
+      "staticLayerBody": "Static SVG plus seed, traits, state, and provenance stay marketplace-safe.",
+      "dynamicLayerTitle": "Website display",
+      "dynamicLayerBody": "This page renders local canvas motion, badges, and copy from that state; no executable animation or video is stored in metadata.",
+      "stages": {
+        "seed": "Seed state",
+        "awakening": "Awakening",
+        "flow": "Flowing",
+        "radiant": "Radiant",
+        "archival": "Archival"
+      },
+      "provenanceValues": {
+        "buy": "Buy-generated",
+        "sell": "Sell-generated",
+        "unknown": "Provenance pending"
+      }
+    },
+    "tradePanelTitle": "Buy or sell to awaken the next Soul",
+    "tradePanelBody": "Every buy or sell can awaken a Soul, but only buys can create buy-backed MT/Soul claim candidates. Sells create visual market moments only; claimed Souls stay available for viewing and collecting.",
+    "tradeSoulCard": {
+      "eyebrow": "Trade Soul",
+      "title": "Trade Soul",
+      "body": "Buy or sell from one focused card. Quotes stay visible; advanced receipt, transfer, and proof controls stay tucked away until you need them."
+    },
+    "proofRail": {
+      "eyebrow": "Proof rail",
+      "title": "Market proof at a glance",
+      "body": "A sticky desktop summary keeps the single Trade Soul surface, claim readiness, latest Soul, holder context, collectors, progress, locked SOL, and provenance visible without duplicating the trade panel.",
+      "tradeSoul": "Trade Soul",
+      "openTrade": "Open trade",
+      "claimStatus": "Claim status",
+      "latestSoul": "Latest generated Soul",
+      "latestSoulValue": "Generation #{generation}",
+      "holders": "Holders",
+      "holdersHelper": "Connected-wallet holder balance or connection state.",
+      "collectors": "Collectors",
+      "collectorsHelper": "Claimed MT/Soul NFTs recorded by the Soul account.",
+      "progress": "Progress",
+      "lockedSol": "Locked SOL",
+      "lockedSolHelper": "Market SOL backing shown from the current curve view.",
+      "provenance": "Provenance",
+      "provenanceHelper": "Short Soul seed; expand for raw account identifiers.",
+      "advancedSummary": "Advanced provenance"
+    },
+    "tradeReady": {
+      "buy": "Buy is ready. Submit a trade to awaken a Soul.",
+      "sell": "Sell is ready. Selling may awaken a visual-only Soul and can replace the latest unclaimed buy-backed claim candidate—collect an eligible Soul first if you want it."
+    },
+    "tradeControls": {
+      "solAmount": "SOL amount",
+      "slippagePercent": "Slippage (%)",
+      "sellTokenAmount": "Amount to sell",
+      "sellSlippagePercent": "Sell slippage (%)",
+      "quickBuyLabel": "Quick buy",
+      "quickSellLabel": "Quick sell",
+      "buyPresetMtGate": "MT gate est.",
+      "sellPresetMax": "Max",
+      "mtGateEstimateReady": "Estimate: {sol} SOL targets {tokens} tokens ({minimum} minimum after slippage) to reach the 10,000-token MT gate. Final eligibility still waits for wallet/RPC confirmation.",
+      "mtGateEstimateMet": "Your confirmed balance already meets the 10,000-token MT gate. Final claim eligibility still waits for wallet/RPC confirmation.",
+      "mtGateEstimateUnavailable": {
+        "connectWallet": "Connect wallet to estimate the exact MT gate quick buy from confirmed balance.",
+        "balanceLoading": "Waiting for confirmed token balance before estimating the MT gate quick buy.",
+        "balanceUnavailable": "Confirmed token balance is unavailable, so the MT gate quick buy estimate is disabled.",
+        "curveLoading": "Waiting for live curve quote data before estimating the MT gate quick buy.",
+        "curveUnavailable": "Curve quote data is unavailable, so no MT gate estimate is shown.",
+        "tooLarge": "The MT gate estimate is above the 5 SOL per-transaction buy limit. Use confirmed quotes before splitting buys."
+      },
+      "sellPresetUnavailable": {
+        "connectWallet": "Connect wallet to enable sell percentage presets from confirmed balance.",
+        "loading": "Waiting for confirmed token balance before enabling sell presets.",
+        "empty": "No available token balance for sell presets.",
+        "unavailable": "Token balance is unavailable, so sell presets are disabled."
+      },
+      "estimatedTokenOut": "Estimated before slippage: {amount} tokens",
+      "buyPreviewPrompt": "Enter an amount after curve state loads to preview expected output.",
+      "estimatedSolOut": "Estimated before slippage: {amount} SOL",
+      "sellPreviewPrompt": "Enter a token amount after curve state loads to preview expected SOL output.",
+      "advanced": "Advanced",
+      "tokenBalanceLabel": "Token balance:",
+      "solBalanceLabel": "SOL balance:",
+      "loading": "loading…",
+      "connectWallet": "connect wallet",
+      "tokenBalanceUnavailable": "Token balance is temporarily unavailable. Refresh or retry after the wallet or network connection recovers.",
+      "solBalanceUnavailable": "SOL balance is temporarily unavailable. Refresh or retry after the wallet or network connection recovers.",
+      "sellDiscovery": "Before selling, SolSoul finds the best available balance for this token.",
+      "openingWallet": "Opening wallet…",
+      "buyCompleteTitle": "Buy complete",
+      "buyCompleteBody": "Your token balance, Soul state, market quote, and story timeline have been refreshed.",
+      "sellCompleteTitle": "Sell complete",
+      "sellCompleteBody": "Your token balance, market quote, and story timeline refreshed. The sell-generated Soul is a visual market moment, not a claimable MT/Soul NFT.",
+      "claimableNextActionTitle": "Collect this Soul first",
+      "claimableNextActionBody": "Confirmed buy-backed eligibility is available for the latest Soul. Collect it before more trades if you want this candidate in your collection.",
+      "claimableNextActionCta": "Collect Soul",
+      "sellBeforeClaimTitle": "Collect first if you want this Soul",
+      "sellBeforeClaimBody": "Visual note only: selling can awaken the next market Soul and may make this unclaimed buy-backed candidate no longer the latest one. This is guidance, not a protocol block.",
+      "sellBeforeClaimCta": "Collect Soul first",
+      "sellBeforeClaimNote": "Sell stays available below when quote, balance, and settlement checks pass.",
+      "sellBeforeClaimWarningTitle": "Visual collection note",
+      "sellBeforeClaimWarningBody": "Selling before collecting may move the latest Soul preview to a new sell-generated market moment. It does not create a claimable MT/Soul NFT and does not block selling unless the current transaction is disabled by confirmed state.",
+      "sellClaimWarningTitle": "Before you sell",
+      "sellClaimWarningBody": "Selling can awaken a visual Soul moment, but it does not create a claimable MT/Soul. If a buy-backed Soul is currently unclaimed, selling first may make that buy provenance no longer the latest claimable candidate.",
+      "tradeEvidence": "Inspect trade evidence",
+      "finalizedBuyLabel": "Buy transaction",
+      "finalizedBuy": "Buy complete. Transaction: {signature}",
+      "minimumTokenOutLabel": "Minimum tokens received",
+      "minimumTokenOut": "Minimum token out: {amount}",
+      "finalizedSellLabel": "Sell transaction",
+      "finalizedSell": "Sell complete. Transaction: {signature}",
+      "soldLabel": "Tokens sold",
+      "sold": "Sold: {amount} tokens",
+      "minimumSolOutLabel": "Minimum SOL received",
+      "minimumSolOut": "Minimum SOL out: {amount}",
+      "tokenAccountLabel": "Source token account",
+      "tokenAccount": "Advanced token account: {account}",
+      "activeReceipts": "active receipts",
+      "live": "Live",
+      "selfDeprecated": "Market closed",
+      "graduated": "Closed"
+    },
+    "directTransfer": {
+      "title": "Hook-aware wallet transfer",
+      "body": "Send meme tokens directly with Token-2022 Transfer Hook account resolution. SolSoul blocks transfers that would break active receipt-backed whole-token capacity.",
+      "recipientLabel": "Recipient wallet",
+      "recipientPlaceholder": "Recipient public key",
+      "amountLabel": "Token amount to transfer",
+      "amountPlaceholder": "0.000001",
+      "openingWallet": "Opening wallet…",
+      "ready": "Hook-aware transfer is ready. The SDK will resolve validation metas and the source-owner receipt registry before preflight.",
+      "connectWallet": "Connect Phantom to unlock hook-aware direct transfer.",
+      "balanceLoading": "Wait for your meme-token balance to load before transferring.",
+      "buyTokensFirst": "Buy tokens first before transferring from this wallet.",
+      "invalidAmount": "Enter a valid token amount to transfer.",
+      "amountExceedsBalance": "Reduce the transfer amount; this wallet does not hold enough meme tokens.",
+      "recipientRequired": "Enter a recipient wallet address.",
+      "success": "Finalized hook-aware transfer signature: {signature}",
+      "sourceAccount": "Source token account: {account}",
+      "destinationAccount": "Destination token account: {account}",
+      "warnings": {
+        "directTransferBoundaryRejected": "Transfer rejected by MT receipt-boundary policy. Keep 10,000 fungible tokens per active MT/Soul receipt or settle receipts before crossing the boundary.",
+        "directTransferHookMetasMissing": "Required transfer validation data is unavailable. Refresh and retry; SolSoul will not submit an incomplete transfer.",
+        "directTransferRegistryMissing": "Claim and receipt state is unavailable for this wallet. Refresh before trying a direct transfer again.",
+        "directTransferUnsupportedHook": "This token is not configured for safe SolSoul direct transfer, so the app will not submit it.",
+        "directTransferPreflightFailed": "Transfer could not be prepared safely. Balances were not changed; retry after the network recovers."
+      },
+      "validation": {
+        "invalidRecipient": "Enter a valid recipient wallet address before transferring."
+      }
+    },
+    "settlement": {
+      "title": "Boundary settlement required",
+      "modeLabel": "Receipt settlement mode",
+      "burnMode": "Burn selected receipts",
+      "forfeitMode": "Forfeit selected receipts",
+      "body": "{mode} before this boundary move. The wallet signs one atomic settlement + sell/transfer transaction so receipts cannot be left active after capacity drops.",
+      "selectedReceipts": "Selected receipt set",
+      "postWholeUnits": "Post-move whole-token capacity",
+      "blocked": "Boundary move is blocked until the exact settlement receipts are available",
+      "blockedUnavailable": "Settlement evidence is temporarily unavailable. Refresh the preview and try again.",
+      "stateUnavailable": "Receipt settlement state is temporarily unavailable. Refresh or retry shortly.",
+      "sourceSelectionNotice": "Settlement preview uses the same selected source token account and balance that will be submitted. If this wallet has multiple token accounts, a source account change can change the required receipt set.",
+      "sourceAccount": "Preview source token account",
+      "sourceBalance": "Preview source balance",
+      "sourceMismatch": "Source token account or balance changed before signing. Refresh the preview and submit again so the selected receipt set matches the transaction.",
+      "boundary": "boundary"
+    },
+    "tradeGeneration": {
+      "buyEyebrow": "Buy complete",
+      "sellEyebrow": "Sell complete",
+      "generated": "Generated Soul #{generation}",
+      "previewAlt": "Generated Soul preview",
+      "buySignature": "Buy transaction",
+      "sellSignature": "Sell transaction",
+      "side": "Side",
+      "buySide": "Buy",
+      "sellSide": "Sell",
+      "amount": "Trade amount",
+      "trader": "Trader",
+      "seedHash": "Soul spark",
+      "transaction": "Explorer transaction",
+      "claimSoul": "Claim Soul",
+      "sellReviewClaimRules": "Review buy-backed claim rules",
+      "sellVisualOnly": "This sell-generated Soul is a visual market moment only. It is not a claimable MT/Soul NFT; claimable Souls must come from the latest qualifying buy.",
+      "viewCollection": "View collection",
+      "tradeAgain": "Trade again"
+    },
+    "timeline": {
+      "title": "Story timeline",
+      "body": "Launches, trades, Soul generations, and collection moments",
+      "loading": "Loading story…",
+      "loadError": "Unable to load story",
+      "unavailableTitle": "Story is temporarily unavailable",
+      "unavailableBody": "The public story endpoint did not return in time. Trading, collecting, and the rest of this token page remain available while you retry.",
+      "retryHint": "Refresh this token page to retry the story timeline.",
+      "cachedNotice": "Showing the last saved story while the public endpoint recovers.",
+      "timeoutError": "Timeline request timed out. Refresh the token page to retry against the public API.",
+      "invalidData": "Timeline response was incomplete. Refresh the token page to fetch finalized public evidence again.",
+      "empty": "No story is available yet. Launch and trade this token to create the first moments.",
+      "source": "Advanced source",
+      "signature": "Transaction",
+      "slot": "Slot",
+      "evidence": {
+        "show": "Inspect evidence",
+        "hide": "Hide evidence",
+        "title": "Technical evidence",
+        "source": "Evidence source",
+        "address": "Evidence address",
+        "blockTime": "Block time",
+        "eventId": "Event ID",
+        "tokenMint": "Token mint",
+        "soulAccount": "Soul account",
+        "rawEvent": "Raw event evidence"
+      },
+      "details": {
+        "side": "Side",
+        "amount": "Amount",
+        "trader": "Trader",
+        "tokenAccount": "Token account",
+        "seedHash": "Soul seed",
+        "receiptLifecycle": "Receipt lifecycle",
+        "receiptAccount": "Receipt account",
+        "receiptBoundQuantity": "Bound quantity",
+        "receiptBoundBoundary": "Bound boundary"
+      },
+      "events": {
+        "launch": {
+          "title": "Launch",
+          "description": "{token} initialized the token/Soul lifecycle."
+        },
+        "trade": {
+          "title": "Trade",
+          "description": "{token} recorded a market action."
+        },
+        "generation": {
+          "title": "Soul generation",
+          "description": "{token} generated Soul #{generation}."
+        },
+        "claim": {
+          "title": "Collected",
+          "description": "{token} Soul collection sequence #{sequence}."
+        }
+      },
+      "links": {
+        "token": "Token",
+        "gallery": "Gallery",
+        "soul": "Soul account",
+        "transaction": "Explorer",
+        "mint": "Token ID",
+        "nft": "Soul NFT"
+      }
+    },
+    "tradeDisabled": {
+      "paused": "Service paused. Wait until SolSoul is unpaused before trading.",
+      "busy": "{action} is already opening the wallet. Wait for the current request to finish.",
+      "connectWallet": "Connect Phantom to unlock {action}.",
+      "curveLoading": "Wait for the market to load before trading.",
+      "curveUnavailable": "This token market is unavailable. Refresh or open a live token before trading.",
+      "graduated": "This token market is closed for buys and sells.",
+      "acknowledgeRisk": "Check I understand in the risk disclosure to unlock {action}.",
+      "invalidAmount": "Enter a valid amount after the market loads to preview {action}.",
+      "balanceLoading": "Wait for your meme-token balance to load before selling.",
+      "buyTokensFirst": "Buy tokens first before selling from this wallet.",
+      "sellAmountExceedsBalance": "Reduce the sell amount or buy more tokens; this wallet does not hold enough tokens for that sell."
+    },
+    "walletErrors": {
+      "buy": {
+        "walletRejected": "Buy was not signed. Approve the wallet request when you are ready.",
+        "validation": "Buy cannot be submitted yet. Check amount, slippage, wallet, and market readiness.",
+        "settlement": "Buy could not continue because receipt state changed. Refresh and try again.",
+        "rpcUnavailable": "Buy could not reach devnet reliably. Nothing changed; retry after the network recovers.",
+        "submissionFailed": "Buy did not complete. Nothing changed; retry or inspect Advanced details if it repeats."
+      },
+      "sell": {
+        "walletRejected": "Sell was not signed. Approve the wallet request when you are ready.",
+        "validation": "Sell cannot be submitted yet. Check amount, balance, slippage, and market readiness.",
+        "settlement": "Sell needs fresh receipt settlement evidence. Refresh the preview and submit again.",
+        "rpcUnavailable": "Sell could not reach devnet reliably. Nothing changed; retry after the network recovers.",
+        "submissionFailed": "Sell did not complete. Nothing changed; retry or inspect Advanced details if it repeats."
+      }
+    },
+    "previewLabel": "Live Soul preview",
+    "previewEmpty": "Fractal placeholder",
+    "previewGenerated": "Showing latest generated Soul #{generation}.",
+    "previewAlt": "Live SolSoul SVG preview",
+    "loadingCurve": "Loading market state…",
+    "curveStatus": "Market status: {status}.",
+    "curveActive": "active",
+    "curveDeprecated": "deprecated",
+    "curveGraduated": "graduated",
+    "curveUnavailable": "Market status unavailable: {message}",
+    "economics": {
+      "title": "Fixed launch economics + live curve state",
+      "loading": "Loading live curve state from the configured devnet RPC…",
+      "empty": "No BondingCurveAccount exists for this mint yet. Fixed protocol economics still apply once the launch is initialized.",
+      "error": "Unable to load live curve state: {message}",
+      "supplyNotConfigurable": "Supply is fixed by the protocol and is not configurable by the creator.",
+      "fixedCopy": {
+        "protocolFixedEconomics": "Protocol-fixed economics",
+        "decimalUnit": "decimals",
+        "curve": "exponential bonding curve",
+        "supplyCap": "asymptotic supply cap",
+        "launchFee": "launch fee",
+        "buyLockFee": "buy lock fee",
+        "buyLockFeeSuffix": "permanently locked in curve",
+        "noGraduation": "no graduation, no migration, no liquidity extraction",
+        "ammReferences": "AMM adapter references are historical/deferred; active launches stay on the curve"
+      },
+      "units": {
+        "tokenUnit": "tokens",
+        "baseUnit": "base units",
+        "solPerToken": "SOL/token",
+        "launchFee": "launch",
+        "buyLockFee": "buy lock"
+      },
+      "labels": {
+        "decimals": "Decimals",
+        "fixedSupply": "Fixed curve/migration supply",
+        "fixedSupplyBaseUnits": "Supply base units",
+        "protocolVirtualReserves": "Protocol virtual reserves",
+        "protocolGraduationThresholds": "Graduation thresholds",
+        "protocolCurveParams": "Protocol curve params",
+        "protocolFees": "Protocol fees",
+        "currentPrice": "Current price",
+        "oneSolQuote": "Live quote",
+        "cumulativeSol": "Cumulative SOL",
+        "totalMinted": "Total minted",
+        "percentMinted": "Percent minted",
+        "percentToDeprecated": "To curve deprecation",
+        "selfDeprecated": "Curve deprecated",
+        "liveVirtualReserves": "Live virtual reserves",
+        "liveRealReserves": "Live real reserves",
+        "percentSold": "Percent sold",
+        "graduated": "Graduated",
+        "migrated": "Migrated",
+        "targetAmm": "Target AMM"
+      }
+    },
+    "loadingSoul": "Loading SoulAccount from the configured RPC…",
+    "loadedSoul": "Loaded SoulAccount with {bytes} SVG bytes.",
+    "fallbackPreview": "Showing fallback preview because the live SoulAccount is not available: {message}",
+    "modelNotice": "Trades can awaken changing Soul artworks. The market has 21,000,000 fungible tokens, while MT/Soul collectibles are scarce: 10,000 tokens qualify one MT and each token can mint at most 2,100 MT/Soul NFTs.",
+    "secondarySections": {
+      "title": "Story and advanced layers",
+      "body": "Soul rarity, story timeline, lifecycle context, and protocol evidence remain available below the hero action center."
+    },
+    "lifecycleMachine": {
+      "eyebrow": "Soul journey",
+      "title": "Soul journey",
+      "body": "Follow the living object first: trade to awaken a Soul, hold the 10,000-token MT quantum, then collect one of the scarce 2,100 MT/Soul NFTs.",
+      "currentState": "Current state",
+      "nextAction": "Best next step",
+      "generation": "Generation #{generation}",
+      "requiredBalance": "Collection gate: qualifying buy + current {required} tokens per MT",
+      "technicalDetails": "Advanced technical details",
+      "steps": {
+        "noSoulYet": {
+          "label": "No Soul yet",
+          "description": "No generated artwork exists yet. Trade this token to awaken the first Soul."
+        },
+        "generatedUnclaimed": {
+          "label": "Awakened / uncollected",
+          "description": "A Soul exists; SolSoul checks the qualifying buy and holder gate before collection."
+        },
+        "claimable": {
+          "label": "Claimable",
+          "description": "This wallet qualifies and still meets the holder gate. Collect the Soul into your gallery."
+        },
+        "ineligible": {
+          "label": "Ineligible",
+          "description": "A Soul exists, but this wallet does not currently meet the collection rules."
+        },
+        "claimedInCollection": {
+          "label": "Collected",
+          "description": "The latest Soul has been collected. View the gallery or trade to awaken another."
+        }
+      },
+      "actions": {
+        "tradeToGenerate": "Trade to awaken",
+        "connectWallet": "Connect wallet to check eligibility",
+        "claimSoul": "Collect Soul",
+        "buyOrHold": "Restore 10,000-token MT gate",
+        "viewCollection": "View gallery"
+      }
+    },
+    "tokenMtSoulExplainer": {
+      "eyebrow": "Token → MT → Soul",
+      "title": "Supply model at a glance",
+      "body": "Trades move the 21M-token market and awaken Souls; only qualifying 10,000-token MT gates can become scarce collectibles.",
+      "steps": {
+        "token": {
+          "label": "Token",
+          "value": "21,000,000 fungible tokens",
+          "body": "Buy and sell the fungible market token on the curve."
+        },
+        "mt": {
+          "label": "MT gate",
+          "value": "10,000 tokens per MT",
+          "body": "Each MT needs qualifying buy provenance plus current holder balance."
+        },
+        "soul": {
+          "label": "Soul",
+          "value": "2,100 MT/Soul cap",
+          "body": "Claimed Souls are capped collectibles shaped by deterministic trade seeds."
+        }
+      },
+      "capProgress": "Claim progress: {claimCount} of 2,100 MT/Soul NFTs claimed."
+    },
+    "bondingCurveChart": {
+      "eyebrow": "Soul Flow chart",
+      "title": "Soul Flow market surface",
+      "body": "A lightweight sampled market view with price movement, volume bars, Soul generation markers, claim markers, the 10,000-token MT gate, and the 2,100 MT/Soul collectible cap.",
+      "summary": "Soul Flow chart. Current price {currentPrice}; minted progress {percentMinted}; total minted {totalMinted}. The chart marks volume movement, Soul generations, claims, 10,000 tokens per MT, and the 2,100 MT/Soul cap.",
+      "unavailableTitle": "Curve chart unavailable",
+      "unavailableBody": "Live curve data is missing or outside the expected range, so SolSoul is showing a safe fallback instead of plotting misleading markers.",
+      "currentPoint": "Current point",
+      "mintedProgress": "Minted progress",
+      "priceAxis": "Price",
+      "tokenAxis": "Minted tokens",
+      "firstMtMarker": "10,000 tokens / MT",
+      "capMarker": "2,100 MT cap",
+      "capHelper": "The 2,100 MT/Soul cap is the collectible layer above the 21,000,000 fungible-token curve supply.",
+      "stats": {
+        "currentPrice": "Current price",
+        "totalMinted": "Total minted",
+        "percentMinted": "Minted"
+      },
+      "soulFlow": {
+        "volumeMovement": "Market / volume movement",
+        "generationMarker": "Soul generation",
+        "claimMarker": "Soul claim",
+        "fixture": "Deterministic fixture until live flow arrives",
+        "noMarkers": "No generation or claim markers yet; trade this token to awaken the first Soul Flow events."
+      }
+    }
+  },
+  "claim": {
+    "disabled": {
+      "paused": "Service paused. Claiming is temporarily disabled.",
+      "connectWallet": "Connect a wallet to claim a generated MT/Soul NFT.",
+      "generateFirst": "Buy first to generate a changing Soul SVG candidate before claiming.",
+      "alreadyClaimed": "This Soul generation has already been claimed.",
+      "balanceLoading": "Checking current holder balance after qualifying single-buy provenance.",
+      "insufficientBalance": "This Soul has qualifying buy provenance, but this wallet must still hold at least {required} fungible tokens for one MT claim.",
+      "provenanceMissing": "The latest Soul lacks qualifying buy-output provenance, so legacy or pre-provenance visual candidates cannot be claimed.",
+      "provenanceSellGenerated": "The latest Soul was generated by a sell, so it is a visual market moment only—not a claimable MT/Soul NFT. Claiming requires the latest Soul to come from a qualifying buy of at least 10,000 fungible tokens.",
+      "provenanceSubWhole": "This Soul's originating buy output was below the 10,000-token MT quantum. Accumulated balance from later activity cannot unlock this candidate.",
+      "provenanceWalletMismatch": "Only the wallet that generated this qualifying buy provenance can claim this Soul."
+    },
+    "errorFallback": "Claim transaction failed.",
+    "errors": {
+      "walletRejected": "Claim was not signed. Approve the wallet request when you are ready.",
+      "validation": "Claim cannot be submitted yet. Check wallet, holder balance, and Soul eligibility.",
+      "settlement": "Claim evidence changed before signing. Refresh the Soul state and try again.",
+      "rpcUnavailable": "Claim could not reach devnet reliably. Nothing changed; retry after the network recovers.",
+      "submissionFailed": "Claim did not complete. Nothing changed; retry or inspect technical details if it repeats."
+    },
+    "claiming": "Claiming…",
+    "claimed": "Claimed",
+    "claim": "Collect Soul",
+    "success": "Collected! Soul ID: {mint}",
+    "technicalDetails": "Technical details",
+    "signature": "Transaction: {signature}",
+    "viewInMySouls": "View in My Souls"
+  },
+  "generateAgain": {
+    "disabled": {
+      "paused": "Service paused. Soul generation is temporarily disabled.",
+      "notGraduated": "Generate again is available after this token graduates.",
+      "connectWallet": "Connect a wallet to generate a new post-graduation Soul."
+    },
+    "errorFallback": "Generate again transaction failed.",
+    "errors": {
+      "walletRejected": "Generation was not signed. Approve the wallet request when you are ready.",
+      "validation": "Generation cannot be submitted yet. Check wallet, token state, and eligibility.",
+      "settlement": "Generation evidence changed before signing. Refresh the Soul state and try again.",
+      "rpcUnavailable": "Generation could not reach devnet reliably. Nothing changed; retry after the network recovers.",
+      "submissionFailed": "Generation did not complete. Nothing changed; retry or inspect technical details if it repeats."
+    },
+    "generating": "Generating…",
+    "button": "Generate again",
+    "success": "Generated a new Soul. Signature: {signature}"
+  },
+  "soulRarity": {
+    "title": "Soul rarity",
+    "score": "Soul Score {score}",
+    "generation": "Generation",
+    "theme": "Theme",
+    "traits": "Key traits",
+    "unknownGeneration": "Unknown generation",
+    "unknownTheme": "Unknown theme",
+    "tiers": {
+      "common": "Common",
+      "uncommon": "Uncommon",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic"
+    },
+    "traitKinds": {
+      "generationBand": "Generation band",
+      "tradeSignal": "Trade signal",
+      "seedSource": "Seed source",
+      "claimRank": "Claim rank",
+      "artTheme": "Art theme"
+    },
+    "traitValues": {
+      "generationBand": {
+        "unknown": "Unknown generation",
+        "genesis": "Genesis",
+        "early": "Early run",
+        "established": "Established cycle",
+        "deepCycle": "Deep cycle"
+      },
+      "tradeSignal": {
+        "unknown": "Provenance unavailable",
+        "buy": "Buy-generated",
+        "sell": "Sell-generated"
+      },
+      "seedSource": {
+        "onChainSeedHash": "Seed hash present",
+        "metadataFallback": "Metadata fallback"
+      },
+      "claimRank": {
+        "unranked": "Unranked claim",
+        "firstClaim": "First claim",
+        "earlyClaim": "Early claim",
+        "archivalClaim": "Archival claim"
+      },
+      "artTheme": {
+        "neonpuff": "NeonPuff renderer",
+        "soulpuff": "SoulPuff renderer",
+        "monochrome": "Monochrome renderer",
+        "hexagram": "Hexagram renderer",
+        "signal": "Signal renderer",
+        "custom": "Custom renderer",
+        "legacy": "Legacy theme fallback",
+        "fractal": "Fractal Structure",
+        "field": "Vector Field",
+        "lattice": "Crystal Lattice",
+        "chaos": "Strange Attractor",
+        "harmonic": "Harmonic Wave",
+        "pixel_fractal": "Pixel Fractal",
+        "pixel_art": "Pixel Art",
+        "symphony": "Symphony"
+      }
+    }
+  },
+  "soulTraits": {
+    "title": "Generated traits",
+    "launchGuidedTitle": "Launch-guided core traits",
+    "launchGuidedEmpty": "No launch-guided core trait was selected; this Soul uses deterministic system guidance.",
+    "systemTitle": "System-generated traits",
+    "coreCategories": {
+      "palette": "Palette",
+      "mood": "Mood",
+      "form": "Form",
+      "background": "Background"
+    },
+    "coreValues": {
+      "palette": {
+        "solana": "Solana",
+        "aurora": "Aurora",
+        "ember": "Ember",
+        "mono": "Mono"
+      },
+      "mood": {
+        "serene": "Serene",
+        "charged": "Charged",
+        "mystic": "Mystic",
+        "radiant": "Radiant"
+      },
+      "form": {
+        "spiral": "Spiral",
+        "wave": "Wave",
+        "crystal": "Crystal",
+        "orb": "Orb"
+      },
+      "background": {
+        "midnight": "Midnight",
+        "nebula": "Nebula",
+        "grid": "Grid",
+        "eclipse": "Eclipse"
+      }
+    },
+    "categories": {
+      "character_archetype": "Character",
+      "goggles_eyes": "Goggles/Eyes",
+      "expression": "Expression",
+      "gas_aura_cloud": "Gas/Aura",
+      "background": "Background",
+      "outfit": "Outfit",
+      "relic": "Relic",
+      "animation_behavior": "Animation",
+      "gas_level": "Gas Level"
+    },
+    "values": {
+      "character_archetype": {
+        "neonpuff_unicorn": "NeonPuff Unicorn",
+        "rainbow_pegasus": "Rainbow Pegasus",
+        "solana_dragon": "Solana Dragon",
+        "vapor_fox": "Vapor Fox",
+        "gas_goblin": "Gas Goblin",
+        "oracle_cat": "Oracle Cat",
+        "mythic_star_horse": "Mythic Star Horse",
+        "fractal_structure": "Fractal Structure"
+      },
+      "goggles_eyes": {
+        "rainbow_goggles": "Rainbow Goggles",
+        "laser_lenses": "Laser Lenses",
+        "starry_eyes": "Starry Eyes",
+        "sleepy_lids": "Sleepy Lids",
+        "monocle_scope": "Monocle Scope",
+        "hologram_visor": "Hologram Visor",
+        "cosmic_third_eye": "Cosmic Third Eye"
+      },
+      "expression": {
+        "zen_smirk": "Zen Smirk",
+        "diamond_grin": "Diamond Grin",
+        "surprised_puff": "Surprised Puff",
+        "battle_squint": "Battle Squint",
+        "meme_cackle": "Meme Cackle",
+        "oracle_focus": "Oracle Focus",
+        "legendary_wink": "Legendary Wink"
+      },
+      "gas_aura_cloud": {
+        "green_gas_puff": "Green Gas Puff",
+        "rainbow_aura": "Rainbow Aura",
+        "solana_mist": "Solana Mist",
+        "neon_cloud": "Neon Cloud",
+        "spark_burst": "Spark Burst",
+        "plasma_halo": "Plasma Halo",
+        "golden_fog": "Golden Fog"
+      },
+      "background": {
+        "midnight_gradient": "Midnight Gradient",
+        "solana_sky": "Solana Sky",
+        "checker_stars": "Checker Stars",
+        "meme_wall": "Meme Wall",
+        "nebula_ring": "Nebula Ring",
+        "aurora_grid": "Aurora Grid",
+        "eclipse_gold": "Eclipse Gold"
+      },
+      "outfit": {
+        "hoodie": "Hoodie",
+        "space_jacket": "Space Jacket",
+        "raydium_racer": "Raydium Racer",
+        "puffer_vest": "Puffer Vest",
+        "wizard_cape": "Wizard Cape",
+        "gold_chain": "Gold Chain",
+        "king_robes": "King Robes"
+      },
+      "relic": {
+        "none": "None",
+        "solana_coin": "Solana Coin",
+        "raydium_orb": "Raydium Orb",
+        "tiny_launcher": "Tiny Launcher",
+        "neon_carrot": "Neon Carrot",
+        "gas_canister": "Gas Canister",
+        "ancient_receipt": "Ancient Receipt"
+      },
+      "animation_behavior": {
+        "gentle_gas_drift": "Gentle Gas Drift",
+        "lens_shine": "Lens Shine",
+        "aura_flow": "Aura Flow",
+        "background_pulse": "Background Pulse",
+        "sparkle_pop": "Sparkle Pop",
+        "rainbow_orbit": "Rainbow Orbit",
+        "mythic_prism_bloom": "Mythic Prism Bloom"
+      },
+      "gas_level": {
+        "level_1": "Gas Level 1",
+        "level_2": "Gas Level 2",
+        "level_3": "Gas Level 3",
+        "level_4": "Gas Level 4",
+        "level_5": "Gas Level 5",
+        "level_6": "Gas Level 6",
+        "level_7": "Gas Level 7",
+        "level_8": "Gas Level 8"
+      }
+    }
+  },
+  "gallery": {
+    "ownerNone": "No wallet connected",
+    "loadError": "Unable to load trade-generated Soul NFTs from public devnet evidence.",
+    "timeoutError": "Soul NFT evidence is taking longer than expected.",
+    "retryGuidance": "Refresh to retry; visible cards stay stable when evidence is temporarily unavailable.",
+    "eyebrow": "My Souls",
+    "title": "Claimed Soul gallery",
+    "description": "Shows this wallet's claimed MT/Soul NFTs after token-trade generation and holder claim. This is not a standalone NFT drop: 21,000,000 fungible tokens power the market, and every MT/Soul NFT requires a 10,000-token holder gate.",
+    "wallet": "Wallet: {owner}",
+    "connectPrompt": "Connect Phantom to load Soul NFTs you claimed after holding the generated token.",
+    "loading": "Loading Token-2022 NFT accounts and token associations from the configured devnet RPC…",
+    "empty": "No claimed MT/Soul NFTs found for this wallet yet. Open a <link>token page</link>, trade to generate a Soul candidate, hold at least 10,000 tokens, then claim.",
+    "emptyLink": "token page",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "Website preview only: this compact card renders local motion from static Soul state; NFT metadata remains static and executable-free.",
+    "mint": "Mint",
+    "tokenMint": "Associated token",
+    "tokenAccount": "Token account",
+    "claimer": "Claimer wallet",
+    "nftMint": "NFT mint",
+    "artTheme": "Art theme",
+    "provenance": {
+      "title": "Market-created trade artifact",
+      "generation": "Generation",
+      "side": "Trade side",
+      "amount": "Trade amount",
+      "trader": "Trader / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer transaction",
+      "transactionPending": "Explorer transaction pending",
+      "openTimeline": "Open token timeline for finalized tx evidence",
+      "unavailableTitle": "Provenance pending",
+      "unavailableBody": "This market-created Soul card has no finalized API/RPC provenance evidence yet, so SolSoul is not fabricating side, amount, trader, seed hash, or tx fields."
+    },
+    "receiptLifecycle": {
+      "label": "Receipt binding",
+      "active": "Active bound receipt",
+      "burned": "Burned inactive receipt",
+      "forfeited": "Forfeited inactive receipt",
+      "boundQuantity": "Bound quantity",
+      "boundBoundary": "Bound boundary",
+      "receiptAccount": "Receipt account"
+    }
+  },
+  "profile": {
+    "ownerNone": "No wallet connected",
+    "loadError": "Unable to load wallet-owned trade-generated Soul NFTs from public devnet evidence.",
+    "timeoutError": "Your Soul collection is taking longer than expected.",
+    "retryGuidance": "Refresh to retry; claimed Soul cards stay stable when evidence is temporarily unavailable.",
+    "eyebrow": "My collection",
+    "title": "My Souls",
+    "description": "Your claimed MT/Soul NFTs. Trade fungible tokens to generate Souls, hold at least 10,000 tokens for one MT, then claim.",
+    "wallet": "Wallet: {owner}",
+    "connectPrompt": "Connect Phantom to view the Soul NFTs claimed by this wallet.",
+    "loading": "Loading active receipt binding records first, then enriching with wallet Token-2022 NFT accounts and metadata from the configured devnet RPC when available…",
+    "empty": "No claimed MT/Soul NFTs found for this wallet yet. Open a <link>token page</link>, trade to generate a Soul candidate, hold at least 10,000 tokens, then claim it into Profile/My Souls.",
+    "emptyLink": "token page",
+    "imageLabel": "{name} SVG",
+    "mint": "Mint",
+    "tokenMint": "Associated token",
+    "tokenAccount": "Token account",
+    "artTheme": "Art theme",
+    "provenance": {
+      "title": "Market-created trade artifact",
+      "generation": "Generation",
+      "side": "Trade side",
+      "amount": "Trade amount",
+      "trader": "Trader / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer transaction",
+      "transactionPending": "Explorer transaction pending",
+      "openTimeline": "Open token timeline for finalized tx evidence",
+      "unavailableTitle": "Provenance pending",
+      "unavailableBody": "This market-created Soul card has no finalized API/RPC provenance evidence yet, so SolSoul is not fabricating side, amount, trader, seed hash, or tx fields."
+    },
+    "receiptLifecycle": {
+      "label": "Receipt binding",
+      "active": "Active bound receipt",
+      "burned": "Burned inactive receipt",
+      "forfeited": "Forfeited inactive receipt",
+      "boundQuantity": "Bound quantity",
+      "boundBoundary": "Bound boundary",
+      "receiptAccount": "Receipt account"
+    }
+  },
+  "publicGallery": {
+    "loadError": "Unable to load public trade-generated Soul NFTs from devnet evidence.",
+    "eyebrow": "Soul collection",
+    "title": "Souls",
+    "description": "Browse claimed Souls. Each Soul is a unique on-chain SVG generated by token trades.",
+    "loading": "Loading claimed Soul NFTs and token associations from the configured devnet RPC…",
+    "timeoutError": "The public gallery request timed out before finalized devnet evidence responded.",
+    "retryGuidance": "Refresh to retry; SolSoul keeps visible cards stable without inventing missing provenance.",
+    "empty": "No claimed MT/Soul NFTs found yet. Launch a token, trade to generate a changing on-chain SVG Soul candidate, then claim while holding at least 10,000 tokens.",
+    "summary": "{total} claimed Souls · page {page} · {pageSize} per page",
+    "previous": "Previous",
+    "next": "Next",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "Website preview only: this compact card renders local motion from static Soul state; NFT metadata remains static and executable-free.",
+    "sequence": "Sequence #{sequence}",
+    "tokenMint": "Associated token",
+    "claimer": "Claimer wallet",
+    "nftMint": "NFT mint",
+    "artTheme": "Art theme",
+    "provenance": {
+      "title": "Market-created trade artifact",
+      "generation": "Generation",
+      "side": "Trade side",
+      "amount": "Trade amount",
+      "trader": "Trader / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer transaction",
+      "transactionPending": "Explorer transaction pending",
+      "openTimeline": "Open token timeline for finalized tx evidence",
+      "unavailableTitle": "Provenance pending",
+      "unavailableBody": "This market-created Soul card has no finalized API/RPC provenance evidence yet, so SolSoul is not fabricating side, amount, trader, seed hash, or tx fields."
+    },
+    "receiptLifecycle": {
+      "label": "Receipt binding",
+      "active": "Active bound receipt",
+      "burned": "Burned inactive receipt",
+      "forfeited": "Forfeited inactive receipt",
+      "boundQuantity": "Bound quantity",
+      "boundBoundary": "Bound boundary",
+      "receiptAccount": "Receipt account"
+    }
+  },
+  "tokens": {
+    "loadError": "Unable to load bonding-curve token market and trade-generated Soul state from devnet evidence.",
+    "eyebrow": "Token market",
+    "title": "Market",
+    "description": "Browse and trade tokens. Each trade generates a unique on-chain Soul.",
+    "marketNotice": "Soul NFTs are not tradable here. Trade the token to generate Souls, then claim them.",
+    "loading": "Loading launched Token-2022 mints and bonding-curve state from the configured devnet RPC…",
+    "timeoutError": "The token market request timed out before public devnet evidence responded.",
+    "retryGuidance": "Refresh to retry; visible token cards stay stable while provenance evidence recovers.",
+    "empty": "No launched bonding-curve tokens found yet. Create a launch to populate the market directory, then open token detail to trade to generate Souls before any holder claim.",
+    "summary": "{total} launched tokens · page {page} · {pageSize} per page",
+    "previous": "Previous",
+    "next": "Next",
+    "tokenSymbol": "{symbol} token",
+    "viewToken": "View token",
+    "feedCardTradeHint": "Bonding-curve buy/sell is available on token detail.",
+    "latestSoulPreview": "Latest Soul preview",
+    "latestSoulAlt": "{symbol} latest generated Soul SVG",
+    "previewMotionCaveat": "Compact website preview only: marketplace metadata keeps the static SVG and does not store animation_url, executable formulas, canvas, video, or remote media.",
+    "noGenerationTitle": "No Soul yet",
+    "noGenerationBody": "Fractal preview awakens after the first trade.",
+    "discovery": {
+      "ariaLabel": "Soul Flow discovery segments",
+      "eyebrow": "Soul Flow board",
+      "description": "Curated views reorder the same available launches by Soul freshness, market flow, generated count, energy, volume, or launch recency.",
+      "activeSummary": "{label} · {count} visible launches",
+      "partialDataHint": "Uses deterministic live fields; sparse evidence stays stable instead of fabricated.",
+      "tabs": {
+        "fresh-souls": "Fresh Souls",
+        "hot-flow": "Hot Flow",
+        "most-generated": "Most Generated",
+        "rare-energy": "Rare Energy",
+        "top-volume": "Top Volume",
+        "new-launches": "New Launches"
+      },
+      "hints": {
+        "fresh-souls": "Generated art first",
+        "hot-flow": "Latest trade pulse",
+        "most-generated": "Most awakened",
+        "rare-energy": "Highest Soul score",
+        "top-volume": "Most SOL locked",
+        "new-launches": "Newest markets"
+      }
+    },
+    "stats": {
+      "flow": "Flow",
+      "generated": "Souls",
+      "generatedValue": "{count} generated",
+      "energy": "Energy",
+      "energyValue": "{tier} · {score}",
+      "energyPending": "Awaiting",
+      "collectors": "Collectors",
+      "collectorsValue": "{count} claimed",
+      "progress": "Progress",
+      "freshness": "Fresh"
+    },
+    "rarityTiers": {
+      "common": "Common",
+      "uncommon": "Uncommon",
+      "rare": "Rare",
+      "epic": "Epic",
+      "legendary": "Legendary",
+      "mythic": "Mythic"
+    },
+    "labels": {
+      "creator": "Creator",
+      "generations": "Generations",
+      "claims": "Claims",
+      "artTheme": "Art theme",
+      "claimStatus": "Claim status",
+      "claimability": "Holder-gated claimability",
+      "currentPrice": "Current price",
+      "created": "Created / recent",
+      "curvePosition": "Curve position"
+    },
+    "provenance": {
+      "title": "Market-created trade artifact",
+      "generation": "Generation",
+      "side": "Trade side",
+      "amount": "Trade amount",
+      "trader": "Trader / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer transaction",
+      "transactionPending": "Explorer transaction pending",
+      "unavailableTitle": "Provenance pending",
+      "unavailableBody": "This market-created Soul card has no finalized API/RPC provenance evidence yet, so SolSoul is not fabricating side, amount, trader, seed hash, or tx fields.",
+      "openTimeline": "Open token timeline for finalized tx evidence"
+    }
+  },
+  "tokenGallery": {
+    "loadError": "Unable to load this token's claimed trade-generated Soul NFTs from devnet evidence.",
+    "invalidMint": "This route parameter is not a valid mint address.",
+    "eyebrow": "Token Souls",
+    "title": "Per-token gallery",
+    "description": "Lists claimed MT/Soul NFTs for this mint, newest sequence first. Each claimed Soul began as a changing on-chain SVG candidate; claims require 10,000 fungible tokens and the max supply is 2,100 MTs.",
+    "mint": "Mint",
+    "page": "Page",
+    "backToToken": "Back to token",
+    "loading": "Loading claimed Soul NFTs from the configured devnet RPC…",
+    "timeoutError": "This token gallery request timed out before finalized devnet evidence responded.",
+    "retryGuidance": "Refresh to retry; SolSoul keeps visible Soul cards stable without fabricating missing evidence.",
+    "empty": "No claimed MT/Soul NFTs found for this token yet. Trade this token to generate a changing on-chain SVG Soul candidate, then claim while holding at least 10,000 tokens.",
+    "summary": "{total} claimed Souls · page {page} · {pageSize} per page",
+    "previous": "Previous",
+    "next": "Next",
+    "imageLabel": "{name} SVG",
+    "previewMotionCaveat": "Website preview only: this compact card renders local motion from static Soul state; NFT metadata remains static and executable-free.",
+    "sequence": "Sequence #{sequence}",
+    "tokenMint": "Associated token",
+    "claimer": "Claimer wallet",
+    "nftMint": "NFT mint",
+    "artTheme": "Art theme",
+    "provenance": {
+      "title": "Market-created trade artifact",
+      "generation": "Generation",
+      "side": "Trade side",
+      "amount": "Trade amount",
+      "trader": "Trader / token owner",
+      "seedHash": "Seed hash",
+      "transaction": "Explorer transaction",
+      "transactionPending": "Explorer transaction pending",
+      "unavailableTitle": "Provenance pending",
+      "unavailableBody": "This market-created Soul card has no finalized API/RPC provenance evidence yet, so SolSoul is not fabricating side, amount, trader, seed hash, or tx fields.",
+      "openTimeline": "Open token timeline for finalized tx evidence"
+    },
+    "receiptLifecycle": {
+      "label": "Receipt binding",
+      "active": "Active bound receipt",
+      "burned": "Burned inactive receipt",
+      "forfeited": "Forfeited inactive receipt",
+      "boundQuantity": "Bound quantity",
+      "boundBoundary": "Bound boundary",
+      "receiptAccount": "Receipt account"
+    }
+  },
+  "stats": {
+    "eyebrow": "Collection dashboard",
+    "title": "Global Soul Collection Dashboard",
+    "description": "Public devnet collection view for launched tokens, generated Soul candidates, claimed Souls, forever-running curves, art theme distribution, and recent trade-generated lifecycle activity backed by RPC data.",
+    "dashboardLabel": "Public Soul collection dashboard",
+    "sourceLabel": "Public data source",
+    "sourceValue": "Devnet RPC provider: {provider}",
+    "fetchedAt": "Last refreshed: {timestamp}",
+    "sourceCommitment": "Commitment: {commitment}",
+    "sourceSlot": "Source slot: {slot}",
+    "loading": "Loading public devnet stats from RPC…",
+    "unavailable": "Public stats are temporarily unavailable.",
+    "loadError": "Unable to load public stats.",
+    "timeoutError": "Stats request timed out; public proof is temporarily unavailable.",
+    "invalidData": "Stats response is incomplete; partial metrics are unavailable.",
+    "refresh": "Refresh proof data",
+    "refreshing": "Refreshing…",
+    "cachedWarning": "Live refresh is temporarily unavailable ({message}); showing the latest available public snapshot.",
+    "dust": {
+      "eyebrow": "Liquidity dust raw metrics",
+      "title": "Liquidity dust components",
+      "description": "Decimal-string raw fields from bonding-curve reserves, historical/deferred liquidity-vault evidence when present, receipt binding lifecycle state, and auditable outside-liquidity scans. Values are displayed exactly as API strings.",
+      "prototypeNotice": "Transfer Hook prototype limitations and partial/stale source badges mean these metrics are source-backed where available. Wallet direct transfers are hook-aware; historical Raydium swap-path evidence remains bounded/deferred and is not part of the active curve-only product flow. The liquidity dust ratio is venue-local and not an official scarcity signal.",
+      "globalTitle": "Global raw sums",
+      "perTokenTitle": "Per-token dust metrics",
+      "limitationsTitle": "Limitations and source metadata",
+      "tokenUnit": "Token unit: {unit} base units",
+      "outsideLiquidityUnavailable": "Unavailable",
+      "partialBadge": "Partial source",
+      "staleBadge": "Stale fallback",
+      "sourceWarnings": "Warnings",
+      "noWarnings": "No dust limitations reported.",
+      "receiptSource": "Receipts: receipt binding state",
+      "burnedIncludes": "Burned receipts includes: {states}",
+      "liquiditySources": {
+        "bonding_curve_reserve": "Liquidity: bonding-curve reserve",
+        "raydium_cp_swap_vault": "Liquidity: historical/deferred Raydium CP-Swap launched-token vault",
+        "unavailable": "Liquidity: active-liquidity source unavailable",
+        "bonding_curve_reserves": "Liquidity: bonding-curve reserves",
+        "post_migration_unavailable": "Liquidity: historical post-migration venue unavailable"
+      },
+      "outsideSources": {
+        "token_account_scan": "Outside liquidity: Token-2022 account scan",
+        "top_accounts_bounded_audit": "Outside liquidity: bounded top-account audit (not a complete scan)",
+        "unavailable": "Outside liquidity: unavailable"
+      },
+      "warningMessages": {
+        "outsideLiquidityScanUnavailable": "Outside-liquidity token-account scan is not available for this token yet.",
+        "outsideLiquidityVenueUnavailable": "Outside-liquidity venue discovery is unavailable for historical/deferred migration evidence.",
+        "activeLiquidityZero": "Active liquidity balance is zero, so liquidity dust ratio is unavailable.",
+        "raydiumVaultUnverified": "Raydium vault source could not be verified, so liquidity dust values are unavailable.",
+        "launchedTokenMetricsPartial": "Launched-token metrics are partially available from the current RPC source.",
+        "claimedSoulMetricsPartial": "Claimed Soul metrics are partially available from the current RPC source.",
+        "recentGenerationProvenancePartial": "Recent generation provenance is partially available from the current RPC source.",
+        "receiptLifecycleCountsPartial": "Receipt lifecycle counts are partially available from the current RPC source.",
+        "outsideLiquidityScanPartial": "Outside-liquidity token-account scanning is partially available from the current RPC source.",
+        "token2022IndexedGpaUnavailable": "Outside-liquidity coverage is a bounded top-account audit because Token-2022 indexed GPA is unavailable.",
+        "token2022SecondaryIndexExcluded": "The RPC source excludes Token-2022 from secondary indexes, so SolSoul is not claiming a complete scan.",
+        "token2022IndexedGpaProbeFailed": "Token-2022 indexed GPA probing failed, so outside-liquidity completeness is not verified.",
+        "tokenMethodsBoundedSample": "Outside-liquidity values come from token supply and largest-account methods with bounded sample limits.",
+        "outsideLiquiditySampleLimited": "Additional outside-liquidity accounts may exist outside the sampled top accounts.",
+        "outsideLiquidityUnknownWhenTopSampleEmpty": "The bounded top-account sample found no outside liquidity, so the outside amount remains unknown instead of zero.",
+        "outsideLiquidityTokenMethodsUnavailable": "Token-method fallback data is unavailable, so outside-liquidity completeness is unknown.",
+        "outsideLiquidityNoProbeTarget": "No Token-2022 mint was available for an outside-liquidity capability probe.",
+        "rpcFailoverUsed": "RPC failover was used; completeness follows the endpoint that supplied the bounded evidence.",
+        "postGraduationRaydiumReceiptPathsBounded": "Historical post-graduation Raydium CP-Swap liquidity and swap paths are bounded/deferred for receipt hard-binding; only wallet hook-aware direct transfers are presented as protected.",
+        "raydiumTransferHookMintsUnsupported": "Transfer Hook-enabled mints do not migrate to Raydium in the active curve-only product flow; retained Raydium references are historical/deferred.",
+        "statsSourceSlotPartial": "Stats source slot metadata is partially available from the current RPC source.",
+        "unknownPartial": "One dust stats source is partially available from the current RPC source."
+      },
+      "fields": {
+        "whole_units_in_pool": {
+          "label": "MT units in pool",
+          "help": "Floor of liquidity reserves divided by one 10,000-token MT quantum."
+        },
+        "fractional_remainder": {
+          "label": "Fractional remainder",
+          "help": "Base units below the next 10,000-token MT boundary."
+        },
+        "fractional_fill_ratio": {
+          "label": "Fractional fill ratio",
+          "help": "Deterministic 6-decimal ratio derived from fractional_remainder."
+        },
+        "active_receipts": {
+          "label": "Active receipts",
+          "help": "Receipt bindings currently active for this token."
+        },
+        "burned_receipts": {
+          "label": "Burned / forfeited receipts",
+          "help": "Inactive receipt bindings counted from burned and forfeited lifecycle states."
+        },
+        "forfeited_receipts": {
+          "label": "Forfeited receipts",
+          "help": "Receipt bindings specifically marked forfeited."
+        },
+        "inactive_receipts": {
+          "label": "Inactive receipts",
+          "help": "All receipt bindings that are no longer active."
+        },
+        "whole_units_outside_liquidity": {
+          "label": "MT units outside liquidity",
+          "help": "Auditable 10,000-token MT units outside the active liquidity vault."
+        },
+        "outside_liquidity_audited_tokens": {
+          "label": "Audited outside-liquidity tokens",
+          "help": "Token rows where outside-liquidity scanning was available."
+        },
+        "liquidity_dust_ratio": {
+          "label": "Liquidity dust ratio",
+          "help": "Venue-local fraction from fractional_remainder divided by observed active liquidity; not an official scarcity signal."
+        }
+      },
+      "raydiumSourceTitle": "Historical Raydium source metadata",
+      "sourceMetadata": {
+        "sourceVerified": "Source verified: {value}",
+        "activeLiquidityAccount": "Historical Raydium vault: {value}",
+        "activeLiquidityBaseUnits": "Active liquidity base units: {value}",
+        "raydiumProgramId": "Raydium program: {value}",
+        "raydiumPoolState": "Raydium pool state: {value}",
+        "raydiumToken0Vault": "Raydium token0 vault: {value}",
+        "raydiumToken1Vault": "Raydium token1 vault: {value}",
+        "raydiumToken0Mint": "Raydium token0 mint: {value}",
+        "raydiumToken1Mint": "Raydium token1 mint: {value}",
+        "raydiumNonSelectedVault": "Non-selected Raydium vault: {value}",
+        "tokenProgram": "Selected vault token program: {value}",
+        "fetchedSlot": "Raydium source slot: {value}",
+        "commitment": "Raydium commitment: {value}"
+      },
+      "sourceCoverageTitle": "Aggregate source coverage",
+      "sourceCoverage": {
+        "bonding_curve_reserve_tokens": {
+          "label": "Bonding-curve source rows",
+          "help": "Token rows whose active liquidity source is the bonding-curve reserve."
+        },
+        "raydium_cp_swap_vault_tokens": {
+          "label": "Raydium vault source rows",
+          "help": "Token rows whose active liquidity source is the verified Raydium CP-Swap launched-token vault."
+        },
+        "unavailable_tokens": {
+          "label": "Unavailable source rows",
+          "help": "Token rows excluded from aggregate liquidity math because active liquidity source data is unavailable."
+        },
+        "source_verified_tokens": {
+          "label": "Verified source rows",
+          "help": "Token rows with verified active-liquidity source metadata."
+        },
+        "source_unverified_tokens": {
+          "label": "Unverified source rows",
+          "help": "Token rows preserving warnings instead of fabricating liquidity values."
+        },
+        "warning_tokens": {
+          "label": "Rows with warnings",
+          "help": "Token rows reporting partial, unavailable, or unverified dust source warnings."
+        }
+      }
+    },
+    "activityEyebrow": "Live flow",
+    "activityTitle": "Recent activity feed",
+    "activityDescription": "Fractal structure activity across buys, sells, Soul generations, collection, and receipt-settlement moments from public evidence. Sparse devnet gaps use labeled deterministic fixtures.",
+    "emptyActivity": "No public buy, sell, Soul generation, claim, or settlement activity is indexed yet. Launch and trade a token to create the first flow rows.",
+    "scopeLinksLabel": "Collection dashboard navigation",
+    "scopeLinks": {
+      "allSouls": "All Souls",
+      "tokenFeed": "Token feed"
+    },
+    "metricLinks": {
+      "launchedTokens": "Open token feed",
+      "generatedSoulCandidates": "Open all Souls",
+      "claimedSouls": "Open claimed Souls",
+      "activeCurves": "Open live tokens"
+    },
+    "themesEyebrow": "Theme distribution",
+    "themesTitle": "Art engines across launches",
+    "emptyThemes": "No art theme distribution is available yet. Launch a themed token to populate the collection dashboard.",
+    "themeTokens": "{count} token launches",
+    "themeGenerated": "{count} generated",
+    "themeClaimed": "{count} claimed",
+    "tokenTotalsEyebrow": "Per-token totals",
+    "tokenTotalsTitle": "Collection scopes",
+    "emptyTokenTotals": "No per-token Soul totals are available yet.",
+    "tokenTotalsGenerated": "{count} generated Souls",
+    "tokenTotalsClaimed": "{count} claimed MT/Soul NFTs",
+    "tokenTotalsTheme": "Theme: {theme}",
+    "tokenTotalsStatus": "{status} token",
+    "tokenTotalsGalleryLink": "Token gallery",
+    "tokenStatus": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "tokenMint": "Token mint: {mint}",
+    "activityDetails": {
+      "theme": "Theme: {theme}",
+      "side": "Side: {side}",
+      "amount": "Amount: {amount}",
+      "trader": "Trader: {trader}",
+      "seedHash": "Seed: {seedHash}",
+      "soul": "Soul: {soul}",
+      "slot": "Slot: {slot}",
+      "time": "Time: {time}",
+      "timePending": "Time pending",
+      "actor": "Actor: {actor}",
+      "value": "Value: {value}",
+      "context": "Context: {context}",
+      "protocolActor": "SolSoul protocol",
+      "collectorActor": "Collector wallet",
+      "fixtureActor": "Deterministic fixture",
+      "fixtureTime": "Deterministic fixture",
+      "fixture": "Fixture row shown because devnet evidence is sparse; it is not raw RPC data."
+    },
+    "metrics": {
+      "launchedTokens": {
+        "label": "Total launched tokens",
+        "help": "Bonding-curve token accounts discovered through the public program."
+      },
+      "generatedSoulCandidates": {
+        "label": "Total generated Soul candidates",
+        "help": "Sum of SoulAccount generation counts created by wallet-signed trades."
+      },
+      "claimedSouls": {
+        "label": "Total claimed Souls",
+        "help": "Claim PDA accounts for scarce MT/Soul NFTs; each token caps at 2,100 claims."
+      },
+      "activeCurves": {
+        "label": "Active curves / tokens",
+        "help": "Launched tokens on the forever curve; current product flow has no graduation or migration."
+      }
+    },
+    "activityKinds": {
+      "launch": "Launch",
+      "tradeGeneration": "Trade / Soul",
+      "claim": "Claim",
+      "buy": "Buy",
+      "sell": "Sell",
+      "soulGenerated": "Soul Generated",
+      "soulClaimed": "Soul Claimed",
+      "settlement": "Settlement"
+    },
+    "activityTitles": {
+      "launch": "{token} launched a token lifecycle",
+      "tradeGeneration": "{token} generated Soul #{generation} from a trade",
+      "claim": "{token} Soul claim sequence #{sequence}",
+      "buy": "{token} buy flowed through the curve",
+      "sell": "{token} sell flowed back through the curve",
+      "soulGenerated": "{token} generated Soul #{generation}",
+      "soulClaimed": "{token} Soul claim #{sequence}",
+      "settlement": "{token} settled a receipt boundary"
+    },
+    "activityOpenToken": "Open token",
+    "activityValues": {
+      "amount": "Amount {amount}",
+      "generation": "Generation #{generation}",
+      "sequence": "Claim #{sequence}",
+      "settlement": "Receipt settlement for claim #{sequence}",
+      "tokenSoul": "{token} · Soul {soul}",
+      "seed": "Seed {seedHash}",
+      "receiptContext": "Receipt boundary for Soul {soul}",
+      "fixtureContext": "Fixture context for Soul {soul}"
+    },
+    "leaderboards": {
+      "eyebrow": "Soul Flow leaderboards",
+      "title": "Market flow leaders",
+      "description": "Premium leaderboard modules reuse public stats, Soul evidence, and safe deterministic fallbacks without inventing private indexer state.",
+      "modules": {
+        "topFlowingTokens": {
+          "eyebrow": "Flow",
+          "title": "Top Flowing Tokens",
+          "empty": "No token flow rows are available yet."
+        },
+        "latestRareSouls": {
+          "eyebrow": "Rare",
+          "title": "Latest Rare Souls",
+          "empty": "No generated or claimed Soul rows are available yet."
+        },
+        "mostGenerated": {
+          "eyebrow": "Generations",
+          "title": "Most Generated",
+          "empty": "No generation totals are available yet."
+        },
+        "highestLocked": {
+          "eyebrow": "Locked",
+          "title": "Highest Locked",
+          "empty": "No receipt-lock rows are available yet."
+        },
+        "recentGenerations": {
+          "eyebrow": "Recent",
+          "title": "Recent Generations",
+          "empty": "No recent generation rows are available yet."
+        }
+      },
+      "metrics": {
+        "flowScore": "Flow score {score}",
+        "generatedClaimed": "{generated} generated · {claimed} claimed",
+        "rareGeneration": "Soul generation #{generation}",
+        "rareClaim": "Claim sequence #{sequence}",
+        "theme": "Theme {theme}",
+        "soul": "Soul {soul}",
+        "generated": "{count} generated",
+        "claimed": "{count} claimed",
+        "locked": "{count} locked MT units",
+        "receipts": "{active} active · {inactive} inactive receipts"
+      }
+    }
+  },
+  "preSignReview": {
+    "ariaLabel": "Pre-sign decoded transaction review",
+    "title": "Pre-sign decoded transaction review",
+    "summary": "Cluster: {cluster}; blockhash: {blockhash}; fee payer: {feePayer}",
+    "pending": "pending",
+    "programIds": "Program IDs: {programIds}",
+    "instructionTitle": "#{index} Program {programId}",
+    "accounts": "Accounts: {accounts}",
+    "receiptIntentTitle": "Receipt settlement intent",
+    "receiptIntentBody": "{state} {amount} base units from {source}.",
+    "unknownSource": "unknown source",
+    "unknown": "unknown",
+    "receiptCapacity": "Active receipts: {activeReceiptCount}; post-move whole-token capacity: {postWholeUnits}.",
+    "selectedReceipts": "Selected receipts: {receipts}",
+    "none": "none",
+    "receiptSettlementStates": {
+      "burned": "Burn selected receipts",
+      "forfeited": "Forfeit selected receipts"
+    },
+    "flags": {
+      "signer": "signer",
+      "nonSigner": "non-signer",
+      "writable": "writable",
+      "readonly": "readonly"
+    }
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Learn how SolSoul works — from curve math to Soul Engine to building your own renderer.",
+    "navTitle": "Documentation",
+    "backToDocs": "Back to docs"
+  }
+}

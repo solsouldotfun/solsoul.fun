@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+cache-control: public, max-age=15, stale-while-revalidate=45
+content-type: application/json
+Date: Sat, 02 May 2026 21:47:06 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+

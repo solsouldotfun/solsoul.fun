@@ -1,0 +1,72 @@
+{
+  "featureId": "PD9.F5",
+  "ranAtIso": "2026-04-29T23:27:05.570Z",
+  "cluster": "devnet",
+  "rpcUrl": "https://api.devnet.solana.com",
+  "publicUrl": "https://solsoul-devnet.vercel.app",
+  "method": "wallet-adapter-compatible SDK sendTransaction harness using local devnet keypair; no server signer or /api/devnet-smoke route",
+  "programs": {
+    "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+    "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+  },
+  "payer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+  "balanceBeforeSol": "19.886706746",
+  "balanceAfterSol": "19.802026226",
+  "launch": {
+    "symbol": "P99K2Y1D",
+    "mint": "4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND",
+    "curve": "GSwBTZJ2v8JheKSXFZVv5LzfGDCLKjSYFZJdwyEUYaRv",
+    "vault": "9Y7DxfJzp8Ab7KiXP2HPAv5v2MfMiB4V8pK2LFCiuPgU",
+    "soul": "BuqnXAYbkjauaLoatXQsyf5LhKGgfYLma4BmWFKu3N3T",
+    "signature": "3yYMWdtrftfKHVtQbUmbDfUMWnP26feHBUbE8Y6NC1qfRcAhnxuXJmRFKfeTEBXhzaVciwkMAaoKen6MBgDRuNUJ",
+    "slot": 458994602,
+    "explorerUrl": "https://explorer.solana.com/tx/3yYMWdtrftfKHVtQbUmbDfUMWnP26feHBUbE8Y6NC1qfRcAhnxuXJmRFKfeTEBXhzaVciwkMAaoKen6MBgDRuNUJ?cluster=devnet"
+  },
+  "tradeGeneration": {
+    "side": "buy",
+    "solInLamports": "1000000",
+    "signature": "3jLhtRKUXnxaAW6Hkr1vAMhoKL76hVFVwrdTmxLJpJSUpHHuKPcmp9VfLA1inmi1rCDfuGp8Kiq6eEW2WjJXSbC",
+    "slot": 458994607,
+    "explorerUrl": "https://explorer.solana.com/tx/3jLhtRKUXnxaAW6Hkr1vAMhoKL76hVFVwrdTmxLJpJSUpHHuKPcmp9VfLA1inmi1rCDfuGp8Kiq6eEW2WjJXSbC?cluster=devnet",
+    "buyerTokenAccount": "redacted-public-token-account",
+    "generationCount": "1",
+    "latestProvenanceSide": "buy",
+    "latestProvenanceAmount": "990000",
+    "latestProvenanceSeedHash": "b6456c680e3ef84f"
+  },
+  "curve": {
+    "realSolReservesLamports": "990000",
+    "realTokenReserves": "793064592168459",
+    "graduated": false
+  },
+  "soul": {
+    "lastSvgLen": 1340,
+    "templateLen": 0,
+    "markerPresent": true,
+    "monochromePalettePresent": true,
+    "forbiddenTokensAbsent": true,
+    "rawSvgPath": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/fresh-public-devnet-generation.svg",
+    "rawSvgSnippet": "<svg viewBox=\"0 0 256 256\" data-soul=\"pd9-monochrome\" data-bg=\"3\"><rect width=\"256\" height=\"256\" fill=\"#050505\"/><rect x=\"14\" y=\"14\" width=\"228\" height=\"228\" rx=\"28\" fill=\"none\" stroke=\"#2a2a2a\" stroke-width=\"2\"/><rect x=\"24\" y=\"36\" width=\"208\" height=\"1\" fill=\"#2a2a2a\" opacity=\".85\"/><rect x=\"24\" y=\"59\" width=\"208\" height=\"1\" fill=\"#2a2a2a\" opacity=\".85\"/><rect x=\"24\" y=\"82\" width=\"208\" height=\"1\" fill=\"#2a2a2a\" opacity=\".85\"/><rect x=\"24\" y=\"105\" width=\"208\" height=\"1\" fill=\"#2a2a2a\" opacity=\""
+  },
+  "publicTokenUrl": "https://solsoul-devnet.vercel.app/en/token/4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND",
+  "browserEvidence": {
+    "tokenDetailScreenshot": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/public-token-detail.png",
+    "tokenDetailText": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/public-token-detail.txt",
+    "tokenDetailErrors": "/Users/davirian/dev/active/ideas/solsouldotfun/evidence/PD9.F5/public-token-detail-errors.txt",
+    "observation": "Public Vercel token page displayed DEVNET TESTNET, Latest Soul #1, Generated / unclaimed, live SVG preview with 1340 SVG bytes, timeline launch/trade/generation rows, and buy provenance side/amount/trader/seed hash. Browser page errors file was empty."
+  },
+  "publicApiEvidence": {
+    "url": "https://solsoul-devnet.vercel.app/api/token/4Z3Xh44EdF63q1ripYFMXiJAs58D6U6udv3qiQNnPAND/generations/1?limit=5",
+    "rowCount": 1,
+    "firstRow": {
+      "generation": 1,
+      "side": "buy",
+      "amount": "990000",
+      "trader": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+      "seedHash": "b6456c680e3ef84f",
+      "signature": "3jLhtRKUXnxaAW6Hkr1vAMhoKL76hVFVwrdTmxLJpJSUpHHuKPcmp9VfLA1inmi1rCDfuGp8Kiq6eEW2WjJXSbC",
+      "slot": 458994607,
+      "source": "finalized-rpc-logs"
+    }
+  }
+}

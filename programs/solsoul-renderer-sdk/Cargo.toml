@@ -1,0 +1,23 @@
+[package]
+name = "solsoul-renderer-sdk"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "SDK for building external Soul Engine renderer programs on Solana"
+repository = "https://github.com/solsoul/solsouldotfun"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+pinocchio = { workspace = true, features = ["cpi"] }
+pinocchio-pubkey = { workspace = true }
+
+[lints.rust]
+# Pinocchio's entrypoint macro emits Solana SBF target guards into downstream
+# example programs. Teach Cargo's cfg checker that `target_os = "solana"` is an
+# expected build target for this crate instead of suppressing the lint.
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(target_os, values("solana"))'] }
+
+[dev-dependencies]

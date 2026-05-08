@@ -1,0 +1,24 @@
+PD13.F1 fresh devnet program show evidence
+Generated: 2026-04-30T18:43:49Z
+
+== soul-generator ==
+
+Program Id: 34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ
+Owner: BPFLoaderUpgradeab1e11111111111111111111111
+ProgramData Address: Ck4hqT5uA5svZGqaBRmucdnEPdjbpV1tqUEwXEvtYdGk
+Authority: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Last Deployed In Slot: 459177314
+Data Length: 159728 (0x26ff0) bytes
+Balance: 1.11291096 SOL
+
+
+== bonding-curve ==
+
+Program Id: CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un
+Owner: BPFLoaderUpgradeab1e11111111111111111111111
+ProgramData Address: D6vr2379jRtXLyoCLsZs4UW9Dm2Ccv1QeR9vXstwiSsn
+Authority: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Last Deployed In Slot: 459177356
+Data Length: 113016 (0x1b978) bytes
+Balance: 0.78779544 SOL
+

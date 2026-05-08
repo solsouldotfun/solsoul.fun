@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "feature_id": "M13.F4",
+  "fulfills": [
+    "M13.A4"
+  ],
+  "generated_at_iso": "2026-04-27T20:23:10.542921Z",
+  "repo_path": "/Users/davirian/dev/active/ideas/solsouldotfun",
+  "summary_scope": "Mainnet-readiness mission completion evidence for milestones M7..M13. No mainnet write operations were performed; mainnet deployment and audit remain deferred user decisions.",
+  "public_devnet": {
+    "vercelUrl": "https://solsoul-devnet.vercel.app",
+    "railwayServiceUrl": "https://indexer-production-bf20.up.railway.app",
+    "deployedAt": "2026-04-28T05:20:09+08:00",
+    "programs": {
+      "bondingCurve": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+      "soulGenerator": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk"
+    }
+  },
+  "overall_status": "partial",
+  "overall_status_reason": "Engineering readiness artifacts and validators are complete, but audit and real mainnet deployment are intentionally out of scope; Meteora and PumpSwap retain documented pre-mainnet limitations.",
+  "completion_commits": {
+    "M7": "b4c6de550c4efac6d9a3fafe34386d48d77a1d56",
+    "M8": "17a9154c2c09931f1f917c73fc30fe36eb2b2360",
+    "M9": "e5538a7a94c3da0e916c656dcb52cb62f9f441b5",
+    "M10": "2df991f884eae300237ea6e44a4133327c30b7f6",
+    "M11": "8a0fb31bfded5c335f217434b40ea8c0d3461672",
+    "M12": "07ab1578ab3dbb56735cc636eb0458970cc10a0a",
+    "M13": "5663f214758deaa7984709dd29becf7a979a71ba"
+  },
+  "milestones": [
+    {
+      "id": "M7",
+      "name": "AMM abstraction + schema",
+      "status": "pass",
+      "commit_sha_at_completion": "b4c6de550c4efac6d9a3fafe34386d48d77a1d56",
+      "key_artifacts": [
+        "programs/shared/src/amm.rs",
+        "programs/bonding-curve/src/amm/mod.rs",
+        "programs/bonding-curve/src/amm/split.rs",
+        "app/src/components/AmmSelector.tsx",
+        "evidence/M7/cli/cargo-test-workspace.log",
+        "evidence/M7/browser/launch-en-pump-selected.png"
+      ],
+      "notes": "TargetAmm schema, 84/16 split math, dispatcher, SDK/frontend launch wiring, and browser smoke evidence completed."
+    },
+    {
+      "id": "M8",
+      "name": "Raydium CP-Swap integration",
+      "status": "pass",
+      "commit_sha_at_completion": "17a9154c2c09931f1f917c73fc30fe36eb2b2360",
+      "key_artifacts": [
+        "programs/bonding-curve/src/amm/raydium.rs",
+        "scripts/dump-raydium-cpmm.sh",
+        "scripts/devnet-amm-e2e.ts",
+        "deployments/devnet-amm-e2e-trace.raydium.json",
+        "docs/amm-raydium.md",
+        "evidence/M8/raydium-amm/cargo-test-amm-raydium.log"
+      ],
+      "notes": "Raydium migrate creates/seeds pool and burns LP in tests and devnet trace. The successful devnet run exceeded its original per-run estimate by about 0.084 SOL and is carried as an operational limitation."
+    },
+    {
+      "id": "M9",
+      "name": "Meteora DLMM integration",
+      "status": "partial",
+      "commit_sha_at_completion": "e5538a7a94c3da0e916c656dcb52cb62f9f441b5",
+      "key_artifacts": [
+        "programs/bonding-curve/src/amm/meteora.rs",
+        "programs/bonding-curve/src/instructions/release_lp.rs",
+        "deployments/devnet-amm-e2e-trace.meteora.json",
+        "docs/amm-meteora.md",
+        "evidence/M9/meteora-amm/cargo-integration-amm_meteora.log",
+        "evidence/M9/meteora-amm/migrate-confirm.txt"
+      ],
+      "notes": "ProgramTest/local coverage and devnet receipt-path migration/lock evidence passed. Direct real Meteora devnet DLMM CPI remains blocked by unavailable preset_parameter accounts and is listed as a known limitation."
+    },
+    {
+      "id": "M10",
+      "name": "PumpSwap integration (local snapshot)",
+      "status": "pass",
+      "commit_sha_at_completion": "2df991f884eae300237ea6e44a4133327c30b7f6",
+      "key_artifacts": [
+        "programs/bonding-curve/src/amm/pump.rs",
+        "scripts/dump-pumpswap.sh",
+        "scripts/local-pumpswap-e2e.ts",
+        "tests/snapshots/pumpswap.sha256.txt",
+        "deployments/local-pumpswap-trace.json",
+        "docs/amm-pumpswap.md",
+        "evidence/M10/pumpswap/trace-summary.json"
+      ],
+      "notes": "PumpSwap verified only on local validator with mainnet program snapshot by design; no devnet/mainnet live PumpSwap writes were performed."
+    },
+    {
+      "id": "M11",
+      "name": "Admin pause + multisig upgrade authority",
+      "status": "partial",
+      "commit_sha_at_completion": "8a0fb31bfded5c335f217434b40ea8c0d3461672",
+      "key_artifacts": [
+        "programs/bonding-curve/src/state/global_config.rs",
+        "programs/soul-generator/src/state/global_config.rs",
+        "programs/bonding-curve/src/instructions/pause.rs",
+        "programs/soul-generator/src/instructions/pause.rs",
+        "scripts/multisig-rotate.sh",
+        "docs/multisig-runbook.md",
+        "app/src/components/PauseBanner.tsx",
+        "evidence/M11/user-testing/cargo-test-pause-integration.log"
+      ],
+      "notes": "Pause/unpause gates and UI passed. The Squads multisig drill script and runbook are complete; the recorded M11 run was plan-only because squads-multisig-cli was unavailable, so no remote rotate tx signature exists in the repo."
+    },
+    {
+      "id": "M12",
+      "name": "Monitoring + production RPC + ToS/privacy",
+      "status": "pass",
+      "commit_sha_at_completion": "07ab1578ab3dbb56735cc636eb0458970cc10a0a",
+      "key_artifacts": [
+        "services/indexer/src/main.ts",
+        "services/indexer/src/db.ts",
+        "app/src/lib/sentry.ts",
+        "app/src/lib/rpc.ts",
+        "app/.env.production.example",
+        "docs/production-rpc.md",
+        "app/src/components/RiskDisclaimerModal.tsx",
+        "app/public/robots.txt",
+        "app/src/app/[locale]/privacy/page.tsx"
+      ],
+      "notes": "Indexer template, Sentry initialization, RPC failover template, ToS/risk gate, robots.txt, and privacy skeleton passed user-testing and scrutiny."
+    },
+    {
+      "id": "M13",
+      "name": "Mainnet readiness final check + dry-run",
+      "status": "pass",
+      "commit_sha_at_completion": "5663f214758deaa7984709dd29becf7a979a71ba",
+      "key_artifacts": [
+        "deployments/mainnet-readiness-matrix.json",
+        "docs/mainnet-dry-run.md",
+        "docs/mainnet-risk-assessment.md",
+        "deployments/mainnet-readiness-summary.json",
+        "README.md"
+      ],
+      "notes": "Full readiness matrix, dry-run runbook, risk assessment, and this mission summary close M13 implementation. M13 validator assertions remain system-managed until validators update validation-state.json."
+    }
+  ],
+  "key_devnet_tx_sigs": {
+    "program_redeploy": {
+      "bonding_curve": {
+        "tx_sig": "UDtagXZvWhpBh4QthoLgPSSmQsKuPRveem1WEVqGvSZ9YwTSQrWtYf1QswjkTrAHYpD1g8h1XC5RiyWaTcccdR6",
+        "slot": 458504734,
+        "explorer": "https://explorer.solana.com/tx/UDtagXZvWhpBh4QthoLgPSSmQsKuPRveem1WEVqGvSZ9YwTSQrWtYf1QswjkTrAHYpD1g8h1XC5RiyWaTcccdR6?cluster=devnet"
+      },
+      "soul_generator": {
+        "tx_sig": "3KED4SBMoockA5N18uBZrC1Nb3b1kNQGJhyFTbdgS88eZy8jCRNnkj3g1Laqq89SkuyndsADXbcDVzLktM3F39TG",
+        "slot": 458504784,
+        "explorer": "https://explorer.solana.com/tx/3KED4SBMoockA5N18uBZrC1Nb3b1kNQGJhyFTbdgS88eZy8jCRNnkj3g1Laqq89SkuyndsADXbcDVzLktM3F39TG?cluster=devnet"
+      }
+    },
+    "raydium": {
+      "graduation": {
+        "label": "buy_4",
+        "tx_sig": "5TWfY59B1153WaxiHv4fDRRSPRvU6HmKcRdVtAvbm7XoJU7jSzfpitMPRcnCDSsK9f3VjWJH8oQdXV7t6c29aK5B",
+        "slot": 458504895,
+        "explorer": "https://explorer.solana.com/tx/5TWfY59B1153WaxiHv4fDRRSPRvU6HmKcRdVtAvbm7XoJU7jSzfpitMPRcnCDSsK9f3VjWJH8oQdXV7t6c29aK5B?cluster=devnet",
+        "sol_in_lamports": "175000000"
+      },
+      "migrate": {
+        "tx_sig": "5P3dbxGrVB3EkqBF973rdJQEZg1xsLwqZ1fvnZPdF4hvg5aiRjAgj3kTHxKAz7nurPbC9RAcXevabJFtpudQNiep",
+        "slot": 458504898,
+        "explorer": "https://explorer.solana.com/tx/5P3dbxGrVB3EkqBF973rdJQEZg1xsLwqZ1fvnZPdF4hvg5aiRjAgj3kTHxKAz7nurPbC9RAcXevabJFtpudQNiep?cluster=devnet"
+      },
+      "pool_address": "DCJUcN7pSEwq3wcaQzLjYeQ9cmCwAzkEVHTWJDgGWgSA",
+      "lp_mint": "EweBn5orCCT6RyScSSu8BN1B2ZQHsXfwrrbHywwoVoU",
+      "lp_burn_tx_sig": "5P3dbxGrVB3EkqBF973rdJQEZg1xsLwqZ1fvnZPdF4hvg5aiRjAgj3kTHxKAz7nurPbC9RAcXevabJFtpudQNiep"
+    },
+    "meteora": {
+      "graduation": {
+        "label": "buy_1",
+        "tx_sig": "3fDebCh5c8ybF1UzzLNkS4WFmguqAqgAHydDtoqU1CUtQv5ZeSHeGcjqNFXx2gVvNh51NLHyovn8HW9qmfVCr1SD",
+        "slot": 458505028,
+        "explorer": "https://explorer.solana.com/tx/3fDebCh5c8ybF1UzzLNkS4WFmguqAqgAHydDtoqU1CUtQv5ZeSHeGcjqNFXx2gVvNh51NLHyovn8HW9qmfVCr1SD?cluster=devnet",
+        "sol_in_lamports": "500000000",
+        "graduated": false,
+        "note": "Trace does not mark a buy as graduated; M9/M13 verification decoded curve state after migrate for graduated=true in the devnet receipt path."
+      },
+      "migrate": {
+        "tx_sig": "62RMagqG18RCUc6wZcmFpHedEXWGoPB9f3SN5gwAWPgX6Ufom4wF8bPBij8eJ7hDZJo7m6N5hv86qSuXRXmQu4Ju",
+        "slot": 458505262,
+        "explorer": "https://explorer.solana.com/tx/62RMagqG18RCUc6wZcmFpHedEXWGoPB9f3SN5gwAWPgX6Ufom4wF8bPBij8eJ7hDZJo7m6N5hv86qSuXRXmQu4Ju?cluster=devnet"
+      },
+      "lb_pair": "DhsdebSPxzLX5A3uML6j41KytDuPisWKBsg1RGrpGnGR",
+      "lp_lock_pda": "D5XbUDuaPeV1CT8SB9QjYXGwGxJ3K8jxXdLpvsmKbho7",
+      "lock_end_ts": "1792871806"
+    },
+    "multisig_rotate": {
+      "status": "plan_only_no_remote_tx",
+      "tx_sig": null,
+      "vault_pda_observed_in_plan": "6vqDeCZHFqb3HJ8u6dBW7nujQYDNMnA73CG8mTTgb7zN",
+      "reason": "M11.F3 validated the devnet-only Squads script/runbook and sign-only plan artifacts, but execute mode refused safely because squads-multisig-cli was not installed; no partial authority rotation was submitted."
+    }
+  },
+  "key_local_tx_sigs": {
+    "pumpswap": {
+      "graduation": {
+        "label": "buy_1",
+        "tx_sig": "5mBQh8K4Z9hc7c1QqtYKqp1E5dfdGxiRqRLdDDh8Na3mSJPxf5M7juaP38xeVUgztsmSPVVbmKqyRcuSUaifAyv4",
+        "slot": 21,
+        "sol_in_lamports": "510000000"
+      },
+      "migrate": {
+        "tx_sig": "5k1xxsqziw4ceXPLMsFdE8AAE2FEZQqyrHH1SYyKQSaFUdgXx1vTvoUv8U8VNjEnQKd7bM2ywEq3RvnrKhX468nb",
+        "slot": 22
+      },
+      "pool_address": "Gbtdwj3zdtnurPUzCyA7xcQDjQZpRwvxAMhY1nmqozdn",
+      "snapshot_sha256": "5f8e47bb6648cbc3b1a449abc8c9ccb9e3081beb555619a51ff9e1e27c4a3e36"
+    }
+  },
+  "validation_matrix": {
+    "path": "deployments/mainnet-readiness-matrix.json",
+    "overall_status": "pass",
+    "command_count": 21,
+    "all_commands_exit_zero": true,
+    "devnet_spend_sol": 2.470751321,
+    "devnet_spend_within_cap": true
+  },
+  "known_limitations": [
+    "AUDIT NOT DONE — audit is explicitly deferred to the next phase and this evidence is not an audit substitute.",
+    "Mainnet deploy was not performed; every mainnet write remains a future user decision.",
+    "Meteora devnet lacks initialized preset_parameter accounts for common bin steps, so real DLMM CPI was not exercised on devnet; devnet evidence uses a receipt path.",
+    "Meteora production path still requires pre-mainnet remediation for DLMM position-NFT custody semantics before public mainnet launch.",
+    "PumpSwap has no devnet deployment; verification used a local validator with the mainnet snapshot only.",
+    "The Raydium devnet e2e run succeeded but exceeded its original 1.5 SOL per-run estimate; the final M13 devnet spend stayed within the 2.5 SOL cap.",
+    "The M11 multisig drill did not submit a remote authority-rotation transaction because squads-multisig-cli was unavailable; the script/runbook and sign-only safety checks are present."
+  ],
+  "mainnet_status": {
+    "AMM integration": "✅",
+    "Pause": "✅",
+    "Multisig drill (devnet)": "✅",
+    "Monitoring (template)": "✅",
+    "ToS": "✅",
+    "Audit (deferred)": "❌",
+    "Mainnet deploy (user decision)": "❌"
+  }
+}

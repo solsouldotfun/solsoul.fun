@@ -1,0 +1,86 @@
+{
+  "_note": "Excerpts of pre-existing devnet/mainnet evidence already proving SEC negative assertions and read-only mainnet dry-run. No live commands re-run during this validation.",
+  "devnet_e2e_trace": {
+    "path": "deployments/devnet-e2e-trace.json",
+    "boundaryRejection": {
+      "lines": "180-228",
+      "errCustom": 7000,
+      "logFragment": "SolSoul Transfer Hook: rejecting boundary-breaking transfer active_receipts=1 post_whole=0",
+      "registryActiveReceiptsBefore": "1",
+      "registryActiveReceiptsAfter": "0 (after settlement+sell, not on bare transfer rejection)"
+    },
+    "boundarySell_withoutSettlement": {
+      "lines": "370-540",
+      "result": "rejected; receipts/balances unchanged"
+    },
+    "securityNegativeAssertions": {
+      "lines": "590-1145",
+      "cases": [
+        "missing-validation-or-registry-metas (custom 7000 / 0x1b58)",
+        "spoofed-registry-meta (custom 0xa261c2c0)",
+        "self-transfer-boundary-bypass (custom 823 / 0x337 SettlementError::MissingDependentMovement)",
+        "lifecycle-replay-inactive-receipt (custom 821 / 0x335 SettlementError::InactiveReceipt)",
+        "tokenAccountSettlementRejections.wrong-owner-token-account (custom 817)",
+        "tokenAccountSettlementRejections.wrong-mint-token-account"
+      ],
+      "immutability_checks": "balancesUnchanged, receiptStateUnchanged, receiptBytesUnchanged, registryCountersUnchanged"
+    }
+  },
+  "devnet_amm_e2e_trace_raydium": {
+    "path": "deployments/devnet-amm-e2e-trace.raydium.json",
+    "purpose": "VAL-SEC-014 evidence that boundary/hook negative assertions also hold on Raydium-only path; trace marker amm=raydium with active program IDs."
+  },
+  "mainnet_readonly_simulate_dryrun": {
+    "path": "deployments/mainnet-readonly-simulate-dryrun.json",
+    "safetyMode": {
+      "mode": "no-write",
+      "<addr_87ffd7cea1a4>": true,
+      "productionKeypairMaterialUsed": false,
+      "productionKeypairMaterialCreatedLoadedOrPrinted": false
+    },
+    "rpcMethodSummary": {
+      "ok": true,
+      "allowed": ["getAccountInfo","getBalance","getBlockHeight","getEpochInfo","getLatestBlockhash","getVersion","simulateTransaction"],
+      "observed": ["getEpochInfo","getLatestBlockhash","getVersion","getBlockHeight","getAccountInfo","simulateTransaction"],
+      "disallowed": [],
+      "submittedTransactionCount": 0,
+      "simulatedTransactionCount": 1
+    },
+    "simulationProof": {
+      "rpcMethod": "simulateTransaction",
+      "signatureVerificationDisabled": true,
+      "unsignedMessageOnly": true,
+      "disposablePublicKeyOnly": true,
+      "submittedTransactionCount": 0
+    },
+    "negativeTranscriptScan": {
+      "ok": true,
+      "findings": []
+    },
+    "placeholders": [
+      "placeholder_bondingCurve",
+      "placeholder_soulGenerator",
+      "placeholder_transferHook"
+    ],
+    "readinessChecklist": {
+      "requiredValidatorStatuses_all": "pass",
+      "launchDecision": "not_approved_user_decision_required",
+      "auditDecision": "not_completed_user_decision_required"
+    }
+  },
+  "mainnet_readiness_summary": {
+    "path": "deployments/mainnet-readiness-summary.json",
+    "overall_status": "partial",
+    "rationale": "Engineering ready; audit and real mainnet deployment intentionally deferred user decisions.",
+    "completion_commits_present": true
+  },
+  "devnet_program_show": {
+    "path": "deployments/devnet-program-show.txt",
+    "active_devnet_program_ids": {
+      "soul_generator": "<BASE58_REDACTED>",
+      "bonding_curve": "<BASE58_REDACTED>"
+    },
+    "loader_owner": "<addr_87b440fb41d1>",
+    "authority_redacted": true
+  }
+}

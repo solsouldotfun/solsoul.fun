@@ -1,0 +1,91 @@
+name: Mainnet Build Gate
+
+# Runs on every PR and every push to main.
+# Purpose: binary smoke test for the bonding-curve and soul-generator SBF
+# artifacts.  The gate confirms:
+#   1. Both programs compile to a .so without errors.
+#   2. bonding_curve.so contains the EXP_CURVE_V1_K_21M_S_500SOL sentinel,
+#      proving it was compiled from the canonical exponential-curve model.
+#
+# The devnet Cargo feature was removed (commit post-8d78729) because nothing
+# branches on it.  There is no longer a devnet/mainnet binary distinction; the
+# single canonical build is checked here.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  CARGO_TERM_COLOR: always
+  SOLANA_CLI_VERSION: v3.1.14
+  SOLANA_INSTALLER_SHA256: f2d4860409b14a7aacc6454431d3b5366f2795df696466fe5a7177b0adf5f761
+
+permissions:
+  contents: read
+
+jobs:
+  mainnet-build-gate:
+    name: SBF build + sentinel check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Install Solana SBF toolchain
+        run: |
+          curl -fsSL "https://release.anza.xyz/${SOLANA_CLI_VERSION}/install" -o /tmp/solana-install.sh
+          echo "${SOLANA_INSTALLER_SHA256}  /tmp/solana-install.sh" | sha256sum --check --strict
+          sh /tmp/solana-install.sh
+          echo "$HOME/.local/share/solana/install/active_release/bin" >> "$GITHUB_PATH"
+
+      - name: Cache SBF toolchain
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/solana
+          key: ${{ runner.os }}-sbf-toolchain-${{ env.SOLANA_CLI_VERSION }}-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-sbf-toolchain-${{ env.SOLANA_CLI_VERSION }}-
+
+      - name: Build bonding-curve SBF artifact
+        run: |
+          set -o pipefail
+          export PATH="$HOME/.cargo/bin:$PATH"
+          cargo build-sbf --manifest-path programs/bonding-curve/Cargo.toml 2>&1 | tee /tmp/bonding-curve-build.log
+          # Treat any warning containing "error" as a failure.
+          grep -i "^error" /tmp/bonding-curve-build.log && exit 1 || true
+
+      - name: Check bonding_curve.so sentinel
+        run: bash scripts/check-mainnet-build.sh target/deploy/bonding_curve.so
+
+      - name: Build soul-generator SBF artifact
+        run: |
+          set -o pipefail
+          export PATH="$HOME/.cargo/bin:$PATH"
+          cargo build-sbf --manifest-path programs/soul-generator/Cargo.toml 2>&1 | tee /tmp/soul-generator-build.log
+          grep -i "^error" /tmp/soul-generator-build.log && exit 1 || true
+
+      - name: Verify soul_generator.so exists and is non-empty
+        run: |
+          [[ -f target/deploy/soul_generator.so ]] || { echo "soul_generator.so not found"; exit 1; }
+          SIZE=$(wc -c < target/deploy/soul_generator.so | tr -d ' ')
+          [[ "$SIZE" -gt 0 ]] || { echo "soul_generator.so is empty"; exit 1; }
+          echo "soul_generator.so OK (${SIZE} bytes)"
+
+      - name: Syntax check gate script
+        run: bash -n scripts/check-mainnet-build.sh

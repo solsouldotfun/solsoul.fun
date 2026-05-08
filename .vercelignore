@@ -1,0 +1,9 @@
+target/
+node_modules/
+.git/
+coverage/
+evidence/
+out/
+test-ledger/
+*.so
+*.log

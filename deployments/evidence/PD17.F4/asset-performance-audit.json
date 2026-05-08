@@ -1,0 +1,701 @@
+{
+  "generatedAt": "2026-05-02T15:15:32.977Z",
+  "featureId": "PD17.F4",
+  "deployment": {
+    "alias": "https://solsoul-devnet.vercel.app",
+    "deploymentUrl": "https://solsoul-devnet-k2g4antp1-davirainsus-projects.vercel.app",
+    "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+    "deploymentId": "dpl_3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+    "gitRef": "b9d6e0b8431d76a3d87ae39cbd4c54a9c186a92e"
+  },
+  "routes": [
+    {
+      "label": "en-home",
+      "route": "/en",
+      "status": 200,
+      "htmlBytes": 84007,
+      "fetchMs": 2343,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-home",
+      "route": "/zh",
+      "status": 200,
+      "htmlBytes": 82642,
+      "fetchMs": 194,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-launch",
+      "route": "/en/launch",
+      "status": 200,
+      "htmlBytes": 97198,
+      "fetchMs": 187,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-launch",
+      "route": "/zh/launch",
+      "status": 200,
+      "htmlBytes": 95764,
+      "fetchMs": 190,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-token",
+      "route": "/en/token/<raydium-trace-token>",
+      "status": 200,
+      "htmlBytes": 100986,
+      "fetchMs": 564,
+      "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-token",
+      "route": "/zh/token/<raydium-trace-token>",
+      "status": 200,
+      "htmlBytes": 99519,
+      "fetchMs": 625,
+      "cacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-profile",
+      "route": "/en/profile",
+      "status": 200,
+      "htmlBytes": 75973,
+      "fetchMs": 193,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 19,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-profile",
+      "route": "/zh/profile",
+      "status": 200,
+      "htmlBytes": 74603,
+      "fetchMs": 185,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 19,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-souls",
+      "route": "/en/souls",
+      "status": 200,
+      "htmlBytes": 72351,
+      "fetchMs": 177,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 19,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-souls",
+      "route": "/zh/souls",
+      "status": 200,
+      "htmlBytes": 71080,
+      "fetchMs": 184,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 19,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-stats",
+      "route": "/en/stats",
+      "status": 200,
+      "htmlBytes": 74079,
+      "fetchMs": 179,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-stats",
+      "route": "/zh/stats",
+      "status": 200,
+      "htmlBytes": 72821,
+      "fetchMs": 183,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 17,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "en-tokens",
+      "route": "/en/tokens",
+      "status": 200,
+      "htmlBytes": 72232,
+      "fetchMs": 180,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 18,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    },
+    {
+      "label": "zh-tokens",
+      "route": "/zh/tokens",
+      "status": 200,
+      "htmlBytes": 70961,
+      "fetchMs": 188,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "nextAssets": 18,
+      "externalAssetRefs": [],
+      "hasDoodleMarkers": true
+    }
+  ],
+  "sampledNextAssets": [
+    {
+      "path": "/_next/static/chunks/app/layout-70bea330ee70f4e2.js",
+      "status": 200,
+      "bytes": 631,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 558
+    },
+    {
+      "path": "/_next/static/chunks/main-app-d274993d99fd988c.js",
+      "status": 200,
+      "bytes": 461,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 511
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/profile/page-d1de57112562ef9b.js",
+      "status": 200,
+      "bytes": 170,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 525
+    },
+    {
+      "path": "/_next/static/css/8d57f6108027eb8b.css",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "text/css; charset=utf-8",
+      "fetchMs": 145
+    },
+    {
+      "path": "/_next/static/chunks/webpack-628904140352222d.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 480
+    },
+    {
+      "path": "/_next/static/chunks/af93057c-2f6e67bae546a850.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 523
+    },
+    {
+      "path": "/_next/static/chunks/458-b7d45a62cc28edf7.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 539
+    },
+    {
+      "path": "/_next/static/chunks/95-999f9c5bb3c93021.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 524
+    },
+    {
+      "path": "/_next/static/chunks/131-a9df548ad022f229.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 525
+    },
+    {
+      "path": "/_next/static/chunks/4-0928bebdfa916b27.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 490
+    },
+    {
+      "path": "/_next/static/chunks/327-e0dce8b3f859cb1a.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 554
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/page-cfda7c64d711ae4c.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 495
+    },
+    {
+      "path": "/_next/static/chunks/b731b60c-997cc6d6ce0710ca.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 523
+    },
+    {
+      "path": "/_next/static/chunks/501-4914c6dd53cec6f9.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 545
+    },
+    {
+      "path": "/_next/static/chunks/498-9b7d779ae890a006.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 503
+    },
+    {
+      "path": "/_next/static/chunks/350-e3872449a2b210ce.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 527
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/layout-73be0ebb4d75fb92.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 524
+    },
+    {
+      "path": "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 793
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/launch/page-a86c5e1b4833585f.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 446
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/token/%5Bmint%5D/page-2b805f2daf7c97b9.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 525
+    },
+    {
+      "path": "/_next/static/chunks/772-1e01e3df9dd4acdb.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 523
+    },
+    {
+      "path": "/_next/static/chunks/20-bdbeeae097b54602.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 524
+    },
+    {
+      "path": "/_next/static/chunks/644-01d5957ba48a37f6.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 524
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/souls/page-e0be63e7cabb9cea.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 526
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/stats/page-8ef9625bae47a71d.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 522
+    },
+    {
+      "path": "/_next/static/chunks/app/%5Blocale%5D/tokens/page-93039bfcdde2865a.js",
+      "status": 200,
+      "bytes": 0,
+      "contentType": "application/javascript; charset=utf-8",
+      "fetchMs": 524
+    }
+  ],
+  "localLargestPublicAssets": [
+    {
+      "path": "app/public/templates/monochrome-figure.svg",
+      "bytes": 758
+    },
+    {
+      "path": "app/public/templates/negative-space-soul.svg",
+      "bytes": 732
+    },
+    {
+      "path": "app/public/templates/signal-halo.svg",
+      "bytes": 717
+    },
+    {
+      "path": "app/public/robots.txt",
+      "bytes": 23
+    }
+  ],
+  "localLargestNextStaticAssets": [
+    {
+      "path": "app/.next/static/chunks/501-d6d3cca3abd27b18.js",
+      "bytes": 221374
+    },
+    {
+      "path": "app/.next/static/chunks/131-9925a4d7b93b1dd1.js",
+      "bytes": 187176
+    },
+    {
+      "path": "app/.next/static/chunks/af93057c-2f6e67bae546a850.js",
+      "bytes": 172833
+    },
+    {
+      "path": "app/.next/static/chunks/framework-78d12eae83f527f9.js",
+      "bytes": 139982
+    },
+    {
+      "path": "app/.next/static/chunks/b731b60c-ef620e78e680451a.js",
+      "bytes": 129824
+    },
+    {
+      "path": "app/.next/static/chunks/458-b7d45a62cc28edf7.js",
+      "bytes": 124379
+    },
+    {
+      "path": "app/.next/static/chunks/498-9b7d779ae890a006.js",
+      "bytes": 120151
+    },
+    {
+      "path": "app/.next/static/chunks/main-5fbbc2de286038ae.js",
+      "bytes": 116965
+    },
+    {
+      "path": "app/.next/static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/token/[mint]/page-7d1c5662bcdaa5de.js",
+      "bytes": 99610
+    },
+    {
+      "path": "app/.next/static/chunks/350-42d1d0c9f4d70213.js",
+      "bytes": 57589
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/stats/page-98c0903714090084.js",
+      "bytes": 44279
+    },
+    {
+      "path": "app/.next/static/chunks/4-0928bebdfa916b27.js",
+      "bytes": 41024
+    },
+    {
+      "path": "app/.next/static/css/8d57f6108027eb8b.css",
+      "bytes": 36349
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/launch/page-58c15d0a8a2c0450.js",
+      "bytes": 32878
+    },
+    {
+      "path": "app/.next/static/chunks/772-1e01e3df9dd4acdb.js",
+      "bytes": 27463
+    },
+    {
+      "path": "app/.next/static/chunks/95-999f9c5bb3c93021.js",
+      "bytes": 23014
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/tokens/page-55ed6478fb8104c0.js",
+      "bytes": 22720
+    },
+    {
+      "path": "app/.next/static/chunks/318-e82de9f7087643c8.js",
+      "bytes": 13614
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/layout-0ddd3958f4cd6deb.js",
+      "bytes": 10088
+    },
+    {
+      "path": "app/.next/static/chunks/327-e0dce8b3f859cb1a.js",
+      "bytes": 10081
+    },
+    {
+      "path": "app/.next/static/chunks/644-01d5957ba48a37f6.js",
+      "bytes": 9189
+    },
+    {
+      "path": "app/.next/static/chunks/app/[locale]/page-5a798932fe2d7af1.js",
+      "bytes": 6022
+    },
+    {
+      "path": "app/.next/static/chunks/163.386534146625d6df.js",
+      "bytes": 5128
+    },
+    {
+      "path": "app/.next/static/chunks/757.2d435fb0cf9ffe7f.js",
+      "bytes": 5057
+    }
+  ],
+  "sourceExternalReferenceReview": {
+    "totalMatches": 52,
+    "matches": [
+      {
+        "file": "app/src/app/api/stats/route.ts",
+        "match": "URL(request.url)"
+      },
+      {
+        "file": "app/src/components/SoulGalleryCard.tsx",
+        "match": "dangerouslySetInnerHTML"
+      },
+      {
+        "file": "app/src/components/StatsDashboard.tsx",
+        "match": "http://www.w3.org/2000/svg"
+      },
+      {
+        "file": "app/src/components/StatsDashboard.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenFeedRow.tsx",
+        "match": "http://www.w3.org/2000/svg"
+      },
+      {
+        "file": "app/src/components/TokenFeedRow.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenFeedRow.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "http://www.w3.org/2000/svg"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "url(#lifecycle-curve-gradient)"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "Url(tradeGenerationMoment.signature)"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "<img"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "Url(signature)"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "Url(signature: string)"
+      },
+      {
+        "file": "app/src/components/TokenSoulPanel.tsx",
+        "match": "https://explorer.solana.com/tx/${signature}?cluster=devnet"
+      },
+      {
+        "file": "app/src/lib/config.ts",
+        "match": "http://127.0.0.1:8899"
+      },
+      {
+        "file": "app/src/lib/config.ts",
+        "match": "https://api.devnet.solana.com"
+      },
+      {
+        "file": "app/src/lib/generationProvenanceRoute.ts",
+        "match": "URL(request.url)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(signature)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(row.signature)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(lookupContext)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(lookupContext)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(signature: string)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "https://explorer.solana.com/tx/${signature}?cluster=devnet"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(\n  lookup: Required<Pick<MarketProvenanceLookup, \"generation\">> &\n    Pick<MarketProvenanceLookup, \"tokenMint\" | \"soul\">,\n)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(\n  lookup: Required<Pick<MarketProvenanceLookup, \"generation\">> &\n    Pick<MarketProvenanceLookup, \"tokenMint\" | \"soul\">,\n)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(signature)"
+      },
+      {
+        "file": "app/src/lib/marketProvenance.ts",
+        "match": "Url(signature)"
+      },
+      {
+        "file": "app/src/lib/rpc.ts",
+        "match": "Url(info: RpcFetchInfo, fallbackUrl: string, init: RpcFetchInit)"
+      },
+      {
+        "file": "app/src/lib/rpc.ts",
+        "match": "URL(fallbackUrl)"
+      },
+      {
+        "file": "app/src/lib/rpc.ts",
+        "match": "Url(info, fallbackUrl, init)"
+      },
+      {
+        "file": "app/src/lib/rpc.ts",
+        "match": "Url(info, fallbackUrl, init)"
+      },
+      {
+        "file": "app/src/lib/rpcSource.ts",
+        "match": "URL(trimmed)"
+      },
+      {
+        "file": "app/src/lib/soulGallery.ts",
+        "match": "<script"
+      },
+      {
+        "file": "app/src/lib/soulGallery.ts",
+        "match": "http://www.w3.org/2000/svg"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-aura)"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-aura)"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-aura)"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-body)"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-body)"
+      },
+      {
+        "file": "app/src/lib/starterTemplates.ts",
+        "match": "url(#np-preview-mane)"
+      },
+      {
+        "file": "app/src/lib/stats.ts",
+        "match": "https://explorer.solana.com/address"
+      },
+      {
+        "file": "app/src/lib/stats.ts",
+        "match": "https://explorer.solana.com/tx"
+      },
+      {
+        "file": "app/src/lib/stats.ts",
+        "match": "https://api.devnet.solana.com"
+      },
+      {
+        "file": "app/src/lib/svgPreview.ts",
+        "match": "http://www.w3.org/2000/svg"
+      },
+      {
+        "file": "app/src/lib/svgPreview.ts",
+        "match": "<script"
+      },
+      {
+        "file": "app/src/lib/svgPreview.ts",
+        "match": "Url(value)"
+      },
+      {
+        "file": "app/src/lib/svgPreview.ts",
+        "match": "Url(value)"
+      },
+      {
+        "file": "app/src/lib/svgPreview.ts",
+        "match": "Url(value: string)"
+      },
+      {
+        "file": "app/src/lib/tokenTimeline.ts",
+        "match": "https://explorer.solana.com/address"
+      },
+      {
+        "file": "app/src/lib/tokenTimeline.ts",
+        "match": "https://explorer.solana.com/tx"
+      }
+    ],
+    "assessment": "Production source uses inline SVG/data URLs, local CSS classes, wallet/RPC/explorer links, and sanitized Soul SVG injection; no imported external image/script/font asset dependency was found in non-test app source."
+  },
+  "manifestsPresent": {
+    "buildManifest": true,
+    "appBuildManifest": true
+  },
+  "thresholds": {
+    "largePublicAssetBytes": 524288,
+    "largeNextStaticChunkBytes": 524288,
+    "routeHttpStatus": 200
+  },
+  "verdict": {
+    "routesHttpOk": true,
+    "noExternalAssetsInPublicHtml": true,
+    "noLargePublicAssetsOver512KiB": true,
+    "noLargeNextStaticChunksOver512KiB": true,
+    "publicFetchP95Ms": 2343
+  }
+}

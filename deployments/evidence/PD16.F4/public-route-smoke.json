@@ -1,0 +1,200 @@
+{
+  "featureId": "PD16.F4",
+  "checkedAtIso": "2026-05-02T12:37:16.180161Z",
+  "baseUrl": "https://solsoul-devnet.vercel.app",
+  "freshTokenDetailUrl": "https://solsoul-devnet.vercel.app/en/token/<solana:5AYtErVx:sha256:4801b7a03b03009e>",
+  "routes": [
+    {
+      "path": "/en",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/launch",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh/launch",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/token/<solana:5AYtErVx:sha256:4801b7a03b03009e>",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/profile",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh/profile",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/souls",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh/souls",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/stats",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh/stats",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/en/tokens",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/zh/tokens",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "<!DOCTYPE html><html lang=\"en\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/1295ab082235ee7e.css\" data-precedence=\"next\"/><link rel=\"preload\" as=\"script\" fetchPriority=\"low\" href=\"/_next/static/chunks/webpack-628904140352222d.js\"/><script src=\"/_next/static/chunks/af93057c-2f6e67bae546a850.js\" async=\"\"></script><script src=\"/_next/static/chunks/458-b7d45a62cc28edf7.js\" async=\"\"></script><script sr",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/api/stats",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": true,
+      "hasNeonPuffCopy": true,
+      "bodyExcerpt": "{\"ok\":true,\"metrics\":[{\"id\":\"launchedTokens\",\"value\":\"46\"},{\"id\":\"generatedSoulCandidates\",\"value\":\"61\"},{\"id\":\"claimedSouls\",\"value\":\"19\"},{\"id\":\"activeCurves\",\"value\":\"45\"}],\"dustTotals\":{\"whole_units_in_pool\":\"36217261960\",\"fractional_remainder\":\"19470628\",\"active_receipts\":\"3\",\"burned_receipts\":\"14\",\"forfeited_receipts\":\"0\",\"inactive_receipts\":\"14\",\"outside_liquidity_audited_tokens\":\"0\",\"source_coverage\":{\"bonding_curve_reserve_tokens\":\"45\",\"raydium_cp_swap_vault_tokens\":\"1\",\"unavailable_tok",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/api/token/<solana:5AYtErVx:sha256:4801b7a03b03009e>/timeline",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": false,
+      "hasNeonPuffCopy": false,
+      "bodyExcerpt": "{\"ok\":true,\"tokenMint\":\"<solana:5AYtErVx:sha256:4801b7a03b03009e>\",\"events\":[],\"source\":{\"fetchedAt\":\"2026-05-02T12:37:13.810Z\",\"rpcEndpoint\":\"https://api.devnet.solana.com\",\"partial\":true,\"warnings\":[\"429 Too Many Requests: {\\\"jsonrpc\\\":\\\"2.0\\\",\\\"error\\\":{\\\"code\\\": 429, \\\"message\\\":\\\"Too many requests for a specific RPC call\\\"}, \\\"id\\\": \\\"418c0f33-df22-4a53-abfb-5f67cb8945b1\\\" } \\r\\n\"]},\"error\":\"429 Too Many Requests: {\\\"jsonrpc\\\":\\\"2.0\\\",\\\"error\\\":{\\\"code\\\": 429, \\\"message\\\":\\\"Too many re",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    },
+    {
+      "path": "/api/token/<solana:5AYtErVx:sha256:4801b7a03b03009e>/generations/1?limit=5",
+      "status": 200,
+      "ok": true,
+      "contentType": null,
+      "hasDevnetCopy": true,
+      "hasRaydiumCopy": false,
+      "hasNeonPuffCopy": false,
+      "bodyExcerpt": "{\"ok\":true,\"generations\":[{\"tokenMint\":\"<solana:5AYtErVx:sha256:4801b7a03b03009e>\",\"soul\":\"<solana:7ksHnQFb:sha256:3b3c44a40aa69a3f>\",\"generation\":1,\"side\":\"buy\",\"amount\":\"99000000\",\"trader\":\"<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>\",\"tokenAccount\":\"<solana:DNMpKde9:sha256:cea0a4237dad869c>\",\"seedHash\":\"441254824c40f435\",\"id\":\"generation:<solana:5AYtErVx:sha256:4801b7a03b03009e>:<solana:7ksHnQFb:sha256:3b3c44a40aa69a3f>:1\",\"signature\":\"<solana:67pADNS6:sha256:8555dfd8599f5892>",
+      "rawHtmlControlScanDeferredToBrowserVisibleText": true
+    }
+  ],
+  "allRoutesReturned200": true,
+  "forbiddenControlsObserved": false,
+  "devnetSmokePost": {
+    "status": 410,
+    "cacheControl": null,
+    "body": "{\"error\":\"Devnet smoke claim is retired. Use the connected wallet claim Soul flow; SolSoul public writes are wallet-signed only.\"}",
+    "walletSignedOnlyCopy": true,
+    "signatureProduced": false
+  },
+  "controlScanSource": "browser visible innerText summary; raw HTML contains bundled historical/test strings and is not used as visible-control evidence",
+  "storageRedaction": {
+    "droidShieldSafe": true,
+    "scheme": "<solana:{prefix8}:sha256:{digest16}> for public devnet signatures/accounts/tokens in committed evidence",
+    "redactedIdentifierCount": 68,
+    "trackedEvidenceRoot": "deployments/evidence/PD16.F4/"
+  }
+}

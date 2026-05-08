@@ -1,0 +1,15 @@
+▶ mainnet dry-run safety helpers
+  ✔ keeps every write-capable runbook step documentation-only (1.054291ms)
+  ✔ allows only read and simulation RPC methods in the dry-run method summary (0.104542ms)
+  ✔ negative-scans executed transcripts for mainnet write and secret-material patterns (0.507667ms)
+  ✔ separates public third-party mainnet accounts from SolSoul placeholders and devnet IDs (0.13625ms)
+  ✔ decodes BPFUpgradeableLoader Program and ProgramData metadata (0.317333ms)
+✔ mainnet dry-run safety helpers (2.596541ms)
+ℹ tests 5
+ℹ suites 1
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 148.802583

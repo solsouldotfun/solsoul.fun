@@ -1,0 +1,659 @@
+{
+  "feature": "artqa-final-brand-review-go-report",
+  "generatedFrom": "evidence/art-qa/report.json",
+  "contactSheet": "evidence/art-qa/contact-sheet.html",
+  "overallObjectiveStatus": "pass",
+  "recommendedDecision": "GO",
+  "mainnetArtFirstImpression": "GO",
+  "objectiveBlockers": [],
+  "metricSummary": {
+    "sampleCount": 240,
+    "minimumSampleCount": 200,
+    "themeCoverage": {
+      "chaos": 30,
+      "field": 30,
+      "fractal": 30,
+      "harmonic": 30,
+      "lattice": 30,
+      "pixelart": 30,
+      "pixelfractal": 30,
+      "symphony": 30
+    },
+    "exactDuplicateCount": 0,
+    "uniqueSvgCount": 240,
+    "byteLengths": {
+      "average": 2754.008333333333,
+      "max": 3806,
+      "min": 1360,
+      "p50": 2674,
+      "p95": 3796
+    },
+    "primitiveVisibilityMetrics": {
+      "samplesFailingStandardVisibleHeuristic": 0,
+      "samplesWithOpacityZero": 0,
+      "samplesWithZeroVisiblePrimitives": 0,
+      "visiblePrimitiveCounts": {
+        "average": 39.15416666666667,
+        "max": 69,
+        "min": 8,
+        "p50": 38,
+        "p95": 69
+      }
+    },
+    "coreTraitDistribution": {
+      "background": {
+        "eclipse": 60,
+        "grid": 61,
+        "midnight": 59,
+        "nebula": 60
+      },
+      "form": {
+        "crystal": 68,
+        "orb": 58,
+        "spiral": 55,
+        "wave": 59
+      },
+      "mood": {
+        "charged": 55,
+        "mystic": 56,
+        "radiant": 62,
+        "serene": 67
+      },
+      "palette": {
+        "aurora": 63,
+        "ember": 60,
+        "mono": 57,
+        "solana": 60
+      }
+    },
+    "thresholds": {
+      "byteCapExclusive": 4096,
+      "exactDuplicateCount": 0,
+      "minCoreTraitValueCount": 24,
+      "minSamples": 200,
+      "minThemeCount": 15,
+      "themeTolerance": "each built-in theme must appear at least floor(sampleCount/16) times",
+      "traitDistributionTolerance": "each final core trait value must appear at least floor(sampleCount/10) times",
+      "visiblePrimitiveCount": "> 0"
+    }
+  },
+  "subjectiveBrandReview": {
+    "reviewedArtifact": "evidence/art-qa/contact-sheet.html",
+    "reviewedFocusedSamplesScreenshot": "/tmp/solsoul-artqa-selected-inline.png",
+    "decision": "GO",
+    "result": "The tuned batch is acceptable for a mainnet first impression. Pixel Fractal now reads as intentional pixel-glow generative art rather than blank fragments, and Symphony has shifted to abstract audio-reactive bars/waves/resonance fields with no dominant literal note clip art.",
+    "strengths": [
+      "Pixel Fractal gained visible foreground density, central motifs, glow blocks, and mirrored structure while staying crisp and deterministic.",
+      "Symphony now presents spectral bars, waveform paths, resonance geometry, and Solana-accent color fields rather than literal music-note iconography.",
+      "Fractal and Harmonic dark-gallery themes include interior glow, contour/ring structure, and secondary geometry, reducing flat dark/gray first impressions.",
+      "The full contact sheet remains visually varied across all eight built-in themes with no blank or malformed tiles observed in browser review."
+    ],
+    "watchNotes": [
+      "Some Pixel Fractal watch samples remain minimalist; keep monitoring whether the pentagon/spiral/block vocabulary feels sufficiently premium at product scale.",
+      "Some Symphony samples are intentionally dense and arcade-like; acceptable for launch, but future tuning could make spectral forms more refined.",
+      "Pixel Art and a few light-background variants are lower-priority aesthetic watch items, not blockers, because objective safety and representative theme quality pass."
+    ],
+    "goRationale": "No objective blockers remain, weak-theme subjective blockers from the previous NO-GO pass have been addressed, and representative best/watch samples are traceable for human review."
+  },
+  "representativeSamples": [
+    {
+      "theme": "fractal",
+      "best": {
+        "id": "sample-040-fractal",
+        "path": "batch-samples/sample-040-fractal.svg",
+        "byteLength": 1775,
+        "visiblePrimitives": 27,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "05e52f000b348bcb"
+      },
+      "watch": {
+        "id": "sample-000-fractal",
+        "path": "batch-samples/sample-000-fractal.svg",
+        "byteLength": 1714,
+        "visiblePrimitives": 27,
+        "finalCoreTraits": {
+          "background": "eclipse",
+          "form": "crystal",
+          "mood": "charged",
+          "palette": "solana"
+        },
+        "hashFnv64": "d6769311d04fc493"
+      },
+      "medianObjective": {
+        "id": "sample-152-fractal",
+        "path": "batch-samples/sample-152-fractal.svg",
+        "byteLength": 1764,
+        "visiblePrimitives": 27,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "mono"
+        },
+        "hashFnv64": "055b5743fd1a3a76"
+      },
+      "strongestObjective": {
+        "id": "sample-040-fractal",
+        "path": "batch-samples/sample-040-fractal.svg",
+        "byteLength": 1775,
+        "visiblePrimitives": 27,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "05e52f000b348bcb"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-040-fractal",
+        "path": "batch-samples/sample-040-fractal.svg",
+        "byteLength": 1775,
+        "visiblePrimitives": 27,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "05e52f000b348bcb"
+      }
+    },
+    {
+      "theme": "field",
+      "best": {
+        "id": "sample-009-field",
+        "path": "batch-samples/sample-009-field.svg",
+        "byteLength": 3250,
+        "visiblePrimitives": 50,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "mono"
+        },
+        "hashFnv64": "d88bbfc8367f16be"
+      },
+      "watch": {
+        "id": "sample-009-field",
+        "path": "batch-samples/sample-009-field.svg",
+        "byteLength": 3250,
+        "visiblePrimitives": 50,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "mono"
+        },
+        "hashFnv64": "d88bbfc8367f16be"
+      },
+      "medianObjective": {
+        "id": "sample-041-field",
+        "path": "batch-samples/sample-041-field.svg",
+        "byteLength": 3248,
+        "visiblePrimitives": 50,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "mono"
+        },
+        "hashFnv64": "755b87b0e2f89267"
+      },
+      "strongestObjective": {
+        "id": "sample-009-field",
+        "path": "batch-samples/sample-009-field.svg",
+        "byteLength": 3250,
+        "visiblePrimitives": 50,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "mono"
+        },
+        "hashFnv64": "d88bbfc8367f16be"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-009-field",
+        "path": "batch-samples/sample-009-field.svg",
+        "byteLength": 3250,
+        "visiblePrimitives": 50,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "mono"
+        },
+        "hashFnv64": "d88bbfc8367f16be"
+      }
+    },
+    {
+      "theme": "lattice",
+      "best": {
+        "id": "sample-114-lattice",
+        "path": "batch-samples/sample-114-lattice.svg",
+        "byteLength": 2412,
+        "visiblePrimitives": 38,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "44e72ead61157cf6"
+      },
+      "watch": {
+        "id": "sample-114-lattice",
+        "path": "batch-samples/sample-114-lattice.svg",
+        "byteLength": 2412,
+        "visiblePrimitives": 38,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "44e72ead61157cf6"
+      },
+      "medianObjective": {
+        "id": "sample-050-lattice",
+        "path": "batch-samples/sample-050-lattice.svg",
+        "byteLength": 2362,
+        "visiblePrimitives": 38,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "wave",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "7f5448ee92173ff1"
+      },
+      "strongestObjective": {
+        "id": "sample-114-lattice",
+        "path": "batch-samples/sample-114-lattice.svg",
+        "byteLength": 2412,
+        "visiblePrimitives": 38,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "44e72ead61157cf6"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-114-lattice",
+        "path": "batch-samples/sample-114-lattice.svg",
+        "byteLength": 2412,
+        "visiblePrimitives": 38,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "44e72ead61157cf6"
+      }
+    },
+    {
+      "theme": "chaos",
+      "best": {
+        "id": "sample-003-chaos",
+        "path": "batch-samples/sample-003-chaos.svg",
+        "byteLength": 2674,
+        "visiblePrimitives": 52,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "b953b5e7b7ac48bf"
+      },
+      "watch": {
+        "id": "sample-003-chaos",
+        "path": "batch-samples/sample-003-chaos.svg",
+        "byteLength": 2674,
+        "visiblePrimitives": 52,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "b953b5e7b7ac48bf"
+      },
+      "medianObjective": {
+        "id": "sample-067-chaos",
+        "path": "batch-samples/sample-067-chaos.svg",
+        "byteLength": 2642,
+        "visiblePrimitives": 52,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "e955da88997d37f4"
+      },
+      "strongestObjective": {
+        "id": "sample-003-chaos",
+        "path": "batch-samples/sample-003-chaos.svg",
+        "byteLength": 2674,
+        "visiblePrimitives": 52,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "b953b5e7b7ac48bf"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-003-chaos",
+        "path": "batch-samples/sample-003-chaos.svg",
+        "byteLength": 2674,
+        "visiblePrimitives": 52,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "b953b5e7b7ac48bf"
+      }
+    },
+    {
+      "theme": "harmonic",
+      "best": {
+        "id": "sample-124-harmonic",
+        "path": "batch-samples/sample-124-harmonic.svg",
+        "byteLength": 3806,
+        "visiblePrimitives": 69,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "4525111d8eb8398c"
+      },
+      "watch": {
+        "id": "sample-124-harmonic",
+        "path": "batch-samples/sample-124-harmonic.svg",
+        "byteLength": 3806,
+        "visiblePrimitives": 69,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "4525111d8eb8398c"
+      },
+      "medianObjective": {
+        "id": "sample-012-harmonic",
+        "path": "batch-samples/sample-012-harmonic.svg",
+        "byteLength": 3791,
+        "visiblePrimitives": 69,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "aurora"
+        },
+        "hashFnv64": "35115765cef301f9"
+      },
+      "strongestObjective": {
+        "id": "sample-124-harmonic",
+        "path": "batch-samples/sample-124-harmonic.svg",
+        "byteLength": 3806,
+        "visiblePrimitives": 69,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "4525111d8eb8398c"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-124-harmonic",
+        "path": "batch-samples/sample-124-harmonic.svg",
+        "byteLength": 3806,
+        "visiblePrimitives": 69,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "wave",
+          "mood": "serene",
+          "palette": "mono"
+        },
+        "hashFnv64": "4525111d8eb8398c"
+      }
+    },
+    {
+      "theme": "pixelfractal",
+      "best": {
+        "id": "sample-101-pixelfractal",
+        "path": "batch-samples/sample-101-pixelfractal.svg",
+        "byteLength": 3756,
+        "visiblePrimitives": 60,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "serene",
+          "palette": "ember"
+        },
+        "hashFnv64": "a45abb8b5f5de30f"
+      },
+      "watch": {
+        "id": "sample-045-pixelfractal",
+        "path": "batch-samples/sample-045-pixelfractal.svg",
+        "byteLength": 2878,
+        "visiblePrimitives": 46,
+        "finalCoreTraits": {
+          "background": "eclipse",
+          "form": "crystal",
+          "mood": "radiant",
+          "palette": "solana"
+        },
+        "hashFnv64": "fc60f6496f25676e"
+      },
+      "medianObjective": {
+        "id": "sample-013-pixelfractal",
+        "path": "batch-samples/sample-013-pixelfractal.svg",
+        "byteLength": 3683,
+        "visiblePrimitives": 60,
+        "finalCoreTraits": {
+          "background": "eclipse",
+          "form": "crystal",
+          "mood": "radiant",
+          "palette": "solana"
+        },
+        "hashFnv64": "d785c59ec66a2b51"
+      },
+      "strongestObjective": {
+        "id": "sample-101-pixelfractal",
+        "path": "batch-samples/sample-101-pixelfractal.svg",
+        "byteLength": 3756,
+        "visiblePrimitives": 60,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "spiral",
+          "mood": "serene",
+          "palette": "ember"
+        },
+        "hashFnv64": "a45abb8b5f5de30f"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-045-pixelfractal",
+        "path": "batch-samples/sample-045-pixelfractal.svg",
+        "byteLength": 2878,
+        "visiblePrimitives": 46,
+        "finalCoreTraits": {
+          "background": "eclipse",
+          "form": "crystal",
+          "mood": "radiant",
+          "palette": "solana"
+        },
+        "hashFnv64": "fc60f6496f25676e"
+      }
+    },
+    {
+      "theme": "pixelart",
+      "best": {
+        "id": "sample-126-pixelart",
+        "path": "batch-samples/sample-126-pixelart.svg",
+        "byteLength": 1673,
+        "visiblePrimitives": 12,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "spiral",
+          "mood": "mystic",
+          "palette": "aurora"
+        },
+        "hashFnv64": "a305c9c6298a85af"
+      },
+      "watch": {
+        "id": "sample-158-pixelart",
+        "path": "batch-samples/sample-158-pixelart.svg",
+        "byteLength": 1493,
+        "visiblePrimitives": 10,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "aurora"
+        },
+        "hashFnv64": "c1f1ef66d84a1c79"
+      },
+      "medianObjective": {
+        "id": "sample-062-pixelart",
+        "path": "batch-samples/sample-062-pixelart.svg",
+        "byteLength": 1508,
+        "visiblePrimitives": 11,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "crystal",
+          "mood": "mystic",
+          "palette": "aurora"
+        },
+        "hashFnv64": "4e582771d83168c6"
+      },
+      "strongestObjective": {
+        "id": "sample-126-pixelart",
+        "path": "batch-samples/sample-126-pixelart.svg",
+        "byteLength": 1673,
+        "visiblePrimitives": 12,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "spiral",
+          "mood": "mystic",
+          "palette": "aurora"
+        },
+        "hashFnv64": "a305c9c6298a85af"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-158-pixelart",
+        "path": "batch-samples/sample-158-pixelart.svg",
+        "byteLength": 1493,
+        "visiblePrimitives": 10,
+        "finalCoreTraits": {
+          "background": "midnight",
+          "form": "wave",
+          "mood": "mystic",
+          "palette": "aurora"
+        },
+        "hashFnv64": "c1f1ef66d84a1c79"
+      }
+    },
+    {
+      "theme": "symphony",
+      "best": {
+        "id": "sample-119-symphony",
+        "path": "batch-samples/sample-119-symphony.svg",
+        "byteLength": 3438,
+        "visiblePrimitives": 10,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "crystal",
+          "mood": "charged",
+          "palette": "solana"
+        },
+        "hashFnv64": "f3c52131d2f0d27a"
+      },
+      "watch": {
+        "id": "sample-223-symphony",
+        "path": "batch-samples/sample-223-symphony.svg",
+        "byteLength": 3605,
+        "visiblePrimitives": 8,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "87ecff80b9f16690"
+      },
+      "medianObjective": {
+        "id": "sample-127-symphony",
+        "path": "batch-samples/sample-127-symphony.svg",
+        "byteLength": 3460,
+        "visiblePrimitives": 8,
+        "finalCoreTraits": {
+          "background": "eclipse",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "157c881fe2418719"
+      },
+      "strongestObjective": {
+        "id": "sample-119-symphony",
+        "path": "batch-samples/sample-119-symphony.svg",
+        "byteLength": 3438,
+        "visiblePrimitives": 10,
+        "finalCoreTraits": {
+          "background": "nebula",
+          "form": "crystal",
+          "mood": "charged",
+          "palette": "solana"
+        },
+        "hashFnv64": "f3c52131d2f0d27a"
+      },
+      "lowestPrimitiveObjective": {
+        "id": "sample-223-symphony",
+        "path": "batch-samples/sample-223-symphony.svg",
+        "byteLength": 3605,
+        "visiblePrimitives": 8,
+        "finalCoreTraits": {
+          "background": "grid",
+          "form": "spiral",
+          "mood": "radiant",
+          "palette": "ember"
+        },
+        "hashFnv64": "87ecff80b9f16690"
+      }
+    }
+  ],
+  "artifacts": {
+    "machineReport": "evidence/art-qa/mainnet-readiness-report.json",
+    "humanReport": "evidence/art-qa/mainnet-readiness-report.md",
+    "batchReport": "evidence/art-qa/report.json",
+    "contactSheet": "evidence/art-qa/contact-sheet.html",
+    "sampleIndex": "evidence/art-qa/sample-index.json",
+    "hashes": "evidence/art-qa/hashes.tsv",
+    "sampleDirectory": "evidence/art-qa/batch-samples/"
+  },
+  "validatorCommandsRequired": [
+    "cargo run -p soul-generator --example art_qa_batch_sample -- --samples 240 --out evidence/art-qa",
+    "pnpm --filter app typecheck && pnpm --filter app test",
+    "pnpm --filter sdk typecheck && pnpm --filter sdk test",
+    "cargo fmt --all -- --check && cargo test --workspace && cargo clippy --workspace -- -D warnings"
+  ]
+}

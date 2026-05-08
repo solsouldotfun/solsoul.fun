@@ -1,0 +1,590 @@
+{
+  "ranAtIso": "2026-05-04T02:43:31.603Z",
+  "rpc": "https://api.devnet.solana.com",
+  "commitment": "confirmed",
+  "payer": "<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>",
+  "payerKeypairPath": "<local-devnet-keypair-path-omitted>",
+  "programs": {
+    "bondingCurve": "<solana:CoL4Sti1:sha256:a41e4888c489b4d0>",
+    "soulGenerator": "<solana:34erFyVv:sha256:47d5fa6b938606d8>",
+    "transferHook": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>"
+  },
+  "prototypeScope": "Controlled Token-2022 transfer-hook prototype; production AMM/wallet compatibility is out of scope and hook rejection does not burn/forfeit.",
+  "qualifying": {
+    "launch": {
+      "symbol": "M5Q4GC4F",
+      "mint": "<solana:Ga6jFa2B:sha256:078c16bde23bd5de>",
+      "curve": "<solana:81XAPoU1:sha256:066477f4ae03ec31>",
+      "vault": "<solana:4btDrGsk:sha256:2c8a441db11e9f82>",
+      "soul": "<solana:A68p4Sya:sha256:741709a94a882dd7>",
+      "validation": "<solana:665h9WWH:sha256:e70a9912a8c2f130>",
+      "hookProgram": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "tx": {
+        "createMintAndHook": {
+          "sig": "<solana:3NENMbJN:sha256:22c80db641177756>",
+          "slot": 459936447,
+          "explorer": "https://explorer.solana.com/tx/<solana:3NENMbJN:sha256:22c80db641177756>?cluster=devnet"
+        },
+        "createToken": {
+          "sig": "<solana:2qiscVLJ:sha256:9f7ca1a6313d5545>",
+          "slot": 459936450,
+          "explorer": "https://explorer.solana.com/tx/<solana:2qiscVLJ:sha256:9f7ca1a6313d5545>?cluster=devnet"
+        },
+        "createValidation": {
+          "sig": "<solana:3EDDHfof:sha256:fdb66341d75054f9>",
+          "slot": 459936453,
+          "explorer": "https://explorer.solana.com/tx/<solana:3EDDHfof:sha256:fdb66341d75054f9>?cluster=devnet"
+        },
+        "initializeSoul": {
+          "sig": "<solana:4nzf8gv1:sha256:f80bce85dcbd056d>",
+          "slot": 459936456,
+          "explorer": "https://explorer.solana.com/tx/<solana:4nzf8gv1:sha256:f80bce85dcbd056d>?cluster=devnet"
+        }
+      },
+      "mintOwner": "<solana:TokenzQd:sha256:06999b8576fcb62a>",
+      "transferHookProgramOnMint": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationOwner": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationMetaCount": 2
+    },
+    "buy": {
+      "sig": "<solana:55aAmFPk:sha256:d6156da47380b1df>",
+      "slot": 459936460,
+      "explorer": "https://explorer.solana.com/tx/<solana:55aAmFPk:sha256:d6156da47380b1df>?cluster=devnet",
+      "logs": [
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1351 of 391739 compute units",
+        "Program return: <solana:TokenzQd:sha256:06999b8576fcb62a> rwAAAAAAAAA=",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program log: Initialize the associated token account",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 674 of 385566 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 2323 of 382559 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 20047 of 400000 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1480 of 370509 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [2]",
+        "Program log: [event:generation] generation=1 side=buy amount=99000000 trader=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64> token_account=<solana:EPT9M3HZ:sha256:cab97b9c3f70cc10> mint=<solana:Ga6jFa2B:sha256:078c16bde23bd5de> soul=<solana:A68p4Sya:sha256:741709a94a882dd7> seed_hash=8d0627d41253612e",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 32207 of 367465 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 44721 of 379953 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> success"
+      ],
+      "solInLamports": "100000000",
+      "tokenOut": "3529253463570",
+      "postBalance": "3529253463570"
+    },
+    "claim": {
+      "sig": "<solana:4KPJJXxu:sha256:3ee5e374e3e2aec8>",
+      "slot": 459936471,
+      "explorer": "https://explorer.solana.com/tx/<solana:4KPJJXxu:sha256:3ee5e374e3e2aec8>?cluster=devnet",
+      "logs": [
+        "Program <solana:ComputeB:sha256:9fe72c2a7bf1978f> invoke [1]",
+        "Program <solana:ComputeB:sha256:9fe72c2a7bf1978f> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: MetadataPointerInstruction::Initialize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 852 of 290648 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeMint2",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1700 of 288724 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: TokenMetadataInstruction: Initialize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 7629 of 285151 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1444 of 266338 compute units",
+        "Program return: <solana:TokenzQd:sha256:06999b8576fcb62a> qgAAAAAAAAA=",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [3]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program log: Initialize the associated token account",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 674 of 260072 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 2027 of 257024 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 21418 of 276132 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1642 of 253324 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: FreezeAccount",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1120 of 250470 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program log: [event:claim] soul=<solana:A68p4Sya:sha256:741709a94a882dd7> nft_mint=<solana:46GACrKi:sha256:c12c4392b6b27bed> claimer=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 458917 of 699850 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success"
+      ],
+      "nftMint": "<solana:46GACrKi:sha256:c12c4392b6b27bed>",
+      "receipt": "<solana:J3m9PYyB:sha256:bb39e0775775445e>",
+      "receiptRegistry": "<solana:CkYCuwAA:sha256:8c78926311186974>",
+      "receiptState": "active",
+      "registryActiveReceipts": "1"
+    },
+    "hookTransfers": {
+      "destinationOwner": "<solana:DmmPgeGB:sha256:42d54e962cf55d77>",
+      "sourceAta": "<solana:EPT9M3HZ:sha256:cab97b9c3f70cc10>",
+      "destinationAta": "<solana:EmejKwtq:sha256:6e2c7bff37069218>",
+      "inBounds": {
+        "sig": "<solana:59iLfsKZ:sha256:8b7925f90fd1e86e>",
+        "slot": 459936480,
+        "explorer": "https://explorer.solana.com/tx/<solana:59iLfsKZ:sha256:8b7925f90fd1e86e>?cluster=devnet",
+        "logs": [
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [1]",
+          "Program log: Instruction: TransferChecked",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> invoke [2]",
+          "Program log: SolSoul Transfer Hook: execute amount=1 pre_whole=3529253 post_whole=3529253 crossed_down=0",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> consumed 17415 of 182960 compute units",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> success",
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 35145 of 200000 compute units",
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success"
+        ],
+        "amount": "1",
+        "sourceBefore": "3529253463570",
+        "sourceAfter": "3529253463569",
+        "destinationAfter": "1",
+        "receiptStateAfter": "active"
+      },
+      "boundaryRejection": {
+        "sig": "<solana:2rnpjzdv:sha256:640f2029129b18ae>",
+        "slot": 459936487,
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 7004
+            }
+          ]
+        },
+        "message": "boundary-breaking hook transfer rejected as expected",
+        "logs": [
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [1]",
+          "Program log: Instruction: TransferChecked",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> invoke [2]",
+          "Program log: SolSoul Transfer Hook: execute amount=3529252463570 pre_whole=3529253 post_whole=0 crossed_down=3529253",
+          "Program log: SolSoul Transfer Hook: rejecting boundary-breaking transfer active_receipts=1 post_whole=0",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> consumed 21424 of 182960 compute units",
+          "Program <solana:Gccbqia5:sha256:66a9d9b02e14a906> failed: custom program error: 0x1b5c",
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 38464 of 200000 compute units",
+          "Program <solana:TokenzQd:sha256:06999b8576fcb62a> failed: custom program error: 0x1b5c"
+        ],
+        "explorer": "https://explorer.solana.com/tx/<solana:2rnpjzdv:sha256:640f2029129b18ae>?cluster=devnet",
+        "expectedCustomErrorCode": "7004 (0x1b5c)",
+        "amount": "3529252463570",
+        "sourceBefore": "3529253463569",
+        "sourceAfter": "3529253463569",
+        "destinationBefore": "1",
+        "destinationAfter": "1",
+        "receiptStateAfter": "active"
+      },
+      "settledBoundaryTransfer": {
+        "sig": "<solana:3tF8nKpt:sha256:0cab3655ede4107d>",
+        "slot": 459936494,
+        "explorer": "https://explorer.solana.com/tx/<solana:3tF8nKpt:sha256:0cab3655ede4107d>?cluster=devnet",
+        "instructionOrder": [
+          "settle_receipts",
+          "transfer_checked"
+        ],
+        "amount": "3529252463570",
+        "sourceBefore": "3529253463569",
+        "sourceAfter": "999999",
+        "destinationBefore": "1",
+        "destinationAfter": "3529252463571",
+        "receipt": "<solana:J3m9PYyB:sha256:bb39e0775775445e>",
+        "receiptStateAfter": "burned",
+        "registryActiveReceiptsAfter": "0",
+        "registryBurnedReceiptsAfter": "1"
+      }
+    }
+  },
+  "nonQualifying": {
+    "launch": {
+      "symbol": "M5NQBAXF2",
+      "mint": "<solana:W8mYNwNF:sha256:56d62b1413355617>",
+      "curve": "<solana:QEaLpJGK:sha256:276d7e86680c7df7>",
+      "vault": "<solana:BfQd76Xk:sha256:363ea997f7fe2de2>",
+      "soul": "<solana:CE8pQCud:sha256:2bb4d10803ac7234>",
+      "validation": "<solana:H2VSCJ1V:sha256:78e3e678b5943d34>",
+      "hookProgram": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "tx": {
+        "createMintAndHook": {
+          "sig": "<solana:4EXuc3ud:sha256:94075b1a331b6804>",
+          "slot": 459936539,
+          "explorer": "https://explorer.solana.com/tx/<solana:4EXuc3ud:sha256:94075b1a331b6804>?cluster=devnet"
+        },
+        "createToken": {
+          "sig": "<solana:3VGa72JR:sha256:438a73872f0413e9>",
+          "slot": 459936543,
+          "explorer": "https://explorer.solana.com/tx/<solana:3VGa72JR:sha256:438a73872f0413e9>?cluster=devnet"
+        },
+        "createValidation": {
+          "sig": "<solana:kAYPAX4V:sha256:7e49f5ae0dd3e06d>",
+          "slot": 459936546,
+          "explorer": "https://explorer.solana.com/tx/<solana:kAYPAX4V:sha256:7e49f5ae0dd3e06d>?cluster=devnet"
+        },
+        "initializeSoul": {
+          "sig": "<solana:3c2RAJsU:sha256:d0ecd0ac13dc0988>",
+          "slot": 459936548,
+          "explorer": "https://explorer.solana.com/tx/<solana:3c2RAJsU:sha256:d0ecd0ac13dc0988>?cluster=devnet"
+        }
+      },
+      "mintOwner": "<solana:TokenzQd:sha256:06999b8576fcb62a>",
+      "transferHookProgramOnMint": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationOwner": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationMetaCount": 2
+    },
+    "qualifyingSetupBuy": {
+      "sig": "<solana:27JkaXab:sha256:843078d84dda04f0>",
+      "slot": 459936553,
+      "explorer": "https://explorer.solana.com/tx/<solana:27JkaXab:sha256:843078d84dda04f0>?cluster=devnet",
+      "logs": [
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1351 of 394739 compute units",
+        "Program return: <solana:TokenzQd:sha256:06999b8576fcb62a> rwAAAAAAAAA=",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program log: Initialize the associated token account",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 674 of 388566 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 2323 of 385559 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 17047 of 400000 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1480 of 373509 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [2]",
+        "Program log: [event:generation] generation=1 side=buy amount=99000000 trader=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64> token_account=<solana:399xBL4f:sha256:207b6bb5db889287> mint=<solana:W8mYNwNF:sha256:56d62b1413355617> soul=<solana:CE8pQCud:sha256:2bb4d10803ac7234> seed_hash=41258bd884ab2f53",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 32234 of 370465 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 44748 of 382953 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> success"
+      ],
+      "solInLamports": "100000000",
+      "tokenOut": "3529253463570",
+      "postBalance": "3529253463570"
+    },
+    "subWholeBuy": {
+      "sig": "<solana:5Z8n6NNr:sha256:560ad40f3dd759f7>",
+      "slot": 459936559,
+      "explorer": "https://explorer.solana.com/tx/<solana:5Z8n6NNr:sha256:560ad40f3dd759f7>?cluster=devnet",
+      "logs": [
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 4356 of 400000 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1480 of 386224 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [2]",
+        "Program log: [event:generation] generation=2 side=buy amount=1 trader=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64> token_account=<solana:399xBL4f:sha256:207b6bb5db889287> mint=<solana:W8mYNwNF:sha256:56d62b1413355617> soul=<solana:CE8pQCud:sha256:2bb4d10803ac7234> seed_hash=c22b132c7c60ea51",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 32212 of 383180 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 44702 of 395644 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> success"
+      ],
+      "solInLamports": "1",
+      "tokenOut": "35531",
+      "postBalance": "3529253499101"
+    },
+    "failedClaim": {
+      "sig": "<solana:R7ny8Yjh:sha256:fbb60ed2d32f90dd>",
+      "slot": 459936566,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 771
+          }
+        ]
+      },
+      "message": "non-qualifying claim rejected as expected",
+      "logs": [
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [1]",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 10171 of 202850 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> failed: custom program error: 0x303"
+      ],
+      "explorer": "https://explorer.solana.com/tx/<solana:R7ny8Yjh:sha256:fbb60ed2d32f90dd>?cluster=devnet",
+      "expectedCustomErrorCode": "771 (0x303)",
+      "attemptedSequence": "1",
+      "holderBalance": "3529253499101",
+      "soulProvenanceTokenAmount": "35531"
+    }
+  },
+  "discoveredIssues": [],
+  "balance": {
+    "startingLamports": 9621444806,
+    "endingLamports": 9036370098,
+    "spentLamports": 585074708
+  },
+  "boundarySell": {
+    "launch": {
+      "symbol": "M4SELLE7T6W",
+      "mint": "<solana:pmU3XyZR:sha256:1cfd005df81646c6>",
+      "curve": "<solana:3boyqX3L:sha256:06192271f7ef5551>",
+      "vault": "<solana:7ktK1LFH:sha256:1de1362665b8e4f6>",
+      "soul": "<solana:4A1WzZ5Q:sha256:ea276b9bb39f151b>",
+      "validation": "<solana:GmBhELAj:sha256:455619d929554422>",
+      "hookProgram": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "tx": {
+        "createMintAndHook": {
+          "sig": "<solana:2JXSpDGL:sha256:e144a597af4a9edc>",
+          "slot": 459936500,
+          "explorer": "https://explorer.solana.com/tx/<solana:2JXSpDGL:sha256:e144a597af4a9edc>?cluster=devnet"
+        },
+        "createToken": {
+          "sig": "<solana:2csXdmEo:sha256:dca5d8d39262a427>",
+          "slot": 459936505,
+          "explorer": "https://explorer.solana.com/tx/<solana:2csXdmEo:sha256:dca5d8d39262a427>?cluster=devnet"
+        },
+        "createValidation": {
+          "sig": "<solana:5rXCU5fx:sha256:9132d7f98444aef0>",
+          "slot": 459936509,
+          "explorer": "https://explorer.solana.com/tx/<solana:5rXCU5fx:sha256:9132d7f98444aef0>?cluster=devnet"
+        },
+        "initializeSoul": {
+          "sig": "<solana:4rBvUeKs:sha256:e94f00bd3de2aee7>",
+          "slot": 459936512,
+          "explorer": "https://explorer.solana.com/tx/<solana:4rBvUeKs:sha256:e94f00bd3de2aee7>?cluster=devnet"
+        }
+      },
+      "mintOwner": "<solana:TokenzQd:sha256:06999b8576fcb62a>",
+      "transferHookProgramOnMint": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationOwner": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>",
+      "validationMetaCount": 2
+    },
+    "buy": {
+      "sig": "<solana:5H9LvJwu:sha256:dec2e0df71e5e829>",
+      "slot": 459936516,
+      "explorer": "https://explorer.solana.com/tx/<solana:5H9LvJwu:sha256:dec2e0df71e5e829>?cluster=devnet",
+      "logs": [
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1351 of 394739 compute units",
+        "Program return: <solana:TokenzQd:sha256:06999b8576fcb62a> rwAAAAAAAAA=",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program log: Initialize the associated token account",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 674 of 388566 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 2323 of 385559 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 17047 of 400000 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1480 of 373509 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [2]",
+        "Program log: [event:generation] generation=1 side=buy amount=99000000 trader=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64> token_account=<solana:2QMf8Boi:sha256:4ee0ea56fb2ce2e3> mint=<solana:pmU3XyZR:sha256:1cfd005df81646c6> soul=<solana:4A1WzZ5Q:sha256:ea276b9bb39f151b> seed_hash=9fa6eaeafceaf0cd",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 32209 of 370465 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 44723 of 382953 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> success"
+      ],
+      "solInLamports": "100000000",
+      "tokenOut": "3529253463570",
+      "postBalance": "3529253463570"
+    },
+    "claim": {
+      "sig": "<solana:4JNXLQUu:sha256:8e0f82749a3f03de>",
+      "slot": 459936526,
+      "explorer": "https://explorer.solana.com/tx/<solana:4JNXLQUu:sha256:8e0f82749a3f03de>?cluster=devnet",
+      "logs": [
+        "Program <solana:ComputeB:sha256:9fe72c2a7bf1978f> invoke [1]",
+        "Program <solana:ComputeB:sha256:9fe72c2a7bf1978f> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [1]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: MetadataPointerInstruction::Initialize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 852 of 289434 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: InitializeMint2",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1700 of 287510 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: TokenMetadataInstruction: Initialize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 7758 of 283936 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> invoke [2]",
+        "Program log: CreateIdempotent",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1444 of 266494 compute units",
+        "Program return: <solana:TokenzQd:sha256:06999b8576fcb62a> qgAAAAAAAAA=",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [3]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program log: Initialize the associated token account",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 674 of 260228 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 2027 of 257189 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> consumed 19909 of 274788 compute units",
+        "Program <solana:ATokenGP:sha256:088bd64328b119e2> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: MintTo",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1642 of 253489 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: FreezeAccount",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1120 of 250635 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program log: [event:claim] soul=<solana:4A1WzZ5Q:sha256:ea276b9bb39f151b> nft_mint=<solana:4jhfgBH8:sha256:72d5d84df893a028> claimer=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64>",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 458752 of 699850 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success"
+      ],
+      "nftMint": "<solana:4jhfgBH8:sha256:72d5d84df893a028>",
+      "receipt": "<solana:7qf7nRW5:sha256:65ae357040c92b5c>",
+      "receiptRegistry": "<solana:2N5JtrN5:sha256:f075c17345e719c0>",
+      "receiptState": "active",
+      "registryActiveReceipts": "1"
+    },
+    "sourceAta": "<solana:2QMf8Boi:sha256:4ee0ea56fb2ce2e3>",
+    "noSettlementRejection": {
+      "sig": "<solana:3VRM6VLA:sha256:8625c7faa9e23a88>",
+      "slot": 459936531,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 17160
+          }
+        ]
+      },
+      "message": "boundary sell without settlement rejected as expected",
+      "logs": [
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 8974 of 200000 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> failed: custom program error: 0x4308"
+      ],
+      "explorer": "https://explorer.solana.com/tx/<solana:3VRM6VLA:sha256:8625c7faa9e23a88>?cluster=devnet",
+      "expectedCustomErrorCode": "17160 (0x4308)",
+      "amount": "3529252463571",
+      "sourceBefore": "3529253463570",
+      "sourceAfter": "3529253463570",
+      "receipt": "<solana:7qf7nRW5:sha256:65ae357040c92b5c>",
+      "receiptStateAfter": "active",
+      "registryActiveReceiptsAfter": "1"
+    },
+    "settlementAndSell": {
+      "sig": "<solana:4YsKfc52:sha256:5eb35e997f4dd923>",
+      "slot": 459936535,
+      "explorer": "https://explorer.solana.com/tx/<solana:4YsKfc52:sha256:5eb35e997f4dd923>?cluster=devnet",
+      "logs": [
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [1]",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 3371 of 400000 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> invoke [1]",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> invoke [2]",
+        "Program log: Instruction: Burn",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> consumed 1541 of 386522 compute units",
+        "Program <solana:TokenzQd:sha256:06999b8576fcb62a> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:11111111:sha256:8a83665f3798727f> invoke [2]",
+        "Program <solana:11111111:sha256:8a83665f3798727f> success",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> invoke [2]",
+        "Program log: [event:generation] generation=2 side=sell amount=3529252463571 trader=<solana:8uAPC2Ux:sha256:ac7a33f6435c3b64> token_account=<solana:2QMf8Boi:sha256:4ee0ea56fb2ce2e3> mint=<solana:pmU3XyZR:sha256:1cfd005df81646c6> soul=<solana:4A1WzZ5Q:sha256:ea276b9bb39f151b> seed_hash=0bce8fa59cec842c",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> consumed 32339 of 380990 compute units",
+        "Program <solana:34erFyVv:sha256:47d5fa6b938606d8> success",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> consumed 48007 of 396629 compute units",
+        "Program <solana:CoL4Sti1:sha256:a41e4888c489b4d0> success"
+      ],
+      "instructionOrder": [
+        "settle_receipts",
+        "sell"
+      ],
+      "amount": "3529252463571",
+      "sourceBefore": "3529253463570",
+      "sourceAfter": "999999",
+      "receipt": "<solana:7qf7nRW5:sha256:65ae357040c92b5c>",
+      "receiptStateAfter": "burned",
+      "registryActiveReceiptsAfter": "0",
+      "registryBurnedReceiptsAfter": "1"
+    }
+  },
+  "coherence": {
+    "deploymentFile": "/Users/davirian/dev/active/ideas/solsouldotfun/deployments/devnet.json",
+    "sdkProgramIds": {
+      "bondingCurve": "<solana:CoL4Sti1:sha256:a41e4888c489b4d0>",
+      "soulGenerator": "<solana:34erFyVv:sha256:47d5fa6b938606d8>"
+    },
+    "appLocalUrl": "http://127.0.0.1:3100/en",
+    "apiStatsUrl": "http://127.0.0.1:3100/api/stats"
+  },
+  "storageRedaction": {
+    "droidShieldSafe": true,
+    "reason": "Public devnet signatures, addresses, local keypair path, and log identifiers are stored as stable prefixes plus SHA-256 digests to avoid Droid-Shield false positives while preserving slots, error codes, lifecycle states, balances, instruction order, and log semantics."
+  }
+}

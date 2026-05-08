@@ -1,0 +1,10 @@
+HTTP/1.1 410 Gone
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch
+cache-control: no-store
+content-type: application/json
+Date: Sat, 02 May 2026 21:37:23 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{"error":"Devnet smoke launch is retired. Use the connected wallet launch flow; SolSoul public writes are wallet-signed only."}

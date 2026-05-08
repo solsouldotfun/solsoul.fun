@@ -1,0 +1,310 @@
+DEVNET TESTNET — funds are not real
+SolSoul.fun
+Explore
+Market
+Collection
+My Souls
+Stats
+Launch
+EN
+/
+中文
+Select Wallet
+
+COLLECTION DASHBOARD
+
+Global Soul Collection Dashboard
+
+Unipeg-like public devnet collection view for launched tokens, generated Soul candidates, claimed Souls, active curves, art theme distribution, and recent trade-generated lifecycle activity backed by RPC data.
+
+PUBLIC DATA SOURCE
+
+Devnet RPC read model: https://api.devnet.solana.com
+
+Last refreshed: 2026-04-30T20:44:40.689Z
+
+Refresh proof data
+All Souls
+Token feed
+
+TOTAL LAUNCHED TOKENS
+
+7
+
+Bonding-curve token accounts discovered through the public program.
+
+Open token feed
+
+TOTAL GENERATED SOUL CANDIDATES
+
+6
+
+Sum of SoulAccount generation counts created by wallet-signed trades.
+
+Open all Souls
+
+TOTAL CLAIMED SOULS
+
+2
+
+Claim PDA accounts for Token-2022 Soul NFTs.
+
+Open claimed Souls
+
+ACTIVE CURVES / TOKENS
+
+7
+
+Launched tokens that have not graduated or migrated.
+
+Open live tokens
+
+THEME DISTRIBUTION
+
+Art engines across launches
+SoulPuff
+BUILT-IN
+2 token launches
+4 generated
+1 claimed
+Monochrome Soul
+BUILT-IN
+5 token launches
+2 generated
+1 claimed
+
+PER-TOKEN TOTALS
+
+Collection scopes
+Token feed
+P13EBMNN
+Theme: SoulPuff
+Active token
+
+6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY
+
+2 generated Souls · 1 claimed NFTs
+
+P13EBMNN
+Token gallery
+P13EBMIR
+Theme: Monochrome Soul
+Active token
+
+8RJST5jvq9YEESB2fmw4bWiWsGxmbEcihSHynqNTSVQe
+
+2 generated Souls · 1 claimed NFTs
+
+P13EBMIR
+Token gallery
+P13EBMM9
+Theme: SoulPuff
+Active token
+
+FzsRDNkZzoQUXw8c2XW8QJUtLMjfG9rrkvyJq1xkdyjc
+
+2 generated Souls · 0 claimed NFTs
+
+P13EBMM9
+Token gallery
+P13EBMEU
+Theme: Monochrome Soul
+Active token
+
+14R6AmqvJL5pVzdU5Pk8KcH4m1pjQeZeH8gqLQ35SoA3
+
+0 generated Souls · 0 claimed NFTs
+
+P13EBMEU
+Token gallery
+P13EBMDC
+Theme: Monochrome Soul
+Active token
+
+7BmedPhjxK8DTTNkezGRcyhbTk4yDa7qkwM3Guu2WKZX
+
+0 generated Souls · 0 claimed NFTs
+
+P13EBMDC
+Token gallery
+P13EBMH4
+Theme: Monochrome Soul
+Active token
+
+9oJyrAen7eZJxkuLvmzBPeJrYKdUSNDhzYmoKgvNDLvT
+
+0 generated Souls · 0 claimed NFTs
+
+P13EBMH4
+Token gallery
+P13EBMHU
+Theme: Monochrome Soul
+Active token
+
+ENQW68BhDVworp1GUR2tXop1mWQRSnzisTwZUAkrQejk
+
+0 generated Souls · 0 claimed NFTs
+
+P13EBMHU
+Token gallery
+
+RECENT PROOF ROWS
+
+Recent trades, generations, and claims
+
+Rows pair monochrome Soul thumbnails with token pages, per-token Soul galleries, Soul PDAs, NFT mints, or devnet explorer evidence when available.
+
+Trade / generation
+
+Slot: 459182134
+
+P13EBMNN latest trade-generated Soul #2
+
+Token mint: 6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY
+
+Theme: SoulPuff
+Side: sell
+Amount: 100000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: 08031cde38639bac
+Soul PDA: FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu
+P13EBMNN
+Explorer tx
+Soul PDA
+Trade / generation
+
+Slot: 459182128
+
+P13EBMNN latest trade-generated Soul #1
+
+Token mint: 6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY
+
+Theme: SoulPuff
+Side: buy
+Amount: 99000000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: f30ef0cc64628f45
+Soul PDA: FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu
+P13EBMNN
+Explorer tx
+Soul PDA
+Claim
+P13EBMNN Soul claim sequence #0
+
+Token mint: 6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY
+
+Theme: SoulPuff
+Soul PDA: FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu
+P13EBMNN
+NFT explorer
+Soul PDA
+Launch
+P13EBMNN launched a token lifecycle
+
+Token mint: 6B69QZ2DjTReXAYuNBzh3Skaf494GQ6qSkvE1Zu88pjY
+
+Theme: SoulPuff
+6B69…8pjY
+Explorer
+Trade / generation
+
+Slot: 459182003
+
+P13EBMM9 latest trade-generated Soul #2
+
+Token mint: FzsRDNkZzoQUXw8c2XW8QJUtLMjfG9rrkvyJq1xkdyjc
+
+Theme: SoulPuff
+Side: sell
+Amount: 100000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: c714aebedfc284fc
+Soul PDA: GjHizgUxTzbK7eJGY7BMyMp8BHw39cdTs55fA1GiBfsF
+P13EBMM9
+Explorer tx
+Soul PDA
+Trade / generation
+
+Slot: 459181999
+
+P13EBMM9 latest trade-generated Soul #1
+
+Token mint: FzsRDNkZzoQUXw8c2XW8QJUtLMjfG9rrkvyJq1xkdyjc
+
+Theme: SoulPuff
+Side: buy
+Amount: 99000000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: 1f067c9aa0308ae3
+Soul PDA: GjHizgUxTzbK7eJGY7BMyMp8BHw39cdTs55fA1GiBfsF
+P13EBMM9
+Explorer tx
+Soul PDA
+Launch
+P13EBMM9 launched a token lifecycle
+
+Token mint: FzsRDNkZzoQUXw8c2XW8QJUtLMjfG9rrkvyJq1xkdyjc
+
+Theme: SoulPuff
+FzsR…dyjc
+Explorer
+Trade / generation
+
+Slot: 459181679
+
+P13EBMIR latest trade-generated Soul #2
+
+Token mint: 8RJST5jvq9YEESB2fmw4bWiWsGxmbEcihSHynqNTSVQe
+
+Theme: Monochrome Soul
+Side: sell
+Amount: 100000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: 8c30abe731d10424
+Soul PDA: CJhLNsGaUgfKbJnh8XShFF4L2upVBUeczMbXeBH2sZM7
+P13EBMIR
+Explorer tx
+Soul PDA
+Trade / generation
+
+Slot: 459181673
+
+P13EBMIR latest trade-generated Soul #1
+
+Token mint: 8RJST5jvq9YEESB2fmw4bWiWsGxmbEcihSHynqNTSVQe
+
+Theme: Monochrome Soul
+Side: buy
+Amount: 99000000
+Trader: 8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i
+Seed hash: 627c3733aceec718
+Soul PDA: CJhLNsGaUgfKbJnh8XShFF4L2upVBUeczMbXeBH2sZM7
+P13EBMIR
+Explorer tx
+Soul PDA
+Claim
+P13EBMIR Soul claim sequence #0
+
+Token mint: 8RJST5jvq9YEESB2fmw4bWiWsGxmbEcihSHynqNTSVQe
+
+Theme: Monochrome Soul
+Soul PDA: CJhLNsGaUgfKbJnh8XShFF4L2upVBUeczMbXeBH2sZM7
+P13EBMIR
+NFT explorer
+Soul PDA
+Launch
+P13EBMIR launched a token lifecycle
+
+Token mint: 8RJST5jvq9YEESB2fmw4bWiWsGxmbEcihSHynqNTSVQe
+
+Theme: Monochrome Soul
+8RJS…SVQe
+Explorer
+Launch
+P13EBMHU launched a token lifecycle
+
+Token mint: ENQW68BhDVworp1GUR2tXop1mWQRSnzisTwZUAkrQejk
+
+Theme: Monochrome Soul
+ENQW…Qejk
+Explorer

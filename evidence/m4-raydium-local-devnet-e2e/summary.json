@@ -1,0 +1,125 @@
+{
+  "featureId": "m4-devnet-boundary-sell-and-stats-evidence-fix",
+  "createdAtIso": "2026-05-01T13:23:07Z",
+  "scope": "Raydium-only M4 devnet boundary-sell and localized stats evidence fix; Meteora/PumpSwap deferred/historical.",
+  "devnetLifecycleTrace": "deployments/devnet-e2e-trace.json",
+  "raydiumTrace": "deployments/devnet-amm-e2e-trace.raydium.json",
+  "statsApiSnapshot": "evidence/m4-raydium-local-devnet-e2e/stats-api-devnet.json",
+  "uiEvidence": [
+    "evidence/m4-raydium-local-devnet-e2e/stats-en.png",
+    "evidence/m4-raydium-local-devnet-e2e/stats-en.txt",
+    "evidence/m4-raydium-local-devnet-e2e/stats-zh.png",
+    "evidence/m4-raydium-local-devnet-e2e/stats-zh.txt"
+  ],
+  "programs": {
+    "bondingCurve": "<solana:CoL4Sti1:sha256:a41e4888c489b4d0>",
+    "soulGenerator": "<solana:34erFyVv:sha256:47d5fa6b938606d8>",
+    "transferHook": "<solana:Gccbqia5:sha256:66a9d9b02e14a906>"
+  },
+  "devnetLifecycle": {
+    "qualifyingMint": "<solana:5j8AcJV4:sha256:b3138f72879e9a90>",
+    "buySig": "<solana:4zT9R2z1:sha256:3f6d36a692e17f61>",
+    "claimSig": "<solana:4y97vTx3:sha256:eb85892f9f669bf8>",
+    "nftMint": "<solana:7sFTnvGx:sha256:01b75fbf64b0614d>",
+    "receipt": "<solana:G6FT5hQs:sha256:669f2c016d0ef919>",
+    "hookInBoundsSig": "<solana:4Uzq3CVV:sha256:c8acea332519e4fe>",
+    "boundaryTransferRejectedSig": "<solana:2hNxNF6A:sha256:3f343fb8cd53f587>",
+    "boundaryTransferExpectedCustomError": "7004 (0x1b5c)",
+    "settledBoundaryTransferSig": "<solana:4d7rKu61:sha256:756d284a82302833>",
+    "settledTransferReceiptState": "burned",
+    "nonQualifyingRejectedSig": "<solana:3r8eUHyr:sha256:6c8ca74ec2b73806>",
+    "nonQualifyingExpectedCustomError": "771 (0x303)"
+  },
+  "boundarySell": {
+    "mint": "<solana:99y7LFpX:sha256:d88e4e2db84a398b>",
+    "buySig": "<solana:5enZvZEN:sha256:1f6ccd2304474618>",
+    "claimSig": "<solana:Z5LW2wG3:sha256:5dfa81c5a585f05f>",
+    "receipt": "<solana:2guexv3A:sha256:240450420482fd14>",
+    "sourceAta": "<solana:CGPqHKAT:sha256:67e8a7ad48c49dbc>",
+    "noSettlementRejectedSig": "<solana:5718XXGn:sha256:7035fdbedf371765>",
+    "noSettlementExpectedCustomError": "17160 (0x4308)",
+    "noSettlementSourceBefore": "3529253463570",
+    "noSettlementSourceAfter": "3529253463570",
+    "noSettlementReceiptStateAfter": "active",
+    "settlementAndSellSig": "<solana:4WedPzi9:sha256:1ab309e2aac8b1ff>",
+    "settlementAndSellInstructionOrder": [
+      "settle_receipts",
+      "sell"
+    ],
+    "settlementAndSellSourceBefore": "3529253463570",
+    "settlementAndSellSourceAfter": "999999",
+    "settlementAndSellReceiptStateAfter": "burned",
+    "registryActiveAfterSettlement": "0",
+    "registryBurnedAfterSettlement": "1"
+  },
+  "raydium": {
+    "amm": "raydium",
+    "migrateSig": "<see-raydium-trace>",
+    "memeMint": "<see-raydium-trace>",
+    "poolAddress": "<see-raydium-trace>",
+    "tokenVaultAmount": "651285856750882",
+    "verifiedVia": "pnpm exec tsx scripts/devnet-amm-e2e.ts --amm raydium --verify-trace"
+  },
+  "stats": {
+    "ok": true,
+    "metrics": [
+      {
+        "id": "launchedTokens",
+        "value": "33"
+      },
+      {
+        "id": "generatedSoulCandidates",
+        "value": "44"
+      },
+      {
+        "id": "claimedSouls",
+        "value": "14"
+      },
+      {
+        "id": "activeCurves",
+        "value": "32"
+      }
+    ],
+    "rpcEndpoint": "https://api.devnet.solana.com",
+    "slot": 459354709,
+    "partial": true,
+    "warnings": [
+      "outside-liquidity token account scan: failed to get accounts owned by program <solana:TokenzQd:sha256:06999b8576fcb62a>: <solana:TokenzQd:sha256:06999b8576fcb62a> excluded from account secondary indexes; this RPC method unavailable for key"
+    ],
+    "sourceCoverage": {
+      "bonding_curve_reserve_tokens": "32",
+      "raydium_cp_swap_vault_tokens": "1",
+      "unavailable_tokens": "0",
+      "source_verified_tokens": "33",
+      "source_unverified_tokens": "0",
+      "warning_tokens": "33",
+      "warnings": [
+        "outside_liquidity_scan_unavailable",
+        "outside_liquidity_venue_unavailable"
+      ]
+    },
+    "boundarySellRow": {
+      "tokenLabel": "M4SELLK4SSD",
+      "liquidity_dust_ratio": "0.000000000000001260",
+      "active_receipts": "0",
+      "burned_receipts": "1",
+      "inactive_receipts": "1",
+      "liquidity": "bonding_curve_reserve"
+    },
+    "raydiumRow": {
+      "tokenLabel": "RAYDLS3J",
+      "liquidity_dust_ratio": "0.000000001152922318",
+      "active_liquidity_base_units": "651285856750882",
+      "liquidity": "raydium_cp_swap_vault",
+      "raydium_pool_state": "<solana:6mGA8w1m:sha256:de82c7064f7e6227>",
+      "source_verified": true
+    }
+  },
+  "notes": [
+    "Stats API is partial only because public devnet RPC excludes Token-2022 getProgramAccounts secondary indexes for outside-liquidity scanning; Raydium vault source remains verified in the stats payload."
+  ],
+  "storageRedaction": {
+    "droidShieldSafe": true,
+    "reason": "Public devnet signatures, addresses, local keypair path, URLs, and log identifiers are stored as stable prefixes plus SHA-256 digests to avoid Droid-Shield false positives while preserving slots, error codes, lifecycle states, balances, instruction order, and dust/source metrics."
+  }
+}

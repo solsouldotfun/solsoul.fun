@@ -1,0 +1,19 @@
+{
+  "featureId": "PD13.F3",
+  "cluster": "devnet",
+  "source": "sanitized solana account summary; raw account bytes intentionally omitted",
+  "address": "EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt",
+  "exists": true,
+  "owner": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+  "space": 112,
+  "explorerUrl": "https://explorer.solana.com/address/EGhJv54APhN4uEv6pWsmSgApqpZ9dUdnLSaqZdyrgmpt?cluster=devnet",
+  "decodedSummary": {
+    "claimer": "8uAPC2UxiBjKmUksVVwUA6q4RctiXkgSAsovBR39cd1i",
+    "nftMint": "ECE3kNcuWLGbLd9LEs2qFjCycJ2Gsh24p92KPaA1HZsF",
+    "soul": "FEZmoZCHHir3Kw5qPMuFJnzGug3zxTpp1QxCXwFhCQbu",
+    "sequence": "0",
+    "generationCount": "2"
+  },
+  "rawAccountDataOmitted": true,
+  "rawAccountDataReason": "Avoid committing raw Solana account byte dumps while preserving public account IDs and decoded validation fields."
+}

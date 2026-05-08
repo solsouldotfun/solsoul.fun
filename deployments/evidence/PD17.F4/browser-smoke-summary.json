@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-02T15:20:27Z",
+  "featureId": "PD17.F4",
+  "session": "d0bb93bd4580",
+  "baseUrl": "https://solsoul-devnet.vercel.app",
+  "deploymentId": "dpl_3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+  "screenshotCount": 28,
+  "viewports": {
+    "desktop": "1440x1000",
+    "mobile": "390x844"
+  },
+  "routesCovered": [
+    "en-home",
+    "en-launch",
+    "en-profile",
+    "en-souls",
+    "en-stats",
+    "en-token",
+    "en-tokens",
+    "zh-home",
+    "zh-launch",
+    "zh-profile",
+    "zh-souls",
+    "zh-stats",
+    "zh-token",
+    "zh-tokens"
+  ],
+  "screenshots": [
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-home.png",
+      "bytes": 400025
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-launch.png",
+      "bytes": 902206
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-profile.png",
+      "bytes": 436048
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-souls.png",
+      "bytes": 767194
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-stats.png",
+      "bytes": 273014
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-token.png",
+      "bytes": 1938914
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-en-tokens.png",
+      "bytes": 4386573
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-home.png",
+      "bytes": 383682
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-launch.png",
+      "bytes": 851572
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-profile.png",
+      "bytes": 417378
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-souls.png",
+      "bytes": 720546
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-stats.png",
+      "bytes": 270194
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-token.png",
+      "bytes": 1833448
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/desktop-zh-tokens.png",
+      "bytes": 4073699
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-home.png",
+      "bytes": 280778
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-launch.png",
+      "bytes": 665682
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-profile.png",
+      "bytes": 334403
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-souls.png",
+      "bytes": 777723
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-stats.png",
+      "bytes": 200480
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-token.png",
+      "bytes": 1470893
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-en-tokens.png",
+      "bytes": 3900251
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-home.png",
+      "bytes": 268327
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-launch.png",
+      "bytes": 616948
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-profile.png",
+      "bytes": 310263
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-souls.png",
+      "bytes": 727856
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-stats.png",
+      "bytes": 193571
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-token.png",
+      "bytes": 1367375
+    },
+    {
+      "file": "deployments/evidence/PD17.F4/screenshots/mobile-zh-tokens.png",
+      "bytes": 3849821
+    }
+  ],
+  "browserErrorsFile": "deployments/evidence/PD17.F4/screenshots/browser-errors.txt",
+  "browserErrorsBytes": 0,
+  "observations": [
+    "EN and ZH home, launch, token detail, Profile, Souls, Stats, and Tokens routes rendered on public Vercel after PD17 redeploy.",
+    "Annotated desktop and mobile screenshots show doodle markers, sketchy panels, marker CTAs, localized labels, wallet entry points, and mobile bottom navigation without visible horizontal overflow or modal obstruction.",
+    "agent-browser errors output was empty after the route pass."
+  ]
+}

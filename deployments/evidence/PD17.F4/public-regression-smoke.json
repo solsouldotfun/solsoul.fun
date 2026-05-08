@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-05-02T15:19:27.515Z",
+  "featureId": "PD17.F4",
+  "deployment": {
+    "productionUrl": "https://solsoul-devnet.vercel.app",
+    "deploymentId": "dpl_3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+    "deploymentUrl": "https://solsoul-devnet-k2g4antp1-davirainsus-projects.vercel.app",
+    "inspectUrl": "https://vercel.com/davirainsus-projects/solsoul-devnet/3QzCBAThFSjTWfwAdCdL1EwWdtvQ",
+    "gitRef": "b9d6e0b8431d76a3d87ae39cbd4c54a9c186a92e"
+  },
+  "checks": {
+    "precheckReady": true,
+    "statsOk": true,
+    "activeBondingCurveMatches": true,
+    "activeSoulGeneratorMatches": true,
+    "raydiumOnlyMetadata": true,
+    "rpcBoundedOrWarned": true,
+    "devnetSmokeRetired410": true,
+    "noServerSignerSignature": true,
+    "noRawRpcUrl": true,
+    "rpcConservativeClassification": true
+  },
+  "precheck": {
+    "status": 200,
+    "headers": {
+      "cacheControl": "public, max-age=15",
+      "contentType": "application/json"
+    },
+    "json": {
+      "ok": true,
+      "route": "/api/stats",
+      "status": "ready",
+      "bounded": true,
+      "gracefulPartialFallback": true,
+      "source": {
+        "fetchedAt": "2026-05-02T15:19:06.935Z",
+        "rpcEndpoint": "solana-devnet",
+        "rpcEndpointLabel": "solana-devnet",
+        "rpcProvider": "solana-devnet",
+        "rpcCluster": "devnet",
+        "rpcCredentialRedacted": false,
+        "commitment": "confirmed",
+        "deployment": {
+          "bondingCurveProgramId": "<solana:CoL4Sti1:sha256:a41e4888c489b4d0>",
+          "soulGeneratorProgramId": "<solana:34erFyVv:sha256:47d5fa6b938606d8>"
+        },
+        "rpcCapability": {
+          "outsideLiquidity": {
+            "classification": "unavailable",
+            "indexedGpaSupported": false,
+            "programLabel": "spl-program-2022",
+            "requestedFilters": [],
+            "endpointLabel": "solana-devnet",
+            "rpcProvider": "solana-devnet",
+            "rpcCluster": "devnet",
+            "rpcCredentialRedacted": false,
+            "warningCodes": [
+              "outside_liquidity_no_probe_target"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "statsSummary": {
+    "status": 200,
+    "headers": {
+      "cacheControl": "public, max-age=15",
+      "contentType": "application/json"
+    },
+    "ok": true,
+    "source": {
+      "fetchedAt": "2026-05-02T15:19:26.814Z",
+      "rpcEndpoint": "solana-devnet",
+      "rpcEndpointLabel": "solana-devnet",
+      "rpcProvider": "solana-devnet",
+      "rpcCluster": "devnet",
+      "rpcCredentialRedacted": false,
+      "commitment": "confirmed",
+      "slot": 459600657,
+      "deployment": {
+        "bondingCurveProgramId": "<solana:CoL4Sti1:sha256:a41e4888c489b4d0>",
+        "soulGeneratorProgramId": "<solana:34erFyVv:sha256:47d5fa6b938606d8>"
+      },
+      "rpcCapability": {
+        "outsideLiquidity": {
+          "classification": "unavailable",
+          "indexedGpaSupported": false,
+          "programLabel": "spl-program-2022",
+          "requestedFilters": [],
+          "endpointLabel": "solana-devnet",
+          "rpcProvider": "solana-devnet",
+          "rpcCluster": "devnet",
+          "rpcCredentialRedacted": false,
+          "warningCodes": [
+            "outside_liquidity_no_probe_target"
+          ]
+        }
+      },
+      "partial": true,
+      "warnings": [
+        "recent generation provenance: generation provenance timed out after 15000ms",
+        "outside-liquidity token account scan: outside-liquidity token account scan timed out after 4500ms"
+      ]
+    },
+    "metricKeys": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "tokenCount": null
+  },
+  "devnetSmoke": {
+    "action": "claim",
+    "status": 410,
+    "headers": {
+      "cacheControl": "no-store",
+      "contentType": "application/json"
+    },
+    "body": {
+      "error": "Devnet smoke claim is retired. Use the connected wallet claim Soul flow; SolSoul public writes are wallet-signed only."
+    }
+  }
+}

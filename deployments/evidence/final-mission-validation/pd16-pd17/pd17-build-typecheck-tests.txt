@@ -1,0 +1,27 @@
+PD17.A2/A4 build/typecheck/test gates
+
+1) pnpm --filter app typecheck
+   Command: tsc --noEmit (app workspace)
+   Result : exit 0, no errors
+
+2) pnpm --filter app test
+   Test Files: 59 passed (59)
+   Tests     : 381 passed (381)
+   Notable suites:
+     - src/components/AmmSelector.test.tsx (3 tests; Raydium-only)
+     - src/components/pd17ProductDoodleSurfaces.test.* (covered by uiPrimitives tests)
+     - src/i18n/messages.test.ts (PD15 marketplace guardrail copy)
+     - src/app/soul-nft-marketplace-guardrails.test.ts (negative marketplace surface)
+     - src/app/wallet-adapter-local.test.ts (no Solflare adapter)
+   Result : exit 0
+
+3) pnpm --filter sdk test
+   Test Files: 9 passed
+   Tests     : 89 passed
+   Result : exit 0
+
+4) pnpm --filter app build (Next.js production build)
+   Result : exit 0
+   Routes generated for /[locale]/{stats,launch,profile,souls,tokens,gallery,token/[mint]/gallery,token/[mint]} EN+ZH.
+   Known-OK warnings (per AGENTS.md): OpenTelemetry/Sentry critical dependency,
+     bigint pure-JS fallback. Build still exits 0.

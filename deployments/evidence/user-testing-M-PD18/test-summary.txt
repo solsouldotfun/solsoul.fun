@@ -1,0 +1,36 @@
+M-PD18 user-testing flow validator evidence summary
+===================================================
+
+Curl results (all HTTP 200):
+- local-stats.json (/api/stats on 127.0.0.1:3100, partial=true; first call timed out heavy collectors but source/coverage warnings emitted on second call)
+- local-stats-2.json (/api/stats on 127.0.0.1:3100, source_coverage.warnings = [outside_liquidity_scan_unavailable, outside_liquidity_venue_unavailable, post_graduation_raydium_receipt_paths_bounded, raydium_transfer_hook_mints_unsupported]; metrics show 46/61/19/45)
+- local-stats-precheck.json (/api/stats?precheck=1, ok=true, status=ready, bounded=true, gracefulPartialFallback=true; source.rpcCapability.outsideLiquidity present)
+- public-stats.json (/api/stats on solsoul-devnet.vercel.app, partial=true, source.warnings emitted, source_coverage with raydium_cp_swap_vault_tokens=1, source_verified_tokens=46; perTokenSoulTotals[2xnVZh...].dustSource shows liquidity=raydium_cp_swap_vault, source_verified=true, raydium_program_id=CPMDWBwJDtYax9qW7AyRuVC19Cc4L4Vcy4n2BHAbHkCW, active_liquidity_base_units=651285856750882, liquidity_dust_ratio=0.000000001152922318)
+- public-en-stats.html, public-zh-stats.html, local-en-stats.html, local-zh-stats.html (HTTP 200; PumpSwap/Meteora rendered as "deferred"; marketplace explicitly disclaimed; zero "official scarcity ratio" / "official dust dominance" forbidden phrases)
+
+Test runs:
+- pnpm --filter app test src/lib/dustDominanceGate.test.ts: 8 tests pass (gate enabled=false, raw_only label, no forbidden wording in EN/ZH messages and StatsDashboard.tsx)
+- pnpm --filter app test src/lib/rpcCapabilityPropagation.test.ts: 3 tests pass (bounded_top_accounts_audit propagates capability layer -> stats API snapshot -> UI cache; rpc_failover_used preserved)
+- pnpm --filter app test src/app/soul-nft-marketplace-guardrails.test.ts: 2 tests pass (no marketplace/orderbook/buy-now/tensor/magic eden routes, no controls)
+- pnpm --filter app test src/components/AmmSelector.test.tsx: 3 tests pass (no AMM chooser controls; only Raydium option)
+- pnpm --filter app test src/lib/stats.test.ts: 14 tests pass (post_graduation_raydium_receipt_paths_bounded + raydium_transfer_hook_mints_unsupported warnings; "marks unverified Raydium vault liquidity unavailable instead of fabricating zeros"; outside_liquidity_completeness=bounded_top_accounts_audit)
+- pnpm --filter app test src/lib/publicStatsCache.test.ts: 24 tests pass (validator refuses indexed_rpc_verified upgrade absent supporting evidence; failover/stale handling)
+- pnpm --filter app test src/components/StatsDashboard.test.tsx: 12 tests pass (UI renders bounded warnings, "Transfer Hook-enabled mints cannot migrate to Raydium until Raydium hook metas are validated.")
+
+Source/code verification:
+- programs/transfer-hook/src/lib.rs:31 — POLICY_SUMMARY explicitly: "rejects boundary-breaking transfers instead of burning or forfeiting in the hook." (reject-only enforced)
+- programs/transfer-hook/src/lib.rs:420 — test asserts POLICY_SUMMARY contains "instead of burning or forfeiting"
+- tests/integration/transfer_hook.rs:721/763/783/796 — assertions: "hook must not burn or forfeit during successful transfers", "hook rejection must not burn or forfeit supply", "repeated boundary-breaking attempts remain reject-only and do not become implicit settlement"
+- tests/integration/amm_raydium.rs:909 — transfer_hook_mint_rejects_raydium_migration_with_0xa03 (post-graduation Raydium TLV-shuffle hook-rejection negative test)
+- programs/bonding-curve/src/amm/raydium.rs:845 — comment "This prevents a 'TLV-shuffling' bypass where a hook would slip past the migration"
+- sdk/src/index.ts:165-169 — warning codes "post_graduation_raydium_receipt_paths_bounded", "raydium_transfer_hook_mints_unsupported", with bounded-coverage copy: "Only wallet direct transfers are currently account-resolution hardened and presented as receipt-protected; post-graduation Raydium CP-Swap liquidity/swap paths must not be presented as receipt-protected, and Transfer Hook-enabled mints cannot migrate until Raydium hook metas are validated."
+- sdk/src/index.ts:192-207 — OFFICIAL_DUST_DOMINANCE_RATIO_GATE { status:"gated", enabled:false, reason:"pd18_protocol_coverage_incomplete", forbiddenPublicWording:[...] }
+- app/src/lib/dustDominanceGate.ts — gate adapter resolves to RawOnly, never Official while gateEnabled=false
+- app/messages/en.json:344, 938, 981, 982 — directTransferBoundaryRejected copy (settle-or-keep-capacity), prototypeNotice (Transfer Hook prototype + bounded), postGraduationRaydiumReceiptPathsBounded, raydiumTransferHookMintsUnsupported
+- app/messages/zh.json:938, 981, 982 — same warning codes localized
+- deployments/devnet-amm-e2e-trace.raydium.json — amm:"raydium", verification.metadata_programs_match_trace=true, raydium_only_scope=true, programs match active devnet IDs
+
+RPC label redaction:
+- /api/stats source.rpcEndpoint = "solana-devnet" (label only, no credentials/path/query)
+- All "https://*?..." URLs in stats payload are public Solana explorer URLs (?cluster=devnet only)
+

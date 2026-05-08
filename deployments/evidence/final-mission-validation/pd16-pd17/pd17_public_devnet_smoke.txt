@@ -1,0 +1,1 @@
+{"error":"Devnet smoke write is retired. Use the connected wallet write flow; SolSoul public writes are wallet-signed only."}

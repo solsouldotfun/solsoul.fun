@@ -1,0 +1,32 @@
+target/
+node_modules/
+.env*
+!app/.env.example
+!app/.env.production.example
+# Secret scanner negative test fixture contains intentional placeholder .env file
+!test-fixtures/secret-negative/.env.example
+.next/
+test-ledger/
+out/
+Users/
+tmp/
+validation/
+coverage/
+dist/
+.DS_Store
+*.log
+*.tsbuildinfo
+tests/snapshots/*.so
+.vercel/
+.vercel
+
+# Local validation/evidence dumps
+evidence/*
+!evidence/PD/
+!evidence/PD/*.png
+
+# Local Railway CLI link metadata
+services/indexer/.railway/
+.gstack/
+
+.pi

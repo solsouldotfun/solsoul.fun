@@ -1,0 +1,10 @@
+<svg viewBox="0 0 320 320" data-soul-art="pd9-monochrome-template" data-seed-hue="{{HUE}}" data-accent="{{ACCENT}}">
+  <rect width="320" height="320" rx="44" fill="#fbfbf6"/>
+  <circle cx="160" cy="112" r="70" fill="none" stroke="#070707" stroke-width="5"/>
+  <circle cx="160" cy="144" r="52" fill="#070707"/>
+  <path d="M96 244 C104 191 125 154 160 154 C195 154 216 191 224 244 Z" fill="#070707"/>
+  <circle cx="138" cy="140" r="5" fill="#fbfbf6"/>
+  <circle cx="182" cy="140" r="5" fill="#fbfbf6"/>
+  <path d="M112 68 L92 48 M208 68 L228 48 M160 42 V18" stroke="#070707" stroke-width="5" stroke-linecap="round"/>
+  <text x="160" y="280" text-anchor="middle" fill="#070707" font-size="13">{{SEED_HEX}}</text>
+</svg>

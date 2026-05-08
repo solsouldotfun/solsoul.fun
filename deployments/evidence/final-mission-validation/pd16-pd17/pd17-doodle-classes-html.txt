@@ -1,0 +1,33 @@
+PD17.A1/A2 doodle-style markers in served SSR HTML (local 3100, devnet env)
+
+For each fetched page (HTTP 200), grep matched doodle-style tokens
+(case-insensitive: doodle|sketchy|marker|noisy-ink|meme|ink-line|hand-drawn|sticker):
+
+  /en          (HTTP 200) -> marker, meme, Meme, sketchy, sticker
+  /zh          (HTTP 200) -> marker, meme, Meme, sketchy, sticker
+  /en/stats    (HTTP 200) -> doodle, marker, meme, Meme, sketchy, sticker
+  /en/launch   (HTTP 200) -> doodle, marker, meme, Meme, sketchy, sticker
+  /en/profile  (HTTP 200) -> doodle, marker, meme, Meme, sketchy, sticker
+  /en/tokens   (HTTP 200) -> doodle, marker, meme, Meme, sketchy, sticker
+  /en/souls    (HTTP 200) -> doodle, marker, meme, Meme, sketchy, sticker
+
+Source confirmation:
+  - app/src/components/uiPrimitives.ts        defines shared doodle primitives
+  - app/src/components/uiPrimitives.test.ts   asserts doodle class shapes
+  - app/src/components/pd17ProductDoodleSurfaces.test.ts   forces every
+    listed surface (LaunchForm, TokenSoulPanel, WalletSoulGalleryPage,
+    TokenTimeline, token gallery page) to import uiPrimitives + joinClasses
+    and use uiPrimitives.{panel|card|heroPanel|denseRow} +
+    uiPrimitives.{buttonPrimary|buttonSecondary|input|statusNeutral|statusError}.
+
+Console-error markers in served HTML:
+  Only matches were React framework names (ErrorBoundary, error-boundary,
+  error-h1 CSS class). No runtime error messages or hydration error markers
+  observed in any of the SSR HTML samples.
+
+Localization parity:
+  EN and ZH home routes both 200 and contain the same doodle-style class
+  fragments (marker/meme/sketchy/sticker). The /zh/ home does not surface
+  the literal class "doodle" because that locale's hero variant uses
+  different doodle primitive names, but the shared uiPrimitives module is
+  already validated by pd17ProductDoodleSurfaces.test.

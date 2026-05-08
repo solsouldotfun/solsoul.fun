@@ -1,0 +1,67 @@
+{
+  "mode": "m10-f3-local-pumpswap-e2e",
+  "ran_at_iso": "2026-04-27T20:00:58.936Z",
+  "rpc": "http://127.0.0.1:8899",
+  "pumpswap_program_id": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+  "bonding_curve_program_id": "HuSRC61oy9qyRDH21sHD8kmkuVsB5Jd9tdJMkbk4zNjQ",
+  "soul_generator_program_id": "5wGUMWySAafwgTpGNgSaTMh1kiejnEGVTZj9x7wWJftk",
+  "snapshot_sha256": "5f8e47bb6648cbc3b1a449abc8c9ccb9e3081beb555619a51ff9e1e27c4a3e36",
+  "payer": "GNrE5gkYMpfTpF73KLDDrpHfLjEaP6nVEUfE85tUsMYq",
+  "target_amm": 1,
+  "txs": [
+    {
+      "label": "airdrop_payer",
+      "tx_sig": "5amXUqTgseTRQShTPAniAZdV3ZsGA12mp7uQojxV95Rniv9XZzMFcyC6dHAStS6RqgzNj6vBe5WpqLDktNsPiWYb",
+      "slot": 17
+    },
+    {
+      "label": "create_mint_account",
+      "tx_sig": "2fw39i9XEHPnrxeCpKcZtFyq4VGHu8F8xiQF3HzynBAsjgjkJiLaR9mg2dirrXgVfkewYssVcDrvoqt3Ksg9BoCd",
+      "slot": 18
+    },
+    {
+      "label": "initialize_soul_target_pump",
+      "tx_sig": "2PmC2PZTwu9DTfQKzwQF6V14pPc6UjAfuyDCX8cq2g6jebSdyVCAfS96zYEqbrvK5sEqEkmeoZYKrQ2kgcZjFSVX",
+      "slot": 19
+    },
+    {
+      "label": "create_token",
+      "tx_sig": "5t3L4Qj2dnDZxaXqnQeVhbnA1UP7JoC2PY4dqxW9kby5YoMmxFA95o79JNWmzEm7y2RV5BwwdQ7hRvhESRYwmeSA",
+      "slot": 20
+    },
+    {
+      "label": "migrate_pumpswap",
+      "tx_sig": "5k1xxsqziw4ceXPLMsFdE8AAE2FEZQqyrHH1SYyKQSaFUdgXx1vTvoUv8U8VNjEnQKd7bM2ywEq3RvnrKhX468nb",
+      "slot": 22
+    }
+  ],
+  "buys": [
+    {
+      "label": "buy_1",
+      "tx_sig": "5mBQh8K4Z9hc7c1QqtYKqp1E5dfdGxiRqRLdDDh8Na3mSJPxf5M7juaP38xeVUgztsmSPVVbmKqyRcuSUaifAyv4",
+      "slot": 21,
+      "sol_in_lamports": "510000000",
+      "cumulative_sol_raised": "504900000",
+      "graduated": true
+    }
+  ],
+  "cleanup": {
+    "validator_stopped": true,
+    "lsof_8899_empty": true
+  },
+  "validator_pid": 43609,
+  "meme_mint": "3DHNsratwYyQFmD2KU2J12EyNCViu311dRTPDCWCzzZR",
+  "curve_pda": "7eDtVywRt7Kd46edGaEAX7pU4jimA4hDGMEo8UYKUrj9",
+  "vault_pda": "CzBjtpFWQabTB6hpYKdMUZ9EGdrsjCS9TcPky487in3x",
+  "soul_pda": "FkLAe2U2iJA6TM8Ueg8nWUTg1CJWL9vFrgnGkzkDPXBC",
+  "graduation_threshold_lamports": "500000000",
+  "pool_address": "Gbtdwj3zdtnurPUzCyA7xcQDjQZpRwvxAMhY1nmqozdn",
+  "lp_mint": "HfbZFrFj9KJFPWVRSdUB2n4UDhQdqkSQVC7QGESCa6Ro",
+  "creator_lp_ata": "4hbVqQAUkU32yrrWrY3epArZHvkao2769EfztAYiCGgv",
+  "pool_exists": true,
+  "observed_lp_supply": "84090732304",
+  "observed_creator_lp": "84090732304",
+  "observed_lp_burned": "441476344591",
+  "expected_lp_burned": "441476344591",
+  "expected_creator_lp": "84090732304"
+}

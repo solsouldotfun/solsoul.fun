@@ -1,0 +1,103 @@
+[package]
+name = "solsouldotfun"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.89"
+license = "Apache-2.0"
+publish = false
+
+[features]
+default = []
+# The devnet Cargo feature for bonding-curve was removed after commit 8d78729
+# because nothing branches on it (the graduation-threshold override and
+# DEVNET_BUILD_SENTINEL were both deleted in the exponential-curve refactor).
+# The workspace devnet feature alias is also removed for consistency.
+# `integration` enables the workspace integration test entrypoints (see the
+# `[[test]] required-features = ["integration"]` blocks below) AND propagates
+# the soul-generator `integration` feature so that local integration tests
+# can authenticate CPI from the workspace bonding-curve crate (which
+# declares the legacy `LOCAL_INTEGRATION_BONDING_CURVE_PROGRAM_ID`). Default
+# and devnet-deployed production-like builds MUST NOT pass
+# `--features integration`; doing so would relax SEC.A5 and trust the local
+# integration bonding-curve authority.
+integration = ["soul-generator/integration"]
+
+[workspace]
+resolver = "2"
+members = [
+  "programs/soul-generator",
+  "programs/bonding-curve",
+  "programs/shared",
+  "programs/transfer-hook",
+  "programs/solsoul-renderer-sdk",
+]
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.89"
+license = "Apache-2.0"
+repository = "https://github.com/solsoul/solsouldotfun"
+
+[workspace.dependencies]
+pinocchio = "0.11.1"
+pinocchio-pubkey = "0.3.0"
+shared = { path = "programs/shared" }
+
+[dev-dependencies]
+base64 = "0.22"
+bonding-curve = { path = "programs/bonding-curve" }
+soul-generator = { path = "programs/soul-generator" }
+transfer-hook = { path = "programs/transfer-hook" }
+solana-program-option = "2.2.1"
+solana-program-pack = "2.2.1"
+solana-program = "2.3.0"
+solana-program-test = "2.3.11"
+solana-sdk = "2.3.1"
+spl-tlv-account-resolution = "0.10"
+spl-token-metadata-interface = "0.7"
+spl-token = "8"
+spl-token-2022 = "8"
+spl-transfer-hook-interface = "0.10"
+spl-type-length-value = "0.8"
+tokio = { version = "1", features = ["macros", "sync"] }
+
+[[test]]
+name = "e2e_skeleton"
+path = "tests/integration/e2e_skeleton.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "default_renderer"
+path = "tests/integration/default_renderer.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "templates"
+path = "tests/integration/templates.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "claim"
+path = "tests/integration/claim.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "transfer_hook"
+path = "tests/integration/transfer_hook.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "curve_e2e"
+path = "tests/integration/curve_e2e.rs"
+required-features = ["integration"]
+
+[[test]]
+name = "sec_provenance"
+path = "tests/integration/sec_provenance.rs"
+required-features = ["integration"]
+
+[profile.release]
+codegen-units = 1
+overflow-checks = true
+lto = "fat"
+opt-level = "s"

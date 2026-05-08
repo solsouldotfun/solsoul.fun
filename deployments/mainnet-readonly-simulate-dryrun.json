@@ -1,0 +1,830 @@
+{
+  "schemaVersion": 1,
+  "featureId": "m3-mainnet-readonly-simulate-dryrun",
+  "generatedAtIso": "2026-05-01T20:14:18.029Z",
+  "repo": {
+    "path": "/Users/davirian/dev/active/ideas/solsouldotfun",
+    "gitHead": "67a4d76941bf9ab06555fba01481d83399687c32",
+    "trackedSourceStatusCommand": "git status --short --untracked-files=no -- . :(exclude)deployments/mainnet-readonly-simulate-dryrun.json :(exclude)evidence/m3-mainnet-readonly-simulate-dryrun",
+    "trackedSourceStatusShort": "",
+    "trackedSourceCleanExcludingGeneratedEvidence": true
+  },
+  "readinessChecklist": {
+    "featureId": "m3-mainnet-dryrun-evidence-completeness-fix",
+    "featureCommit": "67a4d76941bf9ab06555fba01481d83399687c32",
+    "generatedWithTrackedSourceCleanExcludingGeneratedEvidence": true,
+    "requiredValidatorStatuses": [
+      {
+        "name": "cargo test --workspace",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-test-workspace.log"
+      },
+      {
+        "name": "pnpm --filter sdk test",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-sdk-test.log"
+      },
+      {
+        "name": "pnpm --filter app test",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-app-test.log"
+      },
+      {
+        "name": "pnpm --filter indexer test",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-indexer-test.log"
+      },
+      {
+        "name": "pnpm -r typecheck",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-typecheck.log"
+      },
+      {
+        "name": "cargo fmt --all -- --check",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-fmt.log"
+      },
+      {
+        "name": "cargo clippy --workspace -- -D warnings",
+        "status": "pass",
+        "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-clippy.log"
+      }
+    ],
+    "dryRunReadOnlyProof": {
+      "rpcMethodSummaryOk": true,
+      "noWriteScanOk": true,
+      "submittedTransactionCount": 0,
+      "simulatedTransactionCount": 1
+    },
+    "launchDecision": "not_approved_user_decision_required",
+    "auditDecision": "not_completed_user_decision_required"
+  },
+  "safetyMode": {
+    "mode": "no-write",
+    "mainnetRpcEndpointLabel": "api.mainnet-beta.solana.com",
+    "noMainnetWriteAuthorizationGranted": true,
+    "productionKeypairMaterialUsed": false,
+    "productionKeypairMaterialCreatedLoadedOrPrinted": false
+  },
+  "runbookWriteStepClassifications": [
+    {
+      "step": 1,
+      "title": "Build production SBF artifacts without devnet features",
+      "writeCapable": false,
+      "status": "local_build_only_no_mainnet_write",
+      "dryRunDisposition": "Local build and hash commands may be executed; no mainnet RPC write is involved."
+    },
+    {
+      "step": 2,
+      "title": "Fund a dedicated mainnet deployer",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Production custody, funding, and signer setup remain future user decisions."
+    },
+    {
+      "step": 3,
+      "title": "Deploy programs to mainnet-beta",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Program deployment commands were reviewed but are forbidden in this dry run."
+    },
+    {
+      "step": 4,
+      "title": "Rotate upgrade authority to multisig",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Authority mutation remains documentation-only and was not submitted."
+    },
+    {
+      "step": 5,
+      "title": "Enable production monitoring and frontend configuration",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Production RPC/indexer/frontend changes remain documentation-only in this dry run."
+    },
+    {
+      "step": 6,
+      "title": "Publish production legal/risk disclosures",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Production publication remains a user decision and was not performed."
+    },
+    {
+      "step": 7,
+      "title": "Run the first low-value Raydium mainnet launch test",
+      "writeCapable": true,
+      "status": "documentation_only_not_executed",
+      "dryRunDisposition": "Wallet signing, launch, migration, and trading actions were not executed."
+    }
+  ],
+  "mainnetReads": {
+    "epochInfo": {
+      "absoluteSlot": 416946669,
+      "blockHeight": 395039647,
+      "epoch": 965,
+      "slotIndex": 66669,
+      "slotsInEpoch": 432000,
+      "transactionCount": 509096837873
+    },
+    "blockHeight": 395039647,
+    "latestBlockhashContextSlot": 416946669,
+    "latestBlockhashRedacted": "Aad9cPpo…cgVPdbvT",
+    "version": {
+      "feature-set": 534737035,
+      "solana-core": "3.1.13"
+    }
+  },
+  "accountInspections": [
+    {
+      "label": "systemProgram",
+      "address": "11111111111111111111111111111111",
+      "classification": "third_party_mainnet_public_program",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "executable": true,
+      "lamports": 1,
+      "dataLength": 21,
+      "accountTypeNotes": "Public third-party mainnet program account inspected read-only.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "bpfLoaderUpgradeable",
+      "address": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "classification": "third_party_mainnet_public_program",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "NativeLoader1111111111111111111111111111111",
+      "executable": true,
+      "lamports": 1,
+      "dataLength": 37,
+      "accountTypeNotes": "Public third-party mainnet program account inspected read-only.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "splToken",
+      "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "classification": "third_party_mainnet_public_program",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "BPFLoader2111111111111111111111111111111111",
+      "executable": true,
+      "lamports": 5677904863,
+      "dataLength": 134080,
+      "accountTypeNotes": "Public third-party mainnet program account inspected read-only.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "token2022",
+      "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "classification": "third_party_mainnet_public_program",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "lamports": 69875097,
+      "dataLength": 36,
+      "accountTypeNotes": "Public third-party mainnet program account inspected read-only.",
+      "upgradeableLoaderMetadata": {
+        "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programAccountState": "program",
+        "programDataAddress": "DoU57AYuPFu2QU514RktNPG22QhApEjnKxnBcu4BHDTY",
+        "programDataExists": true,
+        "programDataOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataLamports": 9620035440,
+        "programDataDataLength": 1382061,
+        "programDataDeploymentSlot": 395047597,
+        "upgradeAuthority": "<PUBLIC_MAINNET_UPGRADE_AUTHORITY_REDACTED>",
+        "upgradeAuthoritySha256": null,
+        "upgradeAuthorityStatus": "present",
+        "programAccountPointsToProgramData": true,
+        "notes": "ProgramData account decoded from BPFUpgradeableLoader Program account via read-only getAccountInfo."
+      }
+    },
+    {
+      "label": "wrappedSolMint",
+      "address": "So11111111111111111111111111111111111111112",
+      "classification": "third_party_mainnet_public_account",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 1501020049646,
+      "dataLength": 82,
+      "accountTypeNotes": "Public third-party mainnet account inspected read-only.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "raydiumCpSwap",
+      "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "classification": "third_party_mainnet_public_program",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "lamports": 50333567,
+      "dataLength": 36,
+      "accountTypeNotes": "Public third-party mainnet program account inspected read-only.",
+      "upgradeableLoaderMetadata": {
+        "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programAccountState": "program",
+        "programDataAddress": "DMawCQzbgNTmbzaESc7o6pvL1KAeetY8zA7jNpzntHhU",
+        "programDataExists": true,
+        "programDataOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "programDataLamports": 5526219120,
+        "programDataDataLength": 793869,
+        "programDataDeploymentSlot": 389900145,
+        "upgradeAuthority": "<PUBLIC_MAINNET_UPGRADE_AUTHORITY_REDACTED>",
+        "upgradeAuthoritySha256": null,
+        "upgradeAuthorityStatus": "present",
+        "programAccountPointsToProgramData": true,
+        "notes": "ProgramData account decoded from BPFUpgradeableLoader Program account via read-only getAccountInfo."
+      }
+    },
+    {
+      "label": "raydiumCreatePoolFeeReceiver",
+      "address": "DNXgeM9EiiaAbaWvwjHj9fQQLAX5ZsfHyvmYUNRAdNC8",
+      "classification": "third_party_mainnet_public_account",
+      "expectedUse": "Public third-party mainnet account/program.",
+      "inspectedOnMainnet": true,
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 23326654204288,
+      "dataLength": 165,
+      "accountTypeNotes": "Public third-party mainnet account inspected read-only.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "devnet_bondingCurve",
+      "address": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+      "classification": "solsoul_devnet_id_not_mainnet",
+      "expectedUse": "Active devnet SolSoul ID; inspected only to prove it is not treated as production mainnet deployment.",
+      "inspectedOnMainnet": true,
+      "exists": false,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "No mainnet account at this devnet SolSoul ID; absence is expected and not readiness evidence.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "devnet_soulGenerator",
+      "address": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+      "classification": "solsoul_devnet_id_not_mainnet",
+      "expectedUse": "Active devnet SolSoul ID; inspected only to prove it is not treated as production mainnet deployment.",
+      "inspectedOnMainnet": true,
+      "exists": false,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "No mainnet account at this devnet SolSoul ID; absence is expected and not readiness evidence.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "devnet_transferHook",
+      "address": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+      "classification": "solsoul_devnet_id_not_mainnet",
+      "expectedUse": "Active devnet SolSoul ID; inspected only to prove it is not treated as production mainnet deployment.",
+      "inspectedOnMainnet": true,
+      "exists": false,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "No mainnet account at this devnet SolSoul ID; absence is expected and not readiness evidence.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "placeholder_bondingCurve",
+      "address": "<MAINNET_BONDING_CURVE_PROGRAM_ID>",
+      "classification": "solsoul_future_placeholder",
+      "expectedUse": "Future mainnet placeholder only; no RPC lookup is possible or implied.",
+      "inspectedOnMainnet": false,
+      "exists": null,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "Placeholder is intentionally not a Solana public key and is not deployment evidence.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "placeholder_soulGenerator",
+      "address": "<MAINNET_SOUL_GENERATOR_PROGRAM_ID>",
+      "classification": "solsoul_future_placeholder",
+      "expectedUse": "Future mainnet placeholder only; no RPC lookup is possible or implied.",
+      "inspectedOnMainnet": false,
+      "exists": null,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "Placeholder is intentionally not a Solana public key and is not deployment evidence.",
+      "upgradeableLoaderMetadata": null
+    },
+    {
+      "label": "placeholder_transferHook",
+      "address": "<MAINNET_TRANSFER_HOOK_PROGRAM_ID>",
+      "classification": "solsoul_future_placeholder",
+      "expectedUse": "Future mainnet placeholder only; no RPC lookup is possible or implied.",
+      "inspectedOnMainnet": false,
+      "exists": null,
+      "owner": null,
+      "executable": null,
+      "lamports": null,
+      "dataLength": null,
+      "accountTypeNotes": "Placeholder is intentionally not a Solana public key and is not deployment evidence.",
+      "upgradeableLoaderMetadata": null
+    }
+  ],
+  "simulationProof": {
+    "rpcMethod": "simulateTransaction",
+    "signatureVerificationDisabled": true,
+    "unsignedMessageOnly": true,
+    "disposablePublicKeyOnly": true,
+    "submittedTransactionCount": 0,
+    "serializedMessageSha256": "f3e0f784b5cd3a186a440c11348e650a32fadaeb380c3813f7983bd336e1d456",
+    "resultErr": null,
+    "logs": [
+      "Program 11111111111111111111111111111111 invoke [1]",
+      "Program 11111111111111111111111111111111 success"
+    ]
+  },
+  "rpcMethodSummary": {
+    "ok": true,
+    "allowed": [
+      "getAccountInfo",
+      "getBalance",
+      "getBlockHeight",
+      "getEpochInfo",
+      "getLatestBlockhash",
+      "getVersion",
+      "simulateTransaction"
+    ],
+    "observed": [
+      "getEpochInfo",
+      "getLatestBlockhash",
+      "getVersion",
+      "getBlockHeight",
+      "getAccountInfo",
+      "simulateTransaction"
+    ],
+    "disallowed": [],
+    "submittedTransactionCount": 0,
+    "simulatedTransactionCount": 1
+  },
+  "negativeTranscriptScan": {
+    "retainedArtifactPaths": [
+      "evidence/m3-mainnet-readonly-simulate-dryrun/dry-run-command.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/transcript.txt",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-build-sbf.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-clippy.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-fmt.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-test-workspace.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/mainnet-dry-run-node-test.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-app-test.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-indexer-test.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-sdk-test.log",
+      "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-typecheck.log"
+    ],
+    "findings": [],
+    "ok": true
+  },
+  "retainedEvidenceArtifacts": [
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/dry-run-command.log",
+      "sha256": "f3d2a12dcf827fc55d70f7b8bc9d9c84635aaef40ebbe59e7f461849f233b00f",
+      "sizeBytes": 29388,
+      "role": "script_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/transcript.txt",
+      "sha256": "c85e4dfd35a0297429642ed2d6b5575abdb4b6c9226a61108990a49aea6fd284",
+      "sizeBytes": 763,
+      "role": "transcript",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validation-summary.json",
+      "sha256": "3f69f3724460637b059b3181a5f709e71018739d4c96200a54204b35ab182ec9",
+      "sizeBytes": 3085,
+      "role": "validation_summary",
+      "scannedForNoWrite": false
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-build-sbf.log",
+      "sha256": "2d471852cc4191eb090458424f9960d6d076eaaff48c2bcc8f24f8a608982a65",
+      "sizeBytes": 168,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-clippy.log",
+      "sha256": "45d8f7d972875790a6cec7ca48e9acc17c5af68372da1940633becec3b4cd60a",
+      "sizeBytes": 72,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sizeBytes": 0,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-test-workspace.log",
+      "sha256": "3c42d06f182332198bf456607c926988fa1a8fe6881c324c26d68754ffb9e9d3",
+      "sizeBytes": 16216,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/mainnet-dry-run-node-test.log",
+      "sha256": "9ef6ce9ca297e4d22255b63f2dcaf3f078b8cd4fff883eb8d7cdbcc4805ed872",
+      "sizeBytes": 656,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-app-test.log",
+      "sha256": "f653db7c47b57d0d572d6a657021c66fe83aa06279f25b95493696b0d9e1dc32",
+      "sizeBytes": 6579,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-indexer-test.log",
+      "sha256": "51b67b23dbcd951e7b1251c06d5b3b6ccca04c7d6641b60f6dc3f4d5867da896",
+      "sizeBytes": 784,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-sdk-test.log",
+      "sha256": "f8a43a7f5aa145b0ec043325405df61992069e85cafcddedbe7992d4f554b91d",
+      "sizeBytes": 957,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    },
+    {
+      "file": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-typecheck.log",
+      "sha256": "e47f8a759357bd592045bc6425d942f6b5d476e9f94e6a032bf6a17fb1f2358f",
+      "sizeBytes": 237,
+      "role": "validator_log",
+      "scannedForNoWrite": true
+    }
+  ],
+  "validatorSummaries": [
+    {
+      "name": "mainnet dry-run helper tests",
+      "command": "node --import tsx --test scripts/mainnet-dry-run.test.ts",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/mainnet-dry-run-node-test.log",
+      "logSha256": "9ef6ce9ca297e4d22255b63f2dcaf3f078b8cd4fff883eb8d7cdbcc4805ed872",
+      "summary": [
+        "node:test reported 5 tests, 1 suite, 5 pass, 0 fail"
+      ]
+    },
+    {
+      "name": "cargo build-sbf --workspace",
+      "command": "PATH=\"/Users/davirian/.cargo/bin:$PATH\" cargo build-sbf --workspace",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-build-sbf.log",
+      "logSha256": "2d471852cc4191eb090458424f9960d6d076eaaff48c2bcc8f24f8a608982a65",
+      "summary": [
+        "bonding-curve SBF release build finished successfully"
+      ]
+    },
+    {
+      "name": "cargo test --workspace",
+      "command": "cargo test --workspace",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-test-workspace.log",
+      "logSha256": "3c42d06f182332198bf456607c926988fa1a8fe6881c324c26d68754ffb9e9d3",
+      "summary": [
+        "bonding_curve 76 passed",
+        "shared 22 passed",
+        "soul_generator 85 passed",
+        "transfer_hook 1 passed",
+        "doc tests passed with 0 tests"
+      ]
+    },
+    {
+      "name": "pnpm --filter sdk test",
+      "command": "pnpm --filter sdk test",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-sdk-test.log",
+      "logSha256": "f8a43a7f5aa145b0ec043325405df61992069e85cafcddedbe7992d4f554b91d",
+      "summary": [
+        "Vitest reported 5 files passed and 71 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm --filter app test",
+      "command": "pnpm --filter app test",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-app-test.log",
+      "logSha256": "f653db7c47b57d0d572d6a657021c66fe83aa06279f25b95493696b0d9e1dc32",
+      "summary": [
+        "Vitest reported 52 files passed and 338 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm --filter indexer test",
+      "command": "pnpm --filter indexer test",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-indexer-test.log",
+      "logSha256": "51b67b23dbcd951e7b1251c06d5b3b6ccca04c7d6641b60f6dc3f4d5867da896",
+      "summary": [
+        "Vitest reported 3 files passed and 23 tests passed"
+      ]
+    },
+    {
+      "name": "pnpm -r typecheck",
+      "command": "pnpm -r typecheck",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/pnpm-typecheck.log",
+      "logSha256": "e47f8a759357bd592045bc6425d942f6b5d476e9f94e6a032bf6a17fb1f2358f",
+      "summary": [
+        "sdk, services/indexer, and app typecheck scripts completed successfully"
+      ]
+    },
+    {
+      "name": "cargo fmt --all -- --check",
+      "command": "cargo fmt --all -- --check",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-fmt.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": [
+        "rustfmt check completed successfully with no formatting changes"
+      ]
+    },
+    {
+      "name": "cargo clippy --workspace -- -D warnings",
+      "command": "cargo clippy --workspace -- -D warnings",
+      "exitCode": 0,
+      "status": "pass",
+      "logPath": "evidence/m3-mainnet-readonly-simulate-dryrun/validators/cargo-clippy.log",
+      "logSha256": "45d8f7d972875790a6cec7ca48e9acc17c5af68372da1940633becec3b4cd60a",
+      "summary": [
+        "clippy finished dev profile with warnings denied"
+      ]
+    }
+  ],
+  "buildReadiness": {
+    "cargoBuildCommand": "cargo build-sbf --workspace",
+    "devnetFeaturesEnabled": false,
+    "artifactHashes": [
+      {
+        "file": "target/deploy/bonding_curve.so",
+        "sha256": "f01d4d1787e52507d73456f7c67cf8013d43fa99adf13cbc8e6a359634cbac96",
+        "sizeBytes": 139752
+      },
+      {
+        "file": "target/deploy/soul_generator.so",
+        "sha256": "3102ac8f43425a46f875fb4baa6e0491b964bd53c44433cba9c6c6f988e78748",
+        "sizeBytes": 190528
+      },
+      {
+        "file": "target/deploy/transfer_hook.so",
+        "sha256": "4ddfeec97d423414e52a7f09eaab903899d7e46cdbae2210fbecedcce5de1092",
+        "sizeBytes": 123088
+      }
+    ],
+    "readinessGates": [
+      {
+        "gate": "mainnet_readonly_transcript",
+        "status": "pass",
+        "notes": "Executed transcript contains only allowlisted read/simulation evidence."
+      },
+      {
+        "gate": "program_artifact_hashes_recorded",
+        "status": "pass",
+        "notes": "Deployable SBF artifact hashes are captured from target/deploy after local build."
+      },
+      {
+        "gate": "audit",
+        "status": "pending_user_decision",
+        "notes": "Audit is explicitly deferred and this dry-run is not launch approval."
+      },
+      {
+        "gate": "mainnet_deployment",
+        "status": "pending_user_decision",
+        "notes": "Mainnet deploy, funding, authority rotation, wallet signing, and launch remain user decisions."
+      }
+    ]
+  },
+  "readinessConclusion": {
+    "mainnetDeploymentPerformed": false,
+    "mainnetWritePerformed": false,
+    "auditStillUserDecision": true,
+    "launchStillUserDecision": true
+  },
+  "rpcCalls": [
+    {
+      "method": "getEpochInfo",
+      "paramsSummary": [
+        {
+          "commitment": "confirmed"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "method": "getLatestBlockhash",
+      "paramsSummary": [
+        {
+          "commitment": "confirmed"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "method": "getVersion",
+      "paramsSummary": [],
+      "ok": true
+    },
+    {
+      "method": "getBlockHeight",
+      "paramsSummary": [
+        {
+          "commitment": "confirmed"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "11111111111111111111111111111111",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "DoU57AYuPFu2QU514RktNPG22QhApEjnKxnBcu4BHDTY",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "So11111111111111111111111111111111111111112",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "DMawCQzbgNTmbzaESc7o6pvL1KAeetY8zA7jNpzntHhU",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "DNXgeM9EiiaAbaWvwjHj9fQQLAX5ZsfHyvmYUNRAdNC8",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "CoL4Sti1wZbv8tJSYXC6pLSzhwj9eeArw9mdAbsS69un",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "34erFyVvAiLsTwDivcauQCJnVX16ZjEwgJ6tEs5NeaMZ",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getAccountInfo",
+      "paramsSummary": {
+        "address": "Gccbqia51Z8qpdeWvp1yGTrTwoyJX6WNGhFyH5pnPW66",
+        "config": {
+          "commitment": "confirmed",
+          "encoding": "base64"
+        }
+      },
+      "ok": true
+    },
+    {
+      "method": "getLatestBlockhash",
+      "paramsSummary": [
+        {
+          "commitment": "confirmed"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "method": "simulateTransaction",
+      "paramsSummary": {
+        "encodedTransaction": "<unsigned-message-redacted>",
+        "config": {
+          "encoding": "base64",
+          "commitment": "confirmed",
+          "sigVerify": false,
+          "replaceRecentBlockhash": true
+        }
+      },
+      "ok": true
+    }
+  ]
+}

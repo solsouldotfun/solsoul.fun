@@ -1,0 +1,7 @@
+Scope: 3 of 4 workspace projects
+sdk typecheck$ tsc -p tsconfig.json --noEmit
+services/indexer typecheck$ tsc -p tsconfig.json --noEmit
+services/indexer typecheck: Done
+sdk typecheck: Done
+app typecheck$ tsc --noEmit
+app typecheck: Done

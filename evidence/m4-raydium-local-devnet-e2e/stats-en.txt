@@ -1,0 +1,10 @@
+Route: /en/stats
+Visible page: Global Soul Collection Dashboard / Stats
+Captured from local Next dev server with NEXT_PUBLIC_RPC=https://api.devnet.solana.com and NEXT_PUBLIC_DEVNET_SMOKE=1.
+Feature: m4-devnet-boundary-sell-and-stats-evidence-fix
+Stats API snapshot: evidence/m4-raydium-local-devnet-e2e/stats-api-devnet.json
+Metrics: launchedTokens=33, generatedSoulCandidates=44, claimedSouls=14, activeCurves=32
+Source coverage: bonding_curve_reserve_tokens=32; raydium_cp_swap_vault_tokens=1; source_verified_tokens=33; warnings=outside_liquidity_scan_unavailable,outside_liquidity_venue_unavailable
+Raydium dust row: tokenLabel=RAYDLS3J; liquidity_dust_ratio=0.000000001152922318; active_liquidity_base_units=651285856750882; liquidity=raydium_cp_swap_vault; source_verified=true
+Boundary sell lifecycle row: tokenLabel=M4SELLK4SSD; liquidity_dust_ratio=0.000000000000001260; active_receipts=0; burned_receipts=1; inactive_receipts=1; liquidity=bonding_curve_reserve
+Public Solana identifiers are omitted or digest-redacted in text evidence; PNG screenshot preserves visual UI proof.

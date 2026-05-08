@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --solsoul-bg: #000000;
+  --solsoul-panel: #0a0a0a;
+  --solsoul-panel-muted: #111111;
+  --solsoul-border: rgba(255, 255, 255, 0.1);
+  --solsoul-border-strong: rgba(255, 255, 255, 0.2);
+  --solsoul-text: #f5f5f5;
+  --solsoul-muted: rgba(245, 245, 245, 0.55);
+  --solsoul-accent: #d7ff3f;
+  --solsoul-purple: #9b5cff;
+  --solsoul-green: #d7ff3f;
+  --solsoul-gas: #7cff6b;
+  --solsoul-marker: #f8ff70;
+  --solsoul-ink-shadow: #020202;
+}
+
+body {
+  @apply min-h-screen overflow-x-hidden bg-black text-white antialiased;
+}
+
+::selection {
+  @apply bg-white/20 text-white;
+}
+
+@layer components {
+  .solsoul-panel {
+    @apply rounded-2xl border border-white/10 bg-white/[0.03];
+  }
+
+  .solsoul-card {
+    @apply rounded-2xl border border-white/10 bg-neutral-950/80;
+  }
+
+  .solsoul-dense-row {
+    @apply min-w-0 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3;
+  }
+
+  .solsoul-label {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-white/40;
+  }
+
+  .solsoul-mono {
+    @apply break-all font-mono text-white/60;
+  }
+
+  .solsoul-button-primary {
+    @apply inline-flex items-center justify-center rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:bg-white/20 disabled:text-white/40;
+  }
+
+  .solsoul-button-secondary {
+    @apply inline-flex items-center justify-center rounded-xl border border-white/20 bg-transparent px-6 py-3.5 text-sm font-semibold text-white/70 transition hover:border-white/40 hover:text-white disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .solsoul-input {
+    @apply w-full min-w-0 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-white outline-none transition placeholder:text-white/30 focus:border-white/30;
+  }
+
+  .solsoul-pill {
+    @apply inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-3 py-1 text-xs font-medium text-white/60;
+  }
+}
+
+@keyframes solsoul-soul-preview-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(
+        var(--soul-preview-drift-x, 4px),
+        var(--soul-preview-drift-y, 4px),
+        0
+      )
+      rotate(var(--soul-preview-rotation, 1deg))
+      scale(var(--soul-preview-scale, 1.012));
+  }
+}
+
+@keyframes solsoul-soul-preview-glow {
+  0%,
+  100% {
+    opacity: 0.08;
+    transform: scale(0.98);
+  }
+
+  50% {
+    opacity: var(--soul-preview-glow-opacity, 0.14);
+    transform: scale(1.03);
+  }
+}
+
+@keyframes solsoul-soul-preview-shimmer {
+  0% {
+    transform: translateX(-48%) rotate(18deg);
+  }
+
+  100% {
+    transform: translateX(48%) rotate(18deg);
+  }
+}
+
+@keyframes solsoul-soul-preview-orbit {
+  0% {
+    transform: rotate(0deg) translateZ(0);
+  }
+
+  100% {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+
+.solsoul-animated-soul-preview {
+  --soul-preview-duration: 18000ms;
+  --soul-preview-delay: 0ms;
+  --soul-preview-intensity: 0.22;
+  --soul-preview-drift-x: 4px;
+  --soul-preview-drift-y: 4px;
+  --soul-preview-scale: 1.012;
+  --soul-preview-rotation: 1deg;
+  --soul-preview-glow-opacity: 0.14;
+  --soul-preview-shimmer-opacity: 0.08;
+  --soul-preview-orbit-radius: 6px;
+  --soul-preview-accent-hue: 180deg;
+  --soul-flow-particle-budget: 48;
+  --soul-flow-speed: 0.48;
+  --soul-flow-density: 0.42;
+  --soul-flow-swirl: 0.2;
+  --soul-flow-field-scale: 1;
+  --soul-flow-phase-a: 0;
+  --soul-flow-phase-b: 2.09;
+  --soul-flow-phase-c: 4.18;
+  --soul-flow-palette-primary: #14f195;
+  --soul-flow-palette-secondary: #9945ff;
+  --soul-flow-palette-tertiary: #38d5ff;
+  --soul-flow-palette-accent: #d7ff3f;
+  --soul-three-particle-budget: 0;
+  --soul-three-lightfield-layers: 0;
+  --soul-three-halo-radius: 1;
+  --soul-three-orbit-count: 0;
+  --soul-three-orbit-speed: 0;
+  --soul-three-orbit-tilt: 0deg;
+  --soul-three-parallax-depth: 0;
+  --soul-three-point-size: 1.5px;
+  --soul-three-camera-z: 4.5;
+  --soul-three-fov: 44deg;
+  --soul-three-motion-intensity: 0;
+  --soul-three-shader-phase: 0;
+  --soul-three-bloom-strength: 0;
+  --soul-three-palette-primary: #14f195;
+  --soul-three-palette-secondary: #9945ff;
+  --soul-three-palette-accent: #38d5ff;
+}
+
+.solsoul-animated-soul-preview__image {
+  animation: solsoul-soul-preview-float var(--soul-preview-duration) ease-in-out
+    var(--soul-preview-delay) infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.solsoul-animated-soul-preview__glow {
+  background:
+    radial-gradient(
+      circle at 30% 22%,
+      hsl(var(--soul-preview-accent-hue) 100% 68% / 0.24),
+      transparent 34%
+    ),
+    radial-gradient(circle at 70% 78%, rgba(155, 92, 255, 0.2), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 55%);
+  filter: blur(18px);
+  mix-blend-mode: screen;
+  opacity: var(--soul-preview-glow-opacity);
+  animation: solsoul-soul-preview-glow var(--soul-preview-duration) ease-in-out
+    var(--soul-preview-delay) infinite;
+  will-change: opacity, transform;
+}
+
+.solsoul-animated-soul-preview__shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0) 38%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(215, 255, 63, 0.08) 58%,
+    transparent 72%
+  );
+  mix-blend-mode: screen;
+  opacity: var(--soul-preview-shimmer-opacity);
+  animation: solsoul-soul-preview-shimmer var(--soul-preview-duration) linear
+    var(--soul-preview-delay) infinite;
+}
+
+.solsoul-animated-soul-preview__orbit {
+  inset: var(--soul-preview-orbit-radius);
+  border: 1px solid hsl(var(--soul-preview-accent-hue) 100% 68% / 0.18);
+  border-left-color: rgba(215, 255, 63, 0.24);
+  border-radius: 9999px;
+  box-shadow: inset 0 0 32px rgba(255, 255, 255, 0.04);
+  opacity: var(--soul-preview-intensity);
+  animation: solsoul-soul-preview-orbit var(--soul-preview-duration) linear
+    var(--soul-preview-delay) infinite;
+}
+
+.solsoul-animated-soul-preview__flow-canvas {
+  filter: blur(0.15px) saturate(1.16);
+  mix-blend-mode: screen;
+  opacity: calc(0.2 + var(--soul-flow-density) * 0.48);
+}
+
+.solsoul-animated-soul-preview__three-layer {
+  filter: saturate(1.18);
+  opacity: var(--soul-three-layer-opacity, 0);
+  transition: opacity 420ms ease;
+}
+
+.solsoul-animated-soul-preview__three-layer canvas,
+.solsoul-animated-soul-preview__three-canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__image,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__glow,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__shimmer,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__orbit,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__flow-canvas,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__three-layer,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__image,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__glow,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__shimmer,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__orbit,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__three-layer {
+  animation: none !important;
+  transform: none !important;
+  will-change: auto;
+}
+
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__flow-canvas,
+.solsoul-animated-soul-preview--off .solsoul-animated-soul-preview__three-layer,
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__three-layer {
+  display: none;
+}
+
+.solsoul-animated-soul-preview--reduced .solsoul-animated-soul-preview__flow-canvas {
+  opacity: 0.18;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__image,
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__glow,
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__shimmer,
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__orbit,
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__three-layer {
+    animation: none !important;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__flow-canvas {
+    opacity: 0.18;
+  }
+
+  .solsoul-animated-soul-preview .solsoul-animated-soul-preview__three-layer {
+    display: none;
+  }
+}
